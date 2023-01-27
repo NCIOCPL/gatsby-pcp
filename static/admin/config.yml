@@ -1,0 +1,20 @@
+
+backend:
+  name: github # we don't have a github oauth server configured so this does not currently work
+  repo: NCIOCPL/gatsby-pcp
+
+# when using the default proxy server port
+local_backend: true
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  # Pages collection for the main pages. We can move this to a files collection should we need to differentiate the frontmatter
+  - label: "Pages"
+    name: "pages"
+    folder: "src/content/pages"
+    create: false
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Body, name: body, widget: markdown}

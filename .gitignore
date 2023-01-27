@@ -1,0 +1,49 @@
+
+# === Gatsby ===
+.cache/
+public
+
+# === Rule for dotfiles ===
+# Ignore all dotfiles.
+.*
+# Exclude specific dotfiles that we want to track.
+!deps/**/.*
+!test/fixtures/**/.*
+!.clang-format
+!.editorconfig
+!.eslintignore
+!.eslintrc.js
+!.prettierrc
+!.pa11yci
+!.flake8
+!.gitattributes
+!.github
+!.gitignore
+!.gitkeep
+!.mailmap
+!.nycrc
+!.travis.yml
+!.eslintrc.yaml
+!.cpplint
+!.npmrc
+!.nvmrc
+
+
+# === Rules for release artifacts ===
+/*.tar.*
+/*.pkg
+/SHASUMS*.txt*
+
+# === Rules for `node_modules` ===
+!**/node_modules/**
+/node_modules
+/tools/doc/node_modules
+/tools/clang-format/node_modules
+
+# === Global Rules ===
+# Keep last to avoid being excluded
+*.pyc
+__pycache__
+.DS_Store
+*~
+/.idea
