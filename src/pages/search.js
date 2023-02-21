@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { Script } from "gatsby"
+import './search.scss'
 
 const SearchPage = () => {
 	return (
 	  <Layout>
-		<p>Search</p>
 		<div id="NCI-sws-app-root"></div>
 		<Script id="NCI-sws-app-root-js-config" type="text/javascript">{(function() {
 				window.NCI_sws_app_root_js_config = {
@@ -35,7 +35,10 @@ export default SearchPage
 
 export function Head() {
     return (
-      <title>Search Results</title>
+		<head>
+		<link rel="stylesheet" media="all" href="https://www.cancer.gov/app-modules/sitewide-search-app/sitewide-search-app.v1.3.0/static/css/main-legacy.css?rq3pri" />
+		<title>Search Results</title>
+		</head>
     )
   }
 
