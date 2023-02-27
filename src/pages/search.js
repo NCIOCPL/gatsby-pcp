@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout";
 import { Script } from "gatsby"
-import './search.scss'
+import '../styles/search.scss'
 
 const SearchPage = () => {
 	return (
