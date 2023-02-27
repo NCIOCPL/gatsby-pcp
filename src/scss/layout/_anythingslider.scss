@@ -1,0 +1,468 @@
+/*
+        AnythingSlider v1.8+ Default theme
+        By Chris Coyier: http://css-tricks.com
+        with major improvements by Doug Neiner: http://pixelgraphics.us/
+        based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+/*****************************
+  SET DEFAULT DIMENSIONS HERE
+ *****************************/
+/* change the ID & dimensions to match your slider */
+#slider {
+    list-style: none;
+    /* Prevent FOUC (see FAQ page) and keep things readable if javascript is disabled */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/******************
+  SET STYLING HERE
+ ******************
+ =================================
+ Default state (no keyboard focus)
+ ==================================*/
+/* Overall Wrapper */
+.anythingSlider-default {
+    margin: 0 auto;
+    /* 45px right & left padding for the arrows, 28px @ bottom for navigation */
+    padding: 0;
+    //z-index: 0;
+}
+/* slider window - top & bottom borders, default state */
+.anythingSlider-default .anythingWindow {
+    //border-top: 3px solid #777;
+    //border-bottom: 3px solid #777;
+    //@include section-border;
+}
+/* Navigation buttons + start/stop button, default state */
+.anythingSlider-default .anythingControls a {
+    background-color: transparent;
+    color: $white;
+    text-align: center;
+    position: relative;
+    //z-index: 125;
+}
+/* Make sure navigation text is visible */
+.anythingSlider-default .anythingControls a span {
+    //position: absolute;
+    //visibility: hidden;
+    // height: 0;
+    // width: 0;
+    //color: transparent;
+    //@include visually-hidden;
+    display: block;
+    visibility: hidden;
+}
+/* Navigation current button, default state */
+.anythingSlider-default .anythingControls a.cur {
+
+}
+
+/* start-stop button, stopped, default state */
+.anythingSlider-default .anythingControls a.start-stop {
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/play-button.png), none;
+    background-image: url(../images/play-button.svg), 
+        linear-gradient(transparent, transparent);
+    background-size: 10px auto, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+/* start-stop button, playing, default state */
+.anythingSlider-default .anythingControls a.start-stop.playing {
+    background-image: url(../images/pause-button.png), none;
+    background-image: url(../images/pause-button.svg), 
+        linear-gradient(transparent, transparent);
+}
+
+/************************
+  NAVIGATION POSITIONING
+ ************************/
+/* Navigation Arrows */
+.anythingSlider-default .arrow {
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    position: absolute;
+    display: block;
+    //z-index: 200;
+}
+
+.anythingSlider-default .arrow a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    outline: 0;
+
+    //z-index: 250;
+
+    span {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/* back arrow */
+.anythingSlider-default .back { left: 0; }
+.anythingSlider-default .back a:hover { 
+    background-image: url(../images/carousel-left.png);
+    background-image: url(../images/carousel-left.svg),
+        linear-gradient(to right, rgba(0, 0, 0, 0.5) 0px, rgba(0, 0, 0, 0) 100%);
+
+    background-size: 25% auto, 100% 100%;
+    background-position: 35% center, 0 0;
+    background-repeat: no-repeat;
+}
+/* forward arrow */
+.anythingSlider-default .forward { right: 0; }
+.anythingSlider-default .forward a:hover { 
+    background-image: url(../images/carousel-right.png);
+    background-image: url(../images/carousel-right.svg),
+        linear-gradient(to left, rgba(0, 0, 0, 0.5) 0px, rgba(0, 0, 0, 0) 100%);
+
+    background-size: 25% auto, 100% 100%;
+    background-position: right 35% center, 0 0;
+    background-repeat: no-repeat;
+}
+
+/* Navigation Links */
+.anythingSlider-default .anythingControls { 
+    display: block;
+    outline: 0; 
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    z-index: 500;
+}
+.anythingSlider-default .anythingControls ul { 
+    // display: block;
+    position: absolute;
+    top: 0.75rem;
+    left: 0;
+    right: 0;
+    //width: 100%;
+
+    height: 1rem;
+    line-height: 1rem;
+    margin: 0 auto; 
+    padding: 0;  
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+.anythingSlider-default .anythingControls ul li { 
+    // float: left;
+    display: inline-block;
+    //position: relative;
+    background-color: rgba(0,0,0,0);
+}
+.anythingSlider-default .anythingControls ul a {
+
+    display: inline-block;
+    //position: relative;
+    text-decoration: none;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    text-align: center;
+    outline: 0;
+    
+    background-image: url(../images/carousel-hollow-circle.png), none;
+    background-image: url(../images/carousel-hollow-circle.svg), 
+        linear-gradient(transparent, transparent);
+    background-size: 10px auto, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-color: transparent;
+
+    &.cur {
+        background-image: url(../images/carousel-solid-circle.png), none;
+        background-image: url(../images/carousel-solid-circle.svg), 
+            linear-gradient(transparent, transparent);
+    }
+}
+
+/* navigationSize window */
+.anythingSlider-default .anythingControls .anythingNavWindow {
+    overflow: hidden;
+}
+
+/* Autoplay Start/Stop button */
+.anythingSlider-default .anythingControls .start-stop {
+    padding: 0;
+    width: 20px;
+    top: 0;
+    left: calc(50% - 5px);
+    display: block;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    //z-index: 100;
+    outline: 0;
+}
+
+/***********************
+  IE8 AND OLDER STYLING
+ ***********************/
+
+/* Navigation Arrows */
+.as-oldie .anythingSlider-default .arrow {
+    top: 30%;
+}
+.as-oldie .anythingSlider-default .arrow a {
+    margin: 0;
+}
+
+/* margin between nav buttons just looks better */
+.as-oldie .anythingSlider-default .anythingControls li {
+    margin-left: 3px;
+}
+
+/* When using the navigationSize option, the side margins need to be zero
+        None of the navigation panels look good in IE7 now =( */
+.as-oldie .anythingSlider-default .anythingControls a {
+    margin: 0;
+}
+.as-oldie .anythingSlider-default .anythingNavWindow {
+    margin: 0 2px;
+}
+.as-oldie .anythingSlider-default .anythingNavWindow li {
+    padding: 3px 0 0 0;
+}
+
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+/* Overall Wrapper */
+.anythingSlider {
+    display: block;
+    overflow: visible !important;
+    position: relative;
+}
+/* anythingSlider viewport window */
+.anythingSlider .anythingWindow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingSlider .anythingBase {
+    background: transparent;
+    list-style: none;
+    position: absolute;
+    overflow: visible !important;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation arrow text; indent moved to span inside "a", for IE7;
+  apparently, a negative text-indent on an "a" link moves the link as well as the text */
+.anythingSlider .arrow span {
+    display: block;
+    //visibility: hidden;
+    @include visually-hidden;
+}
+/* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+.anythingSlider .arrow.disabled {
+    display: none;
+}
+/* all panels inside the slider; horizontal mode */
+.anythingSlider .panel {
+    width: 100%;
+    // background: transparent;
+    display: block;
+    overflow: hidden;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+/* vertical mode */
+.anythingSlider .vertical .panel {
+    float: none;
+}
+/* fade mode */
+.anythingSlider .fade .panel {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    //z-index: 0;
+}
+/* fade mode active page - visible & on top */
+.anythingSlider .fade .activePage {
+    //z-index: 1;
+}
+
+/***********************
+  RTL STYLING
+ ***********************/
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+.anythingSlider.rtl .anythingWindow {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+.anythingSlider.rtl .anythingControls ul { float: left; } /* move nav link group to left */
+.anythingSlider.rtl .anythingControls ul a { float: right; } /* reverse order of nav links */
+.anythingSlider.rtl .start-stop { /* float: right; */ } /* move start/stop button - in case you want to switch sides */
+
+/* probably not necessary, but added just in case */
+.anythingSlider,
+.anythingSlider .anythingWindow,
+.anythingSlider .anythingControls ul a,
+.anythingSlider .arrow a,
+.anythingSlider .start-stop {
+    transition-duration: 0s;
+    -o-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+}
+
+/*******
+Carousel field styling
+********/
+
+.carousel-background {
+    position: relative;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    left: 20%;
+    max-width: 60%;
+    color: $white;
+
+    //text-shadow: 0 0 4px $black;
+    p {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+    }
+
+    .carousel-title, .carousel-description, .carousel-link {
+        display: block;
+        margin-bottom: $column-gutter;        
+
+        & > span {
+            display: inline-block;
+            padding: $column-gutter/8 $column-gutter/4;
+            background-color: rgba(0,0,0, 0.75);
+        }
+    }
+
+    .carousel-title {
+        text-transform:uppercase;
+        font-size: rem-calc(48); // 52
+        line-height: 1;
+        font-weight: bold;
+    }
+
+    .carousel-description {
+        font-size: rem-calc(24); // 26
+        line-height: 1;
+    }
+
+    .carousel-link {
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 5vh;
+
+        &:before {
+            content: ' ';
+            display: block;
+            width: calc(100% - (#{$column-gutter} * 2 / 3));
+            height: 1px;
+            padding-bottom: calc(100% - (#{$column-gutter} * 2 / 3));
+            margin: 0 $column-gutter/3 1vh;
+            background-image: url(../images/past-members-more.png), none;
+            background-image: url(../images/past-members-more.svg), 
+                linear-gradient(transparent, transparent);
+            background-size: 50% auto, 0 0;
+            background-repeat: no-repeat, no-repeat;
+            background-position: 50% 55%, center;
+            background-color: rgba(0,0,0,0.75);
+            border-radius: 50%;
+        }
+
+        .link-text {
+            display: block;
+            line-height: 1;
+        }
+    }
+}
+
+.carousel-slide:not(:first-child) {
+    visibility: hidden;
+}
+
+
+
+.carousel-container {
+    width: 100%;
+    height: 70vh;
+    background: $borderyellow;
+}
+
+.carousel-background {
+    height: 100vh;
+    width: 100vw;
+}
+
+.initial-slide {
+    background: url(../images/carousel-1-stylizedlogo.jpg) no-repeat center center/ cover;
+}
+
+@media #{$medium-only} {
+
+    .carousel-content {
+        top: 15%;
+        height: 85%;
+        
+        left: 15%;
+        max-width: 70%;
+
+        .carousel-title {
+            font-size: rem-calc(40); // 52
+            font-weight: bold;
+        }
+
+        .carousel-description, .carousel-description p {
+            font-size: rem-calc(20); // 26
+        }
+    }
+}
+
+@media #{$small-only} {
+
+    .carousel-content {
+        top: 10%;
+        height: 90%;
+        
+        left: 10%;
+        max-width: 80%;
+
+    }
+
+    .carousel-title {
+        font-size: rem-calc(32); // 52
+        font-weight: bold;
+    }
+
+    .carousel-description, .carousel-description p {
+        font-size: rem-calc(16); // 26
+    }
+
+}

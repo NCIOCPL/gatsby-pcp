@@ -9,17 +9,48 @@ module.exports = {
   },
   trailingSlash: "never",
   plugins: [
+			`gatsby-plugin-sass`,
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-sass",
-    {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/content/pages/"
-    },
-    __key: "pages"
-  },
-  "gatsby-transformer-remark",
+			"gatsby-plugin-image",
+			"gatsby-plugin-sharp",
+			"gatsby-transformer-sharp",
+			{
+					resolve: "gatsby-plugin-react-svg",
+					options: {
+							rule: {
+									include: /svg/
+							}
+					}
+			},
+		{
+		resolve: 'gatsby-source-filesystem',
+		options: {
+			"name": "pages",
+			"path": "./src/content/pages/"
+		},
+		__key: "pages"
+		},
+	{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+					"name": "images",
+					"path": "./src/images/"
+			}
+	},
+			{
+					resolve: "gatsby-transformer-remark",
+					options: {
+							plugins: [
+									{
+											resolve: `gatsby-remark-images`,
+											options: {
+													maxWidth: 800,
+											},
+									}
+							]
+					}
+			},
+
 ]
 };

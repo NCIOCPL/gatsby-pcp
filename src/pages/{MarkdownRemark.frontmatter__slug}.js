@@ -1,13 +1,15 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+//import { Helmet } from 'react-helmet';
+//import SEO from "../components/Seo";
+//import {siteMetadata as pageContext} from "../../gatsby-config";
 
 export default function DefaultTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
+      <h2>{frontmatter.title}</h2>
       <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
@@ -24,9 +26,13 @@ export const pageQuery = graphql`
   }
 `;
 
-export function Head() {
+/*export function Head() {
     return (
-      <title>Hello World</title>
+				<>
+				<html lang="en" />
+				<body className="html" />
+      	{/!*<title>{pageContext.title}</title>*!/}
+				</>
     )
-  }
+  }*/
 
