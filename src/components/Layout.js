@@ -1,22 +1,17 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import '../scss/pcptheme.scss';
+import React from "react"
+import { Link } from "gatsby"
 
 export default function Layout({ children }) {
   return (
-    <div role={"document"} className={"page"}>
-				<Header/>
-				<div className={"section"}>
-						<div className={"row"}>
-								<div className={"small-12 column"}>
-										<div className={"view-pcp-sections"}>
-												{children}
-										</div>
-								</div>
-						</div>
-				</div>
-				<Footer/>
+    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>
+      <ul>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/members">Members</Link>
+        <Link to="/reports">Reports</Link>
+        <Link to="/nca50">NCA 50</Link>
+      </ul>
+      {children}
     </div>
   )
 }
