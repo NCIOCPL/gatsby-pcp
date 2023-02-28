@@ -152,7 +152,7 @@ body, .section, .subsection {
 }
 
 .section.featured {
-
+	border: none;
     @media #{$small-only} {
         background-color: $cardblue;
         padding: $column-gutter 0 0;

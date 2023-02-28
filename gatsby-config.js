@@ -15,6 +15,7 @@ module.exports = {
 			"gatsby-plugin-image",
 			"gatsby-plugin-sharp",
 			"gatsby-transformer-sharp",
+			 "gatsby-remark-component",
 			{
 					resolve: "gatsby-plugin-react-svg",
 					options: {
