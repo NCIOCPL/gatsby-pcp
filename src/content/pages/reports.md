@@ -2,4 +2,6 @@
 title: Reports
 slug: /reports
 ---
-Content
+
+<report-list></report-list>
+
