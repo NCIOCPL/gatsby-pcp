@@ -1,22 +1,49 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/Seo";
+import rehypeReact from "rehype-react";
+import PCPMemberList from "../components/PCPMemberList";
+import FeaturedHomepageBoxes from "../components/FeaturedHomepageBoxes"
+import StaffList from "../components/StaffList";
+import SingleStaffMember from "../components/SingleStaffMember";
+import Process from "../components/Process";
+import QuestionAnswer from "../components/QuestionAnswer";
+import SingleHomepageBox from "../components/SingleHomepageBox";
+import SingleStaffListEntry from "../components/SingleStaffListEntry";
+import ReportList from "../components/ReportList";
+import SingleReportYear from "../components/SingleReportYear";
+//import SEO from "../components/Seo";
+//import {siteMetadata as pageContext} from "../../gatsby-config";
 
 export default function DefaultTemplate({ data: { markdownRemark } }) {
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, htmlAst } = markdownRemark;
   return (
     <Layout>
-      <h1>{frontmatter.title}</h1>
-      <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+      <h2>{frontmatter.title}</h2>
+				<div className="post-body">{renderAst(htmlAst)}</div>
     </Layout>
   );
 }
+const renderAst = new rehypeReact({
+		createElement: React.createElement,
+		components: {
+				"featured-homepage-boxes": FeaturedHomepageBoxes,
+				"pcp-member-list": PCPMemberList,
+				"process": Process,
+				"question-answer": QuestionAnswer,
+				"report-list": ReportList,
+				"staff-list":StaffList,
+				"single-homepage-box":SingleHomepageBox,
+				"single-report-year":SingleReportYear,
+				"single-staff-list-entry":SingleStaffListEntry,
+				"single-staff-member":SingleStaffMember
+		},
+}).Compiler
 
 export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      html
+      htmlAst
       frontmatter {
         title
       }
@@ -24,9 +51,13 @@ export const pageQuery = graphql`
   }
 `;
 
-export function Head() {
+/*export function Head() {
     return (
-      <title>Hello World</title>
+				<>
+				<html lang="en" />
+				<body className="html" />
+      	{/!*<title>{pageContext.title}</title>*!/}
+				</>
     )
-  }
+  }*/
 
