@@ -28,7 +28,7 @@ class FeaturedHomepageBoxes extends React.Component {
 																				"benefits reach all populations."}
 																		/>
 																		<SingleHomepageBox
-																				url={"/2021-blogs/presidents-cancer-panel-commemorates-50-years-national-cancer-act#nca-50-reflections"}
+																				url={"/nca50/1"}
 																				source={"pcp_50_1.png"}
 																				alt={"President's Cancer Panel Commemorates the National Cancer Act 50th Anniversary"}
 																				title={"President's Cancer Panel Commemorates the National Cancer Act 50th Anniversary"}
