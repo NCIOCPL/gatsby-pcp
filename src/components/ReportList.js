@@ -54,7 +54,7 @@ class ReportList extends React.Component {
 									<Meetings
 											meetings={[
 													{
-															url: "/2021/improving-resilience-and-equity-cancer-screening-innovations-increase-screening",
+															url: "/reports/2021/1",
 															dateList: [
 																"February 11, 2021",
 																	"Thu, 02/11/2021"

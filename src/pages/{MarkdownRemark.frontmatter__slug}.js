@@ -12,6 +12,10 @@ import SingleHomepageBox from "../components/SingleHomepageBox";
 import SingleStaffListEntry from "../components/SingleStaffListEntry";
 import ReportList from "../components/ReportList";
 import SingleReportYear from "../components/SingleReportYear";
+import { LeftNavigation } from "../components/LeftNavigation";
+import PictureWithQuotes from "../components/PictureWithQuotes";
+import ImageWithCaption from "../components/ImageWithCaption";
+import SingleLeftNavigationItem from "../components/SingleLeftNavigationItem";
 //import SEO from "../components/Seo";
 //import {siteMetadata as pageContext} from "../../gatsby-config";
 
@@ -28,15 +32,19 @@ const renderAst = new rehypeReact({
 		createElement: React.createElement,
 		components: {
 				"featured-homepage-boxes": FeaturedHomepageBoxes,
+				"image-with-caption": ImageWithCaption,
+				"left-navigation": LeftNavigation,
 				"pcp-member-list": PCPMemberList,
+				"picture-with-quotes": PictureWithQuotes,
 				"process": Process,
 				"question-answer": QuestionAnswer,
 				"report-list": ReportList,
-				"staff-list":StaffList,
-				"single-homepage-box":SingleHomepageBox,
-				"single-report-year":SingleReportYear,
-				"single-staff-list-entry":SingleStaffListEntry,
-				"single-staff-member":SingleStaffMember
+				"staff-list": StaffList,
+				"single-homepage-box": SingleHomepageBox,
+				"single-left-navigation-item": SingleLeftNavigationItem,
+				"single-report-year": SingleReportYear,
+				"single-staff-list-entry": SingleStaffListEntry,
+				"single-staff-member": SingleStaffMember
 		},
 }).Compiler
 
