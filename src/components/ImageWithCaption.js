@@ -1,11 +1,12 @@
 import React from "react";
 import Image from '../components/Image';
+import "../scss/components/_pictures.scss"
 
 class ImageWithCaption extends React.Component {
 		render() {
 
 				return (
-						<div className="image-with-caption">
+						<div className={"image-with-caption"}>
 								<Image
 										src={this.props.image_src}
 										alt={this.props.image_alt}

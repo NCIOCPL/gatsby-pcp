@@ -3,10 +3,11 @@ title: "Improving Resilience and Equity in Cancer Screening: Innovations to Incr
 linktext: Agenda
 slug: /reports/2021/2
 ---
-
+<div class="full-report-container">
+<div class="left-nav-container">
 <left-navigation root="/reports/2021/"></left-navigation>
-
-<div class="small-12 medium-9 columns">
+</div>
+<div class="report-container">
 
 <table cellpadding="5" cellspacing="5" width="100%">
 <tbody>
@@ -14,7 +15,7 @@ slug: /reports/2021/2
 
 **10:00-12:00**
 </td>
-<td width="1%">&nbsp;</td>
+<td>&nbsp;</td>
 <td valign="top" width="79%">
 
 Innovations in Public Health and Community Engagement
@@ -34,7 +35,9 @@ Present relevant screening priorities and identify opportunities to accelerate i
 </td>
 <td>&nbsp;</td>
 <td valign="top">
+
 Break
+
 </td>
 </tr><tr><td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -46,6 +49,7 @@ Break
 </td>
 <td>&nbsp;</td>
 <td valign="top">
+
 Innovations in EHR's, Data Sharing, and Professional Training (Continuing and Graduate Medical Education)
 
 Present relevant screening priorities and identify opportunities to accelerate implementation through innovation
@@ -60,10 +64,13 @@ Present relevant screening priorities and identify opportunities to accelerate i
 </tr><tr><td valign="top">
 
 **3:00 – 4:00**
+
 </td>
 <td>&nbsp;</td>
 <td valign="top">
+
 Break
+
 </td>
 </tr><tr><td>&nbsp;</td>
 <td>&nbsp;</td>
@@ -71,9 +78,11 @@ Break
 </tr><tr><td valign="top">
 
 **4:00&nbsp;– 6:00**
+
 </td>
 <td>&nbsp;</td>
 <td valign="top">
+
 Innovations in Telehealth, Remote Care &amp; Insurance
 
 Present relevant screening priorities and identify opportunities to accelerate implementation through innovation
@@ -86,4 +95,5 @@ Present relevant screening priorities and identify opportunities to accelerate i
 <td>&nbsp;</td>
 </tr></tbody></table>
 
+</div>
 </div>

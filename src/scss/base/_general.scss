@@ -1,0 +1,63 @@
+@use "uswds-core" as *;
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	color: $pcpblue;
+	&.node-title {
+		text-transform: none;
+	}
+}
+h1 {
+	font-size: font-size('sans','xl');
+}
+h2 {
+	font-size: font-size('sans',11);
+}
+h3 {
+	font-size:font-size('sans',10);
+}
+h4 {
+	font-size:font-size('sans',8);
+}
+a {
+	color: $pcpanchor;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $pcphoverblue;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	&.no-link-display,
+	&.no-link-display:hover,
+	&.no-link-display:focus
+	{
+		cursor: default;
+		color: $mediumgrey;
+	}
+}
+[href] {
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+p {
+	line-height: units(3);
+	margin-bottom: units(2.5);
+}
+ul {
+	line-height: units(3);
+	font-size: font-size('sans',7);
+	list-style: disc outside;
+	margin-left: units(2);
+	padding: 0;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+.hidden {
+	display: none;
+}

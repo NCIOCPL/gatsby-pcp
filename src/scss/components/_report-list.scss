@@ -1,0 +1,24 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.report-list-container {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.single-report {
+	padding: units(1) units(2);
+	border: solid units(2px) $shadegrey;
+	margin-bottom: units(2.5);
+	.report-linklist {
+		font-size: font-size("sans", "xs");
+	}
+}
+
+a.view-more {
+	@include view-more();
+}

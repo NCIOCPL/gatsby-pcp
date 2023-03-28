@@ -1,13 +1,19 @@
 import React from "react"
 import Layout from "../components/Layout";
 import { Script } from "gatsby"
-import '../styles/search.scss'
+import '../scss/search.scss'
 
 const SearchPage = () => {
 	return (
 	  <Layout>
 		<div id="NCI-sws-app-root"></div>
 		<Script id="NCI-sws-app-root-js-config" type="text/javascript">{(function() {
+
+				// Make gatsby build happy when window doesn't exist
+				if (typeof window === 'undefined') {
+					global.window = {}
+				}
+
 				window.NCI_sws_app_root_js_config = {
 					"analyticsChannel": "Search",
 					"analyticsContentGroup": "Global Search",

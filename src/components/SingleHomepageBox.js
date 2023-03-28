@@ -1,31 +1,25 @@
 import React from "react";
 import { Link } from "gatsby";
 import Image from '../components/Image';
+import "../scss/components/_featured-homepage-box.scss";
 
 class SingleHomepageBox extends React.Component {
 		render() {
 				return (
-						<div className="medium-4 columns">
-								<div
-										className="featured-card equalheight"
-										style={{
-												height: "604px"
-										}}
-								>
+								<div className={"featured-card"}>
 										<Link to={this.props.url}>
 												<Image
 														src={this.props.source}
 														alt={this.props.alt}
 												/>
-												<div className="card-title">
+												<div className={"card-title"}>
 														{this.props.title}
 												</div>
-												<div className="card-description">
+												<div className={"card-description"}>
 														{this.props.description}
 												</div>
 										</Link>
-								</div>{" "}
-						</div>
+								</div>
 				);
 		}
 }

@@ -3,10 +3,11 @@ title: "Improving Resilience and Equity in Cancer Screening: Innovations to Incr
 linktext: Overview
 slug: /reports/2021/1
 ---
-
+<div class="full-report-container">
+<div class="left-nav-container">
 <left-navigation root="/reports/2021/"></left-navigation>
-
-<div class="small-12 medium-9 columns">
+</div>
+<div class="report-container">
 
 **February 11, 2021**
 
@@ -27,4 +28,5 @@ The President’s Cancer Panel will consider input and proposed recommendations 
 
 [Meeting Recording](https://nci.rev.vbrick.com/#/videos/ad89d353-6c51-4cfb-96e7-9e50630065c6)
 
+</div>
 </div>

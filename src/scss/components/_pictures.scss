@@ -1,0 +1,36 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.picture-with-quotes-caption {
+	font-size: font-size('sans','3xs');
+	padding: units(1) 0;
+}
+.picture-with-quotes-container {
+	@include grid-row();
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	@include at-media(tablet-lg){
+		@include grid-gap(1);
+		flex-direction: row;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+}
+.picture-with-quotes-image {
+	@include grid-col(12);
+	@include at-media(tablet-lg){
+		@include grid-col(5);
+	}
+}
+.picture-with-quotes-text {
+	@include grid-col(12);
+	@include at-media(tablet-lg) {
+		@include grid-col(7);
+		padding: 0 units(1.5);
+	}
+}

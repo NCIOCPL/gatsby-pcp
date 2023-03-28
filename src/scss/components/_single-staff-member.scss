@@ -1,0 +1,16 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.single-member {
+	@include grid-row();
+	justify-content: center;
+	max-width: 80%;
+	.member-image {
+		@include at-media("tablet") {
+			max-width: 40%;
+		}
+		img {
+			border-radius: 50%;
+		}
+	}
+}

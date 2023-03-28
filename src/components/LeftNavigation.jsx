@@ -1,6 +1,7 @@
 import React from "react";
 import { getNodes } from "../hooks/get-nodes";
 import { Link } from "gatsby";
+import "../scss/components/_left-nav-multipage.scss"
 
 export const LeftNavigation = ({ root }) => {
 
@@ -17,21 +18,19 @@ export const LeftNavigation = ({ root }) => {
 		 let linkList=sortedSlugList.map((link,index)=>{
 				 return <li key={index} className={"nav-item"}>
 						 <Link to={link.node.frontmatter.slug}
-									 className={"meeting-left-nav-item"}
+									 className={"left-nav-item"}
 									 data-section-raw-title={link.node.frontmatter.linktext}
 									 data-section-aliased-title={link.node.frontmatter.linktext}
 									 data-section-id={index}
-									 activeClassName="active">{link.node.frontmatter.linktext}</Link>
+									 activeClassName={"active"}>{link.node.frontmatter.linktext}</Link>
 				 </li>
 		});
-  return (
-		<div className="medium-3 medium-up columns">
-				<div
-						className="view view-pcp-meeting-left-nav view-id-pcp_meeting_left_nav view-display-id-nav section-nav equalheight">
-						<ul className="view-content">
+
+		 return (
+				 <div className={"left-nav"}>
+						<ul>
 								{linkList}
 						</ul>
-				</div>
-		</div>
+					</div>
   )
 }
