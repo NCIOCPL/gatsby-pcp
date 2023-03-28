@@ -4,9 +4,11 @@ linktext: Participants
 slug: /reports/2021/3
 ---
 
+<div class="full-report-container">
+<div class="left-nav-container">
 <left-navigation root="/reports/2021/"></left-navigation>
-
-<div class="small-12 medium-9 columns">
+</div>
+<div class="report-container">
 
 **Tracy A. Battaglia, MD** \
 Associate Professor of Medicine \
@@ -332,5 +334,5 @@ Physician \
 Southern Maine Health Care \
 Biddeford, ME
 
-
+</div>
 </div>

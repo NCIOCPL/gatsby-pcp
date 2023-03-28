@@ -1,0 +1,23 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.site-title-container {
+	display: none;
+	@include at-media(tablet-lg) {
+		display: block;
+		@include grid-row();
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: units(2);
+	}
+}
+h1.site-name {
+	margin-bottom: units(2);
+}
+.site-slogan {
+	 color: $pcpblue;
+	 text-align: center;
+	 font-size: font-size('sans',8);
+	 width: units('mobile');
+	 line-height: units(4);
+}

@@ -15,7 +15,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^5.5.0",
+    "@uswds/uswds": "^3.4.1",
+    "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-netlify-cms": "^7.5.0",
@@ -36,5 +37,8 @@
     "rehype-react": "^7.1.2",
     "sass": "^1.58.3",
     "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@uswds/compile": "^1.0.0"
   }
 }

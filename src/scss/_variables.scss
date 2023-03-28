@@ -1,0 +1,31 @@
+
+$white       : #FFFFFF;
+$pcpanchor   : #135A69;
+$pcpblue     : #05477D;
+$pcpbluedark : darken($pcpblue, 10%);
+$pcpbluelight: lighten($pcpblue, 10%);
+
+$top-bar-blue: #204f8a;
+$top-bar-blue-gradient-end: #0e214f;
+
+$pcphoverblue  : #1b7e93;
+$pcpbuttonblue: #257da0; //not used yet
+$pcpbluefaint: mix($pcpbuttonblue, $white, 50%); //not used yet
+$cardblue    : #2B719B;
+$borderyellow: #D5A130;
+$lightgrey   : #f7f7f7;
+$shadegrey   : #ebebeb;
+$mediumgrey  : #414141;
+$smoke       : #EEEEEE;
+$black       : #000000; //not used yet
+
+$primary-color: $pcpbuttonblue; //not used yet
+
+
+
+
+
+
+
+
+

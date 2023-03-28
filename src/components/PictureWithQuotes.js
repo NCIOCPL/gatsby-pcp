@@ -1,5 +1,6 @@
 import React from "react";
 import Image from '../components/Image';
+import "../scss/components/_pictures.scss"
 
 class PictureWithQuotes extends React.Component {
   render() {
@@ -11,22 +12,23 @@ class PictureWithQuotes extends React.Component {
 					</li>
 			});
 
-    return (<div className="picture-with-quotes-container">
-								<div className="picture-with-quotes-image">
-										<Image
-												src={this.props.image_src}
-												alt={this.props.image_alt}
-										/>
-										<div className={"picture-with-quotes-caption"}>
-												{this.props.image_caption}
-										</div>
-								</div>
-								<div className="picture-with-quotes-text">
-										<ul>
-												{this.quoteList}
-										</ul>
+    return (
+				<div className={"picture-with-quotes-container"}>
+						<div className={"picture-with-quotes-image"}>
+								<Image
+										src={this.props.image_src}
+										alt={this.props.image_alt}
+								/>
+								<div className={"picture-with-quotes-caption"}>
+										{this.props.image_caption}
 								</div>
 						</div>
+						<div className={"picture-with-quotes-text"}>
+								<ul>
+										{this.quoteList}
+								</ul>
+						</div>
+				</div>
     );
   }
 }

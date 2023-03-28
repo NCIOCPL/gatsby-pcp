@@ -1,0 +1,46 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+ul.staff-list {
+	@include grid-row();
+	justify-content: space-between;
+	list-style: none;
+	li {
+		@include at-media(tablet) {
+			@include grid-col();
+			margin-right: units(2);
+		}
+		@include at-media(mobile) {
+			margin-bottom: units(2);
+		}
+	}
+	.member-image {
+		img {
+			border-radius: 50%;
+		}
+	}
+	.member-name,
+	.member-title {
+		font-size: font-size("sans","lg");
+		text-align: center;
+	}
+	.member-name {
+		color: $pcpblue;
+		font-weight: bold;
+		padding: units(1) 0 units(0.5) 0;
+	}
+	.member-title {
+		font-style: italic;
+		padding: 0 0 units(0.5) 0;
+	}
+	.member-link {
+		text-align: center;
+		a {
+			@include view-more();
+			font-size: font-size("sans","md");
+			margin-right: 0;
+		}
+	}
+}
+

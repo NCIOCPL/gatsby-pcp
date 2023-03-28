@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import "../scss/components/_meetings.scss";
 
 class Meetings extends React.Component {
 
@@ -11,7 +12,7 @@ class Meetings extends React.Component {
 				}
 				this.meetingList=this.props.meetings.map((meeting,index)=>{
 						this.dateList=meeting.dateList.map((date,index)=>{
-								return <div><span>{date}</span></div>
+								return <div>{date}</div>
 						});
 						if (meeting.agendalist && (meeting.agendalist.length>1)) {
 								this.agendalist=meeting.agendalist.map((link,index)=>{
@@ -23,53 +24,41 @@ class Meetings extends React.Component {
 								});
 						}
 						if (meeting.url && (meeting.url.length>0)){
-								return <li className={"series-meeting"} key={index}>
-										<div className="views-field views-field-field-sections">
-												<div className="field-content"><a
-														href={meeting.url}
-														className="date-location-wrapper">
-														<div className="field-date">
-																{this.dateList}
-														</div>
-														<div className="field-location">{meeting.location}</div>
-														<div className="field-status">{meeting.status}</div>
-												</a>
-												</div>
-										</div>
-										<div className="views-field views-field-field-series-links">
-												<ul>{this.agendalist}</ul>
-										</div>
-								</li>
+								this.displayUrl = meeting.url;
+								this.meetingLinkClass = 'date-location-wrapper';
 						} else {
-								return <li className={"series-meeting"} key={index}>
-										<div className="views-field views-field-field-sections">
-												<div className="field-content">
-														<div className="date-location-wrapper">
-																<div className="field-date">
-																		{this.dateList}
-																</div>
-																<div className="field-location">{meeting.location}</div>
-																<div className="field-status">{meeting.status}</div>
-														</div>
-												</div>
-										</div>
-										<div className="views-field views-field-field-series-links">
-												<ul>{this.agendalist}</ul>
-										</div>
-								</li>
+								this.displayUrl = '';
+								this.meetingLinkClass = 'date-location-wrapper no-link-display';
 						}
-
+						return <li className={"series-meeting"} key={index}>
+										<a
+												href={this.displayUrl}
+												className={this.meetingLinkClass}>
+												<div className={"date"}>
+														{this.dateList}
+												</div>
+												<div className={"location"}>
+														{meeting.location}
+												</div>
+												<div className={"status"}>
+														{meeting.status}
+												</div>
+										</a>
+								<ul className={"agenda-list"}>
+										{this.agendalist}
+								</ul>
+						</li>
 				});
+
 				return (
-				<div><h4>{this.meetingTitle}</h4>
-						<div className="view view-pcp-series-meetings view-id-pcp_series_meetings view-display-id-series_meetings row display">
-								<div className="view-content">
-										<ul className="small-block-grid-2 medium-block-grid-4">
+						<div className={"meeting-block"}>
+								<h4>{this.meetingTitle}</h4>
+								<div className={"meeting-container"}>
+										<ul className={"meeting-list"}>
 												{this.meetingList}
 										</ul>
 								</div>
 						</div>
-				</div>
 				);
 		}
 }

@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "gatsby";
 import SingleReportYear from "../components/SingleReportYear";
 import Meetings from "../components/Meetings";
+import "../scss/components/_report-list.scss";
 
 class ReportList extends React.Component {
   render() {
     return (
-			<div class="view view-pcp-series view-id-pcp_series view-display-id-past_reports view-dom-id-720f029bc8720d99fcce1a8bf1eb313c">
-					<div class="view-content">
-							<div className="row series">
+				<div className={"report-list-container"}>
+						<div className={"single-report"}>
 									<SingleReportYear
 											year={"2022"}
 											description={<fragment>
-													<p><a href="/report/cancerscreening/">Closing Gaps in Cancer Screening: Connecting People, Communities, and Systems to Improve Equity and Access</a></p>
+													<a href="/report/cancerscreening/">Closing Gaps in Cancer Screening: Connecting People, Communities, and Systems to Improve Equity and Access</a>
 													</fragment>}
 											links={[
 													{
@@ -38,11 +38,11 @@ class ReportList extends React.Component {
 											]}
 											/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2021"}
 											description={<fragment>
-													<p>Improving Resilience and Equity in Cancer Screening: Innovation to Increase Screening</p>
+													Improving Resilience and Equity in Cancer Screening: Innovation to Increase Screening
 											</fragment>}
 											links={[
 													{
@@ -56,8 +56,7 @@ class ReportList extends React.Component {
 													{
 															url: "/reports/2021/1",
 															dateList: [
-																"February 11, 2021",
-																	"Thu, 02/11/2021"
+																"February 11, 2021"
 															],
 															location: "Innovations Meeting",
 															status: ""
@@ -65,11 +64,11 @@ class ReportList extends React.Component {
 											]}
 											/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2020"}
 											description={<fragment>
-													<p>Improving Resilience and Equity in Cancer Screening: Lessons from COVID-19 and Beyond</p>
+													Improving Resilience and Equity in Cancer Screening: Lessons from COVID-19 and Beyond
 											</fragment>}
 											links={[
 													{
@@ -83,9 +82,7 @@ class ReportList extends React.Component {
 													{
 															url: "/2020/improving-resilience-and-equity-lung-cancer-screening-lessons-covid-19-and-beyond",
 															dateList: [
-																	"Oct 26-28, 2020",
-																	"Mon, 10/26/2020 to",
-																	"Wed, 10/28/2020"
+																	"Oct 26-28, 2020"
 															],
 															location: "Lung Cancer",
 															status: ""
@@ -93,9 +90,7 @@ class ReportList extends React.Component {
 													{
 															url: "/2020/improving-resilience-and-equity-lung-cancer-screening-lessons-covid-19-and-beyond",
 															dateList: [
-																	"Nov 2-4, 2020",
-																	"Mon, 11/02/2020 to",
-																	"Wed, 11/04/2020"
+																	"Nov 2-4, 2020"
 															],
 															location: "Colorectal Cancer",
 															status: ""
@@ -103,9 +98,7 @@ class ReportList extends React.Component {
 													{
 															url: "/2020/improving-resilience-and-equity-cervical-cancer-screening-lessons-covid-19-and-beyond",
 															dateList: [
-																	"Nov 9-10, 2020",
-																	"Mon, 11/09/2020 to",
-																	"Tue, 11/10/2020"
+																	"Nov 9-10, 2020"
 															],
 															location: "Cervical Cancer",
 															status: ""
@@ -113,9 +106,7 @@ class ReportList extends React.Component {
 													{
 															url: "/2020/improving-resilience-and-equity-breast-cancer-screening-lessons-covid-19-and-beyond",
 															dateList: [
-																	"Nov 16-18, 2020",
-																	"Mon, 11/16/2020 to",
-																	"Wed, 11/18/2020"
+																	"Nov 16-18, 2020"
 															],
 															location: "Breast Cancer",
 															status: ""
@@ -123,11 +114,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2018"}
 											description={<fragment>
-													<p><a href="/report/hpvupdate/">HPV Vaccination for Cancer Prevention: Progress, Opportunities, and a Renewed Call to Action</a></p>
+													<a href="/report/hpvupdate/">HPV Vaccination for Cancer Prevention: Progress, Opportunities, and a Renewed Call to Action</a>
 											</fragment>}
 											links={[
 													{
@@ -141,11 +132,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2018"}
 											description={<fragment>
-													<p><a href="/report/drugvalue/">Promoting Value, Affordability, and Innovation in Cancer Drug Treatment</a></p>
+													<a href="/report/drugvalue/">Promoting Value, Affordability, and Innovation in Cancer Drug Treatment</a>
 											</fragment>}
 											links={[
 													{
@@ -183,11 +174,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2016"}
 											description={<fragment>
-													<p><a href="/report/connectedhealth/">Improving Cancer-Related Outcomes with Connected Health</a></p>
+													<a href="/report/connectedhealth/">Improving Cancer-Related Outcomes with Connected Health</a>
 											</fragment>}
 											links={[
 													{
@@ -233,11 +224,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2016"}
 											description={<fragment>
-													<p>Cancer Communication in the Digital Era: Opportunities and Challenges</p>
+													Cancer Communication in the Digital Era: Opportunities and Challenges
 											</fragment>}
 											links={[
 													{
@@ -272,11 +263,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2012-2013"}
 											description={<fragment>
-													<p><a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/HPV/index.htm">Cancer Communication in the Digital Era: Opportunities and Challenges</a></p>
+													<a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/HPV/index.htm">Cancer Communication in the Digital Era: Opportunities and Challenges</a>
 											</fragment>}
 											links={[
 													{
@@ -394,11 +385,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2010-2011"}
 											description={<fragment>
-													<p><a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/pcp10-11rpt/FullReport.pdf">The Future of Cancer Research: Accelerating Scientific Innovation</a></p>
+													<a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/pcp10-11rpt/FullReport.pdf">The Future of Cancer Research: Accelerating Scientific Innovation</a>
 											</fragment>}
 											links={[
 													{
@@ -459,7 +450,7 @@ class ReportList extends React.Component {
 															dateList: [
 																	"December 14, 2010"
 															],
-															location: "BEthesda, MD",
+															location: "Bethesda, MD",
 															status: "",
 															agendalist: [
 																	{
@@ -500,11 +491,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2009-2010"}
 											description={<fragment>
-													<p><a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/pcp09-10rpt/pcp09-10rpt.pdf">America's Demographic and Cultural Transformation: Implications for Cancer</a></p>
+													<a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/pcp09-10rpt/pcp09-10rpt.pdf">America's Demographic and Cultural Transformation: Implications for Cancer</a>
 											</fragment>}
 											links={[
 													{
@@ -610,11 +601,11 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="row series">
+							<div className={"single-report"}>
 									<SingleReportYear
 											year={"2008-2009"}
 											description={<fragment>
-													<p><a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/pcp08-09rpt/PCP_Report_08-09_508.pdf">Reducing Environmental Cancer Risk: What We Can Do Now</a></p>
+													<a href="https://deainfo.nci.nih.gov/advisory/pcp/annualReports/pcp08-09rpt/PCP_Report_08-09_508.pdf">Reducing Environmental Cancer Risk: What We Can Do Now</a>
 											</fragment>}
 											links={[
 													{
@@ -728,13 +719,10 @@ class ReportList extends React.Component {
 											]}
 									/>
 							</div>
-							<div className="view-footer">
-									<div className="row">
-											<div className="small-12 column"><a className="view-more" href="http://deainfo.nci.nih.gov/advisory/pcp/archive/index.htm">View More</a><a></a></div>
-									</div>
+							<div className={"view-more-link"}>
+											<a className={"view-more"} href="http://deainfo.nci.nih.gov/advisory/pcp/archive/index.htm">View More</a>
 							</div>
 				</div>
-			</div>
 	);
   }
 }

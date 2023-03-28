@@ -23,7 +23,7 @@ export default function DefaultTemplate({ data: { markdownRemark } }) {
   const { frontmatter, htmlAst } = markdownRemark;
   return (
     <Layout>
-      <h2>{frontmatter.title}</h2>
+      <h2 className={"post-title"}>{frontmatter.title}</h2>
 				<div className="post-body">{renderAst(htmlAst)}</div>
     </Layout>
   );
