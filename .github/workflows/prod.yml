@@ -1,0 +1,13 @@
+name: Deploy to Production
+on:
+  workflow_dispatch:
+
+jobs:
+  
+  call-workflow-deploy:
+    uses: ./.github/workflows/deploy-site.yml
+    with:
+      environment: Prod
+      build_name: pcp-prod
+      use_artifact: true
+    secrets: inherit

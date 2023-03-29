@@ -1,0 +1,168 @@
+name: Build Site
+on:
+  workflow_call:
+    outputs:
+      build_name:
+        value: ${{ jobs.build.outputs.build_name }}
+      branch_name:
+        value: ${{ jobs.build.outputs.branch_name }}
+      commit_hash:
+        value: ${{ jobs.build.outputs.commit_hash }}
+      repo_owner:
+        value: ${{ jobs.build.outputs.repo_owner }}
+      repo_name:
+        value: ${{ jobs.build.outputs.repo_name }}
+    inputs:
+      environment:
+        description: Which environment to deploy to
+        required: true
+        type: string
+
+jobs:
+  build:
+    name: Build, Test and Upload Artifacts
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    outputs:
+      build_name: ${{ steps.set_vars.outputs.build_name }}
+      branch_name: ${{ steps.set_vars.outputs.branch_name }}
+      commit_hash: ${{ steps.set_vars.outputs.commit_hash }}
+      repo_owner: ${{ steps.set_vars.outputs.repo_owner }}
+      repo_name: ${{ steps.set_vars.outputs.repo_name }}
+    steps:
+      ## Setup variables for build info
+      - name: Set Variables
+        id: set_vars
+        run: |
+          ## PUSH
+          if [ "${{ github.event_name }}" == "push" ]; then
+            BUILD_NAME=$(sed -E 's/refs\/(heads|tags)\///; s/\//__/g;' <<< $GITHUB_REF)
+            BRANCH_NAME=$(sed -E 's/refs\/(heads|tags)\///;' <<< $GITHUB_REF)
+            COMMIT_HASH=$(echo "${GITHUB_SHA}")
+          ## PULL_REQUEST
+          elif [ "${{ github.event_name }}" == "pull_request" ]; then
+            BUILD_NAME=$(echo "pr-${{ github.event.pull_request.number }}")
+            BRANCH_NAME=$(echo "pr-${{ github.event.pull_request.number }}")
+            COMMIT_HASH=$(echo "${{ github.event.pull_request.head.sha }}")
+          ## WORKFLOW_DISPATCH
+          elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            BUILD_NAME=$(sed -E 's/refs\/(heads|tags)\///; s/\//__/g;' <<< $GITHUB_REF)
+            BRANCH_NAME=$(sed -E 's/refs\/(heads|tags)\///;' <<< $GITHUB_REF)
+            COMMIT_HASH=$(echo "${GITHUB_SHA}")
+          else
+            ## ERROR
+            exit 1
+          fi
+
+          ## For step checks and artifact deployment path.
+          ## Same for push and PR
+          export REPO_FULL=${{ github.repository }}
+          export REPO_RE='([^/]+)/(.*)'
+          [[ "$REPO_FULL" =~ $REPO_RE ]]
+          REPO_OWNER=$(echo "${BASH_REMATCH[1]}")
+          REPO_NAME=$(echo "${BASH_REMATCH[2]}")
+
+          ## Set step outputs for later use
+          echo "build_name=${BUILD_NAME}" >> $GITHUB_OUTPUT
+          echo "branch_name=${BRANCH_NAME}" >> $GITHUB_OUTPUT
+          echo "commit_hash=${COMMIT_HASH}" >> $GITHUB_OUTPUT
+          echo "repo_owner=${REPO_OWNER}" >> $GITHUB_OUTPUT
+          echo "repo_name=${REPO_NAME}" >> $GITHUB_OUTPUT
+
+      ## Put a comment on the PR for easy testing
+      - name: Add Comment on Where to Test
+        uses: actions/github-script@v6
+        if: startsWith(github.repository, 'NCIOCPL') && github.event_name == 'pull_request' && github.event.action == 'opened'
+        env:
+          BUILD_NAME: ${{steps.set_vars.outputs.build_name}}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          ## NOTE: The script below is JavaScript
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `
+              ## Viewing Information
+              * [The site](https://prescancerpanel-dev.cancer.gov/${ process.env.BUILD_NAME }/)
+              `
+            })
+
+      ## Checkout the code
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      ## Setup node and npm caching
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: https://npm.pkg.github.com
+          scope: "@nciocpl"
+      - name: Run NPM
+        run: npm install
+
+      #      ## Lint the code
+      #      - name: Run Lint
+      #        run: yarn lint
+      #        env:
+      #          CI: true
+
+      #      ## Now test the code
+      #      - name: Run Tests
+      #        run: yarn test
+      #        env:
+      #          CI: true
+
+      #      ## Test a11y
+      #      - name: Run accessibility tests
+      #        run: yarn test:a11y
+      #        env:
+      #          CI: true
+
+      #      ## Now test the css
+      #      - name: Run css tests
+      #        run: yarn test:css
+      #        env:
+      #          CI: true
+
+      #      ## Upload failed css tests
+      #      - uses: actions/upload-artifact@v2
+      #        name: Upload failed tests
+      #        if: failure()
+      #        with:
+      #          name: failed-backstopjs
+      #          path: /home/runner/work/ncids/ncids/testing/ncids-css-testing/.backstop/
+
+      #      ## Upload successful css tests
+      #      - uses: actions/upload-artifact@v2
+      #        name: Upload successful tests
+      #        with:
+      #          name: success-backstopjs
+      #          path: /home/runner/work/ncids/ncids/testing/ncids-css-testing/.backstop/test/**/report.json
+
+      ## Build all the things for publishing. This is a proxy for testing.
+      - name: Build Site
+        run: npm run build
+        env:
+          CI: true
+          ## This is used by Gatsby and NEEDs to be the path that will ultimately
+          ## be in netstorage for prescancerpanel-dev. NOTE: this should not get
+          ## set for production builds.
+          PREFIX_PATH: ${{ format('/{0}', steps.set_vars.outputs.build_name) }}
+
+      ## Generate build-info.json to house information about this specific build.
+      ## Used for product test deployment
+      - name: Create Build Information
+        env:
+          BUILD_INFO: ${{ toJson(steps.set_vars.outputs) }}
+        run: |
+          echo $BUILD_INFO
+          echo $BUILD_INFO > ./public/build-info.json
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: pcp-site
+          path: public/
