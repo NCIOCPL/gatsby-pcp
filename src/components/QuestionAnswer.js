@@ -8,9 +8,7 @@ class QuestionAnswer extends React.Component {
 								<div className={"question"}>
 										{ this.props.question }
 								</div>
-								<div className={"answer"}>
-										{ this.props.answer }
-								</div>
+								<div className={"answer"} dangerouslySetInnerHTML={{ __html: this.props.answer}} />
 						</div>
 				);
 		}

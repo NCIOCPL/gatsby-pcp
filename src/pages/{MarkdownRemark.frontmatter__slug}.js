@@ -2,20 +2,16 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/Layout";
 import rehypeReact from "rehype-react";
-import PCPMemberList from "../components/PCPMemberList";
-import FeaturedHomepageBoxes from "../components/FeaturedHomepageBoxes"
-import StaffList from "../components/StaffList";
-import SingleStaffMember from "../components/SingleStaffMember";
-import Process from "../components/Process";
+import ImageWithCaption from "../components/ImageWithCaption";
+import { LeftNavigation } from "../components/LeftNavigation";
+import Meetings from "../components/Meetings";
+import PictureWithQuotes from "../components/PictureWithQuotes";
 import QuestionAnswer from "../components/QuestionAnswer";
 import SingleHomepageBox from "../components/SingleHomepageBox";
-import SingleStaffListEntry from "../components/SingleStaffListEntry";
-import ReportList from "../components/ReportList";
-import SingleReportYear from "../components/SingleReportYear";
-import { LeftNavigation } from "../components/LeftNavigation";
-import PictureWithQuotes from "../components/PictureWithQuotes";
-import ImageWithCaption from "../components/ImageWithCaption";
 import SingleLeftNavigationItem from "../components/SingleLeftNavigationItem";
+import SingleReportYear from "../components/SingleReportYear";
+import SingleStaffListEntry from "../components/SingleStaffListEntry";
+import SingleStaffMember from "../components/SingleStaffMember";
 //import SEO from "../components/Seo";
 //import {siteMetadata as pageContext} from "../../gatsby-config";
 
@@ -31,15 +27,11 @@ export default function DefaultTemplate({ data: { markdownRemark } }) {
 const renderAst = new rehypeReact({
 		createElement: React.createElement,
 		components: {
-				"featured-homepage-boxes": FeaturedHomepageBoxes,
 				"image-with-caption": ImageWithCaption,
 				"left-navigation": LeftNavigation,
-				"pcp-member-list": PCPMemberList,
+				"meetings": Meetings,
 				"picture-with-quotes": PictureWithQuotes,
-				"process": Process,
 				"question-answer": QuestionAnswer,
-				"report-list": ReportList,
-				"staff-list": StaffList,
 				"single-homepage-box": SingleHomepageBox,
 				"single-left-navigation-item": SingleLeftNavigationItem,
 				"single-report-year": SingleReportYear,

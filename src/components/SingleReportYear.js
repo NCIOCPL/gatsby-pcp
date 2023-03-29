@@ -5,20 +5,30 @@ import "../scss/components/_report-list.scss";
 class SingleReportYear extends React.Component {
 
 		render() {
-				this.linkList=this.props.links.map((link,index)=>{
-						return <li key={index}>
-								<Link to ={link.url}>{link.text}</Link>
-						</li>
-				});
+				this.linkList = '';
+				this.linkListClass = "hidden";
+				if(this.props.links){
+						let linkJSON = JSON.stringify(this.props.links);
+						let parsedLinks = JSON.parse(JSON.parse(linkJSON));
+
+						if(parsedLinks.list && (Array.isArray(parsedLinks.list))) {
+								this.linkListClass = "report-linklist";
+								this.linkList=parsedLinks.list.map((link,index)=>{
+										return <li key={index}>
+												<Link to ={link.url}>{link.text}</Link>
+										</li>
+								});
+						}
+				}
+
+
 				return (
 						<div>
 								<h3 className={"series-year"}>
 										{this.props.year}
 								</h3>
-								<div className={"description"}>
-										{this.props.description}
-								</div>
-								<ul className={"report-linklist"}>
+								<div className={"description"} dangerouslySetInnerHTML={{ __html:  this.props.description}} />
+								<ul className={this.linkListClass}>
 										{this.linkList}
 								</ul>
 						</div>
