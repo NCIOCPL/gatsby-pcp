@@ -7,6 +7,9 @@ module.exports = {
 		description: `The President's Cancer Panel monitors the activities of the National Cancer Program and reports to the President of the United States on barriers to progress in reducing the burden of cancer.`,
 		siteUrl: `https://prescancerpanel.cancer.gov`
 	},
+	pathPrefix: process.env.PREFIX_PATH
+		  ? process.env.PREFIX_PATH
+		  : undefined,
 	trailingSlash: 'never',
 	plugins: [
 		{

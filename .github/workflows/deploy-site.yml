@@ -1,0 +1,77 @@
+name: Deploy Site
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: Which environment to deploy to
+        required: true
+        type: string
+      build_name:
+        description: Build name to be used for zip file
+        required: true
+        type: string
+      use_artifact:
+        description: Whether to use the last artifact for this commit
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  deploy-site:
+    name: Deploy site to ${{ inputs.environment }} environment
+    ## Only do this if the repo is NCIOCPL
+    if: startsWith(github.repository, 'NCIOCPL')
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+
+      # if not using a previous artifact, download the artifact from _this_ run
+      # in theory you could use dawidd6/action-download-artifact with skip_unpack but it was being cranky
+      - name: Download built site
+        if: inputs.use_artifact == false
+        uses: actions/download-artifact@v3
+        with:
+          name: pcp-site
+
+      - name: Zip site
+        if: inputs.use_artifact == false
+        run: |
+          zip -r ../${{ inputs.build_name }}.zip *
+
+      # if using a previous artifact, download the last successful artifact from the test workflow
+      - name: Download artifact
+        if: inputs.use_artifact == true
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: test.yml
+          workflow_conclusion: success
+          commit: ${{ github.sha }}
+          name: pcp-site
+          skip_unpack: true
+
+      - name: Rename artifact
+        if: inputs.use_artifact == true
+        run: |
+          mv pcp-site.zip ../${{ inputs.build_name }}.zip
+
+      - name: Upload artifact to netstorage
+        uses: nciocpl/netstorage-upload-action@v1.0.0
+        with:
+          hostname: ${{ secrets.ns_hostname }}
+          cp-code: ${{ secrets.ns_cpcode }}
+          key-name: ${{ secrets.ns_keyname }}
+          key: ${{ secrets.ns_key }}
+          index-zip: true
+          local-path: ${{ format('../{0}.zip', inputs.build_name) }}
+          ## Note this action automatically prepends the cpcode to the path.
+          destination-path: ${{ format('/{0}.zip', inputs.build_name) }}
+
+#      - name: Clear Site Cache
+#        uses: nciocpl/akamai-purge-action@v1.0.2
+#        with:
+#          hostname: ${{ secrets.eg_hostname }}
+#          client-token: ${{ secrets.eg_client_token }}
+#          client-secret: ${{ secrets.eg_client_secret }}
+#          access-token: ${{ secrets.eg_access_token }}
+#          type: "cpcodes"
+#          ref: ${{ format('{0},{1}', secrets.ns_cpcode, secrets.prop_cpcode) }}
