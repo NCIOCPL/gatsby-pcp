@@ -18,6 +18,7 @@ jobs:
     uses: ./.github/workflows/build-site.yml
     with: 
       environment: Dev
+      prefix_path: true
     secrets: inherit
   
   call-workflow-deploy:
