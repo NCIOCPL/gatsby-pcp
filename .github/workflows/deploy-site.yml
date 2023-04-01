@@ -75,3 +75,23 @@ jobs:
 #          access-token: ${{ secrets.eg_access_token }}
 #          type: "cpcodes"
 #          ref: ${{ format('{0},{1}', secrets.ns_cpcode, secrets.prop_cpcode) }}
+
+      ## Put a comment on the PR for easy testing
+      - name: Add Comment on Where to Test
+        uses: actions/github-script@v6
+        if: startsWith(github.repository, 'NCIOCPL') && github.event_name == 'pull_request' && github.event.action == 'opened'
+        env:
+          BUILD_NAME: ${{steps.set_vars.outputs.build_name}}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          ## NOTE: The script below is JavaScript
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `
+              ## Viewing Information
+              * [The site](https://prescancerpanel-dev.cancer.gov/${ process.env.BUILD_NAME }/)
+              `
+            })
