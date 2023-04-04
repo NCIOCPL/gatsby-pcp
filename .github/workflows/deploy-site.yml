@@ -66,15 +66,15 @@ jobs:
           ## Note this action automatically prepends the cpcode to the path.
           destination-path: ${{ format('/{0}.zip', inputs.build_name) }}
 
-#      - name: Clear Site Cache
-#        uses: nciocpl/akamai-purge-action@v1.0.2
-#        with:
-#          hostname: ${{ secrets.eg_hostname }}
-#          client-token: ${{ secrets.eg_client_token }}
-#          client-secret: ${{ secrets.eg_client_secret }}
-#          access-token: ${{ secrets.eg_access_token }}
-#          type: "cpcodes"
-#          ref: ${{ format('{0},{1}', secrets.ns_cpcode, secrets.prop_cpcode) }}
+      - name: Clear Site Cache
+        uses: nciocpl/akamai-purge-action@v1.0.2
+        with:
+          hostname: ${{ secrets.eg_hostname }}
+          client-token: ${{ secrets.eg_client_token }}
+          client-secret: ${{ secrets.eg_client_secret }}
+          access-token: ${{ secrets.eg_access_token }}
+          type: "cpcodes"
+          ref: ${{ format('{0},{1}', secrets.ns_cpcode, secrets.prop_cpcode) }}
 
       ## Put a comment on the PR for easy testing
       - name: Add Comment on Where to Test
