@@ -2,6 +2,9 @@
 # === Gatsby ===
 .cache/
 public
+# everything we do is in SCSS, anything in CSS would be auto-generated
+src/css
+
 
 # === Rule for dotfiles ===
 # Ignore all dotfiles.

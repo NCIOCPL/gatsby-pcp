@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import Link  from "../components/GatsbyLink";
 import Image from '../components/Image';
 import "../scss/components/_featured-homepage-box.scss";
 

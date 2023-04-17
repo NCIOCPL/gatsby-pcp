@@ -20,7 +20,7 @@
 		font-weight: bold;
 		padding: units(2.5);
 		margin: 0 auto;
-		@include at-media("tablet") {
+		@include at-media(tablet) {
 			@include grid-col(6);
 		}
 	}
@@ -32,7 +32,7 @@
 		border: 2px $pcpblue solid;
 		padding: units(2.5);
 		margin-top: units(4);
-		@include at-media("tablet") {
+		@include at-media(tablet) {
 			@include grid-col(10);
 		}
 	}

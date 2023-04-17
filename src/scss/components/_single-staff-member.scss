@@ -6,7 +6,7 @@
 	justify-content: center;
 	max-width: 80%;
 	.member-image {
-		@include at-media("tablet") {
+		@include at-media(tablet) {
 			max-width: 40%;
 		}
 		img {

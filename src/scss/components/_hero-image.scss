@@ -1,0 +1,21 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.hero-image-desktop,
+.hero-image-tablet {
+	box-shadow: 0 units(1.5) units(2) 1px rgba(0,0,0,.4);
+}
+
+.hero-image-desktop {
+	display: none;
+	@include at-media(desktop) {
+		display: block;
+	}
+}
+.hero-image-tablet {
+	display: none;
+	@include bp-mobile-and-tablet-lg-only {
+		display: block;
+	}
+}

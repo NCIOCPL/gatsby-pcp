@@ -1,0 +1,8 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.intro-text {
+	font-style: italic;
+	text-align: center;
+	margin: units(6) 0 units(4) 0;
+}
