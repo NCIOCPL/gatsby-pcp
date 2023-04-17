@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+//import { Link } from "gatsby";
+import Link from "../components/GatsbyLink";
 import "../scss/components/_report-list.scss";
 
 class SingleReportYear extends React.Component {

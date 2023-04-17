@@ -1,6 +1,6 @@
 
 exports.createPages = async ({ graphql, actions }) => {
-  
+
   // In theory should be able to do redirects here, but implementation seems a bit cranky
   // Note: does not work in develop mode. Use `npm run build && npm run serve`
   // https://support.gatsbyjs.com/hc/en-us/articles/1500003051241-Working-with-Redirects-and-Rewrites
@@ -15,3 +15,9 @@ exports.createPages = async ({ graphql, actions }) => {
     })
     */
   }
+const express = require(`express`)
+
+// Enable development support for serving HTML from `./static` folder
+exports.onCreateDevServer = ({ app }) => {
+		app.use(express.static(`static`))
+}

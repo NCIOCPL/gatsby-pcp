@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import Link  from "../components/GatsbyLink";
 import "../scss/components/_meetings.scss";
 
 class Meetings extends React.Component {
@@ -36,8 +36,8 @@ class Meetings extends React.Component {
 												this.meetingLinkClass = 'date-location-wrapper no-link-display';
 										}
 										return <li className={"series-meeting"} key={index}>
-												<a
-														href={this.displayUrl}
+												<Link
+														to={this.displayUrl}
 														className={this.meetingLinkClass}>
 														<div className={"date"}>
 																{this.dateList}
@@ -48,7 +48,7 @@ class Meetings extends React.Component {
 														<div className={"status"}>
 																{meeting.status}
 														</div>
-												</a>
+												</Link>
 												<ul className={"agenda-list"}>
 														{this.agendalist}
 												</ul>

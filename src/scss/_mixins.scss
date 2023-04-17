@@ -11,6 +11,7 @@
     width: 1px !important;
     overflow: hidden;
 }
+
 @mixin view-more {
 	background: url('/svgs/about-chevron-collapsed.svg') no-repeat,
 		linear-gradient(transparent, transparent);
@@ -19,3 +20,34 @@
 	margin-right: units(4);
 	padding-right: units(4);
 }
+
+@mixin bp-tablet-only {
+	@media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width){
+		@content;
+	}
+}
+
+@mixin bp-tablet-lg-only {
+	@media all and (min-width: $tablet-min-width) and (max-width: $tablet-lg-max-width){
+		@content;
+	}
+}
+
+@mixin bp-mobile-and-tablet-only {
+	@media all and (min-width:0em) and (max-width: $tablet-max-width){
+		@content;
+	}
+}
+
+@mixin bp-mobile-and-tablet-lg-only {
+	@media all and (min-width:0em) and (max-width: $tablet-lg-max-width){
+		@content;
+	}
+}
+
+@mixin bp-mobile-only {
+	@media all and (min-width:0em) and (max-width: $mobile-max-width) {
+		@content;
+	}
+}
+

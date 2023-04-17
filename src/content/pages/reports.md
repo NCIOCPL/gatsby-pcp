@@ -16,19 +16,19 @@ Click the links below to see materials from past series and to download reports.
 						"text": "Executive Summary"
 					},
 						{
-							"url": "/field-collection/field-series-links/387",
+							"url": "/report/cancerscreening/pdf/PresCancerPanel_CancerScreening_CB_Breast_Feb2022.pdf",
 							"text": "Breast Cancer Screening Companion Document"
 						},
 						{
-							"url": "/field-collection/field-series-links/388",
+							"url": "/report/cancerscreening/pdf/PresCancerPanel_CancerScreening_CB_Cervical_Feb2022.pdf",
 							"text": "Cervical Cancer Screening Companion Document"
 						},
 						{
-							"url": "/field-collection/field-series-links/389",
+							"url": "/report/cancerscreening/pdf/PresCancerPanel_CancerScreening_CB_Colorectal_Feb2022.pdf",
 							"text": "Colorectal Cancer Screening Companion Document"
 						},
 						{
-							"url": "/field-collection/field-series-links/390",
+							"url": "/report/cancerscreening/pdf/PresCancerPanel_CancerScreening_CB_Lung_Feb2022.pdf",
 							"text": "Lung Cancer Screening Companion Document"
 						}
 			]}'>
@@ -64,8 +64,8 @@ Click the links below to see materials from past series and to download reports.
 			description='Improving Resilience and Equity in Cancer Screening: Lessons from COVID-19 and Beyond'
 			links='{
 					"list": [{
-						"url": "./pdfs/Meeting-Series-Overview_0",
-						"text": "Meeting Series Overview.pdf"
+						"url": "./pdfs/Meeting-Series-Overview_0.pdf",
+						"text": "Meeting Series Overview"
 					}]
 			}'>
 		</single-report-year>

@@ -2,7 +2,9 @@ import { graphql } from "gatsby";
 import * as React from "react";
 import Layout from "../components/Layout";
 import rehypeReact from "rehype-react";
+import HeroImage from "../components/HeroImage";
 import ImageWithCaption from "../components/ImageWithCaption";
+import IntroText from "../components/IntroText";
 import { LeftNavigation } from "../components/LeftNavigation";
 import Meetings from "../components/Meetings";
 import PictureWithQuotes from "../components/PictureWithQuotes";
@@ -27,7 +29,9 @@ export default function DefaultTemplate({ data: { markdownRemark } }) {
 const renderAst = new rehypeReact({
 		createElement: React.createElement,
 		components: {
+				"hero-image": HeroImage,
 				"image-with-caption": ImageWithCaption,
+				"intro-text": IntroText,
 				"left-navigation": LeftNavigation,
 				"meetings": Meetings,
 				"picture-with-quotes": PictureWithQuotes,

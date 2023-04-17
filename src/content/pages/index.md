@@ -1,6 +1,14 @@
 ---
 slug: /
 ---
+<hero-image
+		sourcedesktop="cancer-gov-hero-widescreen-202301.jpg"
+		sourcetablet="cancer-gov-hero-tablet_FINAL.jpg"
+		alt="Female medical professional reviewing results with female patient.">
+</hero-image>
+<intro-text
+		text='<strong>Example Intro text</strong>: the Presidents Cancer Panel: Monitoring the activities of the National Cancer Program'>
+</intro-text>
 <div class="featured-homepage-box">
 <single-homepage-box
 		url="/reports"
@@ -25,6 +33,3 @@ slug: /
 </single-homepage-box>
 </div>
 
-<h2><a href="/members">Members</a></h2>
-<h2><a href="/about">About</a></h2>
-<h2><a href="/reports">Reports</a></h2>
