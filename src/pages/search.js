@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/Layout";
-import { Script } from "gatsby"
+import Layout from "../components/Layout"
+import { Script, withPrefix } from "gatsby"
 import '../scss/search.scss'
 
 const SearchPage = () => {
@@ -25,7 +25,7 @@ const SearchPage = () => {
 					"siteName": "President's Cancer Panel",
 					"title": "Search Results",
 					"baseHost": "https://prescancerpanel.cancer.gov",
-					"basePath": "/search",
+					"basePath": withPrefix("/search"),
 					"canonicalHost": "https://prescancerpanel.cancer.gov",
 					"language": "en",
 					"rootId": "NCI-sws-app-root"
