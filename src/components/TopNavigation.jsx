@@ -1,6 +1,7 @@
 import React from "react";
 import { ChildLink } from "./Styled";
 import { Link } from "gatsby";
+import { SearchBar } from "./SearchBar";
 import { useSiteMetadata } from "../hooks/use-site-metadata";
 import "../scss/components/_top-navigation.scss";
 
@@ -58,6 +59,9 @@ export const TopNavigation = () => {
 						<section className={"top-bar-section"} aria-hidden={"true"}>
 								<ul className={"first-tier"}>
 										{ linkList }
+										<li>
+											<SearchBar></SearchBar>
+										</li>
 								</ul>
 						</section>
 				</nav>

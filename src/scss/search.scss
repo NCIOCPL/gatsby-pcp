@@ -36,8 +36,35 @@ ul.no-bullets {
 	list-style-type: none;
 }
 
-.result__list-item {
-    padding-bottom: 10px;
+ul.results__container {
+	margin: 0;	
+	
+	.result__list-item {
+		padding-bottom: 10px;
+	}
+}
+
+
+.usa-input {
+	width: 75% !important;
+}
+div.nci-header-nav__secondary {
+	display: flex;
+	margin-top: 5%;
+	margin-left: .4rem;
+	justify-content: center;
+	align-items: center;
+}
+
+button.nci-header-search__search-button {
+	border-width: 1px;
+	border-color: #565c65;
+	border-style: solid;
+	align-self: auto;
+	border-radius: 0;
+	padding: .4rem;
+	background-color: white;
+	width: 12%;
 }
 
 .pager__container {
