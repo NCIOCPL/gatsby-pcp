@@ -3,7 +3,7 @@
 
 .footer {
     border: none;
-    background: transparent;
+    background: $lightgrey;
 		font-size: font-size('sans',8);
     line-height: units(3);
 		position: absolute;
@@ -22,7 +22,9 @@
 			min-height: units(6);
     }
     .pcp-grid-section {
-			padding: units(2) 0 0 0;
+			padding: units(2) 0 0 units(4);
+			margin-left: auto;
+			margin-right: auto;
 			background-color: $white;
     }
 }

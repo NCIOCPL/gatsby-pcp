@@ -6,6 +6,29 @@
 	@include at-media(tablet-lg) {
 		display: block;
 		@include grid-row();
+		justify-content: center;
+		align-items: center;
+		padding-bottom: units(2);
+	}
+	ul {
+		list-style: none;
+	}
+	a.accessible-link {
+		display: none;
+	}
+	.logo {
+		display: none;
+		@include at-media(tablet-lg){
+			display:inline-block;
+		}
+	}
+}
+.site-title-and-slogan {
+	display: none;
+	@include at-media(tablet-lg) {
+		padding-left: units(4);
+		display: block;
+		@include grid-row();
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: units(2);
@@ -21,3 +44,4 @@ h1.site-name {
 	 width: units('mobile');
 	 line-height: units(4);
 }
+

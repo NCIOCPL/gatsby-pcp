@@ -1,5 +1,5 @@
 ---
-title: Reports
+title: Reports & Meetings
 slug: /reports
 ---
 

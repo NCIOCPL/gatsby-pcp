@@ -36,6 +36,19 @@
 			}
 		}
 	}
+	&.top-nav-list {
+		margin-top: units(3);
+		ul.second-tier {
+			a {
+				padding-left: units(6);
+			}
+		}
+		ul.third-tier {
+			a {
+				padding-left: units(8);
+			}
+		}
+	}
 }
 .full-report-container {
 	@include grid-row();
@@ -60,5 +73,9 @@
 	padding: 0 units(4);
 	@include at-media(tablet-lg) {
 		@include grid-col(8);
+	}
+	&.top-left-nav-container {
+		border: none;
+		padding-right: 0;
 	}
 }

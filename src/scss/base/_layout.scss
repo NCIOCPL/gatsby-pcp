@@ -4,7 +4,7 @@ html{
 }
 body {
 	min-height: 100%;
-	background-color: $lightgrey;
+	background-color: $white;
 }
 .pcp-document-container {
 	min-height: 100vh;
@@ -12,8 +12,8 @@ body {
 }
 .pcp-grid-section {
 	border-top: units(0.5) solid $borderyellow;
-	background-color: $lightgrey;
-	padding-bottom: units('mobile');
+	background-color: $white;
+	padding-bottom: 17rem;
 }
 .pcp-sections {
 	@include grid-row();

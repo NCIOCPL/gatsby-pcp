@@ -1,7 +1,12 @@
 ---
-title: The President's Cancer Panel Staff
 slug: /about/staff
 ---
+<div class="full-report-container">
+<div class="left-nav-container">
+<left-top-navigation root="/about/"></left-top-navigation>
+</div>
+<div class="report-container top-left-nav-container">
+<h2 class="post-title">The President's Cancer Panel Staff</h2>
 Staff members of the President's Cancer Panel coordinate the work that advances the Panel's mission with support from a team of science writers and meeting planners.
 
 <ul class="staff-list">
@@ -18,3 +23,5 @@ Staff members of the President's Cancer Panel coordinate the work that advances 
 		alt="Daniela Monterroza"
 		title="Health Communications Fellow"></single-staff-list-entry>
 </ul>
+</div>
+</div>
