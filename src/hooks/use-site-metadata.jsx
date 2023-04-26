@@ -6,8 +6,31 @@ export const useSiteMetadata = () => {
       site {
         siteMetadata {
           title
+          slogan
           description
           siteUrl
+          footerLinks {
+          	name
+          	link
+          }
+          iconLinks {
+          	name
+          	link
+          	height
+          	width
+          }
+          menuLinks {
+          	name
+          	link
+          	sublinks {
+          		name
+          		link
+          		sublinks {
+          			name
+          			link
+          		}
+          	}
+          }
         }
       }
     }

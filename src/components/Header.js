@@ -1,6 +1,6 @@
 import React from "react";
-import TopBar from "./TopBar";
-import SiteTitle from "./SiteTitle";
+import { SiteTitle } from "./SiteTitle";
+import { TopNavigation } from "./TopNavigation";
 import "../scss/components/_header.scss";
 
 class Header extends React.Component {
@@ -8,8 +8,8 @@ class Header extends React.Component {
     return (
       <header role={"banner"}
 							className={"header"}>
-				<TopBar></TopBar>
-        <SiteTitle></SiteTitle>
+					<SiteTitle></SiteTitle>
+					<TopNavigation></TopNavigation>
       </header>
     );
   }

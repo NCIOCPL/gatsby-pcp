@@ -5,13 +5,8 @@ import "../scss/components/_left-nav-multipage.scss"
 
 export const LeftNavigation = ({ root }) => {
 
-	const { edges } = getNodes()
-	const nodeList = {
-		nodes: edges,
-	}
-
+	const { edges } = getNodes();
 	let sluglist = edges.filter(element => element.node.frontmatter.slug.includes(root) );
-
 	let sortedSlugList = sluglist.sort(function(p1,p2){
 			return p1.node.frontmatter.slug - p2.node.frontmatter.slug;
 	});

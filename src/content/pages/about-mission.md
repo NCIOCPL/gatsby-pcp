@@ -1,7 +1,12 @@
 ---
-title: Mission of the President's Cancer Panel
 slug: /about/mission
 ---
+<div class="full-report-container">
+<div class="left-nav-container">
+<left-top-navigation root="/about/"></left-top-navigation>
+</div>
+<div class="report-container">
+<h2 class="post-title">Mission of the President's Cancer Panel</h2>
 The President's Cancer Panel monitors the activities of the National Cancer Program
 and reports to the President of the United States on barriers to progress in reducing
 the burden of cancer.
@@ -22,6 +27,7 @@ in accelerating progress against cancer.
 
 ![Government, Healthcare Providers, Individuals](../../images/cgov-16669_ncp-infographic-update_a_v3_2.png)
 
-
+</div>
+</div>
 
 

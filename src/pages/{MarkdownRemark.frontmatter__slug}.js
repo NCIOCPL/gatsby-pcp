@@ -6,6 +6,7 @@ import HeroImage from "../components/HeroImage";
 import ImageWithCaption from "../components/ImageWithCaption";
 import IntroText from "../components/IntroText";
 import { LeftNavigation } from "../components/LeftNavigation";
+import { LeftTopNavigation } from "../components/LeftTopNavigation";
 import Meetings from "../components/Meetings";
 import PictureWithQuotes from "../components/PictureWithQuotes";
 import QuestionAnswer from "../components/QuestionAnswer";
@@ -14,6 +15,7 @@ import SingleLeftNavigationItem from "../components/SingleLeftNavigationItem";
 import SingleReportYear from "../components/SingleReportYear";
 import SingleStaffListEntry from "../components/SingleStaffListEntry";
 import SingleStaffMember from "../components/SingleStaffMember";
+
 //import SEO from "../components/Seo";
 //import {siteMetadata as pageContext} from "../../gatsby-config";
 
@@ -33,6 +35,7 @@ const renderAst = new rehypeReact({
 				"image-with-caption": ImageWithCaption,
 				"intro-text": IntroText,
 				"left-navigation": LeftNavigation,
+				"left-top-navigation": LeftTopNavigation,
 				"meetings": Meetings,
 				"picture-with-quotes": PictureWithQuotes,
 				"question-answer": QuestionAnswer,
@@ -40,7 +43,7 @@ const renderAst = new rehypeReact({
 				"single-left-navigation-item": SingleLeftNavigationItem,
 				"single-report-year": SingleReportYear,
 				"single-staff-list-entry": SingleStaffListEntry,
-				"single-staff-member": SingleStaffMember
+				"single-staff-member": SingleStaffMember,
 		},
 }).Compiler
 
