@@ -81,7 +81,7 @@ jobs:
         uses: actions/github-script@v6
         if: startsWith(github.repository, 'NCIOCPL') && github.event_name == 'pull_request' && github.event.action == 'opened'
         env:
-          BUILD_NAME: ${{steps.set_vars.outputs.build_name}}
+          BUILD_NAME: ${{inputs.build_name}}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           ## NOTE: The script below is JavaScript
