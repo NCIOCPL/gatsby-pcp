@@ -13,7 +13,7 @@
 }
 
 @mixin view-more {
-	background: url('/svgs/about-chevron-collapsed.svg') no-repeat,
+	background: url('../../svg/about-chevron-collapsed.svg') no-repeat, // because this mixin is included from the components folder we need an extra ../ in the URL
 		linear-gradient(transparent, transparent);
 	background-size: auto units(2);
 	background-position: right units(1) center;
