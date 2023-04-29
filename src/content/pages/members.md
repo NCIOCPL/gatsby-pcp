@@ -6,19 +6,19 @@ Panel members are distinguished members of the scientific, research, and public 
 
 <ul class="staff-list">
 <single-staff-list-entry
-		source="../../images/dr._elizabeth_jaffee_headshot-squarecrop.jpg"
+		source="dr._elizabeth_jaffee_headshot-squarecrop.jpg"
 		alt="Dr. Elizabeth M. Jaffee"
 		title="PCP Chair"
 		url="/members/jaffee">
 </single-staff-list-entry>
 <single-staff-list-entry
-		source="../../images/bergerm_headshot-squarecrop_2_0.png"
+		source="bergerm_headshot-squarecrop_2_0.png"
 		alt="Dr. Mitchel S. Berger"
 		title="PCP Member"
 		url="/members/berger">
 </single-staff-list-entry>
 <single-staff-list-entry
-		source="../../images/dr._brown-squarecrop.png"
+		source="dr._brown-squarecrop.png"
 		alt="Dr. Carol L. Brown"
 		title="PCP Member"
 		url="/members/brown">

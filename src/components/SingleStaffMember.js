@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import Image from '../components/Image';
 import "../scss/components/_single-staff-member.scss";
 
 class SingleStaffMember extends React.Component {
@@ -7,8 +7,7 @@ class SingleStaffMember extends React.Component {
 				return (
 						<div className={"single-member"}>
 								<div className={"member-image"}>
-										<img
-												typeof="foaf:Image"
+										<Image
 												src={this.props.source}
 												alt={this.props.name}
 										/>

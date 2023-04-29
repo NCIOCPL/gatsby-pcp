@@ -3,7 +3,7 @@ title: Dr. Carol L. Brown, Staff Member
 slug: /members/brown
 ---
 <single-staff-member
-	source="../images/dr._brown-squarecrop.png"
+	source="dr._brown-squarecrop.png"
 	name="Dr. Carol L. Brown">
 </single-staff-member>
 

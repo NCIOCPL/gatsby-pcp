@@ -3,7 +3,7 @@ title: Dr. Mitchel S. Berger, Staff Member
 slug: /members/berger
 ---
 <single-staff-member
-	source="../images/bergerm_headshot-squarecrop_2_0.png"
+	source="bergerm_headshot-squarecrop_2_0.png"
 	name="Dr. Mitchel S. Berger">
 </single-staff-member>
 

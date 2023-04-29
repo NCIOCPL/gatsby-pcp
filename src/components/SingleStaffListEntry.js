@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import Image from '../components/Image';
 import "../scss/components/_staff.scss";
 
 class SingleStaffListEntry extends React.Component {
@@ -26,7 +27,7 @@ class SingleStaffListEntry extends React.Component {
 								<div className={"member-image"}>
 										<Link to={this.displayUrl}
 										className={this.linkClass}>
-												<img
+												<Image
 														src={this.props.source}
 														alt={this.props.alt}
 												/>
