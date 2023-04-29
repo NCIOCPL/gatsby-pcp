@@ -3,7 +3,7 @@ title: Dr. Elizabeth M. Jaffee, PCP Chair
 slug: /members/jaffee
 ---
 <single-staff-member
-	source="../images/dr._elizabeth_jaffee_headshot-squarecrop.jpg"
+	source="dr._elizabeth_jaffee_headshot-squarecrop.jpg"
 	name="Dr. Elizabeth M. Jaffee">
 </single-staff-member>
 
