@@ -14,19 +14,19 @@ function navigationLink(link, index) {
 		</li>
 }
 function childNavigationLink(link, index) {
-		let subLinkList = '';
+		/*let subLinkList = '';
 		if (link.sublinks != null ) {
 				subLinkList = link.sublinks.map((link,index)=>{
 						return navigationLink(link, index);
 				});
-		}
+		}*/
 		return <li key={index} className={"second-tier"}>
 				<ChildLink to={ link.link }
 									 activeClassName={"active"}
 									 className={"top-navigation-link"}>
 						{ link.name }
 				</ChildLink>
-				<ul className={"third-tier"}>{ subLinkList }</ul>
+				{/*<ul className={"third-tier"}>{ subLinkList }</ul>*/}
 		</li>
 }
 export const TopNavigation = () => {
@@ -56,14 +56,16 @@ export const TopNavigation = () => {
 						className={"top-bar"}
 						data-options={"custom_back_text:false; scrolltop:false"}
 				>
-						<section className={"top-bar-section"} aria-hidden={"true"}>
-								<ul className={"first-tier"}>
-										{ linkList }
-										<li>
-											<SearchBar></SearchBar>
-										</li>
-								</ul>
-						</section>
+						<div className={"top-bar-container"}>
+								<section className={"top-bar-section"} aria-hidden={"true"}>
+										<ul className={"first-tier"}>
+												{ linkList }
+										</ul>
+								</section>
+								<div className={"searchbar-container"}>
+										<SearchBar></SearchBar>
+								</div>
+						</div>
 				</nav>
 		);
 }

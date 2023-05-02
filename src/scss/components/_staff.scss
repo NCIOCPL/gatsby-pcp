@@ -9,15 +9,19 @@ ul.staff-list {
 	li {
 		@include at-media(tablet) {
 			@include grid-col();
-			margin-right: units(2);
+			@include grid-gap(2);
+			//margin-right: units(2);
 		}
 		@include at-media(mobile) {
-			margin-bottom: units(2);
+			max-width: $mobile-constrained-max-width;
+			margin: 0 auto units(2) auto;
 		}
 	}
 	.member-image {
+
 		img {
 			border-radius: 50%;
+
 		}
 	}
 	.member-name,

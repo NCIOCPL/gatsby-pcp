@@ -13,16 +13,20 @@ $pcpbuttonblue: #257da0; //not used yet
 $pcpbluefaint: mix($pcpbuttonblue, $white, 50%); //not used yet
 $cardblue    : #2B719B;
 $borderyellow: #D5A130;
+$bordergrey	 : #565c65;
+$pagerblue   : #25619b;
+$pagerpaleblue: #cbe8fc;
 $lightgrey   : #f7f7f7;
 $shadegrey   : #ebebeb;
 $mediumgrey  : #414141;
 $smoke       : #EEEEEE;
-$black       : #000000; //not used yet
+$black       : #000000;
 
 $primary-color: $pcpbuttonblue; //not used yet
 
 
 $mobile-min-width: 320px;
+$mobile-constrained-max-width: 433px;
 $mobile-max-width: 479px;
 $mobile-lg-min-width: 480px;
 $mobile-lg-max-width: 639px;
@@ -31,6 +35,7 @@ $tablet-max-width: 879px;
 $tablet-lg-min-width:880px;
 $tablet-lg-max-width:1023px;
 $desktop-min-width: 1024px;
+$desktop-container-max-width: 1350px;
 
 
 

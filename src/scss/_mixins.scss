@@ -20,6 +20,40 @@
 	margin-right: units(4);
 	padding-right: units(4);
 }
+@mixin link-list-header {
+	text-transform: none;
+	margin-block-end: units(1.5);
+	color: $mediumgrey;
+}
+
+@mixin link-list {
+	font-size: font-size("sans", "xs");
+	list-style: none;
+	margin-top: units(1);
+	li::before {
+		content: "\2022";
+		color: $pcpanchor;
+		font-weight: bold;
+		display: inline-block;
+		width: units(1.5);
+		margin-left: units(-1.5);
+	}
+}
+
+@mixin centered-width-constrained {
+	max-width: $desktop-container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin centered-mobile-constrained {
+	max-width: $mobile-constrained-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin top-bar-background {
+	background: $top-bar-blue repeat scroll 0 0;
+	background-image: linear-gradient(to bottom, $top-bar-blue 0%, $top-bar-blue-gradient-end 100%);
+}
 
 @mixin bp-tablet-only {
 	@media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width){

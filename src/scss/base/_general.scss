@@ -61,3 +61,13 @@ li {
 .hidden {
 	display: none;
 }
+.pdf-icon {
+	background-image: url('/images/application-pdf.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 16px auto, cover;
+	padding-left: 20px;
+}
+.desktop-constrained {
+	@include centered-width-constrained();
+}
