@@ -53,12 +53,14 @@ export const Footer = () => {
 		return (
 				<footer className={"footer"} role={"contentinfo"}>
 						<div className={"pcp-grid-section"}>
-								<div className={"grid-row"}>
-										<div className={"grid-col-12"}>
-												<h3>{ title }</h3>
-												{ linkList }
-												<div className={"connect-icons"}>
-														{ iconList }
+								<div className={"desktop-constrained"}>
+										<div className={"grid-row"}>
+												<div className={"grid-col-12"}>
+														<h3>{ title }</h3>
+														{ linkList }
+														<div className={"connect-icons"}>
+																{ iconList }
+														</div>
 												</div>
 										</div>
 								</div>

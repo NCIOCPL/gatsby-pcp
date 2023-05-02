@@ -2,8 +2,8 @@
 slug: /
 ---
 <hero-image
-		sourcedesktop="cancer-gov-hero-widescreen-202301.jpg"
-		sourcetablet="cancer-gov-hero-tablet_FINAL.jpg"
+		sourcedesktop="pcp-temp-header_v2.png"
+		sourcetablet="pcp-temp-header_v2.png"
 		alt="Female medical professional reviewing results with female patient.">
 </hero-image>
 <intro-text

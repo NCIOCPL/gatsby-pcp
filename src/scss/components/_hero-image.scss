@@ -11,6 +11,7 @@
 	display: none;
 	@include at-media(desktop) {
 		display: block;
+		@include centered-width-constrained();
 	}
 }
 .hero-image-tablet {

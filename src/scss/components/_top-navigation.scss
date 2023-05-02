@@ -1,19 +1,27 @@
 @use "uswds-core" as *;
 @import "../variables";
+@import "../mixins";
 
-@mixin top-bar-background {
-	background: $top-bar-blue repeat scroll 0 0;
-	background-image: linear-gradient(to bottom, $top-bar-blue 0%, $top-bar-blue-gradient-end 100%);
-}
 .top-bar {
-	@include grid-row();
 	@include top-bar-background();
-	justify-content: center;
-	height: units(7);
+
 	line-height: units(7);
 	margin-bottom: 0;
+	@include at-media(tablet-lg){
+		height: units(7);
+	}
 	ul {
 		list-style: none;
+	}
+}
+.top-bar-container {
+	@include centered-width-constrained();
+	@include grid-row();
+	flex-direction: column;
+	align-items: center;
+	@include at-media(tablet-lg){
+		justify-content: space-between;
+		flex-direction: row;
 	}
 }
 .top-bar-section {
@@ -42,7 +50,7 @@
 			}
 		}
 		ul.second-tier > li > a {
-			@include top-bar-background();
+			background: $top-bar-blue repeat scroll 0 0;
 			&.active,
 			&:active,
 			&:hover,
@@ -114,6 +122,10 @@
 		}
 	}
 }
-
+.nci-header-search {
+	display: flex;
+	justify-content: center;
+	margin-bottom: units(2);
+}
 
 

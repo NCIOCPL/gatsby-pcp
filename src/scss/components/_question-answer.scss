@@ -8,12 +8,12 @@
 .qna {
 	@include grid-col(12);
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	margin: units(10) 0;
 	.question {
 		display: block;
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		color: $white;
 		background-color: $pcpblue;
 		box-shadow: units(-1.5) units(-1.5) $borderyellow;
@@ -27,7 +27,7 @@
 	.answer {
 		display: block;
 		position: relative;
-		z-index: 2;
+		z-index: 3;
 		background-color: $white;
 		border: 2px $pcpblue solid;
 		padding: units(2.5);
@@ -40,7 +40,7 @@
 		content: "";
 		display: block;
 		position: absolute;
-		z-index: 1;
+		z-index: 2;
 		background-color: $pcpblue;
 		width: 2px;
 		top: 2px;

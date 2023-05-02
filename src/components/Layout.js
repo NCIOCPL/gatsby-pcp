@@ -8,10 +8,12 @@ export default function Layout({ children }) {
 				<div role={"document"} className={"pcp-document-container"}>
 						<Header/>
 						<div className={"pcp-grid-section"}>
-								<div className={"grid-row"}>
-										<div className={"grid-col-12"}>
-												<div className={"pcp-sections"}>
-														{ children }
+								<div className={"desktop-constrained"}>
+										<div className={"grid-row"}>
+												<div className={"grid-col-12"}>
+														<div className={"pcp-sections"}>
+																{ children }
+														</div>
 												</div>
 										</div>
 								</div>

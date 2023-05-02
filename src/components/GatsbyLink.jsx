@@ -27,13 +27,9 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 		}
 		else if (pdf) {
 				return (
-						<>
-						<img className="file-icon" alt="PDF icon" title="application/pdf"
-								 src={"./images/application-pdf.png"} />
-						<a href={to} {...other} target={"_blank"}>
+						<a className={"pdf-icon"} href={to} {...other} target={"_blank"}>
 								{children}
 						</a>
-						</>
 				)
 		}
 		return (
