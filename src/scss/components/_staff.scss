@@ -4,24 +4,21 @@
 
 ul.staff-list {
 	@include grid-row();
+	flex-direction: column;
 	justify-content: space-between;
 	list-style: none;
+	@include at-media(tablet-lg) {
+		flex-direction: row;
+		@include grid-gap(2);
+	}
 	li {
-		@include at-media(tablet) {
-			@include grid-col();
-			@include grid-gap(2);
-			//margin-right: units(2);
-		}
-		@include at-media(mobile) {
-			max-width: $mobile-constrained-max-width;
-			margin: 0 auto units(2) auto;
-		}
+		max-width: $mobile-constrained-max-width;
+		margin: 0 auto units(2) auto;
+		@include grid-col();
 	}
 	.member-image {
-
 		img {
 			border-radius: 50%;
-
 		}
 	}
 	.member-name,

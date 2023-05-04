@@ -8,7 +8,7 @@ import "../scss/components/_footer.scss";
 export const Footer = () => {
 		const { title, footerLinks, iconLinks } = useSiteMetadata();
 		let linkList = footerLinks.map((link,index)=>{
-				return <div className={"connect-icons"}>
+				return <div className={"connect-icons"} key={index}>
 						<a href={ link.link }>
 								{ link.name }
 						</a>
@@ -19,7 +19,7 @@ export const Footer = () => {
 				let altText = 'President\'s Cancer Panel ' + link.name;
 				switch (link.name) {
 						case 'Twitter':
-								return <a href={ link.link }>
+								return <a href={ link.link } key={index}>
 										<TwitterIcon
 												className={"connect-icon"}
 												height={ link.height }
@@ -28,7 +28,7 @@ export const Footer = () => {
 										/>
 								</a>
 						case 'Linkedin':
-								return <a href={ link.link }>
+								return <a href={ link.link } key={index}>
 										<LinkedInIcon
 												className={"connect-icon"}
 												height={ link.height }
@@ -37,7 +37,7 @@ export const Footer = () => {
 										/>
 								</a>
 						case 'email':
-								return <a href={ link.link }>
+								return <a href={ link.link } key={index}>
 										<EnvelopeIcon
 												className={"connect-icon"}
 												height={ link.height }
@@ -46,7 +46,7 @@ export const Footer = () => {
 										/>
 								</a>
 				}
-				return <a href={ link.link }>
+				return <a href={ link.link } key={index}>
 						{ link.name }
 				</a>
 		});

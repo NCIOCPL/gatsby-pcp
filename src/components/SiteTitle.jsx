@@ -28,7 +28,7 @@ export const SiteTitle = () => {
 													src={"../images/logo.png"}
 													alt={"President's Cancer Panel logo"}
 													title={"President's Cancer Panel Home"}
-													width={"150px"}
+													width={150}
 											/>
 									</a>{" "}
 							</li>

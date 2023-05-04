@@ -6,27 +6,42 @@ class Meetings extends React.Component {
 
 		render() {
 				this.meetingList = '';
+				this.meetingTitle = '';
 				if (this.props.meetings){
-						if (this.props.meetings.length>1){
-								this.meetingTitle = "Meetings";
-						} else {
-								this.meetingTitle = "Meeting";
+						if (this.props.sectiontitle && (this.props.sectiontitle.length>0)) {
+								this.meetingTitle = this.props.sectiontitle;
+						}
+						else {
+								if (this.props.meetings.length>1){
+										this.meetingTitle = "Associated Meetings";
+								} else {
+										this.meetingTitle = "Associated Meeting";
+								}
 						}
 						let meetingJSON = JSON.stringify(this.props.meetings);
 						let parsedMeetings = JSON.parse(JSON.parse(meetingJSON));
+
 						if (parsedMeetings.list && (Array.isArray(parsedMeetings.list))) {
+								let dateList='';
+								let agendalist='';
 								this.meetingList=parsedMeetings.list.map((meeting,index)=>{
-										this.dateList=meeting.dateList.map((date,index)=>{
-												return <div>{date}</div>
-										});
-										if (meeting.agendalist && (meeting.agendalist.length>1)) {
-												this.agendalist=meeting.agendalist.map((link,index)=>{
+										if (meeting.datelist && (meeting.datelist.length>0)) {
+												dateList = meeting.datelist.map((date, index) => {
+														return <div key={index}>{date}</div>
+												});
+										} else {
+												dateList = '';
+										}
+										if (meeting.agendalist && (meeting.agendalist.length>0)) {
+												agendalist=meeting.agendalist.map((link,index)=>{
 														return (
-																<li>
+																<li key={index}>
 																		<Link to ={link.url}>{link.text}</Link>
 																</li>
 														);
 												});
+										} else {
+												agendalist = '';
 										}
 										if (meeting.url && (meeting.url.length>0)){
 												this.displayUrl = meeting.url;
@@ -35,22 +50,24 @@ class Meetings extends React.Component {
 												this.displayUrl = '';
 												this.meetingLinkClass = 'date-location-wrapper no-link-display';
 										}
+										let locationText = '';
+										let statusText = '';
+										if (meeting.location) {
+												locationText = ', ' + meeting.location;
+										}
+										if (meeting.status) {
+												statusText = ', ' + meeting.status;
+										}
 										return <li className={"series-meeting"} key={index}>
 												<Link
 														to={this.displayUrl}
 														className={this.meetingLinkClass}>
 														<div className={"date"}>
-																{this.dateList}
-														</div>
-														<div className={"location"}>
-																{meeting.location}
-														</div>
-														<div className={"status"}>
-																{meeting.status}
+																{dateList}{locationText}{statusText}
 														</div>
 												</Link>
 												<ul className={"agenda-list"}>
-														{this.agendalist}
+														{agendalist}
 												</ul>
 										</li>
 								});
@@ -58,7 +75,7 @@ class Meetings extends React.Component {
 				}
 				return (
 						<div className={"meeting-block"}>
-								<h4>{this.meetingTitle}</h4>
+								<div className={"link-list-header"}>{this.meetingTitle}</div>
 								<div className={"meeting-container"}>
 										<ul className={"meeting-list"}>
 												{this.meetingList}
