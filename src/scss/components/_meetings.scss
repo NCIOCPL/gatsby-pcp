@@ -1,35 +1,25 @@
 @use "uswds-core" as *;
 @import "../variables";
+@import "../mixins";
 
-.meeting-block {
-	h4 {
-		text-transform: none;
-		margin-block-end: units(1.5);
-		color: $mediumgrey;
-	}
+.link-list-header {
+	@include link-list-header();
 }
 .meeting-container {
 	ul.meeting-list {
-		@include grid-row();
-		@include grid-gap(6);
+		@include link-list();
 	}
-	li.series-meeting {
-		@include at-media(mobile) {
-			width: 100%;
-		}
-		@include at-media(tablet) {
-			max-width: 50%;
-		}
-		@include at-media(desktop) {
-			@include grid-col(3);
-		}
-		margin-bottom: units(2.5);
-	}
+
 	ul.agenda-list {
-		margin-top: units(1.5);
+		@include link-list();
+		margin-bottom: units(1.5);
 	}
 	.date {
 		font-weight: bold;
+		display: inline;
+		div {
+			display: inline;
+		}
 	}
 	.location {
 		font-style: italic;

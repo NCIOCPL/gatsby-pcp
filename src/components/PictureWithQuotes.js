@@ -7,8 +7,8 @@ class PictureWithQuotes extends React.Component {
 			let parsedQuoteList = JSON.parse(this.props.quotes);
 			this.quoteList=parsedQuoteList.map((quote,index)=>{
 					return <li key={index} className={"quote-list"}>
-							<em>"{quote.text}"</em>
-							<p>-{quote.source}</p>
+							<em>"{quote.text}"</em><br /><br />
+							-{quote.source}
 					</li>
 			});
 

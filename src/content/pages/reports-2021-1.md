@@ -24,7 +24,7 @@ The President’s Cancer Panel will consider input and proposed recommendations 
 **Meeting Outcomes**
 - Identified opportunities to accelerate cancer screening through innovation
 
-[Meeting Summary](https://deainfo.nci.nih.gov/advisory/pcp/pcp0221/summary.pdf)
+<p><a class="pdf-icon" href="https://deainfo.nci.nih.gov/advisory/pcp/pcp0221/summary.pdf">Meeting Summary</a></p>
 
 [Meeting Recording](https://nci.rev.vbrick.com/#/videos/ad89d353-6c51-4cfb-96e7-9e50630065c6)
 

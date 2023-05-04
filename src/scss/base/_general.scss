@@ -3,7 +3,8 @@
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	color: $pcpblue;
-	&.node-title {
+	&.node-title,
+	&.report-section-title {
 		text-transform: none;
 	}
 }
@@ -62,12 +63,31 @@ li {
 	display: none;
 }
 .pdf-icon {
-	background-image: url('/images/application-pdf.png');
+	background-image: url('../images/application-pdf.png');
 	background-position: left top;
 	background-repeat: no-repeat;
-	background-size: 16px auto, cover;
-	padding-left: 20px;
+	background-size: units(2) auto, cover;
+	padding-left: units(2);
 }
 .desktop-constrained {
 	@include centered-width-constrained();
+}
+table.agenda-table {
+	padding: units(1.5);
+	width: 100%;
+	td {
+		vertical-align: top;
+	}
+	tr > td:first-child {
+		width: 40%;
+		@include at-media(tablet){
+			width: 30%;
+		}
+	}
+	tr > td:nth-child(2) {
+		width: 60%;
+		@include at-media(tablet){
+			width: 70%;
+		}
+	}
 }

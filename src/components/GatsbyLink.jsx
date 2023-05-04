@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as GatsbyLink } from "gatsby";
+import {Link as GatsbyLink, withPrefix} from "gatsby";
 
 // Since DOM elements <a> cannot receive activeClassName
 // and partiallyActive, destructure the prop here and
@@ -27,13 +27,13 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 		}
 		else if (pdf) {
 				return (
-						<a className={"pdf-icon"} href={to} {...other} target={"_blank"}>
+						<a className={"pdf-icon"} href={withPrefix(to)} {...other} target={"_blank"}>
 								{children}
 						</a>
 				)
 		}
 		return (
-				<a href={to} {...other}>
+				<a href={withPrefix(to)} {...other}>
 						{children}
 				</a>
 		)

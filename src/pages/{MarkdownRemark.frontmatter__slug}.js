@@ -10,42 +10,43 @@ import { LeftTopNavigation } from "../components/LeftTopNavigation";
 import Meetings from "../components/Meetings";
 import PictureWithQuotes from "../components/PictureWithQuotes";
 import QuestionAnswer from "../components/QuestionAnswer";
+import ResponsiveImage from "../components/ResponsiveImage";
 import SingleHomepageBox from "../components/SingleHomepageBox";
 import SingleLeftNavigationItem from "../components/SingleLeftNavigationItem";
 import SingleReportYear from "../components/SingleReportYear";
 import SingleStaffListEntry from "../components/SingleStaffListEntry";
 import SingleStaffMember from "../components/SingleStaffMember";
-import { SEO } from "../components/Seo"
 
 //import SEO from "../components/Seo";
 //import {siteMetadata as pageContext} from "../../gatsby-config";
 
 export default function DefaultTemplate({ data: { markdownRemark } }) {
-	const { frontmatter, htmlAst } = markdownRemark;
-	return (
-		<Layout>
-			<h2 className={"post-title"}>{frontmatter.title}</h2>
-			<div className="post-body">{renderAst(htmlAst)}</div>
-		</Layout>
-	);
+  const { frontmatter, htmlAst } = markdownRemark;
+  return (
+    <Layout>
+      <h2 className={"post-title"}>{frontmatter.title}</h2>
+				<div className="post-body">{renderAst(htmlAst)}</div>
+    </Layout>
+  );
 }
 const renderAst = new rehypeReact({
-	createElement: React.createElement,
-	components: {
-		"hero-image": HeroImage,
-		"image-with-caption": ImageWithCaption,
-		"intro-text": IntroText,
-		"left-navigation": LeftNavigation,
-		"left-top-navigation": LeftTopNavigation,
-		"meetings": Meetings,
-		"picture-with-quotes": PictureWithQuotes,
-		"question-answer": QuestionAnswer,
-		"single-homepage-box": SingleHomepageBox,
-		"single-left-navigation-item": SingleLeftNavigationItem,
-		"single-report-year": SingleReportYear,
-		"single-staff-list-entry": SingleStaffListEntry,
-		"single-staff-member": SingleStaffMember,
-	},
+		createElement: React.createElement,
+		components: {
+				"hero-image": HeroImage,
+				"image-with-caption": ImageWithCaption,
+				"intro-text": IntroText,
+				"left-navigation": LeftNavigation,
+				"left-top-navigation": LeftTopNavigation,
+				"meetings": Meetings,
+				"picture-with-quotes": PictureWithQuotes,
+				"question-answer": QuestionAnswer,
+				"responsive-image": ResponsiveImage,
+				"single-homepage-box": SingleHomepageBox,
+				"single-left-navigation-item": SingleLeftNavigationItem,
+				"single-report-year": SingleReportYear,
+				"single-staff-list-entry": SingleStaffListEntry,
+				"single-staff-member": SingleStaffMember,
+		},
 }).Compiler
 
 export const pageQuery = graphql`
@@ -59,12 +60,13 @@ export const pageQuery = graphql`
   }
 `;
 
-export function Head({ data: { markdownRemark } }) {
-	const { frontmatter } = markdownRemark;
-	return(
-		<>
-			<html lang="en" />
-			<SEO title={frontmatter.title} />
-		</>
-	)
-}
+/*export function Head() {
+    return (
+				<>
+				<html lang="en" />
+				<body className="html" />
+      	{/!*<title>{pageContext.title}</title>*!/}
+				</>
+    )
+  }*/
+

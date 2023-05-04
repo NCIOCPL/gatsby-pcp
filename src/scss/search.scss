@@ -82,8 +82,10 @@ button.nci-header-search__search-button {
 		list-style-type: none;
 
 		padding: 0;
-		margin-bottom: 0;
-
+		margin: 0;
+		@include at-media(tablet) {
+			margin-left: auto;
+		}
 		& > li {
 			align-items: center;
 			cursor: pointer;
@@ -127,11 +129,10 @@ button.nci-header-search__search-button {
 	border-top: 1px solid $black;
 	border-bottom: 1px solid $black;
 	padding: units(2) 0;
-	margin-top: units(2);
+	margin: units(2) 0;
 }
 
 @include break(medium) {
-	.pager__navigation,
 	.pager__container {
 		margin-left: auto;
 	}
@@ -142,3 +143,12 @@ button.nci-header-search__search-button {
 		padding: 0 0 0 50px;
 	}
 }
+.results {
+	h3, h4 {
+		text-transform: none;
+	}
+	.pager__select {
+		margin: 0 units(1.5);
+	}
+}
+
