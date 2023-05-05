@@ -5,6 +5,10 @@ public
 # everything we do is in SCSS, anything in CSS would be auto-generated
 src/css
 
+# === Gatsby ===
+backstop_data/bitmaps_test
+backstop_data/html_report
+
 
 # === Rule for dotfiles ===
 # Ignore all dotfiles.
