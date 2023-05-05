@@ -133,6 +133,25 @@ jobs:
           ## be in netstorage for the site. For test/prod this should be blank
           PREFIX_PATH: ${{ format('/{0}', steps.set_vars.outputs.prefix_path) }}
 
+      ## Serve the site to test it
+      - name: Test Site
+        run: npm run serve & sleep 5 && npm run test
+
+      ## Upload failed css tests
+      - uses: actions/upload-artifact@v2
+        name: Upload failed tests
+        if: failure()
+        with:
+          name: failed-backstopjs
+          path: backstop_data
+
+      ## Upload successful css tests
+      - uses: actions/upload-artifact@v2
+        name: Upload successful tests
+        with:
+          name: success-backstopjs
+          path: backstop_data/bitmaps_test/**/report.json
+        
       ## Generate build-info.json to house information about this specific build.
       ## Used for product test deployment
       - name: Create Build Information

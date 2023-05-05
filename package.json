@@ -12,10 +12,13 @@
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve --prefix-paths",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "backstop-generate": "backstop reference --config=backstop-config.js",
+    "test": "backstop test --config=backstop-config.js"
   },
   "dependencies": {
     "@uswds/uswds": "^3.4.1",
+    "backstopjs": "^6.2.1",
     "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.7.0",
