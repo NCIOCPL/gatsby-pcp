@@ -9,6 +9,8 @@ export const useSiteMetadata = () => {
 					slogan
 					description
 					siteUrl
+					searchEndpoint
+					searchDomain
 					footerLinks {
 						name
 						link
