@@ -83,7 +83,6 @@ module.exports = {
 	pathPrefix: process.env.PREFIX_PATH
 		  ? process.env.PREFIX_PATH
 		  : undefined,
-	trailingSlash: 'never',
 	plugins: [
 		{
 			resolve: `gatsby-plugin-sass`,

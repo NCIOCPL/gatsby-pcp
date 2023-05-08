@@ -19,3 +19,12 @@ jobs:
     ## This job depends on build completing
     needs: call-workflow-build
     secrets: inherit
+  
+  call-workflow-test:
+    uses: ./.github/workflows/test-site.yml
+    with:
+      environment: Test
+      build_path: ""
+    ## This job depends on build completing
+    needs: call-workflow-deploy
+    secrets: inherit

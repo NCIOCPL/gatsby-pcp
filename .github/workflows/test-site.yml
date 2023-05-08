@@ -1,0 +1,53 @@
+name: Test Site
+on:
+  workflow_call:
+    inputs:
+      environment:
+        description: Which environment to deploy to
+        required: true
+        type: string
+      build_path:
+        description: Subdirectory site is in, if any
+        required: false
+        type: string
+
+jobs:
+  build:
+    name: Test Site
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      ## Checkout the code
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      ## Setup node and npm caching
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: https://npm.pkg.github.com
+          scope: "@nciocpl"
+      - name: Run NPM
+        run: npm install
+
+      ## Serve the site to test it
+      - name: Test Site
+        run: npm run test
+        env: 
+          BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.site_domain, inputs.build_path) }}
+
+      ## Upload failed css tests
+      - uses: actions/upload-artifact@v2
+        name: Upload failed tests
+        if: failure()
+        with:
+          name: failed-backstopjs
+          path: backstop_data
+
+      ## Upload successful css tests
+      - uses: actions/upload-artifact@v2
+        name: Upload successful tests
+        with:
+          name: success-backstopjs
+          path: backstop_data/bitmaps_test/**/report.json

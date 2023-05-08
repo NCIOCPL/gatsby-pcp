@@ -1,5 +1,5 @@
 
-const defaultPath = 'http://localhost:9000/'
+const defaultPath = 'http://localhost:9000'
 const path = process.env.BACKSTOP_BASE_URL ? process.env.BACKSTOP_BASE_URL : defaultPath;
 
 module.exports = {
