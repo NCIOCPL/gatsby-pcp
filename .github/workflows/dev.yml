@@ -29,3 +29,12 @@ jobs:
     ## This job depends on build completing
     needs: call-workflow-build
     secrets: inherit
+  
+  call-workflow-test:
+    uses: ./.github/workflows/test-site.yml
+    with:
+      environment: Dev
+      build_path: ${{ needs.call-workflow-build.outputs.build_name }}
+    ## This job depends on build completing
+    needs: [call-workflow-build, call-workflow-deploy]
+    secrets: inherit

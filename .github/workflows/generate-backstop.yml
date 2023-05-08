@@ -33,7 +33,7 @@ jobs:
       - name: Serve site and generate images
         run: npm run serve & sleep 5 && npm run backstop-generate
         env:
-          BACKSTOP_BASE_URL: http://localhost:9000/
+          BACKSTOP_BASE_URL: http://localhost:9000
 
       - name: Commit updated images
         run: |
@@ -43,8 +43,8 @@ jobs:
           git commit -m "Updated backstop images"
           git push
 
-#      - uses: actions/upload-artifact@v3
-#        name: Upload reference images
-#        with:
-#          name: backstopjs-reference
-#          path: /home/runner/work/ncids/ncids/testing/ncids-css-testing/.backstop/reference
+      - uses: actions/upload-artifact@v3
+        name: Upload reference images
+        with:
+          name: backstopjs-reference
+          path: backstop_data/bitmaps_reference
