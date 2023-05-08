@@ -6,7 +6,15 @@ module.exports = {
 		title: `President's Cancer Panel`,
 		slogan: 'Advisors to the President on the National Cancer Program',
 		description: `The President's Cancer Panel monitors the activities of the National Cancer Program and reports to the President of the United States on barriers to progress in reducing the burden of cancer.`,
-		siteUrl: `https://prescancerpanel.cancer.gov`,
+		siteUrl: process.env.SITE_DOMAIN
+			  ? 'https://' + process.env.SITE_DOMAIN
+			  : 'https://prescancerpanel.cancer.gov',
+		searchDomain: process.env.SITE_DOMAIN
+		? process.env.SITE_DOMAIN
+		: 'prescancerpanel.cancer.gov',
+		searchEndpoint: process.env.SEARCH_ENDPOINT
+		? process.env.SEARCH_ENDPOINT
+		: 'https:\/\/webapis.cancer.gov\/sitewidesearch\/v1\/',
 		footerLinks: [
 				{
 						name: 'PresCancerPanel@mail.nih.gov',

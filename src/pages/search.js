@@ -3,8 +3,10 @@ import Layout from '../components/Layout';
 import { Script, withPrefix } from 'gatsby';
 import '../scss/search.scss';
 import { SEO } from '../components/Seo';
+import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 const SearchPage = () => {
+	const { title, siteUrl, searchEndpoint, searchDomain } = useSiteMetadata();
 	return (
 		<Layout>
 			<div id="NCI-sws-app-root"></div>
@@ -21,13 +23,13 @@ const SearchPage = () => {
 						analyticsPublishedDate: '02/02/2011 - 07:00',
 						dropdownOptions: [20, 50],
 						searchCollection: 'doc',
-						searchSiteFilter: 'dceg.cancer.gov',
-						searchEndpoint: 'https://webapis.cancer.gov/sitewidesearch/v1/',
-						siteName: "President's Cancer Panel",
+						searchSiteFilter: searchDomain,
+						searchEndpoint: searchEndpoint,
+						siteName: title,
 						title: 'Search Results',
-						baseHost: 'https://prescancerpanel.cancer.gov',
+						baseHost: siteUrl,
 						basePath: withPrefix('/search'),
-						canonicalHost: 'https://prescancerpanel.cancer.gov',
+						canonicalHost: siteUrl,
 						language: 'en',
 						rootId: 'NCI-sws-app-root',
 					};
