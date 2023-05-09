@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { Script, withPrefix } from "gatsby"
 import '../scss/search.scss'
+import { SEO } from "../components/Seo"
 
 const SearchPage = () => {
 	return (
@@ -40,11 +41,11 @@ const SearchPage = () => {
 export default SearchPage
 
 export function Head() {
-    return (
-		<head>
-		<link rel="stylesheet" media="all" href="https://www.cancer.gov/app-modules/sitewide-search-app/sitewide-search-app.v1.3.0/static/css/main-legacy.css?rq3pri" />
-		<title>Search Results</title>
-		</head>
-    )
-  }
-
+	return(
+		<>
+			<html lang="en" />
+			<link rel="stylesheet" media="all" href="https://www.cancer.gov/app-modules/sitewide-search-app/sitewide-search-app.v1.3.0/static/css/main-legacy.css?rq3pri" />
+			<SEO title="Search Results" />
+		</>
+		)
+}

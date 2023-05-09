@@ -1,4 +1,5 @@
 import React from "react";
+import { Script } from "gatsby";
 import Header from "./Header";
 import { Footer } from "./Footer";
 import '../scss/styles.scss';
@@ -19,6 +20,12 @@ export default function Layout({ children }) {
 								</div>
 						</div>
 						<Footer/>
+						<Script type="text/javascript">{(function() {
+							if (window._satellite) {
+								_satellite.pageBottom();
+							}
+							})()}
+						</Script>
 				</div>
 		)
 }
