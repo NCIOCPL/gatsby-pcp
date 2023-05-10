@@ -1,21 +1,24 @@
-import React from "react";
-import {graphql, useStaticQuery} from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 export const getNodes = () => {
-		const data  = useStaticQuery(graphql`
+	const data = useStaticQuery(graphql`
 		query {
-			allMarkdownRemark(sort: {frontmatter: {slug: ASC}}) {
+			allMarkdownRemark(sort: {frontmatter: {sortOrder: ASC}}) {
 				edges {
 					node {
 						frontmatter {
-							title
-							slug
 							linktext
 						}
+						parent {
+							... on File {
+								name
+								relativeDirectory
+							}
 					}
 				}
 			}
 		}
+	}
  `);
-		return data.allMarkdownRemark;
+	return data.allMarkdownRemark;
 };

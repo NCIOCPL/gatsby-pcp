@@ -68,7 +68,7 @@ module.exports = {
 									sublinks: [
 											{
 													name: '50th Anniversary',
-													link: '/nca50/1'
+													link: '/about/nca50/'
 											}
 									],
 							},
@@ -105,7 +105,7 @@ module.exports = {
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				'name': 'pages',
-				'path': './src/content/pages/'
+				'path': './content/'
 			},
 			__key: 'pages'
 		},

@@ -5,7 +5,7 @@ export const SEO = ({ title, description, pathname, children }) => {
   const { title: defaultTitle, description: defaultDescription, siteUrl } = useSiteMetadata()
 
   const seo = {
-    title: title != "" ? title + " - " + defaultTitle : defaultTitle,
+    title: title !== undefined ? title + " - " + defaultTitle : defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
   }
