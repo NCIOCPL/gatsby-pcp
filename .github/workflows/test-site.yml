@@ -34,6 +34,7 @@ jobs:
       ## Serve the site to test it
       - name: Test Site
         run: npm run test
+        continue-on-error: true
         env: 
           BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.site_domain, inputs.build_path) }}
 
@@ -51,3 +52,11 @@ jobs:
         with:
           name: success-backstopjs
           path: backstop_data/bitmaps_test/**/report.json
+
+  approve:
+    name: Approve Tests
+    runs-on: ubuntu-latest
+    environment: QA-Approval
+    steps: 
+      - name: Wait for Approval
+        run: npm install
