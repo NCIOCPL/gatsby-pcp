@@ -59,4 +59,4 @@ jobs:
     environment: QA-Approval
     steps: 
       - name: Wait for Approval
-        run: npm install
+        run: echo "QA Approved"
