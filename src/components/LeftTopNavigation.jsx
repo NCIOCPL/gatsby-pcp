@@ -30,8 +30,9 @@ function childNavigationLink(link, index) {
 }
 export const LeftTopNavigation = ({ root }) => {
 		const { menuLinks } = useSiteMetadata();
+		const path = root.relativeDirectory
 		let linkList = menuLinks.map((link,index)=>{
-				if (link.link === root ) {
+				if (link.link === "/" + path.substring(0, path.indexOf("/") ===  -1 ? path.length : path.indexOf("/")) + "/") {
 						let subLinkList = '';
 						if (link.sublinks != null ) {
 								subLinkList = link.sublinks.map((link,index)=>{

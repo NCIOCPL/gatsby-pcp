@@ -13,7 +13,9 @@ export default function Layout({ children }) {
 					<div className={"grid-row"}>
 						<div className={"grid-col-12"}>
 							<div className={"pcp-sections"}>
-								{children}
+								<div className="post-body">
+									{children}
+								</div>
 							</div>
 						</div>
 					</div>
