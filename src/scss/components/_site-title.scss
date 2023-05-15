@@ -2,7 +2,6 @@
 @import "../variables";
 
 .site-title-container {
-		display: block;
 		@include grid-row();
 		justify-content: center;
 		align-items: center;
@@ -21,12 +20,13 @@
 	}
 }
 .site-title-and-slogan {
-		padding-left: units(4);
-		display: block;
 		@include grid-row();
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: units(2);
+	@include at-media(tablet-lg) {
+		padding-left: units(4);
+	}
 }
 h1.site-name {
 	margin-bottom: units(2);
@@ -36,7 +36,10 @@ h1.site-name {
 	 color: $pcpblue;
 	 text-align: center;
 	 font-size: font-size('sans',8);
-	 width: units('mobile');
+	 width: units('card-lg');
+	@include at-media('tablet'){
+		width: units('mobile');
+	}
 	 line-height: units(4);
 }
 

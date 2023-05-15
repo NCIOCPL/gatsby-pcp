@@ -23,6 +23,7 @@ h4 {
 a {
 	color: $pcpanchor;
 	text-decoration: none;
+	word-wrap: break-word;
 	&:hover,
 	&:focus {
 		color: $pcphoverblue;
