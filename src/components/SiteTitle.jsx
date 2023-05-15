@@ -2,6 +2,7 @@ import React from "react";
 import "../scss/components/_site-title.scss";
 import { useSiteMetadata } from "../hooks/use-site-metadata";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 export const SiteTitle = () => {
 		const { title, slogan } = useSiteMetadata();
@@ -9,16 +10,16 @@ export const SiteTitle = () => {
 			<section className={"site-title-container"}>
 					<ul className={"title-area"}>
 							<li>
-									<a
-											href={"/"}
+									<Link
+											to={"/"}
 											rel={"home"}
 											title={"President's Cancer Panel Home"}
 											className={"active accessible-link"}
 									>
 											{ title }
-									</a>
-									<a
-											href={"/"}
+									</Link>
+									<Link
+											to={"/"}
 											rel={"home"}
 											title={"President's Cancer Panel Home Logo"}
 											className={"active"}
@@ -30,21 +31,29 @@ export const SiteTitle = () => {
 													title={"President's Cancer Panel Home"}
 													width={150}
 											/>
-									</a>{" "}
+									</Link>{" "}
 							</li>
 							<li className={"left-off-canvas-toggle menu-icon"}>
-									<a href="#">
+									<Link to={"#"}>
 											<span />
-									</a>
+									</Link>
 							</li>
 					</ul>
 					<div className={"site-title-and-slogan"}>
 							<h1 id={"site-name"} className={"site-name"}>
-									{ title }
+									<Link to={"/"}
+												rel={"home"}
+												title={"President's Cancer Panel Home"}>
+											{ title }
+									</Link>
 							</h1>
 							<div title={slogan}
 								className={"site-slogan"}>
-									{ slogan }
+									<Link to={"/"}
+												rel={"home"}
+												title={"President's Cancer Panel Home"}>
+										{ slogan }
+									</Link>
 							</div>
 					</div>
 			</section>

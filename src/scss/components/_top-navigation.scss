@@ -4,7 +4,6 @@
 
 .top-bar {
 	@include top-bar-background();
-
 	line-height: units(7);
 	margin-bottom: 0;
 	@include at-media(tablet-lg){
@@ -33,7 +32,10 @@
 		}
 	}
 	ul {
-		font-size: font-size("sans",2);
+		font-size: font-size("sans",1);
+		@include at-media(tablet){
+			font-size: font-size("sans",2);
+		}
 		text-transform: uppercase;
 		padding: 0;
 		margin: 0;
@@ -51,6 +53,7 @@
 		}
 		ul.second-tier > li > a {
 			background: $top-bar-blue repeat scroll 0 0;
+			padding: 0 units(2.5);
 			&.active,
 			&:active,
 			&:hover,
@@ -63,6 +66,7 @@
 		}
 		ul.third-tier {
 			position: absolute;
+			padding: 0 units(2.5);
 			background: $top-bar-blue repeat scroll 0 0;
 			display: none;
 			li {
@@ -109,7 +113,7 @@
 	a {
 		display: block;
 		width: 100%;
-		padding: 0 units(2.5);
+		padding: 0 units(0.5) 0 units(0.5);
 		line-height: units(7);
 		color: $white;
 		&.active,
@@ -119,6 +123,9 @@
 		{
 			color: $pcpblue;
 			background-color: $smoke;
+		}
+		@include at-media(tablet) {
+			padding: 0 units(2.5);
 		}
 	}
 }

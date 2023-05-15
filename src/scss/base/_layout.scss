@@ -9,11 +9,12 @@ body {
 .pcp-document-container {
 	min-height: 100vh;
 	position: relative;
+	overflow-x: hidden;
 }
 .pcp-grid-section {
 	border-top: units(0.5) solid $borderyellow;
 	background-color: $white;
-	padding-bottom: 17rem;
+	padding-bottom: 21rem;
 }
 .pcp-sections {
 	@include grid-row();

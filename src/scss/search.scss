@@ -42,7 +42,10 @@ ul.results__container {
 	margin: 0;
 
 	.result__list-item {
-		padding-bottom: 10px;
+		margin: units(4) 0;
+	}
+	.result__url {
+		font-size:font-size('sans','2xs');
 	}
 }
 
