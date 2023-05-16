@@ -6,7 +6,6 @@ import "../scss/components/_staff.scss";
 class SingleStaffListEntry extends React.Component {
 		displayUrl;
 		linkClass;
-		memberLinkClass;
 		linkText;
 
 		render() {
@@ -14,12 +13,10 @@ class SingleStaffListEntry extends React.Component {
 						this.displayUrl = this.props.url;
 						this.linkClass = '';
 						this.linkText = 'View Bio';
-						this.memberLinkClass= 'member-link';
 				} else {
 						this.displayUrl = '';
 						this.linkClass = 'no-link-display';
 						this.linkText = '';
-						this.memberLinkClass= 'hidden';
 				}
 
 				return (
@@ -33,24 +30,22 @@ class SingleStaffListEntry extends React.Component {
 												/>
 										</Link>
 								</div>
-								<div className={"member-name"}>
-										<Link to={this.displayUrl}
-													className={this.linkClass}>
-												{this.props.alt}
-										</Link>
-								</div>
-								<div className={"member-title"}>
-										{this.props.title}
-								</div>
-								<div className={"member-number"}>
-										{this.props.number}
-								</div>
-								<div className={"member-email"}>
-										{this.props.email}
-								</div>
-								<div className={this.memberLinkClass}>
-									<Link to={this.displayUrl}
-												className={this.linkClass}>{this.linkText}</Link>
+								<div className={"member-information"}>
+										<div className={"member-name"}>
+												<Link to={this.displayUrl}
+															className={this.linkClass}>
+														{this.props.alt}
+												</Link>
+										</div>
+										<div className={"member-title"}>
+												{this.props.title}
+										</div>
+										<div className={"member-number"}>
+												{this.props.number}
+										</div>
+										<div className={"member-email"}>
+												{this.props.email}
+										</div>
 								</div>
 						</li>
 				);

@@ -3,28 +3,39 @@
 @import "../mixins";
 
 ul.staff-list {
-	@include grid-row();
-	flex-direction: column;
-	justify-content: space-between;
 	list-style: none;
 	@include at-media(tablet-lg) {
-		flex-direction: row;
 		@include grid-gap(2);
 	}
 	li {
-		max-width: $mobile-constrained-max-width;
+		@include grid-row();
+		@include grid-gap(2);
 		margin: 0 auto units(2) auto;
-		@include grid-col();
+		flex-direction: row;
+		align-items: center;
+		@include at-media(tablet){
+			@include grid-gap(6);
+		}
 	}
 	.member-image {
+		width: 35%;
+		max-width: $member-image-max-width;
+		@include at-media(tablet){
+			width: 40%;
+		}
 		img {
 			border-radius: 50%;
+		}
+	}
+	.member-information {
+		width: 65%;
+		@include at-media(tablet){
+			width: 60%;
 		}
 	}
 	.member-name,
 	.member-title {
 		font-size: font-size("sans","lg");
-		text-align: center;
 	}
 	.member-name {
 		color: $pcpblue;

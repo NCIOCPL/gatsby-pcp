@@ -4,12 +4,16 @@
 .single-member {
 	@include grid-row();
 	justify-content: center;
-	max-width: 80%;
+	margin: 0 0 units(2) 0;
+	@include at-media(tablet) {
+		float:right;
+		display: block;
+		width: 40%;
+		margin: 0 units(2) units(2) units(2);
+	}
 	.member-image {
-		@include at-media(tablet) {
-			max-width: 40%;
-		}
 		width: 100%;
+		max-width: $member-image-max-width;
 		img {
 			border-radius: 50%;
 		}
