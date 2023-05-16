@@ -3,8 +3,12 @@ import { Script } from "gatsby";
 import Header from "./Header";
 import { Footer } from "./Footer";
 import '../scss/styles.scss';
+import Breadcrumbs from "./Breadcrumbs"
 
-export default function Layout({ children }) {
+export default function Layout({ children, pageContext }) {
+	const {
+		breadcrumb: { crumbs },
+	  } = pageContext
 	return (
 		<div role={"document"} className={"pcp-document-container"}>
 			<Header />
@@ -13,6 +17,7 @@ export default function Layout({ children }) {
 					<div className={"grid-row"}>
 						<div className={"grid-col-12"}>
 							<div className={"pcp-sections"}>
+			<Breadcrumbs crumbs={crumbs} />
 								<div className="post-body">
 									{children}
 								</div>

@@ -21,6 +21,7 @@
     "backstopjs": "^6.2.1",
     "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-breadcrumb": "^12.3.2",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-netlify-cms": "^7.5.0",
     "gatsby-plugin-node-reload": "^1.1.0",

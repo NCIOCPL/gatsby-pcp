@@ -5,9 +5,9 @@ import IntroText from "../components/IntroText"
 import SingleHomepageBox from "../components/SingleHomepageBox"
 import { SEO } from "../components/Seo"
 
-const IndexPage = () => {
+const IndexPage = ({pageContext}) => {
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <div>
         <p>
           <HeroImage

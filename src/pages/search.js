@@ -4,9 +4,9 @@ import { Script, withPrefix } from "gatsby"
 import '../scss/search.scss'
 import { SEO } from "../components/Seo"
 
-const SearchPage = () => {
+const SearchPage = ({pageContext}) => {
 	return (
-	  <Layout>
+	  <Layout pageContext={pageContext}>
 		<div id="NCI-sws-app-root"></div>
 		<Script id="NCI-sws-app-root-js-config" type="text/javascript">{(function() {
 

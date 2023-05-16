@@ -3,9 +3,9 @@ import Layout from "../components/Layout";
 import { LeftTopNavigation } from "../components/LeftTopNavigation";
 import MainText from "../components/MainText";
 
-export default function BlogTemplate({ frontmatter, htmlAst, path }) {
+export default function BlogTemplate({ frontmatter, htmlAst, path, pageContext }) {
 	return (
-		<Layout>
+		<Layout pageContext={pageContext}>
 			<div className="full-report-container">
 				<div className="left-nav-container">
 					<LeftTopNavigation root={path}></LeftTopNavigation>

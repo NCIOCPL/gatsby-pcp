@@ -3,9 +3,9 @@ import Layout from "../components/Layout";
 import { LeftNavigation } from "../components/LeftNavigation";
 import MainText from "../components/MainText";
 
-export default function LeftNavsSubSectionsTemplate({ frontmatter, htmlAst, path }) {
+export default function LeftNavsSubSectionsTemplate({ frontmatter, htmlAst, path, pageContext }) {
 	return (
-		<Layout>
+		<Layout pageContext={pageContext}>
 			<h2 className={"post-title"}>{frontmatter.sectionTitle}</h2>
 			<div className="full-report-container">
 				<div className="left-nav-container">

@@ -6,13 +6,13 @@ import LeftNavTemplate from "../../templates/LeftNav";
 import LeftNavsSubSectionsTemplate from "../../templates/LeftNavSubSections";
 import BlogTemplate from "../../templates/Blog";
 
-export default function GeneratedPage({ data: { markdownRemark } }) {
+export default function GeneratedPage({ data: { markdownRemark }, pageContext }) {
 	const { frontmatter, htmlAst, parent } = markdownRemark;
 	const templates = {
-		blog: <BlogTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
-		left_nav: <LeftNavTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
-		left_nav_sub_sections: <LeftNavsSubSectionsTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
-		single_page: <SinglePageTemplate frontmatter={frontmatter} htmlAst={htmlAst} />,
+		blog: <BlogTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} pageContext={pageContext} />,
+		left_nav: <LeftNavTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} pageContext={pageContext} />,
+		left_nav_sub_sections: <LeftNavsSubSectionsTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} pageContext={pageContext} />,
+		single_page: <SinglePageTemplate frontmatter={frontmatter} htmlAst={htmlAst} pageContext={pageContext} />,
 	};
 
 	return templates[frontmatter.template];

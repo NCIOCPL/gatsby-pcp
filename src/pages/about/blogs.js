@@ -6,7 +6,7 @@ import Layout from "../../components/Layout"
 import { SEO } from "../../components/Seo"
 import { LeftTopNavigation } from "../../components/LeftTopNavigation"
 
-export default function BlogPage({ data: { allMarkdownRemark } }) {
+export default function BlogPage({ data: { allMarkdownRemark }, pageContext }) {
   const path = { relativeDirectory: "about" }
   const { edges } = allMarkdownRemark
 
@@ -17,7 +17,7 @@ export default function BlogPage({ data: { allMarkdownRemark } }) {
     blogLinks.push(<p><Link to={"/" + post.parent.relativeDirectory + "/" + post.parent.name} >{post.frontmatter.title}</Link ></p>)
   }
   return (
-    <Layout>
+    <Layout pageContext={pageContext}>
       <div className="post-body">
         <div className="full-report-container">
           <div className="left-nav-container">
