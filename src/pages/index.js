@@ -9,13 +9,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <div>
-        <p>
-          <HeroImage
-            sourcedesktop="pcp-temp-header_v2.png"
-            sourcetablet="pcp-temp-header_v2.png"
-            alt="Female medical professional reviewing results with female patient.">
-          </HeroImage>
-        </p>
+			<HeroImage
+				sourcedesktop="pcp-temp-header_v2.png"
+				sourcetablet="pcp-temp-header_v2.png"
+				alt="Female medical professional reviewing results with female patient.">
+			</HeroImage>
         <IntroText
           text='<strong>Example Intro text</strong>: the Presidents Cancer Panel: Monitoring the activities of the National Cancer Program'>
         </IntroText>
@@ -35,7 +33,7 @@ const IndexPage = () => {
             description="Our report, Closing Gaps in Cancer Screening: Connecting People, Communities, and Systems to Improve Equity and Access, identifies four goals to improve the uptake of cancer screening to ensure the benefits reach all populations.">
           </SingleHomepageBox>
           <SingleHomepageBox
-            url="/nca50/"
+            url="/about/blogs/nca-50-1/"
             source="pcp_50_1.png"
             alt="President's Cancer Panel Commemorates the National Cancer Act 50th Anniversary"
             title="President's Cancer Panel Commemorates the National Cancer Act 50th Anniversary"

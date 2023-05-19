@@ -25,10 +25,6 @@ export const useSiteMetadata = () => {
           	sublinks {
           		name
           		link
-          		sublinks {
-          			name
-          			link
-          		}
           	}
           }
         }

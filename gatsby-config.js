@@ -60,13 +60,7 @@ module.exports = {
 							},
 							{
 									name: 'Blogs',
-									link: '/about/blogs',
-									sublinks: [
-											{
-													name: '50th Anniversary',
-													link: '/about/nca50/'
-											}
-									],
+									link: '/about/blogs'
 							},
 					]
 			},
