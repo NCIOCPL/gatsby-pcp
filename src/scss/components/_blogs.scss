@@ -1,0 +1,36 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.blog-list-item {
+	@include grid-row();
+	@include grid-gap(2);
+	flex-direction: row;
+	margin-bottom: units(5);
+}
+.blog-list-item-image {
+	display: none;
+	@include at-media(tablet-lg){
+		display: block;
+		width: 20%;
+		max-width: units('card-lg');
+	}
+}
+.blog-list-item-title {
+	font-weight: bold;
+}
+.blog-list-item-text-container {
+	width: 100%;
+	@include at-media(tablet-lg){
+		width: 80%;
+	}
+	.blog-list-item-date-and-author {
+		margin-bottom: units(2);
+	}
+	.blog-list-item-date {
+
+	}
+	.blog-list-item-author {
+
+	}
+}

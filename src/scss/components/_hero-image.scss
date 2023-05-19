@@ -2,6 +2,9 @@
 @import "../variables";
 @import "../mixins";
 
+.hero-image-container {
+	margin: units(2) 0;
+}
 .hero-image-desktop,
 .hero-image-tablet {
 	box-shadow: 0 units(1.5) units(2) 1px rgba(0,0,0,.4);

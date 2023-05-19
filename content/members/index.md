@@ -26,8 +26,10 @@ Panel members are distinguished members of the scientific, research, and public 
 </ul>
 
 <h3>Past Members</h3>
+<div>
 <responsive-image
 	sourcedesktop="pastmembers-desktop_8-1.png"
 	sourcemobile="pastmembers-smartphone_8-1.png"
 	alt="List of Past Members.">
 </responsive-image>
+</div>

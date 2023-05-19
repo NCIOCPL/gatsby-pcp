@@ -5,7 +5,7 @@ import "../scss/components/_hero-image.scss";
 class HeroImage extends React.Component {
 		render() {
 				return (
-						<>
+						<div className={"hero-image-container"}>
 								<div className={"hero-image-desktop"}>
 												<Image
 														src={this.props.sourcedesktop}
@@ -18,7 +18,7 @@ class HeroImage extends React.Component {
 												alt={this.props.alt}
 										/>
 								</div>
-						</>
+						</div>
 				);
 		}
 }

@@ -1,21 +1,60 @@
 
-import { graphql } from 'gatsby'
-import * as React from "react"
-import { Link } from 'gatsby'
-import Layout from "../../components/Layout"
-import { SEO } from "../../components/Seo"
-import { LeftTopNavigation } from "../../components/LeftTopNavigation"
+import { graphql } from 'gatsby';
+import * as React from "react";
+import { Link } from 'gatsby';
+import Layout from "../../components/Layout";
+import { SEO } from "../../components/Seo";
+import { LeftTopNavigation } from "../../components/LeftTopNavigation";
+import Image from '../../components/BlogImage';
+import "../../scss/components/_blogs.scss";
 
 export default function BlogPage({ data: { allMarkdownRemark } }) {
-  const path = { relativeDirectory: "about" }
-  const { edges } = allMarkdownRemark
+  const path = { relativeDirectory: "about" };
+  const { edges } = allMarkdownRemark;
+	let blogLinks = edges.map((node, index)=>{
+			let post = node.node;
+			let blogDate;
+			let authorText;
+			let blogImage ='';
+			let blogImageAlt;
+			if (post.frontmatter.date) {
+					blogDate = post.frontmatter.date;
+			}
+			if (post.frontmatter.author) {
+					if (blogDate){
+							authorText = ', ';
+					}
+					authorText += " by " + post.frontmatter.author;
+			}
+			if (post.frontmatter.alt) {
+					blogImageAlt =post.frontmatter.alt;
+			}
+			if (post.frontmatter.image) {
+					blogImage=post.frontmatter.image;
+			}
 
-  // Definitely not the best way to iterate through these
-  const blogLinks = [];
-  for (const node in edges) {
-    let post = edges[node].node
-    blogLinks.push(<p><Link to={"/" + post.parent.relativeDirectory + "/" + post.parent.name} >{post.frontmatter.title}</Link ></p>)
-  }
+			return <div className={"blog-list-item"} key={index}>
+					<div className={"blog-list-item-image"}>
+							<Image
+									src={blogImage}
+									alt={blogImageAlt}
+							/>
+					</div>
+					<div className={"blog-list-item-text-container"}>
+							<span className={"blog-list-item-title"}>
+									<Link to={"/" + post.parent.relativeDirectory + "/" + post.parent.name} >{post.frontmatter.title}</Link >
+							</span>
+							<div className={"blog-list-item-date-and-author"}>
+									<span className={"blog-list-item-date"}>{blogDate}</span>
+									<span className={"blog-list-item-author"}>{authorText}</span>
+							</div>
+							<div className={"blog-list-item-description"}>
+									{post.frontmatter.blurb}
+							</div>
+					</div>
+			</div>
+	});
+
   return (
     <Layout>
       <div className="post-body">
@@ -48,15 +87,17 @@ query {
         frontmatter {
           title
           author
-          date
+          date(formatString: "MMMM DD, YYYY")
           blurb
+          image
+          alt
         }
         parent {
           ... on File {
             name
             relativeDirectory
           }
-          
+
         }
       }
     }

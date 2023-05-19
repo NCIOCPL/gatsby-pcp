@@ -63,6 +63,14 @@ li {
 .hidden {
 	display: none;
 }
+.float-right {
+	float: right;
+	margin-left: units(2);
+}
+.float-left {
+	float: left;
+	margin-right: units(2);
+}
 .pdf-icon {
 	background-image: url('../images/application-pdf.png');
 	background-position: left top;
@@ -91,4 +99,7 @@ table.agenda-table {
 			width: 70%;
 		}
 	}
+}
+.byline {
+	text-transform: uppercase;
 }
