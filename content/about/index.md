@@ -20,4 +20,4 @@ public and private, that form the National Cancer Program as well as other partn
 organizations. Together, these organizations and others can make a positive difference
 in accelerating progress against cancer.
 
-![Government, Healthcare Providers, Individuals](../../src/images/cgov-16669_ncp-infographic-update_a_v3_2.png)
+![Government, Healthcare Providers, Individuals](../../src/images/cgov-16669_ncp-infographic-update_a_v3_3.png)
