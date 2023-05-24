@@ -7,7 +7,7 @@ permissions:
 jobs:
 
   build:
-    name: Generate Images 
+    name: Generate Images
     runs-on: ubuntu-latest
     steps:
 
@@ -23,7 +23,9 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: "@nciocpl"
       - name: Run NPM
-        run: npm install
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       ## Build all the things for testing
       - name: Build site
@@ -39,7 +41,7 @@ jobs:
         run: |
           git config --global user.name 'NCIOCPL Bot'
           git config --global user.email 'NCIOCPL@users.noreply.github.com'
-          git add -A backstop_data/bitmaps_reference/ 
+          git add -A backstop_data/bitmaps_reference/
           git commit -m "Updated backstop images"
           git push
 

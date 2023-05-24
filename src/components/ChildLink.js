@@ -1,14 +1,22 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
-const isActive = className => ({ isPartiallyCurrent }) => ({
+const isActive =
+	(className) =>
+	({ isPartiallyCurrent }) => ({
 		className: className + (isPartiallyCurrent ? ' active' : ''),
-})
+	});
 
 const ChildLink = ({ className, children, ...props }) => (
-		<Link getProps={isActive(className)} {...props}>
-				{children}
-		</Link>
-)
+	<Link getProps={isActive(className)} {...props}>
+		{children}
+	</Link>
+);
 
-export default ChildLink
+ChildLink.propTypes = {
+	className: PropTypes.string,
+	children: PropTypes.children,
+};
+
+export default ChildLink;

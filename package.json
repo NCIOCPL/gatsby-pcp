@@ -14,10 +14,15 @@
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "backstop-generate": "backstop reference --config=backstop-config.js",
-    "test": "backstop test --config=backstop-config.js"
+    "test": "backstop test --config=backstop-config.js",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.21.8",
+    "@nciocpl/eslint-config-react": "^0.8.0",
     "@uswds/uswds": "^3.4.1",
+    "babel-eslint": "^10.1.0",
     "backstopjs": "^6.2.1",
     "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
@@ -33,6 +38,7 @@
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-remark": "^6.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
+    "jest": "^29.5.0",
     "netlify-cms-app": "^2.15.72",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -42,6 +48,7 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "@uswds/compile": "^1.0.0"
+    "@uswds/compile": "^1.0.0",
+    "eslint-plugin-mdx": "^2.1.0"
   }
 }
