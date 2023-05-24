@@ -1,9 +1,9 @@
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from 'gatsby';
 
 export const getNodes = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			allMarkdownRemark(sort: {frontmatter: {sortOrder: ASC}}) {
+			allMarkdownRemark(sort: { frontmatter: { sortOrder: ASC } }) {
 				edges {
 					node {
 						frontmatter {
@@ -14,11 +14,11 @@ export const getNodes = () => {
 								name
 								relativeDirectory
 							}
+						}
 					}
 				}
 			}
 		}
-	}
- `);
+	`);
 	return data.allMarkdownRemark;
 };
