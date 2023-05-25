@@ -54,4 +54,3 @@ export function Head({ data: { markdownRemark } }) {
 GeneratedPage.propTypes = {
 	data: PropTypes.object,
 };
-

@@ -3,14 +3,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  
+
   call-workflow-build:
     uses: ./.github/workflows/build-site.yml
-    with: 
+    with:
       environment: Test
       prefix_path: false
     secrets: inherit
-  
+
   call-workflow-deploy:
     uses: ./.github/workflows/deploy-site.yml
     with:
@@ -19,9 +19,9 @@ jobs:
     ## This job depends on build completing
     needs: call-workflow-build
     secrets: inherit
-  
-  call-workflow-test:
-    uses: ./.github/workflows/test-site.yml
+
+  call-workflow-backstop:
+    uses: ./.github/workflows/test-backstop.yml
     with:
       environment: Test
       build_path: ""

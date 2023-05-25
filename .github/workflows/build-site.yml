@@ -90,42 +90,24 @@ jobs:
         with:
           node-version-file: ".nvmrc"
           registry-url: https://npm.pkg.github.com
+          cache: "npm"
           scope: "@nciocpl"
       - name: Run NPM
         run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      #      ## Lint the code
-      #      - name: Run Lint
-      #        run: yarn lint
+      ## Lint the code
+      - name: Run Lint
+        run: npm run lint
 
-      #      ## Now test the code
-      #      - name: Run Tests
-      #        run: yarn test
+#      ## Now test the code
+#      - name: Run Tests
+#        run: npm test
 
-      #      ## Test a11y
-      #      - name: Run accessibility tests
-      #        run: yarn test:a11y
-
-      #      ## Now test the css
-      #      - name: Run css tests
-      #        run: yarn test:css
-
-      #      ## Upload failed css tests
-      #      - uses: actions/upload-artifact@v2
-      #        name: Upload failed tests
-      #        if: failure()
-      #        with:
-      #          name: failed-backstopjs
-      #          path: /home/runner/work/ncids/ncids/testing/ncids-css-testing/.backstop/
-
-      #      ## Upload successful css tests
-      #      - uses: actions/upload-artifact@v2
-      #        name: Upload successful tests
-      #        with:
-      #          name: success-backstopjs
-      #          path: /home/runner/work/ncids/ncids/testing/ncids-css-testing/.backstop/test/**/report.json
+#      ## Test a11y
+#      - name: Run accessibility tests
+#        run: npm run test:a11y
 
       ## Build all the things for publishing
       - name: Build Site
