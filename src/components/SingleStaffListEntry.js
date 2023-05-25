@@ -45,7 +45,7 @@ class SingleStaffListEntry extends React.Component {
 export default SingleStaffListEntry;
 
 SingleStaffListEntry.propTypes = {
-	url: PropTypes.array,
+	url: PropTypes.string,
 	source: PropTypes.string.isRequired,
 	alt: PropTypes.string.isRequired,
 	title: PropTypes.string.isRequired,

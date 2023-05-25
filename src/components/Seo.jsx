@@ -25,5 +25,5 @@ SEO.propTypes = {
 	title: PropTypes.array,
 	description: PropTypes.string,
 	pathname: PropTypes.string,
-	children: PropTypes.children,
+	children: PropTypes.node,
 };

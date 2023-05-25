@@ -21,7 +21,7 @@ class ResponsiveImage extends React.Component {
 export default ResponsiveImage;
 
 ResponsiveImage.propTypes = {
-	alt: PropTypes.array.isRequired,
+	alt: PropTypes.string.isRequired,
 	sourcedesktop: PropTypes.string.isRequired,
 	sourcemobile: PropTypes.string.isRequired,
 };

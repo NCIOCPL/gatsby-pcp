@@ -24,6 +24,6 @@ export default function LeftNavTemplate({ frontmatter, htmlAst, path }) {
 
 LeftNavTemplate.propTypes = {
 	frontmatter: PropTypes.object.isRequired,
-	htmlAst: PropTypes.htmlAst,
-	path: PropTypes.string,
+	htmlAst: PropTypes.object,
+	path: PropTypes.object,
 };

@@ -25,6 +25,6 @@ export default function BlogTemplate({ frontmatter, htmlAst, path }) {
 
 BlogTemplate.propTypes = {
 	frontmatter: PropTypes.object.isRequired,
-	htmlAst: PropTypes.htmlAst,
-	path: PropTypes.string,
+	htmlAst: PropTypes.object,
+	path: PropTypes.object,
 };

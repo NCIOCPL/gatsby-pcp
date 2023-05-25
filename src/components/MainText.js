@@ -18,7 +18,7 @@ const renderAst = new rehypeReact({
 	components: {
 		'image-with-caption': ImageWithCaption,
 		'image-with-class': ImageWithClass,
-		meetings: Meetings,
+		'meetings': Meetings,
 		'picture-with-quotes': PictureWithQuotes,
 		'question-answer': QuestionAnswer,
 		'responsive-image': ResponsiveImage,

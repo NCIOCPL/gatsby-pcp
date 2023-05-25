@@ -16,5 +16,5 @@ export default function SinglePageTemplate({ frontmatter, htmlAst }) {
 
 SinglePageTemplate.propTypes = {
 	frontmatter: PropTypes.object.isRequired,
-	htmlAst: PropTypes.htmlAst,
+	htmlAst: PropTypes.object,
 };

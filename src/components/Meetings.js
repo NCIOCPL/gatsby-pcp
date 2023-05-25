@@ -86,6 +86,6 @@ class Meetings extends React.Component {
 export default Meetings;
 
 Meetings.propTypes = {
-	meetings: PropTypes.object.isRequired,
+	meetings: PropTypes.string.isRequired,
 	sectiontitle: PropTypes.string,
 };
