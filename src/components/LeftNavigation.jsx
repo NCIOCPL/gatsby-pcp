@@ -1,11 +1,11 @@
 import React from 'react';
-import { getNodes } from '../hooks/get-nodes';
+import { useGetNodes } from '../hooks/use-get-nodes';
 import { Link } from 'gatsby';
 import '../scss/components/_left-nav-multipage.scss';
 import PropTypes from 'prop-types';
 
 export const LeftNavigation = ({ path }) => {
-	const { edges } = getNodes();
+	const { edges } = useGetNodes();
 	let sluglist = edges
 		// filter to everything that starts with the same path up until the last slash
 		.filter((element) => element.node.parent.relativeDirectory.includes(path.relativeDirectory));

@@ -39,6 +39,7 @@ export const pageQuery = graphql`
 	}
 `;
 
+/*eslint-disable react/prop-types*/
 export function Head({ data: { markdownRemark } }) {
 	const { frontmatter } = markdownRemark;
 	return (
@@ -48,11 +49,9 @@ export function Head({ data: { markdownRemark } }) {
 		</>
 	);
 }
+/*eslint-enable react/prop-types*/
 
 GeneratedPage.propTypes = {
 	data: PropTypes.object,
 };
 
-Head.propTypes = {
-	data: PropTypes.object,
-};

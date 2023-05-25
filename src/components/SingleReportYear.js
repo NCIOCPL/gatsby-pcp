@@ -55,7 +55,7 @@ class SingleReportYear extends React.Component {
 export default SingleReportYear;
 
 SingleReportYear.propTypes = {
-	descriptionlinks: PropTypes.object,
-	links: PropTypes.object,
+	descriptionlinks: PropTypes.string,
+	links: PropTypes.string,
 	year: PropTypes.string.isRequired,
 };

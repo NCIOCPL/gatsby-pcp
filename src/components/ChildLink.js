@@ -9,14 +9,14 @@ const isActive =
 	});
 
 const ChildLink = ({ className, children, ...props }) => (
-	<Link getProps={isActive(className)} {...props}>
-		{children}
-	</Link>
+		<Link getProps={isActive(className)} {...props}>
+				{children}
+		</Link>
 );
 
 ChildLink.propTypes = {
 	className: PropTypes.string,
-	children: PropTypes.children,
+	children: PropTypes.node,
 };
 
 export default ChildLink;

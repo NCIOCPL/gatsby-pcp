@@ -33,8 +33,8 @@ class PictureWithQuotes extends React.Component {
 export default PictureWithQuotes;
 
 PictureWithQuotes.propTypes = {
-	quotes: PropTypes.array.isRequired,
+	quotes: PropTypes.string.isRequired,
 	image_src: PropTypes.string.isRequired,
 	image_alt: PropTypes.string.isRequired,
-	image_caption: PropTypes.string.isRequired,
+	image_caption: PropTypes.string,
 };

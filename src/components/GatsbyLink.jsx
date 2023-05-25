@@ -35,7 +35,7 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 };
 
 Link.propTypes = {
-	children: PropTypes.children,
+	children: PropTypes.node,
 	to: PropTypes.string.isRequired,
 	activeClassName: PropTypes.string,
 	partiallyActive: PropTypes.bool,

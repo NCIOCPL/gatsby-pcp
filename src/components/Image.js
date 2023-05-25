@@ -28,9 +28,12 @@ const Image = ({ src, ...rest }) => {
 	if (!match) return null;
 
 	const { node: { childImageSharp, publicURL, extension } = {} } = match;
-
+		let altText = '';
+		if (rest.alt){
+				altText = rest.alt;
+		}
 	if (extension === 'svg' || !childImageSharp) {
-		return <img src={publicURL} {...rest} />;
+		return <img src={publicURL} alt={altText} {...rest} />;
 	}
 
 	return <Img fluid={childImageSharp.fluid} {...rest} />;
