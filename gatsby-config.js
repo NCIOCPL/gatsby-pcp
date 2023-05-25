@@ -20,18 +20,21 @@ module.exports = {
 		iconLinks: [
 			{
 					name: 'Twitter',
+					text: 'Visit us on Twitter',
 					link: 'https://twitter.com/prescancerpanel',
 					height: 48,
 					width: 48
 			},
 			{
 					name: 'Linkedin',
+					text: 'Visit us on LinkedIn',
 					link: 'https://www.linkedin.com/company/president\'s-cancer-panel/',
 					height: 48,
 					width: 48
 			},
 			{
 					name: 'email',
+					text: 'Email us',
 					link: 'mailto:PresCancerPanel@mail.nih.gov',
 					height: 48,
 					width: 48

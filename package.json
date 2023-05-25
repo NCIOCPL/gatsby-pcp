@@ -14,7 +14,7 @@
     "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "backstop-generate": "backstop reference --config=backstop-config.js",
-    "backstop-test": "backstop test --config=backstop-config.js",
+    "test:backstop": "backstop test --config=backstop-config.js",
     "test": "jest",
     "test:a11y": "pa11y-ci",
     "lint": "eslint src --ext .js,.jsx",

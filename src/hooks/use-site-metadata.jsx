@@ -15,6 +15,7 @@ export const useSiteMetadata = () => {
 					}
 					iconLinks {
 						name
+						text
 						link
 						height
 						width

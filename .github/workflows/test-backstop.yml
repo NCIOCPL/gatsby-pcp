@@ -37,7 +37,7 @@ jobs:
 
       ## Serve the site to test it
       - name: Test Site
-        run: npm run test
+        run: npm run test:backstop
         env:
           BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.site_domain, inputs.build_path) }}
 

@@ -43,7 +43,7 @@ class SingleReportYear extends React.Component {
 
 		return (
 			<div className={'single-report-links'}>
-				<h3 className={'series-year'}>{this.props.year}</h3>
+				{this.props.year !== '' && <h3 className={'series-year'}>{this.props.year}</h3>}
 				<ul className={this.descriptionlinkListClass}>{this.descriptionLinkList}</ul>
 				<div className={'link-list-header'} dangerouslySetInnerHTML={{ __html: documentationHeader }} />
 				<ul className={this.linkListClass}>{this.linkList}</ul>

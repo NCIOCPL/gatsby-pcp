@@ -93,10 +93,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: '.nvmrc'
           registry-url: https://npm.pkg.github.com
-          cache: "npm"
-          scope: "@nciocpl"
+          cache: 'npm'
+          scope: '@nciocpl'
       - name: Run NPM
         run: npm ci
         env:
@@ -106,13 +106,9 @@ jobs:
       - name: Run Lint
         run: npm run lint
 
-#      ## Now test the code
-#      - name: Run Tests
-#        run: npm test
-
-#      ## Test a11y
-#      - name: Run accessibility tests
-#        run: npm run test:a11y
+      #      ## Now test the code
+      #      - name: Run Tests
+      #        run: npm test
 
       ## Build all the things for publishing
       - name: Build Site
@@ -133,7 +129,13 @@ jobs:
       - name: Install BLC
         run: npm install broken-link-checker -g
       - name: Check Links
-        run: blc ${{ format('http://localhost:8080/{0}', steps.set_vars.outputs.build_name) }} -rfe
+        run: blc ${{ format('http://localhost:8080/{0}', steps.set_vars.outputs.prefix_path) }} -rfe
+
+      ## Test a11y
+      - name: Accessibility Test
+        run: npm run test:a11y
+        env:
+          PA11Y_BASE_URL: ${{ format('http://localhost:8080/{0}', steps.set_vars.outputs.prefix_path) }}
 
       ## Generate build-info.json to house information about this specific build.
       ## Used for product test deployment
