@@ -9,9 +9,9 @@ const isActive =
 	});
 
 const ChildLink = ({ className, children, ...props }) => (
-		<Link getProps={isActive(className)} {...props}>
-				{children}
-		</Link>
+	<Link getProps={isActive(className)} {...props}>
+		{children}
+	</Link>
 );
 
 ChildLink.propTypes = {

@@ -1,9 +1,10 @@
-name: Test Site
+name: Backstop Test Site
 on:
   workflow_call:
     inputs:
+      # needed to get environment variables
       environment:
-        description: Which environment to deploy to
+        description: Which environment are we testing
         required: true
         type: string
       build_path:
@@ -12,8 +13,8 @@ on:
         type: string
 
 jobs:
-  build:
-    name: Test Site
+  backstop:
+    name: Run Backstop
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
     steps:
@@ -27,14 +28,17 @@ jobs:
         with:
           node-version-file: ".nvmrc"
           registry-url: https://npm.pkg.github.com
+          cache: "npm"
           scope: "@nciocpl"
       - name: Run NPM
-        run: npm install
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       ## Serve the site to test it
       - name: Test Site
         run: npm run test
-        env: 
+        env:
           BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.site_domain, inputs.build_path) }}
 
       ## Upload failed css tests
@@ -51,3 +55,13 @@ jobs:
         with:
           name: success-backstopjs
           path: backstop_data/bitmaps_test/**/report.json
+
+  approve:
+    name: Approve Tests
+    runs-on: ubuntu-latest
+    needs: backstop
+    if: ${{ needs.backstop.result == 'failure' }}
+    environment: QA-Approval
+    steps:
+      - name: Wait for Approval
+        run: echo "QA Approved"
