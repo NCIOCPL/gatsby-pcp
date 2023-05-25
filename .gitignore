@@ -34,6 +34,7 @@ backstop_data/html_report
 !.cpplint
 !.npmrc
 !.nvmrc
+!.pa11yci.js
 
 
 # === Rules for release artifacts ===

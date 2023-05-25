@@ -16,24 +16,26 @@ export const Footer = () => {
 		);
 	});
 	let iconList = iconLinks.map((link, index) => {
-		let altText = "President's Cancer Panel " + link.name;
 		switch (link.name) {
 			case 'Twitter':
 				return (
 					<a href={link.link} key={index}>
-						<TwitterIcon className={'connect-icon'} height={link.height} width={link.width} alt={altText} />
+						<span>{link.text}</span>
+						<TwitterIcon id={'footer-twitter-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);
 			case 'Linkedin':
 				return (
 					<a href={link.link} key={index}>
-						<LinkedInIcon className={'connect-icon'} height={link.height} width={link.width} alt={altText} />
+						<span>{link.text}</span>
+						<LinkedInIcon id={'footer-linkedin-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);
 			case 'email':
 				return (
 					<a href={link.link} key={index}>
-						<EnvelopeIcon className={'connect-icon'} height={link.height} width={link.width} alt={link.name} />
+						<span>{link.text}</span>
+						<EnvelopeIcon id={'footer-email-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);
 		}

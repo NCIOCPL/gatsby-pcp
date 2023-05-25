@@ -1,6 +1,6 @@
 ---
 sectionTitle: "The Connected Cancer Patient: Vision for the Future and Recommendations for Action"
-Title: Presentations
+title: Presentations
 template: left_nav_sub_sections
 linktext: Presentations
 sortOrder: 5
