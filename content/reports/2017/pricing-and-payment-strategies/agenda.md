@@ -4,7 +4,9 @@ title: Agenda
 template: left_nav_sub_sections
 linktext: Agenda
 sortOrder: 3
+description: "Pricing and Payment Strategies for Cancer Drugs: Maximizing Patients' Access to Beneficial Therapies - Meeting Agenda"
 ---
+
 <table class="agenda-table">
 <tbody>
 <tr><td>
@@ -12,12 +14,14 @@ sortOrder: 3
 **8:00**</td><td>
 
 Registration
+
 </td></tr>
 <tr><td>
 
 **8:30**</td><td>
 
 Welcome and Introductions
+
 </td></tr>
 <tr><td>
 
@@ -29,32 +33,37 @@ Welcome and Introductions
 
 - **Cliff Hudis, MD, FACP,** Chief Executive Officer, American Society of Clinical Oncology
 - **Caroline F. Pearson,** Senior Vice President, Policy and Strategy, Avalere Health
-- **Lee Newcomer, MD, MHA,** Senior Vice President, Oncology,   UnitedHealth Group
+- **Lee Newcomer, MD, MHA,** Senior Vice President, Oncology, UnitedHealth Group
 
 **Discussion**</td></tr>
+
 <tr><td>
 
 **10:30**</td><td>
 
 **Break**
+
 </td></tr>
 <tr><td>
 
 **10:45** </td><td>
 
 **Session 2: Generating Recommendations—Overview**
+
 </td></tr>
 <tr><td>
 
 **10:50** </td><td>
 
 **Session 3: Recommendations—Price**
+
 </td></tr>
 <tr><td>
 
 **12:10** </td><td>
 
 **Public Comment**
+
 </td></tr>
 
 <tr><td>
@@ -62,30 +71,35 @@ Welcome and Introductions
 **12:20** </td><td>
 
 **Lunch**
+
 </td></tr>
 <tr><td>
 
 **1:30** </td><td>
 
 **Session 4: Recommendations—Access to Treatments**
+
 </td></tr>
 <tr><td>
 
 **2:45** </td><td>
 
 **Break**
+
 </td></tr>
 <tr><td>
 
 **3:00** </td><td>
 
 **Session 5: Recommendations—Communicating Treatment Benefits**
+
 </td></tr>
 <tr><td>
 
 **4:15** </td><td>
 
 **Public Comment**
+
 </td></tr>
 <tr><td>
 

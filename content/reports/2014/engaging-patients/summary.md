@@ -4,7 +4,9 @@ title: Summary
 template: left_nav_sub_sections
 linktext: Summary
 sortOrder: 5
+description: "The “Engaging Patients with Connected Health Technologies” workshop focused on the exploration of new technologies by health care systems and patients/individuals and the transformation of cancer and chronic disease management."
 ---
+
 The President’s Cancer Panel held a workshop entitled <em>Engaging Patients with Connected Health Technologies</em> on December 11, 2014, in Cambridge, Massachusetts. The workshop brought together leaders in academia, technology, government, advocacy, and health care to explore how use of new technologies by health care systems and patients/individuals could transform management of health and chronic diseases, including cancer. Participants discussed the current landscape, ways in which connected health technologies could improve prevention and management of cancer across the continuum, and barriers to realizing the full potential of connected health. Areas of high priority were identified as potential topics for subsequent workshops in the Panel’s series.
 
 Several invited participants presented examples of emerging technologies that are being used by individuals to monitor and self-manage various health conditions, leading to increased patient engagement and empowerment. They also discussed the potential for connected health technologies and strategies to facilitate integration of patient-reported data—including nonclinical data—with health system data in order to improve understanding of health and disease, support clinical decision making, and promote healthy behaviors.

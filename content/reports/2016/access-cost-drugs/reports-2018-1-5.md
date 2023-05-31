@@ -4,7 +4,9 @@ title: Summary
 template: left_nav_sub_sections
 linktext: Summary
 sortOrder: 5
+description: "The President’s Cancer Panel has identified rising drug prices and threats to access to cancer drugs as critical problems in cancer care. This workshop brought together participants with diverse expertise and perspectives to discuss challenges related to drug costs and access faced by patients, providers, healthcare systems, and payers, as well as factors that influence drug development and pricing."
 ---
+
 <p>Precision cancer medicine, which includes molecularly targeted drugs and immunotherapies, holds remarkable potential to transform treatment of the disease with tailored and possibly curative drug regimens. However, these innovations come at substantial cost to patients, their families, and the healthcare system, and accessing recommended drugs is increasingly difficult for many patients. <strong>The President’s Cancer Panel has identified rising drug prices and threats to access to cancer drugs as critical problems in cancer care. The Panel will focus on these issues in its 2016-2017 series of meetings, <em>Ensuring Patients’ Access to High-Value Cancer Drugs.</em></strong></p>
 
 Multiple stakeholders must be engaged in identifying solutions that support affordability and access without sacrificing quality or innovation in drug development or the success of the pharmaceutical industry. The first workshop in this series—held June 10, 2016, in New York City—brought together participants with diverse expertise and perspectives, including oncologists, health economists, patients and patient advocates, pharmaceutical and biotechnology executives, academic institution representatives, and federal agency stakeholders.

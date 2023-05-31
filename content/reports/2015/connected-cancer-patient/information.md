@@ -4,7 +4,9 @@ title: Information
 template: left_nav_sub_sections
 linktext: Information
 sortOrder: 2
+description: "The Connected Cancer Patient: Vision for the Future and Recommendations for Action - Meeting Information"
 ---
+
 **Date** \
 July 9, 2015
 

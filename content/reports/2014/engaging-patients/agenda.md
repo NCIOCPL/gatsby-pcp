@@ -4,7 +4,9 @@ title: Agenda
 template: left_nav_sub_sections
 linktext: Agenda
 sortOrder: 3
+description: "Engaging Patients with Connected Health Technologies - Meeting Agenda"
 ---
+
 <table class="agenda-table">
 <tbody>
 <tr><td>
@@ -12,12 +14,14 @@ sortOrder: 3
 **8:00**</td><td>
 
 Registration
+
 </td></tr>
 <tr><td>
 
 **8:30**</td><td>
 
 Welcome and Introductions
+
 </td></tr>
 <tr><td>
 
@@ -35,12 +39,14 @@ Setting the Context for Connected Health
 **9:40**</td><td>
 
 Landscape of Connected Health and Patient Engagement
+
 </td></tr>
 <tr><td>
 
 **10:30**</td><td>
 
 **Break**
+
 </td></tr>
 <tr><td>
 
@@ -56,6 +62,7 @@ Connected Health for Individuals and Patients: Desired Future State
 **11:55** </td><td>
 
 Public Comment
+
 </td></tr>
 
 <tr><td>
@@ -63,6 +70,7 @@ Public Comment
 **12:00** </td><td>
 
 Lunch
+
 </td></tr>
 <tr><td>
 
@@ -78,24 +86,28 @@ Connected Health for Individuals and Patients: Desired Future State
 **2:30** </td><td>
 
 Break
+
 </td></tr>
 <tr><td>
 
 **2:40** </td><td>
 
 Recommendations for Action for the President's Cancer Panel
+
 </td></tr>
 <tr><td>
 
 **3:45** </td><td>
 
 Public Comment
+
 </td></tr>
 <tr><td>
 
 **3:55** </td><td>
 
 Wrap Up and Next Steps
+
 </td></tr>
 <tr><td>
 

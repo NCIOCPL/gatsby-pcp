@@ -4,7 +4,9 @@ title: Information
 template: left_nav_sub_sections
 linktext: Information
 sortOrder: 2
+description: "Engaging Patients with Connected Health Technologies - Meeting Information"
 ---
+
 **Date** \
 December 11, 2014
 

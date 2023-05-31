@@ -4,7 +4,9 @@ title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "New therapies emerging on the cancer landscape, including targeted drugs, immunotherapies, and combinations of drugs, offer patients potential for improved outcomes, but often at a steep cost. The President’s Cancer Panel convened leaders and stakeholders across multiple sectors to identify key actions to support drug pricing and payment strategies that ensure patients’ access to high-value cancer therapies."
 ---
+
 New therapies emerging on the cancer landscape, including targeted drugs, immunotherapies, and combinations of drugs, offer patients potential for improved outcomes, but often at a steep cost. For many cancer drugs that have long been on the market, sharp price increases and drug shortages threaten patients' access to needed therapies. Clinicians, patients, families, and healthcare systems increasingly must consider the financial risks associated with treatment options in addition to clinical benefits and risks. Solutions that ensure patients’ access to beneficial and affordable therapies require an evaluation of the drug pricing and payment landscape and the associated policies, practices, and market forces that shape strategies. An improved understanding of these processes could enable informed comparisons between treatment options based on efficacy, side effects, quality of life, and cost to patients.
 
 In this third workshop in a series on cancer drug access and value, the President’s Cancer Panel will convene leaders and stakeholders across multiple sectors to identify key actions to support drug pricing and payment strategies that ensure patients’ access to high-value cancer therapies. Questions to be considered include the following:

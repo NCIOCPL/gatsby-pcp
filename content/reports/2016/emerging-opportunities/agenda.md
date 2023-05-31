@@ -4,7 +4,9 @@ title: Agenda
 template: left_nav_sub_sections
 linktext: Agenda
 sortOrder: 3
+description: "Emerging Opportunities to Streamline Cancer Drug Development - Meeting Agenda"
 ---
+
 <table class="agenda-table">
 <tbody>
 <tr><td>
@@ -12,6 +14,7 @@ sortOrder: 3
 **8:30**</td><td>
 
 **Registration**
+
 </td></tr>
 <tr><td>
 
@@ -153,5 +156,6 @@ sortOrder: 3
 </td><td>
 
 **Adjourn**
+
 </td></tr>
 </tbody></table>

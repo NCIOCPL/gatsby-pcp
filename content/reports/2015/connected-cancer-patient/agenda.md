@@ -4,7 +4,9 @@ title: Agenda
 template: left_nav_sub_sections
 linktext: Agenda
 sortOrder: 3
+description: "The Connected Cancer Patient: Vision for the Future and Recommendations for Action - Meeting Agenda"
 ---
+
 <table class="agenda-table">
 <tbody>
 <tr><td>
@@ -12,12 +14,14 @@ sortOrder: 3
 **8:00**</td><td>
 
 Registration
+
 </td></tr>
 <tr><td>
 
 **8:30**</td><td>
 
 Welcome and Introductions
+
 </td></tr>
 <tr><td>
 
@@ -26,22 +30,26 @@ Welcome and Introductions
 Scenario 2020: Connected Health and Cancer Outcomes
 Overview and scenario process (5 minutes)
 Presentation of scenario (25 minutes)
+
 - **Bradford W. Hesse, PhD,** Chief, Health Communication and Informatics Research Branch, Division of Cancer Control and Population Sciences, National Cancer Institute
 - **David K. Ahern, PhD,** Special Advisor, Health Communication and Informatics Research Branch, Division of Cancer Control and Population Sciences, National Cancer Institute
 
 Moderated discussion (30 minutes)
+
 </td></tr>
 <tr><td>
 
 **10:10**</td><td>
 
 Break
+
 </td></tr>
 <tr><td>
 
 **10:30** </td><td>
 
 Calibration of Assessment and Recommendations
+
 </td></tr>
 <tr><td>
 
@@ -57,6 +65,7 @@ Personal Health Information and Data Sharing - Assessment and Recommendations
 **11:45** </td><td>
 
 Public Comment
+
 </td></tr>
 
 <tr><td>
@@ -64,6 +73,7 @@ Public Comment
 **11:50** </td><td>
 
 Lunch
+
 </td></tr>
 <tr><td>
 
@@ -90,6 +100,7 @@ Devices, Sensors, and Apps - Assessment and Recommendations
 **3:00** </td><td>
 
 Break
+
 </td></tr>
 <tr><td>
 
@@ -107,6 +118,7 @@ National Health Information Infrastructure - Assessment and Recommendations
 **4:15** </td><td>
 
 Conclusions and Cross-Cutting Recommendations
+
 </td></tr>
 <tr><td>
 

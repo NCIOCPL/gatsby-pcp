@@ -4,7 +4,9 @@ title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "As use of targeted cancer drugs and combination therapy continues to grow, so will concerns about access for patients and for the healthcare system overall. The President’s Cancer Panel convened leaders and stakeholders across multiple sectors to examine access, cost, innovation, and value in cancer drug therapy."
 ---
+
 Innovations in cancer therapy, particularly the development of targeted drugs, hold remarkable potential to transform treatment of the disease. A productive oncology-drug pipeline is turning scientific breakthroughs into treatments for many patients who, until recently, had few options. But this innovation comes at a tremendous cost, and accessing needed drugs is increasingly difficult for many patients. As use of targeted cancer drugs and combination therapy continues to grow, so will concerns about access for patients and for the healthcare system overall. The White House, Congress, Federal agencies, presidential candidates, cancer organizations, and advocates are all calling for solutions that strike a balance between supporting innovation in drug development and the potential financial impact drug therapy has on patients and their families.
 
 In this first workshop in a series, the President’s Cancer Panel will convene leaders and stakeholders across multiple sectors to examine access, cost, innovation, and value in cancer drug therapy. Participants will also identify priority topics of focus for discussion in subsequent workshops. Questions for exploration include the following:

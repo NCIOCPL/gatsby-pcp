@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 4
+description: "Access to and Cost of Cancer Drugs in a Changing Healthcare Landscape - Participants"
 ---
+
 **Julian Adams, PhD** \
 President \
 Research and Development \

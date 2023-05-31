@@ -4,14 +4,15 @@ title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "Stakeholder input on opportunities, barriers, and possible solutions to improve cervical cancer screening during and post COVID-19"
 ---
+
 **November 9 & November 10, 2020**
 
 **Meeting Outcomes**
 
 - Stakeholder input on opportunities, barriers, and possible solutions to improve cervical cancer screening during and post COVID-19
 - Stakeholder input on barriers included in cross-cutting theme areas
-
 
 <p><strong><a class="pdf-icon" href="https://deainfo.nci.nih.gov/advisory/pcp/pcp110920/summary.pdf">Meeting Summary</a></strong></p>
 

@@ -101,7 +101,7 @@ export function Head() {
 	return (
 		<>
 			<html lang="en" />
-			<SEO title="Blogs" />
+			<SEO title="Blogs" description="View blogs from the President's Cancer Panel." />
 		</>
 	);
 }

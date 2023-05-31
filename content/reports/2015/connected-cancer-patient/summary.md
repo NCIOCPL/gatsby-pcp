@@ -4,7 +4,9 @@ title: Summary
 template: left_nav_sub_sections
 linktext: Summary
 sortOrder: 6
+description: "The President’s Cancer Panel held the third workshop in its series on connected health and cancer on July 9, 2015, in Chicago, Illinois."
 ---
+
 The President’s Cancer Panel held the third workshop in its series on connected health and cancer on July 9, 2015, in Chicago, Illinois. The workshop, entitled <em>The Connected Cancer Patient: Vision for the Future and Recommendations for Action,</em> brought together leaders from academia, technology, government, advocacy, and healthcare. Participants discussed the desired future state for connected health in cancer prevention and care and identified steps that could be taken to achieve identified goals by 2020. Discussion and recommendations focused on four areas: person- and family-centered care; personal health information and data sharing; devices, sensors, and apps; and national health information infrastructure.
 
 The current healthcare delivery system suffers from many discontinuities in communication, which can result in inefficient and ineffective cancer prevention and care. Participants discussed a new patient-centered paradigm in which the needs and values of individuals and their families are central to care delivery, and all patients are closely connected to their providers. In addition, providers and other members of the care team are connected seamlessly. Health information technology can catalyze and support patient-centeredness and help achieve the Triple Aim of better care, better health, and lower costs. More research is needed to elucidate further the benefits of connected health. There also are opportunities to learn more about how to fully engage patients and the benefits that can be derived from engaged patients and an engaged public since at any one time, most people are not patients.

@@ -4,7 +4,9 @@ title: Information
 template: left_nav_sub_sections
 linktext: Information
 sortOrder: 2
+description: "Pricing and Payment Strategies for Cancer Drugs: Maximizing Patients' Access to Beneficial Therapies - Meeting Information"
 ---
+
 **Date** \
 March 27, 2017
 
