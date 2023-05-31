@@ -4,6 +4,7 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 3
+description: "Improving Resilience and Equity in Cancer Screening: Innovations to Increase Screening - Participants"
 ---
 
 **Tracy A. Battaglia, MD** \
@@ -329,4 +330,3 @@ Raleigh, NC
 Physician \
 Southern Maine Health Care \
 Biddeford, ME
-

@@ -4,7 +4,9 @@ title: Information
 template: left_nav_sub_sections
 linktext: Information
 sortOrder: 2
+description: "The Personal Health Data Revolution, Connected Health, and Cancer - Meeting Information"
 ---
+
 **Date** \
 March 26, 2015
 

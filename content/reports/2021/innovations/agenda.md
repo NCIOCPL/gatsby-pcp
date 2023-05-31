@@ -4,12 +4,15 @@ title: Agenda
 template: left_nav_sub_sections
 linktext: Agenda
 sortOrder: 2
+description: "Improving Resilience and Equity in Cancer Screening: Innovations to Increase Screening - Meeting Agenda"
 ---
+
 <table class="agenda-table">
 <tbody>
 <tr><td>
 
 **10:00-12:00**
+
 </td>
 <td>
 
@@ -26,6 +29,7 @@ Present relevant screening priorities and identify opportunities to accelerate i
 </tr><tr><td>
 
 **12:00 – 1:00**
+
 </td>
 <td>
 
@@ -74,6 +78,7 @@ Break
 Innovations in Telehealth, Remote Care &amp; Insurance
 
 Present relevant screening priorities and identify opportunities to accelerate implementation through innovation
+
 - Panel Introductions
 - Innovation Opportunities Discussion
 

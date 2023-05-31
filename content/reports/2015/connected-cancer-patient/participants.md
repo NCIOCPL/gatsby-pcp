@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 4
+description: "The Connected Cancer Patient: Vision for the Future and Recommendations for Action - Participants"
 ---
+
 **Dr. David K. Ahern** \
 Special Advisor \
 Health Communication and \

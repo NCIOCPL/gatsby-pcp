@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 4
+description: "The Personal Health Data Revolution, Connected Health, and Cancer - Participants"
 ---
+
 **Dr. David K. Ahern** \
 Special Advisor \
 Health Communication and \

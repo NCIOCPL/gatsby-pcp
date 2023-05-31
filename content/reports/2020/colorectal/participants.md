@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 3
+description: "Improving Resilience and Equity in Colorectal Cancer Screening: Lessons from COVID-19 and Beyond - Participants"
 ---
+
 **Carolyn R. Aldigé** \
 Founder and Chief Executive Officer \
 Prevent Cancer Foundation® \

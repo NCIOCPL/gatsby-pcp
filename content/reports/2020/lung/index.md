@@ -4,6 +4,7 @@ title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "Stakeholder input on opportunities, barriers, and possible solutions to improve lung cancer screening during and post COVID-19"
 ---
 
 **October 26 & October 28, 2020**

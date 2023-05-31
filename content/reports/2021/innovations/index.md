@@ -4,7 +4,9 @@ title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "Cancer screening has potential to reduce the burden of cancer through early diagnosis and, in some cases prevention, of cancer."
 ---
+
 **February 11, 2021**
 
 Cancer screening has potential to reduce the burden of cancer through early diagnosis and, in some cases prevention, of cancer. The President’s Cancer Panel has determined that suboptimal implementation of cancer screening—evident prior to COVID-19 and significantly amplified during the pandemic—is a critical issue facing the National Cancer Program. The 2020–2021 series of Panel meetings focused on opportunities to improve the resilience and equity of cancer screening. In fall 2020, four meetings were held to discuss barriers and opportunities related to lung, colorectal, cervical, and breast cancer. The last meeting in the series—held virtually on February 11, 2021—brought together stakeholders from advocacy and community organizations, technology companies, media outlets, healthcare systems, insurance companies, academic institutions, and government agencies to discuss innovations to improve cancer screening in three areas—public health and community engagement; electronic health records (EHRs), data sharing, and professional training; and telehealth, remote care, and insurance.
@@ -18,6 +20,7 @@ Telehealth, remote care, and insurance. Telehealth and remote care have potentia
 The President’s Cancer Panel will consider input and proposed recommendations from this workshop and previous workshops in this series. Findings and recommendations from the series will be presented in the Panel’s 2021 Report to the President of the United States.
 
 **Meeting Outcomes**
+
 - Identified opportunities to accelerate cancer screening through innovation
 
 <p><a class="pdf-icon" href="https://deainfo.nci.nih.gov/advisory/pcp/pcp0221/summary.pdf">Meeting Summary</a></p>

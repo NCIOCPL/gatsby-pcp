@@ -4,7 +4,9 @@ title: Information
 template: left_nav_sub_sections
 linktext: Information
 sortOrder: 2
+description: "Emerging Opportunities to Streamline Cancer Drug Development - Meeting Information"
 ---
+
 **Date** \
 December 9, 2016
 

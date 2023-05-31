@@ -1,10 +1,12 @@
 ---
-sectionTitle: "Engaging Patients with Connected Health Technologies"
+sectionTitle: 'Engaging Patients with Connected Health Technologies'
 title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "The President's Cancer Panel and leaders in technology, government, advocacy, and healthcare explored connected health's potential to revolutionize the way individuals manage their health and chronic diseases, including cancer, to achieve optimal well-being."
 ---
+
 In this workshop, first in a series on connected health and cancer, the President's Cancer Panel and leaders in technology, government, advocacy, and healthcare will explore connected health's potential to revolutionize the way individuals manage their health and chronic diseases, including cancer, to achieve optimal well-being. Presentations will feature trends in technology, patient behavior, healthcare, and policy that are driving changes in patients' interactions with clinicians and healthcare systems. Participants will envision the future of a patient-centered healthcare system powered by enhanced connectivity and describe actions needed to achieve the goal of improved cancer-related outcomes. Questions for exploration include the following:
 
 - Does connected health improve patients' activation, engagement, and patient-provider communication?

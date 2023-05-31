@@ -1,7 +1,9 @@
 ---
 title: Dr. Elizabeth M. Jaffee, PCP Chair
 template: single_page
+description: "Dr. Elizabeth M. Jaffee is an internationally recognized expert in cancer immunology and pancreatic cancer."
 ---
+
 <div>
 <single-staff-member
 	source="dr._elizabeth_jaffee_headshot-squarecrop.jpg"

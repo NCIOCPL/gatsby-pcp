@@ -4,7 +4,9 @@ title: Presentations
 template: left_nav_sub_sections
 linktext: Presentations
 sortOrder: 5
+description: "The Connected Cancer Patient: Vision for the Future and Recommendations for Action - Presentations"
 ---
+
 **Scenario 2020: Connected Health and Cancer Outcomes**
 
 - <a class="pdf-icon" href="http://deainfo.nci.nih.gov/advisory/pcp/pcp0715/Hesse-Ahern.pdf">Connected Health in Cancer: Future State</a>—Drs. Hesse and Ahern

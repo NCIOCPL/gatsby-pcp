@@ -1,7 +1,9 @@
 ---
 title: About the President's Cancer Panel
 template: left_nav
+description: "The President's Cancer Panel monitors the activities of the National Cancer Program and reports to the President of the United States on barriers to progress in reducing the burden of cancer."
 ---
+
 The President's Cancer Panel monitors the activities of the National Cancer Program
 and reports to the President of the United States on barriers to progress in reducing
 the burden of cancer.

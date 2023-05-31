@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 4
+description: "Emerging Opportunities to Streamline Cancer Drug Development - Participants"
 ---
+
 **Margaret Anderson, MSc** \
 Executive Director \
 FasterCures \

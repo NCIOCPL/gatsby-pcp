@@ -25,6 +25,7 @@ export const pageQuery = graphql`
 			htmlAst
 			frontmatter {
 				title
+				description
 				template
 				sectionTitle
 				author
@@ -45,7 +46,7 @@ export function Head({ data: { markdownRemark } }) {
 	return (
 		<>
 			<html lang="en" />
-			<SEO title={frontmatter.title} />
+			<SEO title={frontmatter.title} description={frontmatter.description} />
 		</>
 	);
 }

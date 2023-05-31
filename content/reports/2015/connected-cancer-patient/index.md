@@ -4,7 +4,9 @@ title: Overview
 template: left_nav_sub_sections
 linktext: Overview
 sortOrder: 1
+description: "The President’s Cancer Panel and invited participants explored and recommended concrete actions that could accelerate the development of a patient-centered approach to cancer prevention, treatment, and survivorship"
 ---
+
 Accumulating evidence suggests that connected health approaches could lead the way to better health outcomes; for example, by improving patient adherence to medication, facilitating access to specialty care, and reducing referral wait times, among other promising applications. Yet, it is not yet clear what a truly connected health system of the future looks like. In this integrative workshop, third in a series on connected health and cancer, the President’s Cancer Panel and invited participants will envision an interoperable health system that is integrated with—and adapted to—the real-world environments in which people live.
 
 Participants will explore and recommend concrete actions that could accelerate the development of a patient-centered approach to cancer prevention, treatment, and survivorship in order to maximize the potential of connected health technologies. Participants will contemplate and respond to a scenario for a future connected health system by the year 2020 and consider key areas for potential intervention, including the following:

@@ -4,7 +4,9 @@ title: Summary
 template: left_nav_sub_sections
 linktext: Summary
 sortOrder: 5
+description: "Emerging cancer therapies—including targeted therapies, immunotherapies, and combination therapies—are creating opportunities for more effective, potentially curative, treatments. However, these drugs often come at substantial costs. The President’s Cancer Panel convened experts in drug pricing and payment to discuss potential strategies for increasing patients’ access to high-value cancer drugs."
 ---
+
 Emerging cancer therapies—including targeted therapies, immunotherapies, and combination therapies—are creating opportunities for more effective, potentially curative, treatments. However, these drugs often come at substantial cost, contributing to patients’ financial toxicity and straining system-wide healthcare resources. The President’s Cancer Panel is focusing on these issues in its 2016-2017 series of meetings, <em>Ensuring Patients’ Access to High-Value Cancer Drugs</em>.
 
 The third and final workshop in the Panel series—held on March 27, 2017, in Philadelphia, Pennsylvania—convened experts in drug pricing and payment from the biopharmaceutical industry, insurance companies, healthcare organizations, and professional oncology organizations, along with patients and patient advocates, health economists, and other academic researchers. Participants reviewed key factors that affect pricing of and payment for cancer drug therapies, discussed what constitutes value in the context of cancer treatment, and proposed potential recommendations to maximize patients’ access to high-value cancer drugs while continuing to promote innovation in cancer drug development.

@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 3
+description: "Improving Resilience and Equity in Lung Cancer Screening:  Lessons from COVID-19 and Beyond - Participants"
 ---
+
 **Otis W. Brawley, MD, MACP, FASCO, FACE** \
 Bloomberg Distinguished Professor \
 Department of Oncology \

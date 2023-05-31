@@ -4,7 +4,9 @@ title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 4
+description: "Pricing and Payment Strategies for Cancer Drugs: Maximizing Patients' Access to Beneficial Therapies - Participants"
 ---
+
 **Erin Aakhus, MD** \
 Fellow \
 Leonard Davis Institute of Health Economics \
