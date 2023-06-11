@@ -122,8 +122,9 @@ jobs:
       - name: Copy to Apache
         run: |
           CONTAINER_ID=$(docker ps -q --filter "ancestor=httpd:2.4")
-          # Make the branch/tag/pr directory.
-          docker cp public "$CONTAINER_ID:/usr/local/apache2/htdocs/${{steps.set_vars.outputs.prefix_path}}"
+          # DEV: SRC_PATH specifies a directory, DEST_PATH does not exist: DEST_PATH is created as a directory and the contents of the source directory are copied into this directory
+          # TEST: SRC_PATH specifies a directory, DEST_PATH exists and is a directory, SRC_PATH does end with "/.": the content of the source directory is copied into this directory
+          docker cp public/. "$CONTAINER_ID:/usr/local/apache2/htdocs/${{steps.set_vars.outputs.prefix_path}}"
 
       ## Check for internal broken links
       - name: Install BLC
