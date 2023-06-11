@@ -7,7 +7,7 @@ export const SearchBar = () => {
 		<>
 			<div className={'nci-header-nav__secondary'}>
 				<form className={'nci-header-search'} method={'get'} action={withPrefix('/search')} role={'search'} id={'search'}>
-					<label className={'usa-sr-only'} htmlFor={'nci-header-search__field'}>
+					<label className={'usa-sr-only'} htmlFor={'searchbox-header-input'}>
 						Search
 					</label>
 
