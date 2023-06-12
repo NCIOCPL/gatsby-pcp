@@ -51,7 +51,7 @@ export const Footer = () => {
 				<div className={'desktop-constrained'}>
 					<div className={'grid-row'}>
 						<div className={'grid-col-12'}>
-							<h3>{title}</h3>
+							<h2>{title}</h2>
 							{linkList}
 							<div className={'connect-icons'}>{iconList}</div>
 						</div>
