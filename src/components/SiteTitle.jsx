@@ -15,6 +15,7 @@ export const SiteTitle = () => {
 					</Link>
 					<Link to={'/'} rel={'home'} title={"President's Cancer Panel Home Logo"} className={'active'}>
 						<StaticImage className={'logo'} src={'../images/logo.png'} alt={"President's Cancer Panel logo"} title={"President's Cancer Panel Home"} width={150} />
+						<span className={'hidden'}>President&#39;s Cancer Panel Home</span>
 					</Link>{' '}
 				</li>
 			</ul>
@@ -24,7 +25,7 @@ export const SiteTitle = () => {
 						{title}
 					</Link>
 				</h1>
-				<div title={slogan} className={'site-slogan'}>
+				<div className={'site-slogan'}>
 					<Link to={'/'} rel={'home'} title={"President's Cancer Panel Home"}>
 						{slogan}
 					</Link>
