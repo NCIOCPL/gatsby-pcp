@@ -72,9 +72,18 @@ class Meetings extends React.Component {
 				});
 			}
 		}
+		if (this.meetingTitle) {
+			return (
+				<div className={'meeting-block'}>
+					<h4 className={'link-list-header'}>{this.meetingTitle}</h4>
+					<div className={'meeting-container'}>
+						<ul className={'meeting-list'}>{this.meetingList}</ul>
+					</div>
+				</div>
+			);
+		}
 		return (
 			<div className={'meeting-block'}>
-				<div className={'link-list-header'}>{this.meetingTitle}</div>
 				<div className={'meeting-container'}>
 					<ul className={'meeting-list'}>{this.meetingList}</ul>
 				</div>

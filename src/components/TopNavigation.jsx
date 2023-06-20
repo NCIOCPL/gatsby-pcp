@@ -55,7 +55,7 @@ export const TopNavigation = () => {
 	return (
 		<nav className={'top-bar'} data-options={'custom_back_text:false; scrolltop:false'}>
 			<div className={'top-bar-container'}>
-				<section className={'top-bar-section'} aria-hidden={'true'}>
+				<section className={'top-bar-section'} aria-hidden={'false'}>
 					<ul className={'first-tier'}>{linkList}</ul>
 				</section>
 				<div className={'searchbar-container'}>

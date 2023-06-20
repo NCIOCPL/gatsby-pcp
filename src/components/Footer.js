@@ -20,21 +20,21 @@ export const Footer = () => {
 			case 'Twitter':
 				return (
 					<a href={link.link} key={index}>
-						<span className={'hidden'}>{link.text}</span>
+						<span className={'visually-hidden'}>{link.text}</span>
 						<TwitterIcon id={'footer-twitter-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);
 			case 'Linkedin':
 				return (
 					<a href={link.link} key={index}>
-						<span className={'hidden'}>{link.text}</span>
+						<span className={'visually-hidden'}>{link.text}</span>
 						<LinkedInIcon id={'footer-linkedin-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);
 			case 'email':
 				return (
 					<a href={link.link} key={index}>
-						<span className={'hidden'}>{link.text}</span>
+						<span className={'visually-hidden'}>{link.text}</span>
 						<EnvelopeIcon id={'footer-email-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);

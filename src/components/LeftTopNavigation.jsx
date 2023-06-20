@@ -55,7 +55,7 @@ export const LeftTopNavigation = ({ root }) => {
 	});
 	return (
 		<div className={'left-nav top-nav-list'}>
-			<ul>{linkList}</ul>
+			<ul role={'navigation'}>{linkList}</ul>
 		</div>
 	);
 };

@@ -19,6 +19,9 @@
 		}
 	}
 }
+.title-area {
+	margin: 1em 0 1em 1em;
+}
 .site-title-and-slogan {
 		@include grid-row();
 		flex-direction: column;
