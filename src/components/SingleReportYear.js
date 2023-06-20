@@ -40,12 +40,20 @@ class SingleReportYear extends React.Component {
 			this.linkListClass = 'report-linklist';
 			documentationHeader = 'Associated Documentation';
 		}
-
+		if (documentationHeader) {
+			return (
+				<div className={'single-report-links'}>
+					{this.props.year !== '' && <h3 className={'series-year'}>{this.props.year}</h3>}
+					<ul className={this.descriptionlinkListClass}>{this.descriptionLinkList}</ul>
+					<h4 className={'link-list-header'} dangerouslySetInnerHTML={{ __html: documentationHeader }} />
+					<ul className={this.linkListClass}>{this.linkList}</ul>
+				</div>
+			);
+		}
 		return (
 			<div className={'single-report-links'}>
 				{this.props.year !== '' && <h3 className={'series-year'}>{this.props.year}</h3>}
 				<ul className={this.descriptionlinkListClass}>{this.descriptionLinkList}</ul>
-				<div className={'link-list-header'} dangerouslySetInnerHTML={{ __html: documentationHeader }} />
 				<ul className={this.linkListClass}>{this.linkList}</ul>
 			</div>
 		);

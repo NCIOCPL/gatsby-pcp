@@ -1,7 +1,7 @@
 ---
 title: President's Cancer Panel Commends National Cancer Plan
 template: blog
-author: Dr. Elizabeth M. Jafee (Panel Chair), Dr. Mitchel S. Berger (Panel Member), Dr. Carol L. Brown (Panel Member)
+author: Dr. Elizabeth M. Jaffee (Panel Chair), Dr. Mitchel S. Berger (Panel Member), Dr. Carol L. Brown (Panel Member)
 date: 2023-04-03
 blurb: "On April 3, with leadership from National Cancer Institute (NCI) Director Monica Bertagnolli, the U.S. Department of Health and Human Services (HHS) released a National Cancer Plan to guide the nation’s efforts against cancer."
 image: nationalcancerplan_401x357_pcphomepagethumbnail.jpg

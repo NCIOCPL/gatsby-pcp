@@ -4,24 +4,31 @@
 
 ul.staff-list {
 	list-style: none;
+	@include grid-row();
+	flex-direction: column;
+	flex-wrap: nowrap;
 	@include at-media(tablet-lg) {
 		@include grid-gap(2);
+		flex-direction: row;
 	}
 	li {
 		@include grid-row();
 		@include grid-gap(2);
-		margin: 0 auto units(2) auto;
+		margin-bottom: units(2);
 		flex-direction: row;
 		align-items: center;
-		@include at-media(tablet){
+		@include at-media(tablet-lg){
 			@include grid-gap(6);
+			@include grid-col();
+			flex-direction: column;
+			justify-content: center;
 		}
 	}
 	.member-image {
 		width: 35%;
 		max-width: $member-image-max-width;
-		@include at-media(tablet){
-			width: 40%;
+		@include at-media(tablet-lg){
+			width: 80%;
 		}
 		img {
 			border-radius: 50%;
@@ -29,13 +36,17 @@ ul.staff-list {
 	}
 	.member-information {
 		width: 65%;
-		@include at-media(tablet){
-			width: 60%;
+		@include at-media(tablet-lg){
+			width: 80%;
 		}
 	}
 	.member-name,
 	.member-title {
 		font-size: font-size("sans","lg");
+		@include at-media(tablet-lg){
+			text-align: center;
+		}
+
 	}
 	.member-name {
 		color: $pcpblue;

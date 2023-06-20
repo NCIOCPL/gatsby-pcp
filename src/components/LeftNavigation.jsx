@@ -21,7 +21,7 @@ export const LeftNavigation = ({ path }) => {
 
 	return (
 		<div className={'left-nav'}>
-			<ul>{linkList}</ul>
+			<ul role={'navigation'}>{linkList}</ul>
 		</div>
 	);
 };

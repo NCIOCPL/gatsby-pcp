@@ -14,18 +14,12 @@ export default function BlogPage({ data: { allMarkdownRemark } }) {
 	let blogLinks = edges.map((node, index) => {
 		let post = node.node;
 		let blogDate;
-		let authorText;
 		let blogImage = '';
 		let blogImageAlt;
 		if (post.frontmatter.date) {
 			blogDate = post.frontmatter.date;
 		}
-		if (post.frontmatter.author) {
-			if (blogDate) {
-				authorText = ', ';
-			}
-			authorText += ' by ' + post.frontmatter.author;
-		}
+
 		if (post.frontmatter.alt) {
 			blogImageAlt = post.frontmatter.alt;
 		}
@@ -44,7 +38,6 @@ export default function BlogPage({ data: { allMarkdownRemark } }) {
 					</span>
 					<div className={'blog-list-item-date-and-author'}>
 						<span className={'blog-list-item-date'}>{blogDate}</span>
-						<span className={'blog-list-item-author'}>{authorText}</span>
 					</div>
 					<div className={'blog-list-item-description'}>{post.frontmatter.blurb}</div>
 				</div>
@@ -79,7 +72,6 @@ export const pageQuery = graphql`
 					id
 					frontmatter {
 						title
-						author
 						date(formatString: "MMMM DD, YYYY")
 						blurb
 						image
