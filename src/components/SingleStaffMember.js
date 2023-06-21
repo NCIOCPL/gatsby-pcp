@@ -8,7 +8,7 @@ class SingleStaffMember extends React.Component {
 		return (
 			<div className={'single-member'}>
 				<div className={'member-image'}>
-					<Image src={this.props.source} alt={this.props.name} />
+					<Image src={this.props.source} alt={this.props.name} loading={'eager'} />
 				</div>
 			</div>
 		);
