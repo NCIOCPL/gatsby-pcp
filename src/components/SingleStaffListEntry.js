@@ -11,7 +11,7 @@ class SingleStaffListEntry extends React.Component {
 				<li className={'member'}>
 					<div className={'member-image'}>
 						<Link to={this.props.url}>
-							<Image src={this.props.source} alt={this.props.alt} />
+							<Image src={this.props.source} alt={this.props.alt} loading={'eager'} />
 						</Link>
 					</div>
 					<div className={'member-information'}>

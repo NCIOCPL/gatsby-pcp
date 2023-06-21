@@ -7,7 +7,7 @@ class ImageWithCaption extends React.Component {
 	render() {
 		return (
 			<div className={'image-with-caption'}>
-				<Image src={this.props.image_src} alt={this.props.image_alt} />
+				<Image src={this.props.image_src} alt={this.props.image_alt} loading={'eager'} />
 				<div className={'picture-with-quotes-caption'}>
 					<div dangerouslySetInnerHTML={{ __html: this.props.image_caption }} />
 				</div>

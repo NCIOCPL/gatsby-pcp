@@ -8,10 +8,10 @@ class ResponsiveImage extends React.Component {
 		return (
 			<>
 				<div className={'responsive-image-desktop'}>
-					<Image src={this.props.sourcedesktop} alt={this.props.alt} />
+					<Image src={this.props.sourcedesktop} alt={this.props.alt} loading={'eager'} />
 				</div>
 				<div className={'responsive-image-mobile'}>
-					<Image src={this.props.sourcemobile} alt={this.props.alt} />
+					<Image src={this.props.sourcemobile} alt={this.props.alt} loading={'eager'} />
 				</div>
 			</>
 		);
