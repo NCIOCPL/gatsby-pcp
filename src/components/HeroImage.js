@@ -8,10 +8,10 @@ class HeroImage extends React.Component {
 		return (
 			<div className={'hero-image-container'}>
 				<div className={'hero-image-desktop'}>
-					<Image src={this.props.sourcedesktop} alt={this.props.alt} />
+					<Image src={this.props.sourcedesktop} alt={this.props.alt} loading={'eager'} />
 				</div>
 				<div className={'hero-image-tablet'}>
-					<Image src={this.props.sourcetablet} alt={this.props.alt} />
+					<Image src={this.props.sourcetablet} alt={this.props.alt} loading={'eager'} />
 				</div>
 			</div>
 		);

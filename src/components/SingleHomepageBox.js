@@ -9,7 +9,7 @@ class SingleHomepageBox extends React.Component {
 		return (
 			<div className={'featured-card'}>
 				<Link to={this.props.url}>
-					<Image src={this.props.source} alt={this.props.alt} />
+					<Image src={this.props.source} alt={this.props.alt} loading={'eager'} />
 					<div className={'card-title'}>{this.props.title}</div>
 					<div className={'card-description'}>{this.props.description}</div>
 				</Link>

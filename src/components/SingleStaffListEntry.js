@@ -28,7 +28,7 @@ class SingleStaffListEntry extends React.Component {
 			return (
 				<li className={'member'}>
 					<div className={'member-image'}>
-						<Image src={this.props.source} alt={this.props.alt} />
+						<Image src={this.props.source} alt={this.props.alt} loading={'eager'} />
 					</div>
 					<div className={'member-information'}>
 						<div className={'member-name'}>{this.props.alt}</div>
