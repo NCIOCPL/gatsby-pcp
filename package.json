@@ -24,6 +24,7 @@
     "@uswds/uswds": "^3.4.1",
     "gatsby": "^5.8.1",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-canonical-urls": "^5.11.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-netlify-cms": "^7.5.0",
     "gatsby-plugin-node-reload": "^1.1.0",
