@@ -19,7 +19,7 @@ class PictureWithQuotes extends React.Component {
 		return (
 			<div className={'picture-with-quotes-container'}>
 				<div className={'picture-with-quotes-image'}>
-					<Image src={this.props.image_src} alt={this.props.image_alt} />
+					<Image src={this.props.image_src} alt={this.props.image_alt} loading={'eager'} />
 					<div className={'picture-with-quotes-caption'}>{this.props.image_caption}</div>
 				</div>
 				<div className={'picture-with-quotes-text'}>

@@ -6,7 +6,7 @@ class ImageWithClass extends React.Component {
 	render() {
 		return (
 			<span className={this.props.className} style={{ width: this.props.imagewidth }}>
-				<Image src={this.props.src} alt={this.props.alt} />
+				<Image src={this.props.src} alt={this.props.alt} loading={'eager'} />
 			</span>
 		);
 	}
