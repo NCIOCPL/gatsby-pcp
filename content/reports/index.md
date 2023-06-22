@@ -7,22 +7,7 @@ description: "Click the links below to see materials from past series and to dow
 Click the links below to see materials from past series and to download reports. Many of the reports are available in hard copy and can be ordered by sending an email to [nci@gpo.gov](mailto:nci@gpo.gov).
 
 <div class="report-list-container">
-<h2 class="report-section-title">Meetings</h2>
-<div class="single-report">
-		<meetings
-				sectiontitle="Upcoming Meetings"
-				meetings='{
-						"list": [{
-								"url": "/reports/2021/innovations/",
-								"datelist": [
-									"November 22, 2023"
-								],
-								"location": "Placeholder Meeting",
-								"status": ""
-							}]
-				}'>
-		</meetings>
-</div>
+<h2 class="report-section-title">Current Meeting Series</h2>
 <h2 class="report-section-title">Reports</h2>
 	<div class="single-report">
 		<single-report-year
