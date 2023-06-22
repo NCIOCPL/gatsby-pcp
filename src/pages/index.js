@@ -9,7 +9,7 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<div>
-				<HeroImage sourcedesktop="pcp-temp-header_v2.png" sourcetablet="pcp-temp-header_v2.png" alt="Female medical professional reviewing results with female patient."></HeroImage>
+				<HeroImage sourcedesktop="white-house.jpg" sourcetablet="white-house.jpg" alt="White House."></HeroImage>
 				<IntroText text="Charged to monitor the development and execution of the activities of the National Cancer Program and report to the President on progress, efficacy, and opportunities for improvement."></IntroText>
 				<div className="featured-homepage-box">
 					<SingleHomepageBox url="/reports" source="Summary-Page-FC-401x357.jpg" alt="" title="Improving Resilience and Equity in Cancer Screening: 2020-2021 Meeting Series" description="The Panel’s focus for the 2020–2021 series of meetings is on opportunities to improve the resilience and equity of cancer screening."></SingleHomepageBox>

@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 import { SEO } from '../../components/Seo';
 import { LeftTopNavigation } from '../../components/LeftTopNavigation';
 import Image from '../../components/BlogImage';
+import HeroImage from '../../components/HeroImage';
 import '../../scss/components/_blogs.scss';
 import PropTypes from 'prop-types';
 
@@ -47,14 +48,15 @@ export default function BlogPage({ data: { allMarkdownRemark } }) {
 
 	return (
 		<Layout>
-			<div className="post-body">
-				<div className="full-report-container">
-					<div className="left-nav-container">
+			<div className={'post-body'}>
+				<div className={'full-report-container'}>
+					<div className={'left-nav-container'}>
 						<LeftTopNavigation root={path}></LeftTopNavigation>
 					</div>
-					<div className="report-container top-left-nav-container">
+					<div className={'report-container top-left-nav-container'}>
+						<HeroImage sourcedesktop={'columns.jpg'} sourcetablet={'columns.jpg'} alt={''}></HeroImage>
 						<h2 className={'post-title'}>Blogs</h2>
-						<div className="post-body">{blogLinks}</div>
+						<div className={'post-body'}>{blogLinks}</div>
 					</div>
 				</div>
 			</div>

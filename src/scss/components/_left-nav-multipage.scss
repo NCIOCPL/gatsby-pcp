@@ -77,5 +77,8 @@
 	&.top-left-nav-container {
 		border: none;
 		padding: 0;
+		.hero-image-container {
+			margin-top: 1.5rem;
+		}
 	}
 }
