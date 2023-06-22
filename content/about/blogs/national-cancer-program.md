@@ -3,7 +3,7 @@ title: What Is the National Cancer Program?
 template: blog
 date: 2023-06-14
 blurb: "The National Cancer Program represents all those affected by cancer and those who can address the burden of cancer to create a better future."
-image: cgov-16669_ncp-infographic-update_a_v3_2.png
+image: cgov-16669_ncp-infographic-update_a_v3_2-cropped.png
 alt: "National Cancer Program"
 description: "The National Cancer Program represents all those affected by cancer and those who can address the burden of cancer to create a better future."
 ---
