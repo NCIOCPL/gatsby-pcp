@@ -238,13 +238,13 @@ border-radius: 5px;
 
 a
 {
-	color: #06C;
+	color: #005dbb;
 	text-decoration:none;	
 }
 
 a:hover
 {
-	color: #06C;
+	color: #005dbb;
 	text-decoration:underline;	
 }
 
@@ -343,7 +343,7 @@ div.BackToTopPageNav {
 	padding:0;
 	height:.55em;	
 	line-height:.65em;
-	color:#06C;
+	color:#005dbb;
 	font-weight:bold;
 }
 div.BackToTopPageNav img {
@@ -352,7 +352,7 @@ div.BackToTopPageNav img {
 	margin-bottom:.1em;
 	
 }
-a#backToTopAnchor {
+a.backToTopAnchor {
 	color:#0066cc;
         font-size: 14px;
 	
@@ -790,7 +790,7 @@ table.actionItemTable
 }
 
 table.actionItemTable tr:first-child { 
-    background-color: #808080;
+    background-color: #767676;
     color: white;
 }
 table.actionItemTable th
@@ -927,13 +927,13 @@ p.sourceText
 
 p.sourceText a
 {
-	color: #06C !important;
+	color: #005dbb !important;
 	text-decoration:none !important;	
 }
 
 p.sourceText a:hover
 {
-	color: #06C !important;
+	color: #005dbb !important;
 	text-decoration:underline !important;	
 }
 
@@ -1245,7 +1245,7 @@ div.mobileBox p.figureNotes
 }
 
 div.mobileBox p.figureNotes a, div.mobileBox p a
-{color:#06C;}
+{color:#005dbb;}
 
 #box1GrayBox{
 height: 775px;

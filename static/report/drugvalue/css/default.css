@@ -251,13 +251,13 @@ border-radius: 5px;
 
 a
 {
-	color: #06C;
+	color: #005dbb;
 	text-decoration:none;	
 }
 
 a:hover
 {
-	color: #06C;
+	color: #005dbb;
 	text-decoration:underline;	
 }
 
@@ -356,7 +356,7 @@ div.BackToTopPageNav {
 	padding:0;
 	height:.55em;	
 	line-height:.65em;
-	color:#06C;
+	color:#005dbb;
 	font-weight:bold;
 }
 div.BackToTopPageNav img {
@@ -986,13 +986,13 @@ p.sourceText
 
 p.sourceText a
 {
-	color: #06C !important;
+	color: #005dbb !important;
 	text-decoration:none !important;	
 }
 
 p.sourceText a:hover
 {
-	color: #06C !important;
+	color: #005dbb !important;
 	text-decoration:underline !important;	
 }
 
@@ -1058,21 +1058,21 @@ p.sourceText a:hover
     text-decoration: none;
 }
 
-#grayButton1{
+.grayButton1{
     padding-top: 26px;
 }
 
-#grayButton2{
+.grayButton2{
     padding-top: 26px;
 }
 
-#grayButton3{
+.grayButton3{
     padding-top: 15px;
     padding-left: 45px;
     padding-right: 45px;
 }
 
-#grayButton4{
+.grayButton4{
     padding-top: 26px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1325,7 +1325,7 @@ div.mobileBox p.figureNotes
 }
 
 div.mobileBox p.figureNotes a, div.mobileBox p a
-{color:#06C;}
+{color:#005dbb;}
 
 #box1GrayBox{
 height: 775px;
@@ -1669,7 +1669,7 @@ a.grayButtonLink:hover
         margin-right: .5em;
     }
     
-    #grayButton1,#grayButton2,#grayButton3,#grayButton4{
+    .grayButton1,.grayButton2,.grayButton3,.grayButton4{
         margin: 8px auto;
     }
 
@@ -1922,7 +1922,7 @@ a.grayButtonLink:hover
         width: 100%;
     }
     
-    #grayButton1,#grayButton2,#grayButton3,#grayButton4{
+    .grayButton1,.grayButton2,.grayButton3,.grayButton4{
     padding-top: 1.9em;
 }
 
