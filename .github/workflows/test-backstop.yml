@@ -39,7 +39,7 @@ jobs:
       - name: Test Site
         run: npm run test:backstop
         env:
-          BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.site_domain, inputs.build_path) }}
+          BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.backstop_site_domain, inputs.build_path) }}
 
       ## Upload failed css tests
       - name: Upload failed tests to GitHub
@@ -64,7 +64,7 @@ jobs:
 
       - name: Upload failed tests to netstorage
         uses: nciocpl/netstorage-upload-action@v1.0.0
-        if: failure()
+        if: failure() && inputs.environment == 'Dev'
         with:
           hostname: ${{ secrets.ns_hostname }}
           cp-code: ${{ secrets.ns_cpcode }}
@@ -78,7 +78,7 @@ jobs:
         # in this instance, clearing cache by URL in the future might be better
       - name: Clear Akamai Cache
         uses: nciocpl/akamai-purge-action@v1.0.2
-        if: failure()
+        if: failure() && inputs.environment == 'Dev'
         with:
           hostname: ${{ secrets.eg_hostname }}
           client-token: ${{ secrets.eg_client_token }}
@@ -92,7 +92,7 @@ jobs:
         uses: actions/github-script@v6
         if: failure() && startsWith(github.repository, 'NCIOCPL') && github.event_name == 'pull_request'
         env:
-          REVIEW_URL: ${{ format('https://{0}/{1}/html_report/index.html', vars.site_domain, steps.zip-name.outputs.name) }}
+          REVIEW_URL: ${{ format('https://{0}/{1}/html_report/index.html', vars.backstop_site_domain, steps.zip-name.outputs.name) }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           ## NOTE: The script below is JavaScript
