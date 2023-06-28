@@ -17,4 +17,4 @@ Achieving the promise of connected health for cancer prevention and care is cont
 
 Findings and recommendations from the series will be presented in the Panel’s 2014–2015 Report to the President of the United States.
 
-Presentation materials from the meeting can be accessed here, and a detailed meeting summary can be accessed <a class="pdf-icon" href="http://deainfo.nci.nih.gov/advisory/pcp/pcp0715/index.htm">here</a>.
+Presentation materials from the meeting can be accessed here, and a detailed meeting summary can be accessed <a class="pdf-icon" href="https://deainfo.nci.nih.gov/advisory/pcp/pcp0715/summary.pdf">here</a>.

@@ -7,6 +7,7 @@ ul.staff-list {
 	@include grid-row();
 	flex-direction: column;
 	flex-wrap: nowrap;
+	align-items: flex-start;
 	@include at-media(tablet-lg) {
 		@include grid-gap(2);
 		flex-direction: row;
@@ -17,6 +18,7 @@ ul.staff-list {
 		margin-bottom: units(2);
 		flex-direction: row;
 		align-items: center;
+		width: 100%;
 		@include at-media(tablet-lg){
 			@include grid-gap(6);
 			@include grid-col();
