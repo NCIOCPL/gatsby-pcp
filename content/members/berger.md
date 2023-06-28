@@ -1,5 +1,5 @@
 ---
-title: Dr. Mitchel S. Berger, Staff Member
+title: Dr. Mitchel S. Berger, Member
 template: single_page
 description: "Dr. Mitchel S. Berger is a neurosurgeon, director of the Brain Tumor Center, and principal investigator for the SPORE (Specialized Program of Research Excellence) Brain Tumor Program at the University of California San Francisco (USCF)."
 ---

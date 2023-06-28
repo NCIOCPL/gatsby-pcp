@@ -2,10 +2,10 @@
 title: What Is the National Cancer Program?
 template: blog
 date: 2023-06-14
-blurb: "The National Cancer Program represents all those affected by cancer and those who can address the burden of cancer to create a better future."
+blurb: "One of the most important tasks of the President’s Cancer Panel is to monitor the National Cancer Program. Learn more about this critical effort that brings together the cancer community to make progress in reducing the burden of cancer."
 image: cgov-16669_ncp-infographic-update_a_v3_2-cropped.png
 alt: "National Cancer Program"
-description: "The National Cancer Program represents all those affected by cancer and those who can address the burden of cancer to create a better future."
+description: "One of the most important tasks of the President’s Cancer Panel is to monitor the National Cancer Program. Learn more about this critical effort that brings together the cancer community to make progress in reducing the burden of cancer."
 ---
 
 **One of the most important tasks of the President’s Cancer Panel is to monitor the National Cancer Program. But what is that program, exactly? And what does it do?**

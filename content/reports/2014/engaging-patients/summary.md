@@ -17,4 +17,4 @@ To capitalize on opportunities afforded by connected health, clinical institutio
 
 Results from this workshop will inform planning for subsequent meetings in the Panel’s series on connected health and cancer. Findings and recommendations from the series will be presented in the Panel’s 2014–2015 Annual Report to the President of the United States.
 
-A detailed meeting summary can be accessed <a class="pdf-icon" href="https://deainfo.nci.nih.gov/advisory/pcp/pcp0317/minutes.pdf">here</a>.
+A detailed meeting summary can be accessed <a class="pdf-icon" href="https://deainfo.nci.nih.gov/advisory/pcp/pcp1214/summary.pdf">here</a>.

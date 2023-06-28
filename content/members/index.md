@@ -10,19 +10,19 @@ Panel members are distinguished members of the scientific, research, and public 
 <single-staff-list-entry
 		source="dr._elizabeth_jaffee_headshot-squarecrop.jpg"
 		alt="Dr. Elizabeth M. Jaffee"
-		title="PCP Chair"
+		title="Chair"
 		url="/members/jaffee">
 </single-staff-list-entry>
 <single-staff-list-entry
 		source="bergerm_headshot-squarecrop_2_0.png"
 		alt="Dr. Mitchel S. Berger"
-		title="PCP Member"
+		title="Member"
 		url="/members/berger">
 </single-staff-list-entry>
 <single-staff-list-entry
 		source="dr._brown-squarecrop.png"
 		alt="Dr. Carol L. Brown"
-		title="PCP Member"
+		title="Member"
 		url="/members/brown">
 </single-staff-list-entry>
 </ul>
@@ -30,8 +30,8 @@ Panel members are distinguished members of the scientific, research, and public 
 <h3>Past Members</h3>
 <div>
 <responsive-image
-	sourcedesktop="pastmembers-desktop_5-23-23.png"
-	sourcemobile="pastmembers-mobile_5-23-23.png"
+	sourcedesktop="PCP-pastmembers-update-051923_V2.png"
+	sourcemobile="PCP-pastmembers-update-smartphone-052423_V1.png"
 	alt="List of Past Members.">
 </responsive-image>
 </div>

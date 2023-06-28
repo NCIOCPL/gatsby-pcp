@@ -1,5 +1,5 @@
 ---
-title: Dr. Carol L. Brown, Staff Member
+title: Dr. Carol L. Brown, Member
 template: single_page
 description: "Dr. Carol L. Brown is a gynecologic cancer surgeon and chief health equity officer at Memorial Sloan Kettering Cancer Center, where she holds the Nicholls-Biondi chair for health equity and is vice chair of health equity in the department of surgery."
 ---
