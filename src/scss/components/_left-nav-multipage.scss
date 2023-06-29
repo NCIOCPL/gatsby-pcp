@@ -16,6 +16,7 @@
 		border-bottom: 1px solid $smoke;
 		padding: units(1.5) units(4);
 		position: relative;
+		font-weight: normal;
 		&.active,
 		&:hover {
 			color: $white;

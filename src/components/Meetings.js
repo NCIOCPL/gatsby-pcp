@@ -42,13 +42,6 @@ class Meetings extends React.Component {
 					} else {
 						agendalist = '';
 					}
-					if (meeting.url && meeting.url.length > 0) {
-						this.displayUrl = meeting.url;
-						this.meetingLinkClass = 'date-location-wrapper';
-					} else {
-						this.displayUrl = '';
-						this.meetingLinkClass = 'date-location-wrapper no-link-display';
-					}
 					let locationText = '';
 					let statusText = '';
 					if (meeting.location) {
@@ -57,18 +50,34 @@ class Meetings extends React.Component {
 					if (meeting.status) {
 						statusText = ', ' + meeting.status;
 					}
-					return (
-						<li className={'series-meeting'} key={index}>
-							<Link to={this.displayUrl} className={this.meetingLinkClass}>
-								<div className={'date'}>
-									{dateList}
-									{locationText}
-									{statusText}
-								</div>
-							</Link>
-							<ul className={'agenda-list'}>{agendalist}</ul>
-						</li>
-					);
+					this.meetingLinkClass = 'date-location-wrapper';
+					if (meeting.url && meeting.url.length > 0) {
+						return (
+							<li className={'series-meeting'} key={index}>
+								<Link to={meeting.url} className={this.meetingLinkClass}>
+									<span className={'date'}>
+										{dateList}
+										{locationText}
+										{statusText}
+									</span>
+								</Link>
+								<ul className={'agenda-list'}>{agendalist}</ul>
+							</li>
+						);
+					} else {
+						return (
+							<li className={'series-meeting'} key={index}>
+								<span className={this.meetingLinkClass}>
+									<span className={'date'}>
+										{dateList}
+										{locationText}
+										{statusText}
+									</span>
+								</span>
+								<ul className={'agenda-list'}>{agendalist}</ul>
+							</li>
+						);
+					}
 				});
 			}
 		}
