@@ -666,7 +666,7 @@ Click the links below to see materials from past series and to download reports.
 				]}'>
 		</meetings>
 </div>
-<p>For additional information on meetings and past reports, please visit: <a target="_blank" href="https://deainfo.nci.nih.gov/advisory/pcp/index.htm">https://deainfo.nci.nih.gov/advisory/pcp/index.htm</a>.</p>
+<p>For additional information on meetings and past reports, please visit: <a target="_blank" rel="noopener noreferrer" href="https://deainfo.nci.nih.gov/advisory/pcp/index.htm">https://deainfo.nci.nih.gov/advisory/pcp/index.htm</a>.</p>
 	<div class="view-more-link">
 			<a class="view-more" href="http://deainfo.nci.nih.gov/advisory/pcp/archive/index.htm">View More</a>
 	</div>
