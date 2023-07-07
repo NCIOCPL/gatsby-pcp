@@ -14,7 +14,7 @@ const IndexPage = () => {
 				<div className="featured-homepage-box">
 					<SingleHomepageBox url="/reports" source="Summary-Page-FC-401x357.jpg" alt="" title="Improving Resilience and Equity in Cancer Screening: 2020-2021 Meeting Series" description="The Panel’s focus for the 2020–2021 series of meetings is on opportunities to improve the resilience and equity of cancer screening."></SingleHomepageBox>
 					<SingleHomepageBox url="/report/cancerscreening/" source="PCP2021reportCover-square.jpeg" alt="" title="Recent Report from the President’s Cancer Panel" description="Our report, Closing Gaps in Cancer Screening: Connecting People, Communities, and Systems to Improve Equity and Access, identifies four goals to improve the uptake of cancer screening to ensure the benefits reach all populations."></SingleHomepageBox>
-					<SingleHomepageBox url="/about/blogs/nca-50-1/" source="pcp_50_1.png" alt="" title="President's Cancer Panel Commemorates the National Cancer Act 50th Anniversary" description="Since its inception in 1971, the President’s Cancer Panel has called attention to the causes of and possible solutions to disparities in the nation’s healthcare system. This series of blogs explores the Panel’s focus on this important topic."></SingleHomepageBox>
+					<SingleHomepageBox url="/about/blogs/national-cancer-program/" source="cgov-16669_ncp-infographic-update_a_v3-fc.png" alt="" title="What is the National Cancer Program?" description="One of the most important tasks of the President’s Cancer Panel is to monitor the National Cancer Program. Learn more about this critical effort that brings together the cancer community to make progress in reducing the burden of cancer."></SingleHomepageBox>
 				</div>
 			</div>
 		</Layout>
