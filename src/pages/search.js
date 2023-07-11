@@ -35,7 +35,7 @@ const SearchPage = () => {
 					};
 				})()}
 			</Script>
-			<Script id="NCI-sws-app-root-js-file" src="https://www.cancer.gov/app-modules/sitewide-search-app/sitewide-search-app.v1.3.0/static/js/main.js" type="text/javascript" onload="window.SitewideSearchApp(window.NCI_sws_app_root_js_config)" defer="defer"></Script>
+			<Script id="NCI-sws-app-root-js-file" src="https://www.cancer.gov/app-modules/sitewide-search-app/sitewide-search-app.v1.3.0/static/js/main.js" type="text/javascript" onload="window.SitewideSearchApp(window.NCI_sws_app_root_js_config)" async></Script>
 		</Layout>
 	);
 };
