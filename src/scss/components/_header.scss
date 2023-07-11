@@ -1,0 +1,11 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.header {
+	background-image: url('../../svg/header-dot.svg'),
+		url('../../images/header-background.png'),
+		linear-gradient(transparent, transparent);
+	background-position: center center, center bottom;
+	background-repeat: space, no-repeat;
+	background-size: 3px auto, cover;
+}

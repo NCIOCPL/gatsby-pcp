@@ -1,0 +1,29 @@
+name: Build and Deploy to Test
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow-build:
+    uses: ./.github/workflows/build-site.yml
+    with:
+      environment: Test
+      prefix_path: false
+    secrets: inherit
+
+  call-workflow-deploy:
+    uses: ./.github/workflows/deploy-site.yml
+    with:
+      environment: Test
+      build_name: pcp-test
+    ## This job depends on build completing
+    needs: call-workflow-build
+    secrets: inherit
+
+  call-workflow-backstop:
+    uses: ./.github/workflows/test-backstop.yml
+    with:
+      environment: Test
+      build_path: ''
+    ## This job depends on deploy completing
+    needs: call-workflow-deploy
+    secrets: inherit

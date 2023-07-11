@@ -1,0 +1,20 @@
+---
+sectionTitle: "Access to and Cost of Cancer Drugs in a Changing Healthcare Landscape"
+title: Summary
+template: left_nav_sub_sections
+linktext: Summary
+sortOrder: 5
+description: "The President’s Cancer Panel has identified rising drug prices and threats to access to cancer drugs as critical problems in cancer care. This workshop brought together participants with diverse expertise and perspectives to discuss challenges related to drug costs and access faced by patients, providers, healthcare systems, and payers, as well as factors that influence drug development and pricing."
+---
+
+<p>Precision cancer medicine, which includes molecularly targeted drugs and immunotherapies, holds remarkable potential to transform treatment of the disease with tailored and possibly curative drug regimens. However, these innovations come at substantial cost to patients, their families, and the healthcare system, and accessing recommended drugs is increasingly difficult for many patients. <strong>The President’s Cancer Panel has identified rising drug prices and threats to access to cancer drugs as critical problems in cancer care. The Panel will focus on these issues in its 2016-2017 series of meetings, <em>Ensuring Patients’ Access to High-Value Cancer Drugs.</em></strong></p>
+
+Multiple stakeholders must be engaged in identifying solutions that support affordability and access without sacrificing quality or innovation in drug development or the success of the pharmaceutical industry. The first workshop in this series—held June 10, 2016, in New York City—brought together participants with diverse expertise and perspectives, including oncologists, health economists, patients and patient advocates, pharmaceutical and biotechnology executives, academic institution representatives, and federal agency stakeholders.
+
+Participants discussed challenges related to drug costs and access faced by patients, providers, healthcare systems, and payers, as well as factors that influence drug development and pricing. When faced with high drug costs, cancer patients may forgo, delay, or discontinue their treatments because of financial concerns, or incur severe financial strain during an already distressing time. Financial toxicity is real and results in poorer health outcomes. Patients want information about care costs in order to make informed decisions, but healthcare providers are not always comfortable with or knowledgeable about discussing financial issues. It also is challenging to discern patient out-of-pocket costs due to complex healthcare reimbursement policies. Healthcare payers also struggle to support high-quality patient care while containing costs, a considerable challenge as healthcare becomes increasingly expensive. Drug shortages, particularly of generic drugs, create additional challenges for access and cost.
+
+In planning future workshops in this series, participants asked the Panel to look at a variety of factors that influence drug cost and pricing, such as research and development costs, payment models, reimbursement policies and regulations, organizational treatment guidelines, and other market forces. Consideration should be given to rational drug pricing models that assess the value of a drug for patients, taking into account data on clinical outcomes, health-related quality of life, and cost. Such models could help assess the value of expensive but highly effective drugs compared with less effective options. Deliberations should acknowledge rapidly emerging targeted drugs and immunotherapies for cancer, which provide tremendous hope for improved outcomes, but also are expected to be expensive.
+
+Information about future workshops will be posted to the President’s Cancer Panel website as it becomes available. Workshop findings and recommendations for ensuring patients’ access to high-value cancer drugs will be presented in the Panel’s 2016–2017 Report to the President of the United States.
+
+A detailed meeting summary can be accessed <a class="pdf-icon" href="http://deainfo.nci.nih.gov/advisory/pcp/pcp0616/summary.pdf">here</a>.

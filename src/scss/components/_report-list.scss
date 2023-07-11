@@ -1,0 +1,35 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.report-list-container {
+
+}
+h3.series-year {
+	text-transform: none;
+}
+.single-report {
+	padding: units(1) units(2);
+	border: solid units(2px) $shadegrey;
+	margin-bottom: units(2.5);
+}
+ul.report-linklist {
+	@include link-list();
+}
+.report-description-linklist {
+	font-weight: bold;
+	font-size: units(3);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+a.view-more {
+	@include view-more();
+}
+.link-list-header {
+	@include link-list-header();
+}
+.single-report-links {
+	margin-bottom: units(2.5);
+}

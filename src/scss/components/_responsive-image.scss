@@ -1,0 +1,17 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.responsive-image-desktop {
+	display: none;
+	@include at-media(desktop) {
+		display: block;
+		@include centered-width-constrained();
+	}
+}
+.responsive-image-mobile {
+	display: none;
+	@include bp-mobile-and-tablet-lg-only {
+		display: block;
+	}
+}

@@ -1,0 +1,89 @@
+@use "uswds-core" as *;
+@import "variables";
+
+@mixin visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+@mixin view-more {
+	background: url('../../svg/about-chevron-collapsed.svg') no-repeat, // because this mixin is included from the components folder we need an extra ../ in the URL
+		linear-gradient(transparent, transparent);
+	background-size: auto units(2);
+	background-position: right units(1) center;
+	margin-right: units(4);
+	padding-right: units(4);
+}
+@mixin link-list-header {
+	text-transform: none;
+	margin-block-end: units(1.5);
+	margin-block-start: units(2);
+	font-weight: bold;
+	color: $pcptextcolor;
+}
+
+@mixin link-list {
+	font-size: font-size("sans", "xs");
+	list-style: none;
+	margin-top: units(1);
+	li::before {
+		content: "\2022";
+		color: $pcpanchor;
+		font-weight: bold;
+		display: inline-block;
+		width: units(1.5);
+		margin-left: units(-1.5);
+	}
+}
+
+@mixin centered-width-constrained {
+	max-width: $desktop-container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin centered-mobile-constrained {
+	max-width: $mobile-constrained-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+@mixin top-bar-background {
+	background: $top-bar-blue repeat scroll 0 0;
+	background-image: linear-gradient(to bottom, $top-bar-blue 0%, $top-bar-blue-gradient-end 100%);
+}
+
+@mixin bp-tablet-only {
+	@media all and (min-width: $tablet-min-width) and (max-width: $tablet-max-width){
+		@content;
+	}
+}
+
+@mixin bp-tablet-lg-only {
+	@media all and (min-width: $tablet-min-width) and (max-width: $tablet-lg-max-width){
+		@content;
+	}
+}
+
+@mixin bp-mobile-and-tablet-only {
+	@media all and (min-width:0em) and (max-width: $tablet-max-width){
+		@content;
+	}
+}
+
+@mixin bp-mobile-and-tablet-lg-only {
+	@media all and (min-width:0em) and (max-width: $tablet-lg-max-width){
+		@content;
+	}
+}
+
+@mixin bp-mobile-only {
+	@media all and (min-width:0em) and (max-width: $mobile-max-width) {
+		@content;
+	}
+}
+

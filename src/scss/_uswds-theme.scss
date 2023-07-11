@@ -1,0 +1,23 @@
+/*
+----------------------------------------
+USWDS with settings overrides
+----------------------------------------
+Uncomment the following lines and add a list of changed settings
+in the form $setting: value,
+----------------------------------------
+*/
+
+@use "../../node_modules/@uswds/uswds/packages/uswds-core/_index.scss" with (
+//@use "uswds-core" with (
+  $theme-image-path: "../../node_modules/@uswds/uswds/dist/img",
+	$theme-font-path: "../../node_modules/@uswds/uswds/packages/uswds-core/src/assets/fonts",
+	$theme-grid-container-max-width: "desktop",
+	$theme-site-margins-breakpoint: "desktop",
+	$theme-font-type-sans: "public-sans",
+  $theme-body-font-size: 7,
+  $theme-respect-user-font-size: true,
+  $theme-site-margins-width: 4,
+  $theme-site-margins-mobile-width: 2,
+  $theme-show-notifications: false
+);
+

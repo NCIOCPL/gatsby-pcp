@@ -1,0 +1,85 @@
+//@use "uswds-core" as *;
+@use "uswds-core" as *;
+@import "../variables";
+
+.left-nav {
+	background-color: $white;
+	border: 1px solid $smoke;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	a.left-nav-item,
+	a.left-nav-item:visited {
+		display: block;
+		border-bottom: 1px solid $smoke;
+		padding: units(1.5) units(4);
+		position: relative;
+		font-weight: normal;
+		&.active,
+		&:hover {
+			color: $white;
+			background-color: $cardblue;
+			&:after {
+				@include at-media(tablet-lg) {
+					content: '';
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: units(1) 0 units(1) units(1);
+					border-color: transparent transparent transparent $cardblue;
+					position: absolute;
+					right: units(-1);
+					top: calc(50% - 10px);
+					-webkit-transform: rotate(360deg)
+				}
+			}
+		}
+	}
+	&.top-nav-list {
+		margin-top: units(3);
+		ul.second-tier {
+			a {
+				padding-left: units(6);
+			}
+		}
+		ul.third-tier {
+			a {
+				padding-left: units(8);
+			}
+		}
+	}
+}
+.full-report-container {
+	@include grid-row();
+	@include u-width(full);
+	@include at-media(tablet-lg) {
+		@include grid-gap(6);
+	}
+}
+.left-nav-container {
+	@include grid-col(12);
+	margin-bottom: units(2);
+	@include at-media(tablet-lg) {
+		@include grid-col(4);
+		margin-bottom: 0;
+	}
+}
+
+.report-container {
+	@include grid-col(12);
+	background-color: $white;
+	border: 1px solid $smoke;
+	padding: 0 units(4);
+	@include at-media(tablet-lg) {
+		@include grid-col(8);
+	}
+	&.top-left-nav-container {
+		border: none;
+		padding: 0;
+		.hero-image-container {
+			margin-top: 1.5rem;
+		}
+	}
+}

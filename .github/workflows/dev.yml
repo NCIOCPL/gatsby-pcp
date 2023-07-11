@@ -1,0 +1,46 @@
+name: Build and Deploy to Develop
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'hotfix/**'
+      - 'release/**'
+      - 'feature/**'
+      - 'prototype/**'
+    tags:
+      - '*'
+  pull_request:
+
+#cancel previous runs for this ref
+concurrency:
+  group: ${{ github.ref }}-build-and-deploy
+  cancel-in-progress: true
+
+jobs:
+  call-workflow-build:
+    uses: ./.github/workflows/build-site.yml
+    with:
+      environment: Dev
+      prefix_path: true
+    secrets: inherit
+
+  call-workflow-deploy:
+    uses: ./.github/workflows/deploy-site.yml
+    with:
+      environment: Dev
+      build_name: ${{ needs.call-workflow-build.outputs.build_name }}
+    ## This job depends on build completing
+    needs: call-workflow-build
+    secrets: inherit
+
+  call-workflow-backstop:
+    uses: ./.github/workflows/test-backstop.yml
+    # We only want to run this one for finalized PRs
+    if: ${{ !github.event.pull_request.draft }}
+    with:
+      environment: Dev
+      build_path: ${{ needs.call-workflow-build.outputs.build_name }}
+    ## This job depends on build completing
+    needs: [call-workflow-build, call-workflow-deploy]
+    secrets: inherit

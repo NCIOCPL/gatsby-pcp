@@ -1,0 +1,2027 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+@media screen,print {
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    min-width: 300px;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px 'Lato', Helvetica, Helvetica Neue, Arial;
+    overflow-x: hidden;
+    -webkit-font-smoothing:subpixel-antialiased;
+}
+
+body {}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    //border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    //border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    //background: #f16529;
+}
+
+nav {
+    display:none;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 10px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+section#reportContent
+{
+    width: 100%;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.bold
+{
+    font-weight: bold;
+}
+.italic
+{
+  font-style: italic;  
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/*New section for general test styles*/
+
+.header-container
+{
+    background-color: #02455F;
+    padding-top: 10px;
+    height: 165px;
+}
+
+.header-container a:hover
+{
+   text-decoration: none; 
+}
+
+.searchForm
+{
+    display: inline;
+}
+
+#pcpLogo
+{
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+    /*margin-left: -160px;*/
+    margin-top: 3px;
+}
+
+.title {
+    color: white;
+    /*text-shadow: 2px 2px #000;*/
+    line-height: 1.1;
+    margin-top: 1.2em;
+    font-size: 2.25em;
+}
+
+h2.subtitle
+{
+   color: white;
+   font-weight: normal;
+   font-size: 1.32em;
+   margin-top: -.75em;
+}
+
+.pcptitle
+{
+    font-size: 1.5em;
+    color:white;
+    text-shadow: 2px 2px #000;
+}
+
+#pcpSubtitle
+{
+    color: white;
+    display: none;
+}
+
+/*Top Bar*/
+#topbar
+{
+    margin-bottom: 20px; 
+    border-bottom: 2px solid #02455F;
+    overflow: hidden;
+}
+
+#sharePanel
+{
+	min-width: 195px;
+	padding-left: .5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+        
+}
+
+#sharePanel img.shareIcon
+{
+	vertical-align: middle;	
+}
+
+
+#searchPanel
+{
+	min-width: 285px;
+	float: right;
+	text-align: right;
+        padding-top: 6px;
+}
+
+#searchText
+{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+/*REVISED NAV STYLES*/
+
+a
+{
+	color: #005dbb;
+	text-decoration:none;	
+}
+
+a:hover
+{
+	color: #005dbb;
+	text-decoration:underline;	
+}
+
+#innerWrapper{
+    
+    position: relative; 
+    height:auto; 
+    overflow: hidden;
+    clear: both;
+    padding-right: 1em;
+}
+
+#reportNavigation
+{
+  font-weight: bold;
+  color: #4B4C4D;
+  font-family: Helvetica;
+}
+
+#reportNavigation ul
+{
+    list-style: none;
+    padding:0;
+    margin:0;
+    line-height: 1.2em;
+    
+}
+
+#reportNavigation li.selected
+{
+	color: 	#008AAB;
+}
+
+ul#topLevelNav li
+{
+	text-transform: uppercase;
+	margin-bottom: .6em;
+}
+
+ul#topLevelNav li.subLevelNav
+{
+	text-transform: none;
+	margin-left: 1em;
+	font-style:italic;
+}
+
+
+a.navLink
+{
+	color:inherit;		
+}
+
+/*Content Panel Styles*/
+
+
+section#reportContent
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1.allCaps
+{
+   color: #4B4C4D;
+   text-transform: uppercase;
+   line-height: 32px;
+   margin-bottom: 0px;
+}
+
+h1.partLabel
+{
+	margin-top: 0px;
+        margin-bottom: 0px;
+        color: #4B4C4D;
+        line-height: 32px;
+        
+}
+
+h1.pageTitle
+{
+    color: #008AAB;
+    margin-top: .5em;	
+    margin-bottom: .5em;
+    line-height: 1.2em;
+    font-size: 1.75em;
+}
+
+/*Back to top styles*/
+
+div.BackToTopPageNav {	
+	margin-bottom:1.5em;
+	padding:0;
+	height:.55em;	
+	line-height:.65em;
+	color:#005dbb;
+	font-weight:bold;
+}
+div.BackToTopPageNav img {
+	margin:0;
+	padding:0;
+	margin-bottom:.1em;
+	
+}
+a#backToTopAnchor {
+	color:#0066cc;
+        font-size: 14px;
+	
+}
+
+
+
+#reportContent h2
+{
+	color: #02455F; 
+	font-size: 1.55em;
+	line-height: 1.1em;
+	font-weight: bold;
+	margin-bottom: .5em;
+	margin-top: 1.3em;
+}
+
+#reportContent h2.red
+{
+    color: #692425;
+}
+
+#reportContent h2 a
+{
+	color: #02455F; 
+}
+
+#reportContent h2.objTitle a
+{
+    color: #008AAB;
+    font-size: .9em;
+}
+
+#reportContent h2.actionItem
+{
+    margin-left: 1em;
+}
+
+#reportContent h2.actionItem a
+{
+    font-size: .8em;
+}
+
+#reportContent h2.redHeader
+{
+    color: #692425;
+    text-indent: -1em;
+    margin-left: 1em;
+}
+
+#reportContent h3
+{
+	color: #00467f;
+	font-size: 1.5em;
+	line-height: 1.1em;
+	font-weight: bold;
+	margin-bottom: .5em;
+	margin-top: 1.3em;
+}
+
+#reportContent#ExecSummary h3.objective
+{
+	color:#5D5D60;
+	font-style:italic;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+/*Objective text outsize of executive summary */
+#reportContent h3.objective
+{
+	color: #00467f;
+	font-style:italic;
+}
+
+#reportContent h3.objective a, #reportContent h3.objective a:hover
+{
+	color: inherit;
+}
+
+#reportContent h3.ExecSumm
+{
+   font-size: 1.32em; 
+   color: #02455F;
+}
+
+#reportContent ul
+{
+    list-style-type: square;
+}
+
+#reportContent ul.bodyBullets li
+{
+    font-size: 1.25em;
+    line-height: 1.35em;
+    margin-bottom: 1em;
+}
+
+ul.checkmark li:before
+{
+    content: '✔';   
+    margin-left: -1em;
+    margin-right: .100em;
+}
+
+ul.checkmark
+{
+   padding-left: 20px;
+   text-indent: 2px;
+   list-style: none !important;
+   list-style-position: outside;
+}
+
+#reportContent p
+{
+ 	font-size: 1.25em;
+ 	line-height: 1.35em;
+ 	margin-bottom: 1em;
+}
+
+div.bulletedTextbox
+{
+	background-color: #D9D9D9;
+	float: right;
+	width: 45%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 1em 1.5em 1em 1em;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+div.bulletedTextbox h3
+{
+	color: black;
+	text-align:center;
+	font-style:italic;	
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+div.bulletedTextbox ul
+{
+    list-style-type: disc;
+	list-style-position:outside;
+	margin-left: 2em;
+	font-size: 1.35em;
+	line-height: 1em;
+}
+
+div.bulletedTextbox li
+{
+	margin-bottom: 1em;
+}
+
+div.grayTextbox, div.blueTextbox, div.whiteTextbox
+{
+	background-color: #D9D9D9;
+	float: right;
+	width: 45%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 1em 1.5em 1em 1em;
+        border-radius: 15px;
+	box-shadow: 5px 5px 5px #888888;
+	font-size:inherit;
+	font-style:italic;
+        font-weight: bold;
+	margin-left: 1em;
+}
+
+div.grayTextbox h3
+{
+	color: black;
+	text-align:center;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+}
+
+div.grayTextbox p, div.blueTextbox p, div.whiteTextbox p
+{
+	font-size: .9em;
+        margin-top: 0;
+        margin-bottom: 0 !important;
+}
+
+div.grayTextbox p.sources
+{
+	font-weight:normal; 
+	font-size: .7em;	
+	font-style:normal;
+}
+
+div.blueTextbox
+{
+    background-color: #02455F;
+    color: white;
+}
+div.whiteTextbox
+{
+    background-color: white;
+    color: #00C4B3;
+}
+
+div.fullWidthGrayBox
+{
+	background-color: #D9D9D9;
+        
+        margin: 1em 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 1em;
+        border-radius: 15px;
+	box-shadow: 5px 5px 5px #888888;
+	font-size: .9em;
+	font-weight:normal;
+}
+
+div.fullWidthGrayBox h3
+{
+	color: black !important;
+	text-align:center;
+	font-style:italic;
+	margin-top: .5em !important;
+	margin-bottom: 1em;
+}
+
+div.fullWidthGrayBox p.sources
+{
+	font-weight:normal; 
+	font-size: 1em;	
+}
+
+.fullWidthGrayBox li
+{
+  font-size: 1.25em;  
+  line-height: 1.35em;
+  margin-bottom: 1em;
+}
+
+div.fullWidthGrayBox ul#box1slider li
+{
+    font-size: 100%;
+}
+
+div.fullWidthGrayBox ul#box2slider li
+{
+    font-size: 100%;
+}
+
+div.fullWidthGrayBox ul#box3slider li
+{
+    font-size: 100%;
+}
+
+#reportContent div.wrappedText
+{
+ 	font-size: 1.5em;
+	line-height: 1.35em;
+	margin-bottom: 1em;
+}
+
+.customSuperscript
+{
+
+ vertical-align:.4em; 
+ font-size:.6em;
+}
+
+a.headerLink
+{
+	color:inherit;	
+}
+
+a.seeLink
+{
+    
+}
+
+#reportContent span.refLink
+{
+	font-size:.7em;
+	display: inline-block; 
+	vertical-align: top;
+}
+
+
+#reportContent  a.linkback {
+	text-decoration:none;
+}
+#reportContent .pageNavWrapper
+{
+	clear:both;
+	margin-top:1em;
+	margin-bottom: 1em;
+	line-height:100%;
+	font-size:1.35em;
+}
+
+#reportContent .pageNavWrapper a
+{
+	text-decoration: none;
+	color:#00467f;
+	font-weight:bold;
+	letter-spacing:.05em;
+	/* font-size:1.5em; */
+}
+
+#reportContent .pageNavWrapper a:hover
+{
+	text-decoration:underline;
+}
+
+#reportContent .pageNavWrapper a#next
+{
+	float:right;	
+}
+
+
+/*Interior Page Table Styles*/
+#reportContent h1.figureNumber
+{
+	color: #008E87;//#d7a31c;
+	font-size: 1.4em;
+	font-weight:bold;
+	margin-left: .5em;
+        margin-bottom: 0px;
+}
+
+#reportContent h2.figureTitle
+{
+	font-size: 1.4em;
+	font-weight:bold;
+	color: black;//black;
+	margin-bottom: .5em;
+	margin-left: .5em;
+	margin-top: 0;
+}
+
+.figureWrapper
+{
+	margin-top: 2em;
+	margin-bottom:3em;	
+}
+
+img.figure
+{
+
+}
+
+img.panelPhoto
+{
+    float: right;
+    margin-left: 1em;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #c6d5da;
+    width: 40%;
+}
+
+img.panelPhotoMobile
+{
+    float: right;
+    margin-left: 1em;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #c6d5da;
+    width: 40%;
+    display: none;
+}
+
+#reportContent p.figureNotes 
+{
+	margin-top: .5em;
+	margin-bottom: .5em;
+	font-size: .9em;
+	font-weight: bold;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+
+/*Interior Page Table Styles*/
+
+.ackTable
+{
+    font-size: 1.25em;
+}
+
+.ackTable td
+{
+    width: 50%;
+    vertical-align: top;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+.ackName
+{
+    font-weight: bold;
+}
+
+
+#ackStaff
+{
+    display: block;
+}
+
+#ackStaff2col
+{
+    display: none;
+}
+
+#ackStaff, #ackStaff2col
+{
+   width: 98%; 
+    font-size: 1.25em; 
+}
+
+#ackStaff td, #ackStaff2col td
+{
+    padding-bottom: 1em;
+    padding-right: 1em;
+    vertical-align: top;
+}
+
+.term
+{
+    font-weight: bold;
+}
+
+table.seriesInfoTable
+{
+    border: 1px solid #ACB9CA;
+    width: 98%;    
+    text-align: left;
+    margin-top: 2em;
+}
+
+table.seriesInfoTable tr:first-child { 
+    background-color: #00467f;
+    color: white;
+}
+table.seriesInfoTable th
+{
+    padding: .5em;
+}
+
+table.seriesInfoTable td
+{
+    padding: .5em;
+    border: 1px solid #ACB9CA;
+    vertical-align: top;
+}
+
+table.seriesInfoTable td:first-child { 
+    font-weight: bold; 
+    width: 40%;
+    line-height: 1.1em;
+}
+
+table.seriesInfoTable td ul
+{
+    margin-top: 0px;
+    padding-left: .25em;
+    margin-bottom: 0px;
+}
+
+table.seriesInfoTable td li
+{
+    list-style-type: none;
+    line-height: 1.1em;
+    /*margin-bottom: .75em;*/
+}
+
+table.actionItemTable
+{
+   border: 1px solid #BFBFBF;
+    width: 98%;    
+    text-align: left;
+    margin-top: 2em; 
+}
+
+table.actionItemTable tr:first-child { 
+    background-color: #00467f;
+    color: white;
+}
+table.actionItemTable th
+{
+    padding: .5em;
+    text-align: left;
+}
+
+table.actionItemTable td
+{
+    padding: .5em;
+    border: 1px solid #BFBFBF;
+    vertical-align: top;
+}
+
+table.actionItemTable td.objHeader
+{
+    background-color: #00467f;
+    color: white;
+}
+
+table.actionItemTable td:first-child { 
+    font-weight: bold; 
+    width: 40%;
+    vertical-align: top;
+    line-height: 1.45em;
+}
+
+table.actionItemTable td ul
+{
+    margin-top: 0px;
+    padding-left: .25em;
+}
+
+table.actionItemTable td ul li
+{
+    list-style-type: none;
+    line-height: 1.1em;
+    margin-bottom: .75em;
+}
+
+table.actionItemTable td ol li
+{
+    line-height: 1.1em;
+    margin-bottom: .95em;
+}
+
+
+img.table
+{
+    margin-bottom: 3em;
+}
+
+#pageFootnotes {
+	
+}
+#reportContent #pageFootnotes h2.footnotes
+{
+	font-size: 1.25em;
+	font-weight: bold;	
+	margin-bottom: .5em;
+	margin-top: 1em;
+	color: black;
+}
+
+#reportContent #pageFootnotes p
+{
+	font-size: 16px;
+	line-height: 1.1em;
+}
+
+#reportContent .pageReferences a, .fullWidthGrayBox a, .grayTextbox a, .sourceText a
+{
+    /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+#reportContent .pageReferences h2.references
+{
+	font-size: 1.25em;
+	font-weight: bold;	
+	margin-bottom: .5em;
+	color: black;
+}
+
+#reportContent .pageReferences ol
+{
+	list-style:decimal;
+	margin-left: 1.75em;
+}
+
+#reportContent .pageReferences li
+{
+	font-size: 1em;
+	line-height: 1.1em;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
+/*New Source Styles */
+h1.sourceHeader
+{
+  font-family: Lato, Helvetica, "Helvetica Neue", Arial;  
+  font-size: 14.4px;
+  font-weight: bold;      
+}
+
+h1.sourceHeader a
+{
+  font-size: .9em;
+}
+
+/*.ui-btn-icon-left:after {width: 15px !important; height: 15px !important;}*/
+
+
+p.sourceText
+{
+  font-size: .8em !important;  
+  font-family: Lato, Helvetica, "Helvetica Neue", Arial; 
+  margin-left: .875em;
+}
+
+p.sourceText a
+{
+	color: #005dbb !important;
+	text-decoration:none !important;	
+}
+
+p.sourceText a:hover
+{
+	color: #005dbb !important;
+	text-decoration:underline !important;	
+}
+
+/*Homepage styles*/
+#homepageContent
+{
+    position: relative;
+}
+
+#homepageContent p {
+    font-size: 1.25em;
+    line-height: 1.35em;
+    margin-bottom: 1em;
+    width: 70%;
+}
+#smallButtonWrapper{
+    width: 270px;
+    float: right;
+    margin-left: 1em;
+}
+
+#smallButtonWrapperMobile
+{
+    display:none;
+}
+#homepageBigButtonWrapper
+{
+    background-image: url('../img/homepage/hexBackground.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+.grayButton
+{
+    background-color: #414042;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    height: 75px;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-bottom: 8px;
+    float: left;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    line-height: 1.2em;
+    font-size: 1.15em;
+}
+
+.grayButton:hover
+{
+    background-color: #676668;
+}
+
+.grayButton a
+{
+    color: white;
+}
+
+.grayButton a:hover
+{
+    text-decoration: none;
+}
+
+.grayButton1{
+    padding-top: 26px;
+}
+
+.grayButton2{
+    padding-top: 26px;
+}
+
+.grayButton3{
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.grayButton4{
+    padding-top: 26px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+#widePart1
+{
+    background-color: #008AAB;
+    height: 130px;
+    max-width: 1026px;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: white;
+    clear: both;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top:1.75em;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+
+#widePart1:hover{opacity:0.6;}
+
+a.part1link:hover
+{
+    text-decoration: none;
+}
+
+
+
+#wideButtonWrapper{
+    margin-top: 15px;
+    max-width: 1026px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wideButtonWrapper .wideButton
+{
+   width: 323px;
+   height: 283px;
+   background-color: #DDDBD9;
+   background-image: url('../img/homepage/PCP_Hexagon.png');
+   background-size: 70%;
+   background-repeat: no-repeat;
+   background-position: 50%;
+   float: left;
+   border-radius: 15px;
+   box-sizing: border-box;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+#wideButtonWrapper .wideButton:hover img 
+{
+    opacity:0.6;
+}
+
+#wideButtonWrapper .wideButton:hover p 
+{
+    opacity:0.6;
+}
+
+
+#wideButtonWrapper .wideButton p
+{
+   width: 65%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   text-align: center;
+   font-size: 1.5em;
+   font-weight: bold;
+   color: white;
+   line-height: 1.1em;
+   
+}
+
+#wideButton1{
+    margin-right: 14px;
+    margin-bottom: 9px;
+}
+
+#wideButton1 p{padding-top:100px;}
+
+#wideButton2{
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-bottom: 9px;
+}
+
+#wideButton2 p{padding-top:85px;}
+
+#wideButton3{
+    margin-left: 14px;
+    margin-bottom: 9px;
+}
+
+#wideButton3 p{padding-top:85px;}
+
+#wideButton4{
+    margin-right: 14px;
+    margin-top: 9px;
+}
+
+#wideButton4 p{padding-top:85px;}
+
+#wideButton5{
+    margin-left: 13px;
+    margin-right: 13px;
+    margin-top: 9px;
+}
+
+#wideButton5 p{padding-top:110px;}
+
+#wideButton6{
+    margin-left: 14px;
+    margin-top: 9px;
+}
+
+#wideButton6 p{padding-top:100px;}
+
+/*Letter Styles*/
+#signatures {
+	font-size:1.25em;
+}
+#signatures div
+{
+    margin-bottom: 1em;
+}
+
+/*Exec Summ Styles*/
+#execSummHeader{
+    width: 12em; 
+    float: left;    
+}
+
+#execSummFirst{
+    margin-top:73px;
+    clear:both;
+}
+
+/*PDF download button*/
+#grayButtonPDF{
+    float: right;
+    width: 225px;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 7px;
+}
+
+#grayButtonPDF img{
+    float: left; 
+    margin-left: .25em;
+    margin-top: .1em;
+}
+
+#SEbox ul
+{
+    width: 42%;
+    float: left;
+}
+
+
+#SD
+{
+    padding-right:.5em;
+    padding-bottom:0;
+    margin-top:1em;
+    margin-bottom:1em;
+    display: block;
+}
+
+#SDMobile
+{
+    padding-right:.5em;
+    padding-bottom:0;
+    margin-top:1em;
+    margin-bottom:1em;
+    display: none;
+}
+
+/*Anything Slider Override*/
+.anythingSlider-default .anythingControls ul a
+{
+    font-size: 16px !important;
+}
+
+/*I think this was supposed to just modify nav links, but retest.*/
+.anythingSlider .anythingControls a
+{
+    text-shadow: none;
+    font-weight: normal !important;
+    font-family: 'Lato', Helvetica, Helvetica Neue, Arial !important;
+    font-size: 16px;
+}
+
+.fullWidthGrayBox .panel a.externalLink
+{
+    font-size: 18px;
+    font-weight: bold !important;
+}
+
+#box1slider li div, #box2slider li div, #box3slider li div
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#box1GrayBox,#box2GrayBox,#box3GrayBox
+{
+    display: block;
+}
+
+#box1GrayBoxMobile,#box2GrayBoxMobile,#box3GrayBoxMobile,#figure7Print
+{
+    display: none;
+}
+
+
+
+div.mobileBox div
+{
+    padding-top: 0 !important;
+}
+
+div.mobileBox p
+{
+    font-size: 18px !important;
+    font-family: 'Lato', Helvetica, Helvetica Neue, Arial !important;
+}
+
+div.mobileBox li
+{
+    font-size: 18px !important;
+    font-family: 'Lato', Helvetica, Helvetica Neue, Arial !important;
+}
+
+div.mobileBox p.figureNotes
+{
+    font-size: 13px !important;
+    font-family: 'Lato', Helvetica, Helvetica Neue, Arial !important;
+}
+
+div.mobileBox p.figureNotes a, div.mobileBox p a
+{color:#005dbb;}
+
+#box1GrayBox{
+height: 775px;
+}
+ 
+#box2GrayBox{
+height: 540px;
+}
+
+#box3GrayBox{
+height: 710px;
+}
+
+ 
+
+/*Copied footer styles*/
+.footer-container
+{
+   clear: both;
+   margin-top: 30px;
+}
+
+#lastUpdated
+{
+   color: #666;
+   font-style: italic;
+}
+
+.footer-container h3 a
+{
+    color: #05477D;
+}
+
+
+footer.wrapper
+{
+    border-top: 2px solid #02455F;
+    
+}
+
+footer.wrapper h3{
+  color: #02455F;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0.9375rem 0;
+}
+footer.wrapper div{
+    color: #414141;
+    font-size: 1.3125rem;
+}
+footer.wrapper div.connect-icons
+{
+margin: 0.9375rem 0;
+}
+
+
+footer.wrapper .connect-icon
+{
+    margin-right: 1.875rem;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        /* float: left; */
+    }
+
+    nav {
+        display: block;
+        width: 25%;
+        font-size: 90%;
+        box-sizing: border-box;
+        margin-top: 20px;
+        background-color: white; //rgba(235, 206, 123, 1);
+        padding: 15px;
+        left:0;
+        position:absolute;
+        height:100%;
+    }
+    
+    #mnav
+    {
+        display: none;
+    }
+    
+    #closeNav{
+        display:none;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+section#reportContent
+{
+    float:right;
+    width: 74%;
+    box-sizing: border-box;
+}
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+
+@media only screen and (min-width: 1140px) and (max-width: 1364px) {
+
+/* ===============
+    Moderate Width
+   =============== */
+    #pcpLogo {
+        margin-left: 0px;
+    }
+    header h1.title
+    {
+        margin-top: 1.2em;
+    }
+    
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px;/* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 1095px) {
+
+    #box1GrayBox{
+    height: 800px;
+    }
+    
+    #box2GrayBox{
+        height: 580px;
+        }
+        
+    #box3GrayBox{
+    height: 750px;
+    }    
+}
+
+@media only screen and (max-width: 1065px) {
+    #box1GrayBox{
+    height: 860px;
+    }
+    #box2GrayBox{
+        height: 620px;
+    }
+    #box3GrayBox{
+    height: 790px;
+    } 
+}
+
+@media only screen and (max-width: 1139px) {
+/* ===============
+    hide logo and move homepage buttons to two columns
+   =============== */
+    
+    #wideButton1, #wideButton3, #wideButton5
+    {
+       margin-left:5%;
+       margin-right: 0;
+       margin-top: 9px;
+       margin-bottom: 9px;
+    }
+    
+    #wideButton2, #wideButton4, #wideButton6
+    {
+       margin-left: 0;
+       margin-right: 5%;
+       float: right !important;
+       margin-top: 9px;
+       margin-bottom: 9px;
+    }
+    
+}
+
+@media only screen and (max-width: 432px) {
+/* ===============
+    hide logo and move homepage buttons to two columns
+   =============== */
+    
+    #pcpLogo
+    {
+        display: none;
+    }
+    
+    #pcpSubtitle
+    {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: .5em;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #widePart1
+    {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+/* Exec summary tweaks*/
+#execSummHeader{
+    width: auto; 
+    float: none;    
+}
+/*PDF download button*/
+#grayButtonPDF{
+    float: none;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a.grayButtonLink:hover
+{
+    text-decoration: none;
+}
+
+#execSummFirst{
+    margin-top: 20px;
+    clear:both;
+}
+
+
+
+#box1GrayBox,#box2GrayBox,#box3GrayBox
+{
+    display: none;
+}
+
+#box1GrayBoxMobile,#box2GrayBoxMobile,#box3GrayBoxMobile
+{
+    display: block;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 870px) {
+/* ===============
+    wider content pane and 2 column buttons on homepage, move dark gray buttons to one column
+   =============== */
+    .wrapper {
+        width: 98%;
+        margin: 0 auto;
+    }
+    #reportContent .pageReferences ol
+    {
+        margin-left: 0px;
+    }
+    
+    #smallButtonWrapper {
+        width: 170px;
+        margin-bottom: 1em;
+        margin-right: .5em;
+    }
+    
+    .grayButton1,.grayButton2,.grayButton3,.grayButton4{
+        margin: 8px auto;
+    }
+
+    #wideButton1, #wideButton3, #wideButton5
+    {
+       margin-left:1%;
+       margin-right: 0;
+       margin-top: 9px;
+       margin-bottom: 9px;
+    }
+    
+    #wideButton2, #wideButton4, #wideButton6
+    {
+       margin-left: 0;
+       margin-right: 1%;
+       float: right !important;
+       margin-top: 9px;
+       margin-bottom: 9px;
+    }
+    
+    .grayButton {
+     width: 170px; 
+     height: 93px;
+     padding-left: .5em;
+     padding-right: .5em;
+    }
+    
+    #grayButton3
+    {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+}
+
+@media only screen and (max-width: 868px) {
+    #widePart1
+    {
+        padding-top: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+ h1.title
+	{
+                font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 790px) {
+    #SEbox ul
+       {
+           width: 98%;
+           margin-top: 0;
+           margin-bottom: 0;
+       }
+    #reportContent h3#se   
+    {
+        margin-bottom: .67em;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    
+    
+   
+    h2.subtitle
+    {
+        font-size: 1.5em;
+    }
+    nav {
+        display:none;
+    }
+    #mnav
+    {
+        display: block;
+        float: left;
+        margin-right: 2em;
+    }
+    #reportNavigation ul 
+    {
+        background-color: #eaeaea;
+        z-index: 2;
+        padding: 1em;
+    }
+
+    #closeNav{
+     width: 6em;
+     text-align: right; 
+     color: black; 
+     float: right; 
+    }
+    
+        #SEbox ul
+       {
+           width: 42%;
+       }
+}
+@media only screen and (max-width: 752px) {
+    img.panelPhoto
+    {
+        display: none;
+    }
+    img.panelPhotoMobile
+    {
+        display: block;
+        margin-bottom:  1em;
+    }
+}
+@media only screen and (max-width: 730px) {
+    h1.title
+    {
+            margin-top: .75em;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    /* ===============
+    single column buttons on homepage
+   =============== */
+    #wideButton1, #wideButton3, #wideButton5, #wideButton2, #wideButton4, #wideButton6
+    {
+       margin-left: auto;
+       margin-right: auto;
+       float: none !important;
+       margin-top: 9px;
+       margin-bottom: 9px;
+    }
+
+    
+    #wideButtonWrapper a:hover
+    {
+        text-decoration: none;
+    }
+    
+    #innerWrapper.homepage
+    {
+        padding-right:0;
+    }
+
+    #ackStaff
+    {
+        display:none;
+    }
+    
+    #ackStaff2col
+    {
+        display:block;
+    }
+}
+     
+
+@media only screen and (max-width: 640px) {
+
+    .header-container
+    {
+        height: auto;
+    }
+    
+    #pcpLogo
+    {
+        height: 75px;
+    }
+    
+    h1.title
+	{
+            font-size: 1.5em;
+	}
+    h2.subtitle
+    {
+        font-size: 1.2em;
+    }
+    #searchPanel {
+        float: left;
+        margin-left: 1em;
+    }
+    
+    div.blueTextbox
+    {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+/*Stakeholders and Experts Box*/
+
+    #SEbox ul
+   {
+       width: 90%;
+   }
+   
+   ul
+   {
+       padding-left: 20px;
+   }
+   
+}
+
+@media only screen and (max-width: 519px) {
+    h1.title
+    {
+            margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    #smallButtonWrapper{
+    display: none;
+    }
+
+    #smallButtonWrapperMobile
+    {
+        display:block;
+        width: 385px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+    .grayButton
+    {
+        margin-right: .5em !important;
+    }
+   
+    #homepageContent p { 
+        width: 95%;
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    #widePart1
+    {
+        padding-top:1em;
+    }
+}
+
+
+@media only screen and (max-width: 402px) {
+  
+    #smallButtonWrapperMobile
+    {
+        
+        width: 95%;
+        
+    }
+    
+    .grayButton
+    {
+        width: 100%;
+    }
+    
+    .grayButton1,.grayButton2,.grayButton3,.grayButton4{
+    padding-top: 1.9em;
+}
+
+
+    #ackHeader{
+        font-size: 1.45em;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    #widePart1
+    {
+        padding-top:.5em;
+    }
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    
+    
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    html
+    {
+        page: cover; 
+        width: 100%;
+    }
+    
+    #reportHeader
+    {
+        width: 82%;
+        float: left;
+    }
+    
+    body
+    {
+        font-size: 12px;
+    }
+    
+    #pcpLogo
+    {
+        width: 150px;
+        
+    }
+    
+    td
+    {
+        padding: 1em;
+    }
+
+
+    
+    /*specific items to drop from print view*/
+    nav, #topbar, .pageNavWrapper, .BackToTopPageNav,#box1GrayBox,#box2GrayBox,#box3GrayBox,#carouselWrapper
+    {
+        display: none;
+    }
+    
+
+
+    #box1GrayBoxMobile,#box2GrayBoxMobile,#box3GrayBoxMobile, div.ui-accordion-content,#figure7Print
+    {
+        display: block !important;
+    }
+    
+    #figure7Print img
+    {
+        width: 75%;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img,.grayTextbox {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+

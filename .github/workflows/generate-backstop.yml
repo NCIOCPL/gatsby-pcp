@@ -1,0 +1,54 @@
+name: Generate Backstop Reference Images
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  packages: read
+
+jobs:
+
+  build:
+    name: Generate Images
+    runs-on: ubuntu-latest
+    steps:
+
+      ## Checkout the code
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      ## Setup node and npm caching
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: https://npm.pkg.github.com
+          cache: "npm"
+          scope: "@nciocpl"
+      - name: Run NPM
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      ## Build all the things for testing
+      - name: Build site
+        run: npm run build
+
+      ## Serve the site
+      - name: Serve site and generate images
+        run: npm run serve & sleep 5 && npm run backstop-generate
+        env:
+          BACKSTOP_BASE_URL: http://localhost:9000
+
+      - name: Commit updated images
+        run: |
+          git config --global user.name 'NCIOCPL Bot'
+          git config --global user.email 'NCIOCPL@users.noreply.github.com'
+          git add -A backstop_data/bitmaps_reference/
+          git commit -m "Updated backstop images"
+          git push
+
+      - uses: actions/upload-artifact@v3
+        name: Upload reference images
+        with:
+          name: backstopjs-reference
+          path: backstop_data/bitmaps_reference

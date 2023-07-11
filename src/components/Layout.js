@@ -1,17 +1,42 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Script } from 'gatsby';
+import Header from './Header';
+import { Footer } from './Footer';
+import '../scss/styles.scss';
+import PropTypes from 'prop-types';
 
 export default function Layout({ children }) {
-  return (
-    <div style={{ margin: `0 auto`, maxWidth: 650, padding: `0 1rem` }}>
-      <ul>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/members">Members</Link>
-        <Link to="/reports">Reports</Link>
-        <Link to="/nca50">NCA 50</Link>
-      </ul>
-      {children}
-    </div>
-  )
+	return (
+		<div role={'document'} className={'pcp-document-container'}>
+			<Header />
+			<div className={'pcp-grid-section'}>
+				<div className={'desktop-constrained'}>
+					<div className={'grid-row'}>
+						<div className={'grid-col-12'}>
+							<div className={'pcp-sections'}>
+								<div className="post-body">{children}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<Footer />
+			<Script type="text/javascript">
+				{(function () {
+					// Make gatsby build happy when window doesn't exist
+					if (typeof window === 'undefined') {
+						global.window = {};
+					}
+
+					if (window._satellite) {
+						_satellite.pageBottom(); // eslint-disable-line no-undef
+					}
+				})()}
+			</Script>
+		</div>
+	);
 }
+
+Layout.propTypes = {
+	children: PropTypes.node,
+};

@@ -1,0 +1,31 @@
+@use "uswds-core" as *;
+html{
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background-color: $white;
+}
+.pcp-document-container {
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+}
+.pcp-grid-section {
+	border-top: units(0.5) solid $borderyellow;
+	background-color: $white;
+	padding-bottom: 21rem;
+}
+.pcp-sections {
+	@include grid-row();
+	padding: 0 units(3) units(2) units(3);
+	font-size: font-size('sans',7);
+	background-color: $white;
+	color: $pcptextcolor;
+}
+.post-body{
+	@include u-width(full);
+	a {
+		font-weight: bold;
+	}
+}

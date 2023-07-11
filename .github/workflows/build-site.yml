@@ -1,0 +1,156 @@
+name: Build Site
+on:
+  workflow_call:
+    outputs:
+      build_name:
+        value: ${{ jobs.build.outputs.build_name }}
+      branch_name:
+        value: ${{ jobs.build.outputs.branch_name }}
+      commit_hash:
+        value: ${{ jobs.build.outputs.commit_hash }}
+      repo_owner:
+        value: ${{ jobs.build.outputs.repo_owner }}
+      repo_name:
+        value: ${{ jobs.build.outputs.repo_name }}
+    inputs:
+      environment:
+        description: Which environment to deploy to
+        required: true
+        type: string
+      prefix_path:
+        description: Should we prefix the build path or not?
+        required: true
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    name: Build and Lint Site
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    services:
+      apache:
+        image: httpd:2.4
+        ports:
+          - 8080:80
+    outputs:
+      build_name: ${{ steps.set_vars.outputs.build_name }}
+      branch_name: ${{ steps.set_vars.outputs.branch_name }}
+      commit_hash: ${{ steps.set_vars.outputs.commit_hash }}
+      repo_owner: ${{ steps.set_vars.outputs.repo_owner }}
+      repo_name: ${{ steps.set_vars.outputs.repo_name }}
+    steps:
+      ## Setup variables for build info
+      - name: Set Variables
+        id: set_vars
+        run: |
+          ## PUSH
+          if [ "${{ github.event_name }}" == "push" ]; then
+            BUILD_NAME=$(sed -E 's/refs\/(heads|tags)\///; s/\//__/g;' <<< $GITHUB_REF)
+            BRANCH_NAME=$(sed -E 's/refs\/(heads|tags)\///;' <<< $GITHUB_REF)
+            COMMIT_HASH=$(echo "${GITHUB_SHA}")
+          ## PULL_REQUEST
+          elif [ "${{ github.event_name }}" == "pull_request" ]; then
+            BUILD_NAME=$(echo "pr-${{ github.event.pull_request.number }}")
+            BRANCH_NAME=$(echo "pr-${{ github.event.pull_request.number }}")
+            COMMIT_HASH=$(echo "${{ github.event.pull_request.head.sha }}")
+          ## WORKFLOW_DISPATCH
+          elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            BUILD_NAME=$(sed -E 's/refs\/(heads|tags)\///; s/\//__/g;' <<< $GITHUB_REF)
+            BRANCH_NAME=$(sed -E 's/refs\/(heads|tags)\///;' <<< $GITHUB_REF)
+            COMMIT_HASH=$(echo "${GITHUB_SHA}")
+          else
+            ## ERROR
+            exit 1
+          fi
+
+          ## For step checks and artifact deployment path.
+          ## Same for push and PR
+          export REPO_FULL=${{ github.repository }}
+          export REPO_RE='([^/]+)/(.*)'
+          [[ "$REPO_FULL" =~ $REPO_RE ]]
+          REPO_OWNER=$(echo "${BASH_REMATCH[1]}")
+          REPO_NAME=$(echo "${BASH_REMATCH[2]}")
+
+          ## Set step outputs for later use
+          echo "build_name=${BUILD_NAME}" >> $GITHUB_OUTPUT
+          echo "branch_name=${BRANCH_NAME}" >> $GITHUB_OUTPUT
+          echo "commit_hash=${COMMIT_HASH}" >> $GITHUB_OUTPUT
+          echo "repo_owner=${REPO_OWNER}" >> $GITHUB_OUTPUT
+          echo "repo_name=${REPO_NAME}" >> $GITHUB_OUTPUT
+
+          if [ "${{ inputs.prefix_path }}" == "true" ]; then
+            echo "prefix_path=${BUILD_NAME}" >> $GITHUB_OUTPUT
+          else
+            echo "prefix_path=" >> $GITHUB_OUTPUT
+          fi
+
+      ## Checkout the code
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      ## Setup node and npm caching
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: https://npm.pkg.github.com
+          cache: 'npm'
+          scope: '@nciocpl'
+      - name: Run NPM
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      ## Lint the code
+      - name: Run Lint
+        run: npm run lint
+
+      #      ## Now test the code
+      #      - name: Run Tests
+      #        run: npm test
+
+      ## Build all the things for publishing
+      - name: Build Site
+        run: npm run build
+        env:
+          ## This is used by Gatsby and NEEDs to be the path that will ultimately
+          ## be in netstorage for the site. For test/prod this should be blank
+          PREFIX_PATH: ${{ format('/{0}', steps.set_vars.outputs.prefix_path) }}
+          SITE_DOMAIN: ${{ vars.site_domain }}
+          SEARCH_ENDPOINT: ${{ vars.search_endpoint }}
+
+      ## Put the built site on to apache for testing.
+      - name: Copy to Apache
+        run: |
+          CONTAINER_ID=$(docker ps -q --filter "ancestor=httpd:2.4")
+          # DEV: SRC_PATH specifies a directory, DEST_PATH does not exist: DEST_PATH is created as a directory and the contents of the source directory are copied into this directory
+          # TEST: SRC_PATH specifies a directory, DEST_PATH exists and is a directory, SRC_PATH does end with "/.": the content of the source directory is copied into this directory
+          docker cp public/. "$CONTAINER_ID:/usr/local/apache2/htdocs/${{steps.set_vars.outputs.prefix_path}}"
+
+      ## Check for internal broken links
+      - name: Install BLC
+        run: npm install broken-link-checker -g
+      - name: Check Links
+        run: blc ${{ format('http://localhost:8080/{0}', steps.set_vars.outputs.prefix_path) }} -rfe
+
+      ## Test a11y
+      - name: Accessibility Test
+        run: npm run test:a11y
+        env:
+          PA11Y_BASE_URL: ${{ format('http://localhost:8080/{0}', steps.set_vars.outputs.prefix_path) }}
+
+      ## Generate build-info.json to house information about this specific build.
+      ## Used for product test deployment
+      - name: Create Build Information
+        env:
+          BUILD_INFO: ${{ toJson(steps.set_vars.outputs) }}
+        run: |
+          echo $BUILD_INFO
+          echo $BUILD_INFO > ./public/build-info.json
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: pcp-site
+          path: public/

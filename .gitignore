@@ -2,6 +2,13 @@
 # === Gatsby ===
 .cache/
 public
+# everything we do is in SCSS, anything in CSS would be auto-generated
+src/css
+
+# === Gatsby ===
+backstop_data/bitmaps_test
+backstop_data/html_report
+
 
 # === Rule for dotfiles ===
 # Ignore all dotfiles.
@@ -27,6 +34,7 @@ public
 !.cpplint
 !.npmrc
 !.nvmrc
+!.pa11yci.js
 
 
 # === Rules for release artifacts ===

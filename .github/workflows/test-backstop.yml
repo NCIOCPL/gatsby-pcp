@@ -1,0 +1,125 @@
+name: Backstop Test Site
+on:
+  workflow_call:
+    inputs:
+      # needed to get environment variables
+      environment:
+        description: Which environment are we testing
+        required: true
+        type: string
+      build_path:
+        description: Subdirectory site is in, if any
+        required: false
+        type: string
+
+jobs:
+  backstop:
+    name: Run Backstop
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      ## Checkout the code
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      ## Setup node and npm caching
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: https://npm.pkg.github.com
+          cache: 'npm'
+          scope: '@nciocpl'
+      - name: Run NPM
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      ## Serve the site to test it
+      - name: Test Site
+        run: npm run test:backstop
+        env:
+          BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.backstop_site_domain, inputs.build_path) }}
+
+      ## Upload failed css tests
+      - name: Upload failed tests to GitHub
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: failed-backstopjs
+          path: backstop_data
+
+      - name: Create zip file name
+        id: zip-name
+        if: failure()
+        run: |
+          echo "NAME=backstop-${{ inputs.build_path || inputs.environment }}" >> "$GITHUB_OUTPUT"
+
+      - name: Zip tests
+        if: failure()
+        run: |
+          pushd backstop_data
+          zip -r ../${{ steps.zip-name.outputs.name }}.zip ./*
+          popd
+
+      - name: Upload failed tests to netstorage
+        uses: nciocpl/netstorage-upload-action@v1.0.0
+        if: failure() && inputs.environment == 'Dev'
+        with:
+          hostname: ${{ secrets.ns_hostname }}
+          cp-code: ${{ secrets.ns_cpcode }}
+          key-name: ${{ secrets.ns_keyname }}
+          key: ${{ secrets.ns_key }}
+          index-zip: true
+          local-path: ${{ format('{0}.zip', steps.zip-name.outputs.name) }}
+          ## Note this action automatically prepends the cpcode to the path.
+          destination-path: ${{ format('/{0}.zip', steps.zip-name.outputs.name) }}
+
+        # in this instance, clearing cache by URL in the future might be better
+      - name: Clear Akamai Cache
+        uses: nciocpl/akamai-purge-action@v1.0.2
+        if: failure() && inputs.environment == 'Dev'
+        with:
+          hostname: ${{ secrets.eg_hostname }}
+          client-token: ${{ secrets.eg_client_token }}
+          client-secret: ${{ secrets.eg_client_secret }}
+          access-token: ${{ secrets.eg_access_token }}
+          type: 'cpcodes'
+          ref: ${{ format('{0},{1}', secrets.ns_cpcode, secrets.prop_cpcode) }}
+
+      ## Put a comment on the PR for easy review
+      - name: Add comment on where to view
+        uses: actions/github-script@v6
+        if: failure() && startsWith(github.repository, 'NCIOCPL') && github.event_name == 'pull_request'
+        env:
+          REVIEW_URL: ${{ format('https://{0}/{1}/html_report/index.html', vars.backstop_site_domain, steps.zip-name.outputs.name) }}
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          ## NOTE: The script below is JavaScript
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `
+              ## Backstop test results
+              * [View backstop report](${ process.env.REVIEW_URL })
+              `
+            })
+
+      ## Upload successful css tests
+      - uses: actions/upload-artifact@v2
+        name: Upload successful tests
+        with:
+          name: success-backstopjs
+          path: backstop_data/bitmaps_test/**/report.json
+
+  approve:
+    name: Approve Tests
+    runs-on: ubuntu-latest
+    needs: backstop
+    if: ${{ needs.backstop.result == 'failure' }}
+    environment: QA-Approval
+    steps:
+      - name: Wait for Approval
+        run: echo "QA Approved"

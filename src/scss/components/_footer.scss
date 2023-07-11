@@ -1,0 +1,30 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.footer {
+    border: none;
+    background: $lightgrey;
+		font-size: font-size('sans',8);
+    line-height: units(3);
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+    h3,
+		.connect-icons {
+			text-align: left;
+			margin: units(2) 0;
+    }
+    .connect-icon {
+			margin-right: units(4);
+    }
+    .footer-endcap {
+			background-color: $pcpblue;
+			min-height: units(6);
+    }
+    .pcp-grid-section {
+			padding: units(2) 0 0 units(4);
+			margin-left: auto;
+			margin-right: auto;
+			background-color: $white;
+    }
+}

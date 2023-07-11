@@ -1,0 +1,48 @@
+@use "uswds-core" as *;
+
+$white       : #FFFFFF;
+$pcpanchor   : #135A69;
+$pcpblue     : #05477D;
+$pcpbluedark : darken($pcpblue, 10%);
+$pcpbluelight: lighten($pcpblue, 10%);
+
+$top-bar-blue: #204f8a;
+$top-bar-blue-gradient-end: #0e214f;
+
+$pcphoverblue  : #1b7e93;
+$pcpbuttonblue: #257da0; //not used yet
+$pcpbluefaint: mix($pcpbuttonblue, $white, 50%); //not used yet
+$cardblue    : #2B719B;
+$borderyellow: #D5A130;
+$bordergrey	 : #565c65;
+$pagerblue   : #25619b;
+$pagerpaleblue: #cbe8fc;
+$lightgrey   : #f7f7f7;
+$shadegrey   : #ebebeb;
+$mediumgrey  : #414141;
+$darkergrey	:	#1B1B1B;
+$smoke       : #EEEEEE;
+$black       : #000000;
+$pcptextcolor: $darkergrey;
+
+$primary-color: $pcpbuttonblue; //not used yet
+
+
+$mobile-min-width: units('mobile');
+$mobile-constrained-max-width: 433px;
+$mobile-max-width: 479px;
+$mobile-lg-min-width: units('mobile-lg');
+$mobile-lg-max-width: 639px;
+$tablet-min-width: units('tablet');
+$tablet-max-width: 879px;
+$tablet-lg-min-width:units('tablet-lg');
+$tablet-lg-max-width:1023px;
+$desktop-min-width: units('desktop');
+$desktop-container-max-width: units('widescreen');
+
+$member-image-max-width: units('mobile');
+
+
+
+
+

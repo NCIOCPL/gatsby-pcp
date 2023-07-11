@@ -1,0 +1,22 @@
+name: Deploy to Production
+on:
+  release:
+    types: [released]
+
+jobs:
+  call-workflow-deploy:
+    uses: ./.github/workflows/deploy-site.yml
+    with:
+      environment: Prod
+      build_name: pcp-prod
+      use_artifact: true
+    secrets: inherit
+
+  call-workflow-backstop:
+    uses: ./.github/workflows/test-backstop.yml
+    with:
+      environment: Prod
+      build_path: ''
+    ## This job depends on deploy completing
+    needs: call-workflow-deploy
+    secrets: inherit

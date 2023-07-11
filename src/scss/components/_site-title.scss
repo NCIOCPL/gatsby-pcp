@@ -1,0 +1,48 @@
+@use "uswds-core" as *;
+@import "../variables";
+
+.site-title-container {
+		@include grid-row();
+		justify-content: center;
+		align-items: center;
+		padding-bottom: units(2);
+	ul {
+		list-style: none;
+	}
+	a.accessible-link {
+		display: none;
+	}
+	.logo {
+		display: none;
+		@include at-media(tablet-lg){
+			display:inline-block;
+		}
+	}
+}
+.title-area {
+	margin: 1em 0 1em 1em;
+}
+.site-title-and-slogan {
+		@include grid-row();
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: units(2);
+	@include at-media(tablet-lg) {
+		padding-left: units(4);
+	}
+}
+h1.site-name {
+	margin-bottom: units(2);
+	text-align: center;
+}
+.site-slogan {
+	 color: $pcpblue;
+	 text-align: center;
+	 font-size: font-size('sans',8);
+	 width: units('card-lg');
+	@include at-media('tablet'){
+		width: units('mobile');
+	}
+	 line-height: units(4);
+}
+

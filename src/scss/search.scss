@@ -1,0 +1,157 @@
+@use "uswds-core" as *;
+@import 'breakpoints';
+@import 'variables';
+
+// SearchBar screen reader text
+.usa-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.pager__navigation,
+.pager__container {
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 0;
+}
+
+// search screen reader text
+.show-for-sr {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+ul.no-bullets {
+	list-style-type: none;
+}
+
+ul.results__container {
+	margin: 0;
+
+	.result__list-item {
+		margin: units(4) 0;
+	}
+	.result__url {
+		font-size:font-size('sans','2xs');
+	}
+}
+
+
+.usa-input {
+	width: 75% !important;
+}
+
+div.nci-header-nav__secondary {
+	display: flex;
+	margin-top: 5%;
+	margin-left: .4rem;
+	justify-content: center;
+	align-items: center;
+}
+
+button.nci-header-search__search-button {
+	border-width: 1px;
+	border-color: $bordergrey;
+	border-style: solid;
+	align-self: auto;
+	border-radius: 0;
+	padding: .4rem;
+	background-color:$white;
+	width: 12%;
+	height:2rem;
+	&:hover,
+	&:focus
+	{
+		background-color: $smoke;
+	}
+}
+
+.pager__container {
+	.pager__navigation {
+		color: $pagerblue ;
+		list-style-type: none;
+
+		padding: 0;
+		margin: 0;
+		@include at-media(tablet) {
+			margin-left: auto;
+		}
+		& > li {
+			align-items: center;
+			cursor: pointer;
+			display: inline-flex;
+			justify-content: center;
+			list-style-type: none;
+			margin: 0 2px 0;
+		}
+
+		.pager__button {
+			border: none;
+			border-radius: 3px;
+			display: block;
+			min-width: units(3);
+			padding: 2px 6px;
+			text-decoration: none;
+			white-space: nowrap;
+
+			&.active {
+				background: $pagerblue ;
+				color: $white ;
+				&:hover {
+					background: $pagerblue;
+				}
+			}
+
+			&:hover {
+				background: $pagerpaleblue;
+			}
+		}
+
+		.pager__ellipses--right,
+		.pager__ellipses--left {
+			padding: 2px units(.5);
+			cursor: default;
+		}
+	}
+}
+
+.pager__container {
+	border-top: 1px solid $black;
+	border-bottom: 1px solid $black;
+	padding: units(2) 0;
+	margin: units(2) 0;
+}
+
+@include break(medium) {
+	.pager__container {
+		margin-left: auto;
+	}
+
+	.pager__container {
+		border: none;
+		margin-top: 0;
+		padding: 0 0 0 50px;
+	}
+}
+#NCI-sws-app-root {
+	h3, h4 {
+		text-transform: none;
+	}
+	.pager__select {
+		margin: 0 units(1.5);
+	}
+}
+

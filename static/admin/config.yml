@@ -1,20 +1,112 @@
 
 backend:
-  name: github # we don't have a github oauth server configured so this does not currently work
+  name: github # will use Netlify's oauth server by default so be aware of that
   repo: NCIOCPL/gatsby-pcp
 
 # when using the default proxy server port
+# run `npx netlify-cms-proxy-server` to use this
 local_backend: true
 
 media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-  # Pages collection for the main pages. We can move this to a files collection should we need to differentiate the frontmatter
-  - label: "Pages"
-    name: "pages"
-    folder: "src/content/pages"
-    create: false
+
+  # About pages
+  - label: "About"
+    name: "about"
+    folder: "content/about/"
     fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Body, name: body, widget: markdown}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        options: ["single_page", "left_nav", "left_nav_sub_sections"]
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  # Members list & pages
+  - label: "Members"
+    name: "members"
+    folder: "content/members/"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        options: ["single_page", "left_nav", "left_nav_sub_sections"]
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  # NCA50 Blog
+  - label: "NCA50"
+    name: "nca50"
+    folder: "content/nca50/"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        options: ["single_page", "left_nav", "left_nav_sub_sections"]
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+
+  # Reports List 
+  - label: "Other Pages"
+    name: "other"
+    files:
+      - label: Report List
+        name: "reports-list" 
+        file: "content/reports/index.md"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Template"
+            name: "template"
+            widget: "select"
+            options: ["single_page", "left_nav", "left_nav_sub_sections"]
+          - label: "Body"
+            name: "body"
+            widget: "markdown"
+
+  # Reports
+  - label: "2021 Innovations Report"
+    name: "2021-innovations"
+    folder: "content/reports/2021/innovations/"
+    create: true
+    # example of how to create a file with custom filename
+    slug: "{{filename}}"
+    fields:
+      - label: "Section Title"
+        name: "sectionTitle"
+        widget: "string"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        options: ["single_page", "left_nav", "left_nav_sub_sections"]
+      - label: "Link Text"
+        name: "linktext"
+        widget: "string"
+      - label: "Sort Order"
+        name: "sortOrder"
+        widget: "number"
+      # this field will only be used on first creation
+      - label: "Filename"
+        name: "filename"
+        widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"

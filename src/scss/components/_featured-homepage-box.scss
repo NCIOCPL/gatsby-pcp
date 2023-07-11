@@ -1,0 +1,41 @@
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.featured-homepage-box {
+	@include grid-row();
+	@include centered-width-constrained();
+	justify-content: space-between;
+	padding: units(2) 0;
+	a {
+		font-weight: normal;
+	}
+}
+.featured-card {
+	background-color: $cardblue;
+	color: $white;
+	padding: units(2);
+	flex: auto;
+	margin-bottom: units(2);
+	@include centered-mobile-constrained();
+	@include at-media(tablet-lg) {
+		@include grid-col();
+		margin: 0 0 0 units(2);
+	}
+	a,
+	a:hover {
+		color: $white;
+	}
+	.card-title {
+		font-size: font-size("sans",9);
+		font-weight: bold;
+		margin: units(2) 0 units(1) 0;
+		line-height: units(4);
+	}
+	.card-description {
+		font-size: font-size("sans",7);
+	}
+	img {
+		max-width: 401px;
+	}
+}
