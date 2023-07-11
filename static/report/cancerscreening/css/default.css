@@ -1041,21 +1041,21 @@ a.sourceLink
     text-decoration: none;
 }
 
-#blueButton1{
+.blueButton1{
     padding-top: 26px;
 }
 
-#blueButton2{
+.blueButton2{
     padding-top: 26px;
 }
 
-#blueButton3{
+.blueButton3{
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
 }
 
-#blueButton4{
+.blueButton4{
     padding-top: 26px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1638,7 +1638,7 @@ section#reportContent
         margin-right: .5em;
     }
     
-    #blueButton1,#blueButton2,#blueButton3,#blueButton4{
+    .blueButton1,.blueButton2,.blueButton3,.blueButton4{
         margin: 8px auto;
     }
 
@@ -1649,11 +1649,11 @@ section#reportContent
      padding-right: .5em;
     }
     
-    #blueButton1 {
+    .blueButton1 {
     padding-top: 2em;
     }
     
-    #blueButton3
+    .blueButton3
     {
         padding: 1.3em .5em;
     }
@@ -1895,7 +1895,7 @@ section#reportContent
         width: 100%;
     }
     
-    #blueButton1,#blueButton2,#blueButton3,#blueButton4{
+    .blueButton1,.blueButton2,.blueButton3,.blueButton4{
     padding-top: 1.9em;
     }
     

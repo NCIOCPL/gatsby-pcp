@@ -31,7 +31,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="css/default.css" />
-		<link href="js/vendor/jqueryui/css/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="js/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
 		<!--Search Style-->
 		<link href="tipuesearch/tipuesearch.css" rel="stylesheet" />
@@ -45,7 +45,7 @@
 
 		<div class="header-container" id="reportHeader">
 			<header class="wrapper clearfix">
-				<a href="https://prescancerpanel.cancer.gov/" target="_blank"
+				<a href="https://prescancerpanel.cancer.gov/" target="_blank" rel="noopener noreferrer"
 					><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" />
 					<div id="pcpSubtitle">President's Cancer Panel</div></a
 				>
@@ -68,6 +68,7 @@
 						<label for="tipue_search_input">Search:</label>
 						<form action="searchResults.html" class="searchForm">
 							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required />
+							<button type="submit">Go</button>
 						</form>
 					</div>
 				</div>
@@ -801,13 +802,13 @@
 					<div class="section">
 						<div class="row">
 							<div class="small-12 column">
-								<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank">President's Cancer Panel</a></h3>
+								<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank" rel="noopener noreferrer">President's Cancer Panel</a></h3>
 								<div><a href="mailto:PresCancerPanel@mail.nih.gov" class="emailLink">PresCancerPanel@mail.nih.gov</a><br /></div>
 								<div class="connect-icons">
-									<a href="https://twitter.com/prescancerpanel" target="_blank"
+									<a href="https://twitter.com/prescancerpanel" target="_blank" rel="noopener noreferrer"
 										><span class="visuallyhidden">President's Cancer Panel Twitter</span><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/twitter-icon.svg" alt="President's Cancer Panel Twitter" src="img/icons/twitter-icon.png" height="48" width="48"></image></svg
 									></a>
-									<a href="https://www.linkedin.com/company/16184523/" target="_blank"
+									<a href="https://www.linkedin.com/company/16184523/" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel LinkedIn"
 										><span class="visuallyhidden">President's Cancer Panel LinkedIn</span><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/linkedin-icon.svg" alt="President's Cancer Panel LinkedIn" src="img/icons/linkedin-icon.png" height="48" width="48"></image></svg
 									></a>
 									<a href="mailto:PresCancerPanel@nih.gov"
@@ -823,11 +824,9 @@
 		</div>
 		<!-- #main-container -->
 
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="js/vendor/jqueryui/jquery-ui.js" type="text/javascript"></script>
-		<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
-		</script>
+		<script src="js/vendor/code.jquery.com_jquery-3.6.4.min.js"></script>
+		<script src="js/vendor/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+
 		<script src="js/navScroll.js" type="text/javascript"></script>
 
 		<script type="text/javascript">

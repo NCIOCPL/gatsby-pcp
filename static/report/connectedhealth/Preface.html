@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 	<!--<![endif]-->
 
 	<head>
@@ -20,7 +20,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
 
 		<link rel="stylesheet" href="css/default.css" />
-		<link href="js/vendor/jqueryui/css/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="js/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/anythingslider.css" rel="stylesheet" type="text/css" />
 
 		<!--Search Style-->
@@ -36,11 +36,9 @@
 
 		<div class="header-container" id="reportHeader">
 			<header class="wrapper clearfix">
-				<a href="index.html">
-					<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
-					<h1 class="title">Improving Cancer-Related Outcomes with Connected Health</h1>
-					<h2 class="subtitle">A Report to the President of the United States from the President's Cancer Panel</h2>
-				</a>
+				<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
+				<h1 class="title">Improving Cancer-Related Outcomes with Connected Health</h1>
+				<h2 class="subtitle">A Report to the President of the United States from the President's Cancer Panel</h2>
 			</header>
 		</div>
 
@@ -59,6 +57,7 @@
 						<label for="tipue_search_input">Search:</label>
 						<form action="searchResults.html" class="searchForm">
 							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required />
+							<button type="submit">Go</button>
 						</form>
 					</div>
 				</div>
@@ -113,17 +112,17 @@
 						<div class="pageReferences">
 							<h2 class="references colorEditable">References</h2>
 							<ol>
-								<li id="ref1">President’s Council of Advisors on Science and Technology. Realizing the full potential of health information technology to improve healthcare for Americans: the path forward. Washington (DC): Executive Office of the President; 2010 Dec. Available from: <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/pcast-health-it-report.pdf" target="_blank">https://www.whitehouse.gov/sites/default/files/microsites/ostp/pcast-health-it-report.pdf</a></li>
+								<li id="ref1">President’s Council of Advisors on Science and Technology. Realizing the full potential of health information technology to improve healthcare for Americans: the path forward. Washington (DC): Executive Office of the President; 2010 Dec. Available from: <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/pcast-health-it-report.pdf" target="_blank" rel="noopener noreferrer">https://www.whitehouse.gov/sites/default/files/microsites/ostp/pcast-health-it-report.pdf</a></li>
 								<li id="ref2">
-									President’s Council of Advisors on Science and Technology. Better health care and lower costs: accelerating improvement through systems engineering. Washington (DC): Executive Office of the President; 2014 May. Available from: <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/PCAST/pcast_systems_engineering_in_healthcare_-_may_2014.pdf" target="_blank">https://www.whitehouse.gov/sites/default/files/microsites/ostp/PCAST/<br />pcast_systems_engineering_in_healthcare_-_may_2014.pdf</a>
+									President’s Council of Advisors on Science and Technology. Better health care and lower costs: accelerating improvement through systems engineering. Washington (DC): Executive Office of the President; 2014 May. Available from: <a href="https://www.whitehouse.gov/sites/default/files/microsites/ostp/PCAST/pcast_systems_engineering_in_healthcare_-_may_2014.pdf" target="_blank" rel="noopener noreferrer">https://www.whitehouse.gov/sites/default/files/microsites/ostp/PCAST/<br />pcast_systems_engineering_in_healthcare_-_may_2014.pdf</a>
 								</li>
-								<li id="ref3">The White House. Cancer Moonshot [Internet]. Washington (DC): the White House; [cited 2016 Jul 5]. Available from: <a href="https://www.whitehouse.gov/CancerMoonshot" target="_blank">https://www.whitehouse.gov/CancerMoonshot</a></li>
-								<li id="ref4">Institute of Medicine. Delivering high-quality cancer care: charting a new course for a system in crisis. Levit L, Balogh E, Nass S, Ganz P, editors. Washington (DC): The National Academies Press; 2013 Sep 10. Available from: <a href="https://www.nap.edu/18359" target="_blank">https://www.nap.edu/18359</a></li>
-								<li id="ref5">American Society of Clinical Oncology. The state of cancer care in America, 2016: a report by the American Society of Clinical Oncology. J Oncol Pract. 2016;12(4):339-83. Available from: <a href="http://www.ncbi.nlm.nih.gov/pubmed/26979926" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/26979926</a></li>
-								<li id="ref6">Cancer Moonshot Blue Ribbon Panel. Cancer Moonshot Blue Ribbon Panel Report 2016. Bethesda (MD): National Cancer Institute; 2016 Oct 17. Available from: <a href="https://www.cancer.gov/research/key-initiatives/moonshot-cancer-initiative/blue-ribbon-panel" target="_blank">https://www.cancer.gov/research/key-initiatives/moonshot-cancer-initiative/blue-ribbon-panel</a></li>
-								<li id="ref7">Cancer Moonshot Task Force. Report of the Cancer Moonshot Task Force. Washington (DC): the White House; 2016 Oct 17. Available from: <a href="https://www.whitehouse.gov/sites/default/files/docs/final-whcmtf-report-1012161.pdf" target="_blank">https://www.whitehouse.gov/sites/default/files/docs/final-whcmtf-report-1012161.pdf</a></li>
-								<li id="ref8">Office of the National Coordinator for Health Information Technology. Federal health IT strategic plan 2015-2020. Washington (DC): ONC; 2014 Dec. Available from: <a href="http://dashboard.healthit.gov/strategic-plan/federal-health-it-strategic-plan-2015-2020.php" target="_blank">http://dashboard.healthit.gov/strategic-plan/federal-health-it-strategic-plan-2015-2020.php</a></li>
-								<li id="ref9">Office of the National Coordinator for Health Information Technology. Connecting health and care for the nation: a shared nationwide interoperability roadmap. Washington (DC): ONC; 2015 Oct. Available from: <a href="https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf" target="_blank">https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf</a></li>
+								<li id="ref3">The White House. Cancer Moonshot [Internet]. Washington (DC): the White House; [cited 2016 Jul 5]. Available from: <a href="https://www.whitehouse.gov/CancerMoonshot" target="_blank" rel="noopener noreferrer">https://www.whitehouse.gov/CancerMoonshot</a></li>
+								<li id="ref4">Institute of Medicine. Delivering high-quality cancer care: charting a new course for a system in crisis. Levit L, Balogh E, Nass S, Ganz P, editors. Washington (DC): The National Academies Press; 2013 Sep 10. Available from: <a href="https://www.nap.edu/18359" target="_blank" rel="noopener noreferrer">https://www.nap.edu/18359</a></li>
+								<li id="ref5">American Society of Clinical Oncology. The state of cancer care in America, 2016: a report by the American Society of Clinical Oncology. J Oncol Pract. 2016;12(4):339-83. Available from: <a href="http://www.ncbi.nlm.nih.gov/pubmed/26979926" target="_blank" rel="noopener noreferrer">http://www.ncbi.nlm.nih.gov/pubmed/26979926</a></li>
+								<li id="ref6">Cancer Moonshot Blue Ribbon Panel. Cancer Moonshot Blue Ribbon Panel Report 2016. Bethesda (MD): National Cancer Institute; 2016 Oct 17. Available from: <a href="https://www.cancer.gov/research/key-initiatives/moonshot-cancer-initiative/blue-ribbon-panel" target="_blank" rel="noopener noreferrer">https://www.cancer.gov/research/key-initiatives/moonshot-cancer-initiative/blue-ribbon-panel</a></li>
+								<li id="ref7">Cancer Moonshot Task Force. Report of the Cancer Moonshot Task Force. Washington (DC): the White House; 2016 Oct 17. Available from: <a href="https://www.whitehouse.gov/sites/default/files/docs/final-whcmtf-report-1012161.pdf" target="_blank" rel="noopener noreferrer">https://www.whitehouse.gov/sites/default/files/docs/final-whcmtf-report-1012161.pdf</a></li>
+								<li id="ref8">Office of the National Coordinator for Health Information Technology. Federal health IT strategic plan 2015-2020. Washington (DC): ONC; 2014 Dec. Available from: <a href="http://dashboard.healthit.gov/strategic-plan/federal-health-it-strategic-plan-2015-2020.php" target="_blank" rel="noopener noreferrer">http://dashboard.healthit.gov/strategic-plan/federal-health-it-strategic-plan-2015-2020.php</a></li>
+								<li id="ref9">Office of the National Coordinator for Health Information Technology. Connecting health and care for the nation: a shared nationwide interoperability roadmap. Washington (DC): ONC; 2015 Oct. Available from: <a href="https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf" target="_blank" rel="noopener noreferrer">https://www.healthit.gov/sites/default/files/hie-interoperability/nationwide-interoperability-roadmap-final-version-1.0.pdf</a></li>
 							</ol>
 						</div>
 
@@ -141,17 +140,17 @@
 				<div class="section">
 					<div class="row">
 						<div class="small-12 column">
-							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank">President's Cancer Panel</a></h3>
+							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank" rel="noopener noreferrer">President's Cancer Panel</a></h3>
 							<div><a href="mailto:PresCancerPanel@mail.nih.gov">PresCancerPanel@mail.nih.gov</a><br /></div>
 							<div class="connect-icons"><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">HHS Vulnerability Disclosure</a><br /></div>
 							<div class="connect-icons">
-								<a href="https://twitter.com/prescancerpanel" target="_blank"
+								<a href="https://twitter.com/prescancerpanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Twitter"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/twitter-icon.svg" alt="President's Cancer Panel Twitter" src="img/icons/twitter-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="https://storify.com/PresCancerPanel" target="_blank"
+								<a href="https://storify.com/PresCancerPanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Storify"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/storify-icon.svg" alt="President's Cancer Panel Storify" src="img/icons/storify-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="mailto:PresCancerPanel@mail.nih.gov"
+								<a href="mailto:PresCancerPanel@mail.nih.gov" aria-label="President's Cancer Panel email"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/envelope-icon.svg" alt="President's Cancer Panel email" src="img/icons/envelope-icon.png" height="48" width="48"></image></svg
 								></a>
 							</div>
@@ -162,12 +161,8 @@
 			</footer>
 		</div>
 
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
-		<script src="js/vendor/jqueryui/jquery-ui.js" type="text/javascript"></script>
-		<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
-		</script>
+		<script src="js/vendor/code.jquery.com_jquery-3.6.4.min.js"></script>
+		<script src="js/vendor/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 
 		<script src="js/navScroll.js" type="text/javascript"></script>
 

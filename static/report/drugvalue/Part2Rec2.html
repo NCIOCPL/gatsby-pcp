@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 	<!--<![endif]-->
 
 	<head>
@@ -28,7 +28,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
 
 		<link rel="stylesheet" href="css/default.css" />
-		<link href="js/vendor/jqueryui/css/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="js/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/anythingslider.css" rel="stylesheet" type="text/css" />
 
 		<!--Search Style-->
@@ -44,11 +44,9 @@
 
 		<div class="header-container" id="reportHeader">
 			<header class="wrapper clearfix">
-				<a href="index.html">
-					<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
-					<div id="pcpSubtitle">President's Cancer Panel</div>
-					<h1 class="title">Promoting Value, Affordability, and Innovation in Cancer Drug Treatment</h1>
-				</a>
+				<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
+				<div id="pcpSubtitle">President's Cancer Panel</div>
+				<h1 class="title">Promoting Value, Affordability, and Innovation in Cancer Drug Treatment</h1>
 			</header>
 		</div>
 
@@ -67,6 +65,7 @@
 						<label for="tipue_search_input">Search:</label>
 						<form action="searchResults.html" class="searchForm">
 							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required />
+							<button type="submit">Go</button>
 						</form>
 					</div>
 				</div>
@@ -126,8 +125,8 @@
 
 						<div class="fullWidthGrayBox" style="width: 100%; height: auto">
 							<h3 id="ctatv">Clinical Tools to Assess Treatment Value</h3>
-							<p>ASCO has developed a <a href="http://www.asco.org/practice-guidelines/cancer-care-initiatives/value-cancer-care" target="_blank">Value Framework</a> that assesses cancer therapies based on clinical benefit, side effects, improvements in patient symptoms, and cost. One possible future step could be to create an electronic, physician-guided tool that can be modified at the point of care to reflect patient priorities and used to support shared decision making.</p>
-							<p>The National Comprehensive Cancer Network has developed <a href="https://www.nccn.org/evidenceblocks/default.aspx" target="_blank">Evidence Blocks</a> to accompany its Clinical Practice Guidelines. The Evidence Blocks provide a visual representation of five key measures—efficacy, safety, quality of evidence, consistency of evidence, and affordability—with the goal of supporting informed decision making by providers and patients.</p>
+							<p>ASCO has developed a <a href="http://www.asco.org/practice-guidelines/cancer-care-initiatives/value-cancer-care" target="_blank" rel="noopener noreferrer">Value Framework</a> that assesses cancer therapies based on clinical benefit, side effects, improvements in patient symptoms, and cost. One possible future step could be to create an electronic, physician-guided tool that can be modified at the point of care to reflect patient priorities and used to support shared decision making.</p>
+							<p>The National Comprehensive Cancer Network has developed <a href="https://www.nccn.org/evidenceblocks/default.aspx" target="_blank" rel="noopener noreferrer">Evidence Blocks</a> to accompany its Clinical Practice Guidelines. The Evidence Blocks provide a visual representation of five key measures—efficacy, safety, quality of evidence, consistency of evidence, and affordability—with the goal of supporting informed decision making by providers and patients.</p>
 						</div>
 
 						<h2>Patients Should Have Access to Cost Information</h2>
@@ -138,7 +137,7 @@
 						<h2>Clinical Data Are Needed to Inform Decision Making</h2>
 						<p>To enable value assessment, cost information should be considered in conjunction with potential clinical benefits and harms, including impact on patients’ quality of life. Ideally, each patient should be able to review clinical data that reflect outcomes in other patients with similar diseases and health characteristics. However, these data often are limited or unavailable, in part because clinical trial populations often are not representative of the general population. Moreover, a paucity of data exists on quality of life and patient-reported outcomes because they are collected inconsistently and in nonstandardized formats, if at all. Physicians should clearly explain any evidence gaps to patients and should also tell patients when a drug is unlikely to provide benefit.</p>
 						<p>
-							As discussed in the Panel’s 2016 report, <a href="https://prescancerpanel.cancer.gov/report/connectedhealth/" target="_blank" class="italic">Improving Cancer-Related Outcomes with Connected Health</a>,<span class="refLink"><a href="#ref11" class="refLink">11</a></span> widespread adoption of health information technology is creating opportunities to address these knowledge gaps. In particular, standardized collection of patient-reported outcomes and use of learning healthcare systems that gather and analyze real-world data could generate valuable information for physicians and patients weighing treatment options. The need to “unleash the power of data” to improve cancer care and research also is a key theme in the 2016 <a href="https://medium.com/cancer-moonshot/report-of-the-cancer-moonshot-task-force-executive-summary-e711f1845ec" target="_blank" class="italic">Report of the Cancer Moonshot Task Force</a>.<span class="refLink"><a href="#ref12" class="refLink">12</a></span>
+							As discussed in the Panel’s 2016 report, <a href="https://prescancerpanel.cancer.gov/report/connectedhealth/" target="_blank" rel="noopener noreferrer" class="italic">Improving Cancer-Related Outcomes with Connected Health</a>,<span class="refLink"><a href="#ref11" class="refLink">11</a></span> widespread adoption of health information technology is creating opportunities to address these knowledge gaps. In particular, standardized collection of patient-reported outcomes and use of learning healthcare systems that gather and analyze real-world data could generate valuable information for physicians and patients weighing treatment options. The need to “unleash the power of data” to improve cancer care and research also is a key theme in the 2016 <a href="https://medium.com/cancer-moonshot/report-of-the-cancer-moonshot-task-force-executive-summary-e711f1845ec" target="_blank" rel="noopener noreferrer" class="italic">Report of the Cancer Moonshot Task Force</a>.<span class="refLink"><a href="#ref12" class="refLink">12</a></span>
 						</p>
 
 						<div class="pageNavWrapper">
@@ -154,18 +153,18 @@
 						<div class="pageReferences">
 							<h2 class="references">References</h2>
 							<ol>
-								<li id="ref1">Institute of Medicine. Delivering high-quality cancer care: charting a new course for a system in crisis. Levit L, Balogh E, Nass S, Ganz P, editors. Washington (DC): The National Academies Press; 2013 Sep 10. Available from: <a href="https://www.nap.edu/18359" target="_blank">https://www.nap.edu/18359</a></li>
-								<li id="ref2">Meropol NJ, Schrag D, Smith TJ, Mulvey TM, Langdon RM Jr, Blum D, et al. American Society of Clinical Oncology guidance statement: the cost of cancer care. J Clin Oncol. 2009;27(23):3868-74. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19581533" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/19581533</a></li>
-								<li id="ref3">Chino F, Peppercorn JM, Rushing C, Kamal AH, Altomare I, Samsa G, et al. Out-of-pocket costs, financial distress, and underinsurance in cancer care. JAMA Oncol. 2017;3(11):1582-84. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28796862" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/28796862</a></li>
-								<li id="ref4">Shih YT, Chien CR. A review of cost communication in oncology: patient attitude, provider acceptance, and outcome assessment. Cancer. 2017;123(6):928-39. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27893929" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/27893929</a></li>
-								<li id="ref5">American Society of Clinical Oncology. Value in cancer care [Internet]. Alexandria (VA): ASCO; [cited 2017 May 19]. Available from: <a href="http://www.asco.org/practice-guidelines/cancer-care-initiatives/value-cancer-care" target="_blank">http://www.asco.org/practice-guidelines/cancer-care-initiatives/value-cancer-care</a></li>
-								<li id="ref6">National Comprehensive Cancer Network. NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines) with NCCN Evidence Blocks [Internet]. Fort Washington (PA): NCCN; [cited 2017 May 18]. Available from: <a href="https://www.nccn.org/evidenceblocks" target="_blank">https://www.nccn.org/evidenceblocks</a></li>
-								<li id="ref7">Avalere Health, FasterCures. Patient-Perspective Value Framework (PPVF) Version 1.0. Washington (DC): Avalere Health and FasterCures; 2017 May. Available from: <a href="http://www.fastercures.org/reports/view/66" target="_blank">http://www.fastercures.org/reports/view/66</a></li>
-								<li id="ref8">Association of Community Cancer Centers. 2016 trends in cancer programs. Rockville (MD): ACCC; 2016. Available from: <a href="http://www.accc-cancer.org/surveys/pdf/Trends-in-Cancer-Programs-2016.pdf" target="_blank">http://www.accc-cancer.org/surveys/pdf/Trends-in-Cancer-Programs-2016.pdf</a></li>
-								<li id="ref9">Robert Wood Johnson Foundation. How price transparency can control the cost of health care. Health Policy Snapshot Series [Internet]. 2016 Mar [cited 2017 Oct 13]. Available from: <a href="https://www.rwjf.org/en/library/research/2016/03/how-price-transparency-controls-health-care-cost.html" target="_blank">https://www.rwjf.org/en/library/research/2016/03/how-price-transparency-controls-health-care-cost.html</a></li>
-								<li id="ref10">Minemyer P. Massachusetts hospitals still fail to comply with price transparency law. FierceHealthcare [Internet]. 2017 Apr 10 [cited 2017 Oct 13]. Available from: <a href="http://www.fiercehealthcare.com/finance/massachusetts-hospitals-still-fail-to-comply-price-transparency-law" target="_blank">http://www.fiercehealthcare.com/finance/massachusetts-hospitals-still-fail-to-comply-price-transparency-law</a></li>
-								<li id="ref11">President's Cancer Panel. Improving cancer-related outcomes with connected health: a report to the President of the United States from the President's Cancer Panel. Bethesda (MD): the Panel; 2016 Nov. Available from: <a href="https://prescancerpanel.cancer.gov/report/connectedhealth" target="_blank">https://prescancerpanel.cancer.gov/report/connectedhealth</a></li>
-								<li id="ref12">Cancer Moonshot Task Force. Report of the Cancer Moonshot Task Force. Washington (DC): the White House; 2016 Oct 17. Available from: <a href="https://medium.com/cancer-moonshot/report-of-the-cancer-moonshot-task-force-executive-summary-e711f1845ec " target="_blank">https://medium.com/cancer-moonshot/report-of-the-cancer-moonshot-task-force-executive-summary-e711f1845ec</a></li>
+								<li id="ref1">Institute of Medicine. Delivering high-quality cancer care: charting a new course for a system in crisis. Levit L, Balogh E, Nass S, Ganz P, editors. Washington (DC): The National Academies Press; 2013 Sep 10. Available from: <a href="https://www.nap.edu/18359" target="_blank" rel="noopener noreferrer">https://www.nap.edu/18359</a></li>
+								<li id="ref2">Meropol NJ, Schrag D, Smith TJ, Mulvey TM, Langdon RM Jr, Blum D, et al. American Society of Clinical Oncology guidance statement: the cost of cancer care. J Clin Oncol. 2009;27(23):3868-74. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19581533" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pubmed/19581533</a></li>
+								<li id="ref3">Chino F, Peppercorn JM, Rushing C, Kamal AH, Altomare I, Samsa G, et al. Out-of-pocket costs, financial distress, and underinsurance in cancer care. JAMA Oncol. 2017;3(11):1582-84. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28796862" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pubmed/28796862</a></li>
+								<li id="ref4">Shih YT, Chien CR. A review of cost communication in oncology: patient attitude, provider acceptance, and outcome assessment. Cancer. 2017;123(6):928-39. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27893929" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pubmed/27893929</a></li>
+								<li id="ref5">American Society of Clinical Oncology. Value in cancer care [Internet]. Alexandria (VA): ASCO; [cited 2017 May 19]. Available from: <a href="http://www.asco.org/practice-guidelines/cancer-care-initiatives/value-cancer-care" target="_blank" rel="noopener noreferrer">http://www.asco.org/practice-guidelines/cancer-care-initiatives/value-cancer-care</a></li>
+								<li id="ref6">National Comprehensive Cancer Network. NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines) with NCCN Evidence Blocks [Internet]. Fort Washington (PA): NCCN; [cited 2017 May 18]. Available from: <a href="https://www.nccn.org/evidenceblocks" target="_blank" rel="noopener noreferrer">https://www.nccn.org/evidenceblocks</a></li>
+								<li id="ref7">Avalere Health, FasterCures. Patient-Perspective Value Framework (PPVF) Version 1.0. Washington (DC): Avalere Health and FasterCures; 2017 May. Available from: <a href="http://www.fastercures.org/reports/view/66" target="_blank" rel="noopener noreferrer">http://www.fastercures.org/reports/view/66</a></li>
+								<li id="ref8">Association of Community Cancer Centers. 2016 trends in cancer programs. Rockville (MD): ACCC; 2016. Available from: <a href="http://www.accc-cancer.org/surveys/pdf/Trends-in-Cancer-Programs-2016.pdf" target="_blank" rel="noopener noreferrer">http://www.accc-cancer.org/surveys/pdf/Trends-in-Cancer-Programs-2016.pdf</a></li>
+								<li id="ref9">Robert Wood Johnson Foundation. How price transparency can control the cost of health care. Health Policy Snapshot Series [Internet]. 2016 Mar [cited 2017 Oct 13]. Available from: <a href="https://www.rwjf.org/en/library/research/2016/03/how-price-transparency-controls-health-care-cost.html" target="_blank" rel="noopener noreferrer">https://www.rwjf.org/en/library/research/2016/03/how-price-transparency-controls-health-care-cost.html</a></li>
+								<li id="ref10">Minemyer P. Massachusetts hospitals still fail to comply with price transparency law. FierceHealthcare [Internet]. 2017 Apr 10 [cited 2017 Oct 13]. Available from: <a href="http://www.fiercehealthcare.com/finance/massachusetts-hospitals-still-fail-to-comply-price-transparency-law" target="_blank" rel="noopener noreferrer">http://www.fiercehealthcare.com/finance/massachusetts-hospitals-still-fail-to-comply-price-transparency-law</a></li>
+								<li id="ref11">President's Cancer Panel. Improving cancer-related outcomes with connected health: a report to the President of the United States from the President's Cancer Panel. Bethesda (MD): the Panel; 2016 Nov. Available from: <a href="https://prescancerpanel.cancer.gov/report/connectedhealth" target="_blank" rel="noopener noreferrer">https://prescancerpanel.cancer.gov/report/connectedhealth</a></li>
+								<li id="ref12">Cancer Moonshot Task Force. Report of the Cancer Moonshot Task Force. Washington (DC): the White House; 2016 Oct 17. Available from: <a href="https://medium.com/cancer-moonshot/report-of-the-cancer-moonshot-task-force-executive-summary-e711f1845ec " target="_blank" rel="noopener noreferrer">https://medium.com/cancer-moonshot/report-of-the-cancer-moonshot-task-force-executive-summary-e711f1845ec</a></li>
 							</ol>
 						</div>
 
@@ -183,20 +182,20 @@
 				<div class="section">
 					<div class="row">
 						<div class="small-12 column">
-							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank">President's Cancer Panel</a></h3>
+							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank" rel="noopener noreferrer">President's Cancer Panel</a></h3>
 							<div><a href="mailto:PresCancerPanel@mail.nih.gov">PresCancerPanel@mail.nih.gov</a><br /></div>
 							<div class="connect-icons"><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">HHS Vulnerability Disclosure</a><br /></div>
 							<div class="connect-icons">
-								<a href="https://twitter.com/prescancerpanel" target="_blank"
+								<a href="https://twitter.com/prescancerpanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Twitter"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/twitter-icon.svg" alt="President's Cancer Panel Twitter" src="img/icons/twitter-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="https://www.linkedin.com/company/16184523/" target="_blank"
+								<a href="https://www.linkedin.com/company/16184523/" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel LinkedIn"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/linkedin-icon.svg" alt="President's Cancer Panel LinkedIn" src="img/icons/linkedin-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="https://storify.com/PresCancerPanel" target="_blank"
+								<a href="https://storify.com/PresCancerPanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Storify"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/storify-icon.svg" alt="President's Cancer Panel Storify" src="img/icons/storify-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="mailto:PresCancerPanel@mail.nih.gov"
+								<a href="mailto:PresCancerPanel@mail.nih.gov" aria-label="President's Cancer Panel email"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/envelope-icon.svg" alt="President's Cancer Panel email" src="img/icons/envelope-icon.png" height="48" width="48"></image></svg
 								></a>
 							</div>
@@ -207,12 +206,8 @@
 			</footer>
 		</div>
 
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
-		<script src="js/vendor/jqueryui/jquery-ui.js" type="text/javascript"></script>
-		<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
-		</script>
+		<script src="js/vendor/code.jquery.com_jquery-3.6.4.min.js"></script>
+		<script src="js/vendor/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 
 		<script src="js/navScroll.js" type="text/javascript"></script>
 		<script src="js/vendor/jquery.anythingslider.js" type="text/javascript"></script>

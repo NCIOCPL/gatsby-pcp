@@ -80,7 +80,7 @@
 }
 /* start-stop button, playing, default state */
 .anythingSlider-default .anythingControls a.start-stop.playing {
-	background-color: #D00;
+	background-color: #c70000;
 }
 
 /* start-stop button, default hovered text color (when visible) */

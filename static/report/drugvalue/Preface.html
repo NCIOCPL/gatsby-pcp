@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 	<!--<![endif]-->
 
 	<head>
@@ -28,7 +28,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
 
 		<link rel="stylesheet" href="css/default.css" />
-		<link href="js/vendor/jqueryui/css/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="js/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 		<link href="css/anythingslider.css" rel="stylesheet" type="text/css" />
 
 		<!--Search Style-->
@@ -44,11 +44,9 @@
 
 		<div class="header-container" id="reportHeader">
 			<header class="wrapper clearfix">
-				<a href="index.html">
-					<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
-					<div id="pcpSubtitle">President's Cancer Panel</div>
-					<h1 class="title">Promoting Value, Affordability, and Innovation in Cancer Drug Treatment</h1>
-				</a>
+				<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
+				<div id="pcpSubtitle">President's Cancer Panel</div>
+				<h1 class="title">Promoting Value, Affordability, and Innovation in Cancer Drug Treatment</h1>
 			</header>
 		</div>
 
@@ -67,6 +65,7 @@
 						<label for="tipue_search_input">Search:</label>
 						<form action="searchResults.html" class="searchForm">
 							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required />
+							<button type="submit">Go</button>
 						</form>
 					</div>
 				</div>
@@ -122,17 +121,17 @@
 						<div class="pageReferences">
 							<h2 class="references colorEditable">References</h2>
 							<ol>
-								<li id="ref1">Mailankody S, Prasad V. Five years of cancer drug approvals: innovation, efficacy, and costs. JAMA Oncol. 2015;1(4):539-40. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26181265" target="_blank">https://www.ncbi.nlm.nih.gov/pubmed/26181265</a></li>
-								<li id="ref2">Bach PB. Cancer drug costs for a month of treatment at initial Food and Drug Administration approval. New York (NY): Center for Health Policy & Outcomes, Memorial Sloan Kettering Cancer Center; 2017. Available from: <a href="https://www.mskcc.org/research-areas/programs-centers/health-policy-outcomes/cost-drugs" target="_blank">https://www.mskcc.org/research-areas/programs-centers/health-policy-outcomes/cost-drugs</a></li>
-								<li id="ref3">Fitch K, Pelizzari PM, Pyenson B. Cost drivers of cancer care: a retrospective analysis of Medicare and commercially insured population claim data 2004-2014. Milliman (commissioned by the Community Oncology Alliance); 2016 Apr. Available from: <a href="http://www.milliman.com/insight/2016/Cost-drivers-of-cancer-care-A-retrospective-analysis-of-Medicare-and-commercially-insured-population-claim-data-2004-2014" target="_blank">http://www.milliman.com/insight/2016/Cost-drivers-of-cancer-care-A-retrospective-analysis-of-Medicare-and-commercially-insured-population-claim-data-2004-2014</a></li>
-								<li id="ref4">Hoadley J, Cubanski J. It pays to shop: variation in out-of-pocket costs for Medicare Part D enrollees in 2016. Menlo Park (CA): The Henry J. Kaiser Family Foundation; 2015 Dec. Available from: <a href="http://files.kff.org/attachment/Issue-Brief-It-Pays-to-Shop-Variation-in-Out-of-Pocket-Costs-for-Medicare-Part-D-Enrollees-in-2016" target="_blank">http://files.kff.org/attachment/Issue-Brief-It-Pays-to-Shop-Variation-in-Out-of-Pocket-Costs-for-Medicare-Part-D-Enrollees-in-2016</a></li>
-								<li id="ref5">American Society of Clinical Oncology. National Cancer Opinion Survey: key findings. Alexandria (VA): ASCO; 2017 Oct 24. Available from: <a href="https://www.asco.org/sites/new-www.asco.org/files/content-files/research-and-progress/documents/ASCO-National-Cancer-Opinion-Index-infographic.pdf" target="_blank">https://www.asco.org/sites/new-www.asco.org/files/content-files/research-and-progress/documents/ASCO-National-Cancer-Opinion-Index-infographic.pdf</a></li>
-								<li id="ref6">Karlin-Smith S. Trump renews attacks on high drug prices. Politico [Internet]. 2017 Oct 16 [cited 2017 Nov 6]. Available from: <a href="https://www.politico.com/story/2017/10/16/trump-attacks-high-drug-prices-243836" target="_blank">https://www.politico.com/story/2017/10/16/trump-attacks-high-drug-prices-243836</a></li>
-								<li id="ref7">Full committee hearing: the cost of prescription drugs: how the drug delivery system affects what patients pay [Internet]. Washington (DC): U.S. Senate Committee on Health, Education, Labor, and Pensions; 2017 Jun 13 [cited 2017 Nov 6]. Available from: <a href="https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay" target="_blank">https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay</a></li>
-								<li id="ref8">Full committee hearing: the cost of prescription drugs: how the drug delivery system affects what patients pay, part II [Internet]. Washington (DC): U.S. Senate Committee on Health, Education, Labor, and Pensions; 2017 Oct 17 [cited 2017 Nov 6]. Available from: <a href="https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay-part-ii" target="_blank">https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay-part-ii</a></li>
-								<li id="ref9">American Society of Clinical Oncology. American Society of Clinical Oncology position statement on addressing the affordability of cancer drugs. Alexandria (VA): ASCO; 2017 Jun 1. Available from: <a href="https://www.asco.org/sites/new-www.asco.org/files/content-files/blog-release/documents/2017-ASCO-Position-Statement-Affordability-Cancer-Drugs.pdf" target="_blank">https://www.asco.org/sites/new-www.asco.org/files/content-files/blog-release/documents/2017-ASCO-Position-Statement-Affordability-Cancer-Drugs.pdf</a></li>
-								<li id="ref10">Society for Gynecologic Oncology. Addressing the high cost of drugs for oncology patients: a national priority. Chicago (IL): SGO. Available from: <a href="https://www.sgo.org/public-policy/addressing-the-high-cost-of-drugs-for-oncology-patients" target="_blank">https://www.sgo.org/public-policy/addressing-the-high-cost-of-drugs-for-oncology-patients</a></li>
-								<li id="ref11">The National Academies of Sciences, Engineering, and Medicine. Making medicines affordable: a national imperative. Washington (DC): The National Academies Press; 2017 Nov. Available from: <a href="https://www.nap.edu/catalog/24946" target="_blank">https://www.nap.edu/catalog/24946</a></li>
+								<li id="ref1">Mailankody S, Prasad V. Five years of cancer drug approvals: innovation, efficacy, and costs. JAMA Oncol. 2015;1(4):539-40. Available from: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26181265" target="_blank" rel="noopener noreferrer">https://www.ncbi.nlm.nih.gov/pubmed/26181265</a></li>
+								<li id="ref2">Bach PB. Cancer drug costs for a month of treatment at initial Food and Drug Administration approval. New York (NY): Center for Health Policy & Outcomes, Memorial Sloan Kettering Cancer Center; 2017. Available from: <a href="https://www.mskcc.org/research-areas/programs-centers/health-policy-outcomes/cost-drugs" target="_blank" rel="noopener noreferrer">https://www.mskcc.org/research-areas/programs-centers/health-policy-outcomes/cost-drugs</a></li>
+								<li id="ref3">Fitch K, Pelizzari PM, Pyenson B. Cost drivers of cancer care: a retrospective analysis of Medicare and commercially insured population claim data 2004-2014. Milliman (commissioned by the Community Oncology Alliance); 2016 Apr. Available from: <a href="http://www.milliman.com/insight/2016/Cost-drivers-of-cancer-care-A-retrospective-analysis-of-Medicare-and-commercially-insured-population-claim-data-2004-2014" target="_blank" rel="noopener noreferrer">http://www.milliman.com/insight/2016/Cost-drivers-of-cancer-care-A-retrospective-analysis-of-Medicare-and-commercially-insured-population-claim-data-2004-2014</a></li>
+								<li id="ref4">Hoadley J, Cubanski J. It pays to shop: variation in out-of-pocket costs for Medicare Part D enrollees in 2016. Menlo Park (CA): The Henry J. Kaiser Family Foundation; 2015 Dec. Available from: <a href="http://files.kff.org/attachment/Issue-Brief-It-Pays-to-Shop-Variation-in-Out-of-Pocket-Costs-for-Medicare-Part-D-Enrollees-in-2016" target="_blank" rel="noopener noreferrer">http://files.kff.org/attachment/Issue-Brief-It-Pays-to-Shop-Variation-in-Out-of-Pocket-Costs-for-Medicare-Part-D-Enrollees-in-2016</a></li>
+								<li id="ref5">American Society of Clinical Oncology. National Cancer Opinion Survey: key findings. Alexandria (VA): ASCO; 2017 Oct 24. Available from: <a href="https://www.asco.org/sites/new-www.asco.org/files/content-files/research-and-progress/documents/ASCO-National-Cancer-Opinion-Index-infographic.pdf" target="_blank" rel="noopener noreferrer">https://www.asco.org/sites/new-www.asco.org/files/content-files/research-and-progress/documents/ASCO-National-Cancer-Opinion-Index-infographic.pdf</a></li>
+								<li id="ref6">Karlin-Smith S. Trump renews attacks on high drug prices. Politico [Internet]. 2017 Oct 16 [cited 2017 Nov 6]. Available from: <a href="https://www.politico.com/story/2017/10/16/trump-attacks-high-drug-prices-243836" target="_blank" rel="noopener noreferrer">https://www.politico.com/story/2017/10/16/trump-attacks-high-drug-prices-243836</a></li>
+								<li id="ref7">Full committee hearing: the cost of prescription drugs: how the drug delivery system affects what patients pay [Internet]. Washington (DC): U.S. Senate Committee on Health, Education, Labor, and Pensions; 2017 Jun 13 [cited 2017 Nov 6]. Available from: <a href="https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay" target="_blank" rel="noopener noreferrer">https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay</a></li>
+								<li id="ref8">Full committee hearing: the cost of prescription drugs: how the drug delivery system affects what patients pay, part II [Internet]. Washington (DC): U.S. Senate Committee on Health, Education, Labor, and Pensions; 2017 Oct 17 [cited 2017 Nov 6]. Available from: <a href="https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay-part-ii" target="_blank" rel="noopener noreferrer">https://www.help.senate.gov/hearings/the-cost-of-prescription-drugs-how-the-drug-delivery-system-affects-what-patients-pay-part-ii</a></li>
+								<li id="ref9">American Society of Clinical Oncology. American Society of Clinical Oncology position statement on addressing the affordability of cancer drugs. Alexandria (VA): ASCO; 2017 Jun 1. Available from: <a href="https://www.asco.org/sites/new-www.asco.org/files/content-files/blog-release/documents/2017-ASCO-Position-Statement-Affordability-Cancer-Drugs.pdf" target="_blank" rel="noopener noreferrer">https://www.asco.org/sites/new-www.asco.org/files/content-files/blog-release/documents/2017-ASCO-Position-Statement-Affordability-Cancer-Drugs.pdf</a></li>
+								<li id="ref10">Society for Gynecologic Oncology. Addressing the high cost of drugs for oncology patients: a national priority. Chicago (IL): SGO. Available from: <a href="https://www.sgo.org/public-policy/addressing-the-high-cost-of-drugs-for-oncology-patients" target="_blank" rel="noopener noreferrer">https://www.sgo.org/public-policy/addressing-the-high-cost-of-drugs-for-oncology-patients</a></li>
+								<li id="ref11">The National Academies of Sciences, Engineering, and Medicine. Making medicines affordable: a national imperative. Washington (DC): The National Academies Press; 2017 Nov. Available from: <a href="https://www.nap.edu/catalog/24946" target="_blank" rel="noopener noreferrer">https://www.nap.edu/catalog/24946</a></li>
 							</ol>
 						</div>
 
@@ -150,20 +149,20 @@
 				<div class="section">
 					<div class="row">
 						<div class="small-12 column">
-							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank">President's Cancer Panel</a></h3>
+							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank" rel="noopener noreferrer">President's Cancer Panel</a></h3>
 							<div><a href="mailto:PresCancerPanel@mail.nih.gov">PresCancerPanel@mail.nih.gov</a><br /></div>
 							<div class="connect-icons"><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">HHS Vulnerability Disclosure</a><br /></div>
 							<div class="connect-icons">
-								<a href="https://twitter.com/prescancerpanel" target="_blank"
+								<a href="https://twitter.com/prescancerpanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Twitter"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/twitter-icon.svg" alt="President's Cancer Panel Twitter" src="img/icons/twitter-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="https://www.linkedin.com/company/16184523/" target="_blank"
+								<a href="https://www.linkedin.com/company/16184523/" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel LinkedIn"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/linkedin-icon.svg" alt="President's Cancer Panel LinkedIn" src="img/icons/linkedin-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="https://storify.com/PresCancerPanel" target="_blank"
+								<a href="https://storify.com/PresCancerPanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Storify"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/storify-icon.svg" alt="President's Cancer Panel Storify" src="img/icons/storify-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="mailto:PresCancerPanel@mail.nih.gov"
+								<a href="mailto:PresCancerPanel@mail.nih.gov" aria-label="President's Cancer Panel email"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/envelope-icon.svg" alt="President's Cancer Panel email" src="img/icons/envelope-icon.png" height="48" width="48"></image></svg
 								></a>
 							</div>
@@ -174,12 +173,8 @@
 			</footer>
 		</div>
 
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
-		<script src="js/vendor/jqueryui/jquery-ui.js" type="text/javascript"></script>
-		<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
-		</script>
+		<script src="js/vendor/code.jquery.com_jquery-3.6.4.min.js"></script>
+		<script src="js/vendor/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 
 		<script src="js/navScroll.js" type="text/javascript"></script>
 

@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 	<!--<![endif]-->
 
 	<head>
@@ -20,7 +20,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css" />
 
 		<link rel="stylesheet" href="css/default.css" />
-		<link href="js/vendor/jqueryui/css/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+		<link href="js/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
 		<!--Search Style-->
 		<link href="tipuesearch/tipuesearch.css" rel="stylesheet" />
@@ -35,11 +35,9 @@
 
 		<div class="header-container" id="reportHeader">
 			<header class="wrapper clearfix">
-				<a href="index.html">
-					<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
-					<h1 class="title">Improving Cancer-Related Outcomes with Connected Health</h1>
-					<h2 class="subtitle">A Report to the President of the United States from the President's Cancer Panel</h2>
-				</a>
+				<a href="/"><img src="img/bg/logo.png" alt="President's Cancer Panel Logo" id="pcpLogo" /></a>
+				<h1 class="title">Improving Cancer-Related Outcomes with Connected Health</h1>
+				<h2 class="subtitle">A Report to the President of the United States from the President's Cancer Panel</h2>
 			</header>
 		</div>
 
@@ -58,6 +56,7 @@
 						<label for="tipue_search_input">Search:</label>
 						<form action="searchResults.html" class="searchForm">
 							<input type="text" name="q" id="tipue_search_input" autocomplete="off" required />
+							<button type="submit">Go</button>
 						</form>
 					</div>
 				</div>
@@ -109,8 +108,8 @@
 
 						<div class="fullWidthGrayBox" style="width: 100%; height: auto">
 							<h3 id="EHR">Privacy and Security</h3>
-							<p>Breaches of health information can harm individuals, large groups of people, and organizations, damaging stakeholder trust. Without this trust, stakeholders will be less willing to share their data, undermining the goals of connected health. Although none of the recommendations in this report directly address privacy and security, the Panel encourages all stakeholders to take steps to appropriately protect privacy and ensure security while also sharing health data for learning to the extent possible. Additional information can be found on the Office of the National Coordinator for Health Information Technology (ONC) <a href="https://www.healthit.gov/providers-professionals/ehr-privacy-security/resources" target="_blank">website</a> or in ONC’s <a href="https://www.healthit.gov/sites/default/files/pdf/privacy/privacy-and-security-guide.pdf" target="_blank">Guide to Privacy and Security of Electronic Health Information</a>. Information on how the Health Insurance Portability and Accountability Act (HIPAA) protects privacy and security of health information can be found on the U.S. Department of Health and Human Services <a href="http://www.hhs.gov/hipaa/" target="_blank">website</a>.</p>
-							<p class="figureNotes">Sources: Office of the National Coordinator for Health Information Technology. Health IT privacy and security resources [Internet]. Washington (DC): ONC; [updated 2016 Feb 12; cited 2016 Oct 3]. Available from: <a href="https://www.healthit.gov/providers-professionals/ehr-privacy-security/resources" target="_blank">https://www.healthit.gov/providers-professionals/ehr-privacy-security/resources</a>; Office of the National Coordinator for Health Information Technology. Guide to privacy and security of electronic health information. Washington (DC): ONC; 2015 Apr. Available from: <a href="https://www.healthit.gov/sites/default/files/pdf/privacy/privacy-and-security-guide.pdf" target="_blank">https://www.healthit.gov/sites/default/files/pdf/privacy/privacy-and-security-guide.pdf</a>; U.S. Department of Health and Human Services. Health information privacy [Internet]. Washington (DC): DHHS; [cited 2016 Oct 3]. Available from: <a href="http://www.hhs.gov/hipaa/" target="_blank">http://www.hhs.gov/hipaa/</a></p>
+							<p>Breaches of health information can harm individuals, large groups of people, and organizations, damaging stakeholder trust. Without this trust, stakeholders will be less willing to share their data, undermining the goals of connected health. Although none of the recommendations in this report directly address privacy and security, the Panel encourages all stakeholders to take steps to appropriately protect privacy and ensure security while also sharing health data for learning to the extent possible. Additional information can be found on the Office of the National Coordinator for Health Information Technology (ONC) <a href="https://www.healthit.gov/providers-professionals/ehr-privacy-security/resources" target="_blank" rel="noopener noreferrer">website</a> or in ONC’s <a href="https://www.healthit.gov/sites/default/files/pdf/privacy/privacy-and-security-guide.pdf" target="_blank" rel="noopener noreferrer">Guide to Privacy and Security of Electronic Health Information</a>. Information on how the Health Insurance Portability and Accountability Act (HIPAA) protects privacy and security of health information can be found on the U.S. Department of Health and Human Services <a href="http://www.hhs.gov/hipaa/" target="_blank" rel="noopener noreferrer">website</a>.</p>
+							<p class="figureNotes">Sources: Office of the National Coordinator for Health Information Technology. Health IT privacy and security resources [Internet]. Washington (DC): ONC; [updated 2016 Feb 12; cited 2016 Oct 3]. Available from: <a href="https://www.healthit.gov/providers-professionals/ehr-privacy-security/resources" target="_blank" rel="noopener noreferrer">https://www.healthit.gov/providers-professionals/ehr-privacy-security/resources</a>; Office of the National Coordinator for Health Information Technology. Guide to privacy and security of electronic health information. Washington (DC): ONC; 2015 Apr. Available from: <a href="https://www.healthit.gov/sites/default/files/pdf/privacy/privacy-and-security-guide.pdf" target="_blank" rel="noopener noreferrer">https://www.healthit.gov/sites/default/files/pdf/privacy/privacy-and-security-guide.pdf</a>; U.S. Department of Health and Human Services. Health information privacy [Internet]. Washington (DC): DHHS; [cited 2016 Oct 3]. Available from: <a href="http://www.hhs.gov/hipaa/" target="_blank" rel="noopener noreferrer">http://www.hhs.gov/hipaa/</a></p>
 						</div>
 
 						<div class="pageNavWrapper">
@@ -137,17 +136,17 @@
 				<div class="section">
 					<div class="row">
 						<div class="small-12 column">
-							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank">President's Cancer Panel</a></h3>
+							<h3><a href="https://prescancerpanel.cancer.gov/" target="_blank" rel="noopener noreferrer">President's Cancer Panel</a></h3>
 							<div><a href="mailto:PresCancerPanel@mail.nih.gov">PresCancerPanel@mail.nih.gov</a><br /></div>
 							<div class="connect-icons"><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">HHS Vulnerability Disclosure</a><br /></div>
 							<div class="connect-icons">
-								<a href="https://twitter.com/prescancerpanel" target="_blank"
+								<a href="https://twitter.com/prescancerpanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Twitter"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/twitter-icon.svg" alt="President's Cancer Panel Twitter" src="img/icons/twitter-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="https://storify.com/PresCancerPanel" target="_blank"
+								<a href="https://storify.com/PresCancerPanel" target="_blank" rel="noopener noreferrer" aria-label="President's Cancer Panel Storify"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/storify-icon.svg" alt="President's Cancer Panel Storify" src="img/icons/storify-icon.png" height="48" width="48"></image></svg
 								></a>
-								<a href="mailto:PresCancerPanel@mail.nih.gov"
+								<a href="mailto:PresCancerPanel@mail.nih.gov" aria-label="President's Cancer Panel email"
 									><svg class="connect-icon" height="48" width="48"><image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/envelope-icon.svg" alt="President's Cancer Panel email" src="img/icons/envelope-icon.png" height="48" width="48"></image></svg
 								></a>
 							</div>
@@ -158,12 +157,8 @@
 			</footer>
 		</div>
 
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-
-		<script src="js/vendor/jqueryui/jquery-ui.js" type="text/javascript"></script>
-		<script>
-			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>');
-		</script>
+		<script src="js/vendor/code.jquery.com_jquery-3.6.4.min.js"></script>
+		<script src="js/vendor/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 
 		<script src="js/navScroll.js" type="text/javascript"></script>
 

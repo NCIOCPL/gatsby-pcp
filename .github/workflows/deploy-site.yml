@@ -24,7 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
     steps:
-
       # if not using a previous artifact, download the artifact from _this_ run
       # in theory you could use dawidd6/action-download-artifact with skip_unpack but it was being cranky
       - name: Download built site
@@ -41,7 +40,7 @@ jobs:
       # if using a previous artifact, download the last successful artifact from the test workflow
       - name: Download artifact
         if: inputs.use_artifact == true
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@246dbf436b23d7c49e21a7ab8204ca9ecd1fe615
         with:
           workflow: test.yml
           workflow_conclusion: success
@@ -73,7 +72,7 @@ jobs:
           client-token: ${{ secrets.eg_client_token }}
           client-secret: ${{ secrets.eg_client_secret }}
           access-token: ${{ secrets.eg_access_token }}
-          type: "cpcodes"
+          type: 'cpcodes'
           ref: ${{ format('{0},{1}', secrets.ns_cpcode, secrets.prop_cpcode) }}
 
       ## Put a comment on the PR for easy testing

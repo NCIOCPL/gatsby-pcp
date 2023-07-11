@@ -2,15 +2,15 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
-const siteURL = process.env.SITE_DOMAIN ? 'https://' + process.env.SITE_DOMAIN : 'https://prescancerpanel.cancer.gov';
+const siteDomain = process.env.SITE_DOMAIN ? process.env.SITE_DOMAIN : 'prescancerpanel.cancer.gov';
 
 module.exports = {
 	siteMetadata: {
 		title: `President's Cancer Panel`,
 		slogan: 'Advisors to the President on the National Cancer Program',
 		description: `The President's Cancer Panel monitors the activities of the National Cancer Program and reports to the President of the United States on barriers to progress in reducing the burden of cancer.`,
-		siteUrl: siteURL,
-		searchDomain: process.env.SITE_DOMAIN ? process.env.SITE_DOMAIN : 'prescancerpanel.cancer.gov',
+		siteUrl: 'https://' + siteDomain,
+		searchDomain: siteDomain,
 		searchEndpoint: process.env.SEARCH_ENDPOINT ? process.env.SEARCH_ENDPOINT : 'https://webapis.cancer.gov/sitewidesearch/v1/',
 		footerLinks: [
 			{
@@ -94,7 +94,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-canonical-urls',
 			options: {
-				siteUrl: siteURL,
+				siteUrl: 'https://' + siteDomain,
 			},
 		},
 		'gatsby-plugin-image',

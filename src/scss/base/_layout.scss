@@ -21,8 +21,11 @@ body {
 	padding: 0 units(3) units(2) units(3);
 	font-size: font-size('sans',7);
 	background-color: $white;
-	color: $mediumgrey;
+	color: $pcptextcolor;
 }
 .post-body{
 	@include u-width(full);
+	a {
+		font-weight: bold;
+	}
 }
