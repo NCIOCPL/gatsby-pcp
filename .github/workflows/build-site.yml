@@ -118,6 +118,7 @@ jobs:
           ## be in netstorage for the site. For test/prod this should be blank
           PREFIX_PATH: ${{ format('/{0}', steps.set_vars.outputs.prefix_path) }}
           SITE_DOMAIN: ${{ vars.site_domain }}
+          SEARCH_DOMAIN: ${{ vars.search_domain }}
           SEARCH_ENDPOINT: ${{ vars.search_endpoint }}
 
       ## Put the built site on to apache for testing.
