@@ -82,7 +82,7 @@ module.exports = {
 	pathPrefix: process.env.PREFIX_PATH ? process.env.PREFIX_PATH : undefined,
 	plugins: [
 		{
-			resolve: `gatsby-plugin-sass`,
+			resolve: 'gatsby-plugin-sass',
 			options: {
 				sassOptions: {
 					includePaths: ['./node_modules/@uswds/uswds/packages/', 'src/scss/'],
@@ -129,9 +129,10 @@ module.exports = {
 			options: {
 				plugins: [
 					{
-						resolve: `gatsby-remark-images`,
+						resolve: 'gatsby-remark-images',
 						options: {
 							maxWidth: 800,
+							loading: 'eager',
 						},
 					},
 				],
