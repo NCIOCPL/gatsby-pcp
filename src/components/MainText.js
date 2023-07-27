@@ -6,6 +6,7 @@ import Meetings from '../components/Meetings';
 import PictureWithQuotes from '../components/PictureWithQuotes';
 import QuestionAnswer from '../components/QuestionAnswer';
 import ResponsiveImage from '../components/ResponsiveImage';
+import SingleHomepageBox from '../components/SingleHomepageBox';
 import SingleReportYear from '../components/SingleReportYear';
 import SingleStaffListEntry from '../components/SingleStaffListEntry';
 import SingleStaffMember from '../components/SingleStaffMember';
@@ -22,6 +23,7 @@ const renderAst = new rehypeReact({
 		'picture-with-quotes': PictureWithQuotes,
 		'question-answer': QuestionAnswer,
 		'responsive-image': ResponsiveImage,
+		'single-homepage-box': SingleHomepageBox,
 		'single-report-year': SingleReportYear,
 		'single-staff-list-entry': SingleStaffListEntry,
 		'single-staff-member': SingleStaffMember,

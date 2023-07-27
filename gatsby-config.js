@@ -77,6 +77,16 @@ module.exports = {
 				name: 'Reports & Meetings',
 				link: '/reports/',
 			},
+				{
+						name: 'National Cancer Plan',
+						link: '/ncp/',
+						sublinks: [
+								{
+										name: 'Meetings',
+										link: '/ncp/meetings',
+								}
+						],
+				},
 		],
 	},
 	pathPrefix: process.env.PREFIX_PATH ? process.env.PREFIX_PATH : undefined,
