@@ -75,7 +75,12 @@ li {
 	white-space: nowrap !important;
 	border: 0 !important;
 }
-
+.desktop-float-right {
+	@include at-media(desktop) {
+		float: right;
+		margin-left: units(2);
+	}
+}
 .float-right {
 	float: right;
 	margin-left: units(2);

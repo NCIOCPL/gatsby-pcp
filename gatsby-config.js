@@ -3,14 +3,15 @@
  */
 
 const siteDomain = process.env.SITE_DOMAIN ? process.env.SITE_DOMAIN : 'prescancerpanel.cancer.gov';
+const siteUrl = 'https://' + siteDomain;
 
 module.exports = {
 	siteMetadata: {
 		title: `President's Cancer Panel`,
 		slogan: 'Advisors to the President on the National Cancer Program',
 		description: `The President's Cancer Panel monitors the activities of the National Cancer Program and reports to the President of the United States on barriers to progress in reducing the burden of cancer.`,
-		siteUrl: 'https://' + siteDomain,
-		searchDomain: siteDomain,
+		siteUrl: siteUrl,
+		searchDomain: process.env.SEARCH_DOMAIN ? process.env.SEARCH_DOMAIN : siteDomain,
 		searchEndpoint: process.env.SEARCH_ENDPOINT ? process.env.SEARCH_ENDPOINT : 'https://webapis.cancer.gov/sitewidesearch/v1/',
 		footerLinks: [
 			{
@@ -76,12 +77,22 @@ module.exports = {
 				name: 'Reports & Meetings',
 				link: '/reports/',
 			},
+				{
+						name: 'National Cancer Plan',
+						link: '/ncp/',
+						sublinks: [
+								{
+										name: 'Meetings',
+										link: '/ncp/meetings',
+								}
+						],
+				},
 		],
 	},
 	pathPrefix: process.env.PREFIX_PATH ? process.env.PREFIX_PATH : undefined,
 	plugins: [
 		{
-			resolve: `gatsby-plugin-sass`,
+			resolve: 'gatsby-plugin-sass',
 			options: {
 				sassOptions: {
 					includePaths: ['./node_modules/@uswds/uswds/packages/', 'src/scss/'],
@@ -94,7 +105,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-canonical-urls',
 			options: {
-				siteUrl: 'https://' + siteDomain,
+				siteUrl: siteUrl,
 			},
 		},
 		'gatsby-plugin-image',
@@ -128,9 +139,10 @@ module.exports = {
 			options: {
 				plugins: [
 					{
-						resolve: `gatsby-remark-images`,
+						resolve: 'gatsby-remark-images',
 						options: {
 							maxWidth: 800,
+							loading: 'eager',
 						},
 					},
 				],
