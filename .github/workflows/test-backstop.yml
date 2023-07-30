@@ -16,11 +16,27 @@ jobs:
   backstop:
     name: Run Backstop
     runs-on: ubuntu-latest
+    services:
+      apache:
+        image: httpd:2.4
+        ports:
+          - 8080:80
     environment: ${{ inputs.environment }}
     steps:
-      ## Checkout the code
+
+      ####################################################
+      ## Setup
+      ####################################################
+
+      ## Checkout the backstop code
       - name: Checkout branch
         uses: actions/checkout@v3
+        with:
+          sparse-checkout: |
+            package.json
+            package-lock.json
+            backstop-config.json
+            backstop_data
 
       ## Setup node and npm caching
       - name: Setup Node
@@ -35,11 +51,46 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      ## Serve the site to test it
-      - name: Test Site
+      ####################################################
+      ## Dev Testing
+      ####################################################
+
+      - name: Download built site (DEV)
+        if: inputs.environment == 'Dev'
+        uses: actions/download-artifact@v3
+        with:
+          name: pcp-site
+          path: ./built-site
+
+      - name: Copy built site to apache (DEV)
+        if: inputs.environment == 'Dev'
+        run: |
+          CONTAINER_ID=$(docker ps -q --filter "ancestor=httpd:2.4")
+          # DEV: SRC_PATH specifies a directory, DEST_PATH does not exist: DEST_PATH is created as a directory and the contents of the source directory are copied into this directory
+          docker cp built-site/. "$CONTAINER_ID:/usr/local/apache2/htdocs/${{ inputs.build_path }}"
+
+      ## Test the site DEV
+      - name: Test Site (DEV)
+        if: inputs.environment == 'Dev'
+        run: npm run test:backstop
+        env:
+          BACKSTOP_BASE_URL: ${{ format('http://localhost:8080/{0}', inputs.build_path) }}
+
+
+      ####################################################
+      ## Non-Dev Testing
+      ####################################################
+
+      ## Test the site non-DEV
+      - name: Test Site (non-DEV)
+        if: inputs.environment != 'Dev'
         run: npm run test:backstop
         env:
           BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.backstop_site_domain, inputs.build_path) }}
+
+      ####################################################
+      ## Handle Failures
+      ####################################################
 
       ## Upload failed css tests
       - name: Upload failed tests to GitHub
@@ -107,12 +158,20 @@ jobs:
               `
             })
 
+      ####################################################
+      ## Handle Success
+      ####################################################
+
       ## Upload successful css tests
       - uses: actions/upload-artifact@v2
         name: Upload successful tests
         with:
           name: success-backstopjs
           path: backstop_data/bitmaps_test/**/report.json
+
+      ####################################################
+      ## Approve Failures
+      ####################################################
 
   approve:
     name: Approve Tests
