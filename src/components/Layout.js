@@ -7,9 +7,9 @@ import PropTypes from 'prop-types';
 
 export default function Layout({ children }) {
 	return (
-		<div role={'document'} className={'pcp-document-container'}>
+		<div role={'document'} className={'pcp-document-container'} id={'outer-container'}>
 			<Header />
-			<div className={'pcp-grid-section'}>
+			<div className={'pcp-grid-section'} id={'page-wrap'}>
 				<div className={'desktop-constrained'}>
 					<div className={'grid-row'}>
 						<div className={'grid-col-12'}>

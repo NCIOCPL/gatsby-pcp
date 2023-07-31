@@ -1,55 +1,10 @@
 //@use "uswds-core" as *;
 @use "uswds-core" as *;
 @import "../variables";
+@import "../mixins";
 
 .left-nav {
-	background-color: $white;
-	border: 1px solid $smoke;
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
-	a.left-nav-item,
-	a.left-nav-item:visited {
-		display: block;
-		border-bottom: 1px solid $smoke;
-		padding: units(1.5) units(4);
-		position: relative;
-		font-weight: normal;
-		&.active,
-		&:hover {
-			color: $white;
-			background-color: $cardblue;
-			&:after {
-				@include at-media(tablet-lg) {
-					content: '';
-					width: 0;
-					height: 0;
-					border-style: solid;
-					border-width: units(1) 0 units(1) units(1);
-					border-color: transparent transparent transparent $cardblue;
-					position: absolute;
-					right: units(-1);
-					top: calc(50% - 10px);
-					-webkit-transform: rotate(360deg)
-				}
-			}
-		}
-	}
-	&.top-nav-list {
-		margin-top: units(3);
-		ul.second-tier {
-			a {
-				padding-left: units(6);
-			}
-		}
-		ul.third-tier {
-			a {
-				padding-left: units(8);
-			}
-		}
-	}
+	@include left-nav-menu();
 }
 .full-report-container {
 	@include grid-row();
