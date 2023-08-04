@@ -17,9 +17,8 @@
 	@include centered-width-constrained();
 	@include grid-row();
 	justify-content: space-between;
-
+	align-items: center;
 	@include at-media(tablet-lg){
-		align-items: center;
 		flex-direction: row;
 	}
 }
@@ -147,6 +146,7 @@
 	flex-direction: row;
 	align-items: center;
 	line-height: inherit;
+	justify-content: center;
 	@include at-media(tablet-lg) {
 		display: none;
 	}
@@ -158,6 +158,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	justify-content: center;
 }
 .bm-menu-wrap {
 	top: 0;
@@ -182,7 +183,10 @@
 		}
 	}
 }
-
+.bm-icon {
+	height: 16px !important;
+	width: 20px !important;
+}
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
 	background: #373a47;
