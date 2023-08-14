@@ -8,6 +8,46 @@ Click the links below to see materials from past series and to download reports.
 
 <div class="report-list-container">
 <h2 class="report-section-title">Current Meeting Series</h2>
+<div class="single-report">
+		<single-report-year
+			year="2023"
+			descriptionlinks='{
+					"list": [{
+						"url": "/reports/2023/inequities/",
+						"text": "Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation"
+					}
+			]}'>
+	</single-report-year>
+	<meetings
+				meetings='{
+					"list": [{
+							"url": "/reports/2023/opportunities-enhancing-navigation/",
+							"datelist": [
+								"Oct 17, 2023"
+							],
+							"location": "Focus: Opportunities for Enhancing Patient Navigation",
+							"status": ""
+						},
+						{
+							"url": "/reports/2023/technology-opportunities/",
+							"datelist": [
+								"Nov 2-3, 2023"
+							],
+							"location": "Focus: Technology Opportunities for Patient Navigation",
+							"status": ""
+						},
+						{
+							"url": "/reports/2023/policy-considerations/",
+							"datelist": [
+								"Dec 7, 2023"
+							],
+							"location": "Focus: Policy Considerations at the Intersection of Technology and Patient Navigation",
+							"status": ""
+						}
+					]
+				}'>
+		</meetings>
+	</div>
 <h2 class="report-section-title">Reports</h2>
 	<div class="single-report">
 		<single-report-year

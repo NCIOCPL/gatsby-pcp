@@ -16,7 +16,7 @@ The National Cancer Program represents all those affected by cancer and those wh
 <image-with-class
 	imagewidth="100%"
 	src="cgov-16669_ncp-infographic-update_a_v3_2.png"
-	alt="National Cancer Program">s
+	alt="National Cancer Program">
 </image-with-class>
 </div>
 
