@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import { SearchBar } from './SearchBar';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 import '../scss/components/_top-navigation.scss';
+import { slide as Menu } from 'react-burger-menu';
+import HamburgerIcon from '../svg/hamburger-cg.inline.svg';
 
 function navigationLink(link, index) {
 	return (
@@ -52,12 +54,18 @@ export const TopNavigation = () => {
 			</li>
 		);
 	});
+
 	return (
 		<nav className={'top-bar'} data-options={'custom_back_text:false; scrolltop:false'}>
 			<div className={'top-bar-container'}>
 				<section className={'top-bar-section'} aria-hidden={'false'}>
 					<ul className={'first-tier'}>{linkList}</ul>
 				</section>
+				<div className={'hamburger-container'}>
+					<Menu customBurgerIcon={<HamburgerIcon className={''} width={'20px'} height={'16px'} />} pageWrapId={'page-wrap'} outerContainerId={'outer-container'}>
+						<ul className={'hamburger-first-tier'}>{linkList}</ul>
+					</Menu>
+				</div>
 				<div className={'searchbar-container'}>
 					<SearchBar></SearchBar>
 				</div>
