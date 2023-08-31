@@ -4,7 +4,7 @@ template: left_nav
 description: "The initial stakeholder meeting will be held virtually on Thursday, September 7, 2023."
 ---
 
-**Mark your calendars!** The initial stakeholder meeting will be held virtually on **Thursday, September 7, 2023**. This meeting will consist of presentations from invited stakeholders, each followed by discussion with the Panel members. The organizations invited to this first meeting do not fully represent the rich landscape of National Cancer Program activities or the full breadth of the [National Cancer Plan](https://nationalcancerplan.cancer.gov/).
+**Mark your calendars!** The initial stakeholder meeting will be held virtually on **[Thursday, September 7, 2023](/ncp/meetings/2023-09-07/)**. This meeting will consist of presentations from invited stakeholders, each followed by discussion with the Panel members. The organizations invited to this first meeting do not fully represent the rich landscape of National Cancer Program activities or the full breadth of the [National Cancer Plan](https://nationalcancerplan.cancer.gov/).
 
 The Panel enthusiastically looks forward to hearing from additional organizations in writing and at future meetings. The Panel encourages stakeholders to highlight their National Cancer Plan activities on their organizational websites and on social media. Tag social media posts with #NationalCancerPlan, #CancerMoonshot, and #Every1HasARole to join the conversation.
 
@@ -16,4 +16,4 @@ This meeting will be led by President’s Cancer Panel members Dr. Elizabeth Jaf
 
 **The September 7, 2023 virtual meeting is open to the public. To attend, [click here](https://nci.rev.vbrick.com/#/webcasts/presidentscancerpanel).**
 
-The agenda will be posted soon.
+The agenda is available [here](/ncp/meetings/2023-09-07/).
