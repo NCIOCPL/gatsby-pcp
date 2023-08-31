@@ -25,7 +25,7 @@ Click the links below to see materials from past series and to download reports.
 							"datelist": [
 								"Oct 17, 2023"
 							],
-							"location": "Focus: Opportunities for Enhancing Patient Navigation",
+							"location": "Opportunities for Enhancing Patient Navigation",
 							"status": ""
 						},
 						{
@@ -33,7 +33,7 @@ Click the links below to see materials from past series and to download reports.
 							"datelist": [
 								"Nov 2-3, 2023"
 							],
-							"location": "Focus: Technology Opportunities for Patient Navigation",
+							"location": "Technology Opportunities for Patient Navigation",
 							"status": ""
 						},
 						{
@@ -41,7 +41,7 @@ Click the links below to see materials from past series and to download reports.
 							"datelist": [
 								"Dec 7, 2023"
 							],
-							"location": "Focus: Policy Considerations at the Intersection of Technology and Patient Navigation",
+							"location": "Policy Considerations at the Intersection of Technology and Patient Navigation",
 							"status": ""
 						}
 					]

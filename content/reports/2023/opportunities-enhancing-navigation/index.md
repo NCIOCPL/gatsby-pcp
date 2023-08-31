@@ -1,5 +1,5 @@
 ---
-sectionTitle: "Focus: Opportunities for Enhancing Patient Navigation"
+sectionTitle: "Opportunities for Enhancing Patient Navigation"
 title: Overview
 template: left_nav_sub_sections
 linktext: Overview
@@ -11,7 +11,7 @@ description: "This will be the first of three public meetings hosted by the Pres
 
 **Meeting location:** New Orleans, Louisiana, and online
 
-This will be the first of three public meetings hosted by the President’s Cancer Panel on the topic of Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation.
+This will be the first of three public meetings hosted by the President’s Cancer Panel on the topic of [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/).
 
 Questions that will be explored during Meeting 1 include, but are not limited to, the following:
 
