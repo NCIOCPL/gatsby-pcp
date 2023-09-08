@@ -9,9 +9,9 @@ Patient navigation is a health care service delivery model that aims to overcome
 This topic aligns with and supports two of the eight [National Cancer Plan](https://nationalcancerplan.cancer.gov/goals) goals: to Eliminate Inequities and to Deliver Optimal Care. The President’s Cancer Panel will prospectively assess the needs related to these goals, focusing on gaps and opportunities related to the use of technology to support cancer patient navigation.
 
 The Panel will engage stakeholders and collect information through a series of three public meetings.
-- **[Meeting 1, Focus: Opportunities for Enhancing Patient Navigation](/reports/2023/opportunities-enhancing-navigation/)**, will be held October 17, 2023, in New Orleans, Louisiana, and online.
-- **[Meeting 2, Focus: Technology Opportunities for Patient Navigation](/reports/2023/technology-opportunities/)**, will be held November 2 and 3, 2023, online.
-- **[Meeting 3, Focus: Policy Considerations at the Intersection of Technology and Patient Navigation](/reports/2023/policy-considerations/)**, will be held December 7, 2023, in Bethesda, Maryland, and online.
+- **[Meeting 1, Opportunities for Enhancing Patient Navigation](/reports/2023/opportunities-enhancing-navigation/)**, will be held October 17, 2023, in New Orleans, Louisiana, and online.
+- **[Meeting 2, Technology Opportunities for Patient Navigation](/reports/2023/technology-opportunities/)**, will be held November 2 and 3, 2023, online.
+- **[Meeting 3, Policy Considerations at the Intersection of Technology and Patient Navigation](/reports/2023/policy-considerations/)**, will be held December 7, 2023, in Bethesda, Maryland, and online.
 
 The presentations and moderated discussions at these meetings will inform the Panel's recommendations in a formal report to the President of the United States after the conclusion of the meeting series.
 

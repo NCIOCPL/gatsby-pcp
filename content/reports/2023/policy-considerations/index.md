@@ -1,5 +1,5 @@
 ---
-sectionTitle: "Focus: Policy Considerations at the Intersection of Technology and Patient Navigation"
+sectionTitle: "Policy Considerations at the Intersection of Technology and Patient Navigation"
 title: Overview
 template: left_nav_sub_sections
 linktext: Overview
@@ -11,7 +11,7 @@ description: "This will be the second of three public meetings hosted by the Pre
 
 **Meeting location:** Bethesda, Maryland, and online
 
-This will be the third of three public meetings hosted by the President’s Cancer Panel on the topic of Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation.
+This will be the third of three public meetings hosted by the President’s Cancer Panel on the topic of [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/).
 
 Questions that will be explored during Meeting 3 include, but are not limited to, the following:
 
