@@ -2,6 +2,8 @@
 title: History of the President's Cancer Panel
 template: left_nav
 description: "The President's Cancer Panel was established by law in 1971 when the National Cancer Act was signed by President Richard Nixon."
+linktext: History
+sortOrder: 2
 ---
 
 The President's Cancer Panel was established by law in 1971 when the National Cancer Act was

@@ -3,6 +3,8 @@ title: The President's Cancer Panel Staff
 template: left_nav
 section: about
 description: "Staff members of the President's Cancer Panel coordinate the work that advances the Panel's mission with support from a team of science writers and meeting planners."
+linktext: Staff
+sortOrder: 4
 ---
 
 Staff members of the President's Cancer Panel coordinate the work that advances the Panel's mission with support from a team of science writers and meeting planners.

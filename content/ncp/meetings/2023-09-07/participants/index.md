@@ -1,9 +1,9 @@
 ---
 sectionTitle: "National Cancer Plan Stakeholder Meeting"
 title: Participants
-template: left_nav_sub_sections
+template: left_nav
 linktext: Participants
-sortOrder: 2
+sortOrder: 1
 description: "National Cancer Plan Stakeholder Meeting - Participants"
 ---
 

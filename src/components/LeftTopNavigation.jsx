@@ -14,10 +14,28 @@ function navigationLink(link, index) {
 		</li>
 	);
 }
+function subNavigationLink(link, index) {
+	let subLinkList = '';
+	subLinkList = link.sublinks.map((link, index) => {
+		return navigationLink(link, index);
+	});
+	return (
+		<li key={index} className={'nav-item'}>
+			<ChildLink to={link.link} activeClassName={'active'} className={'left-nav-item'}>
+				{link.name}
+			</ChildLink>
+			<ul className={'fourth-tier'}>{subLinkList}</ul>
+		</li>
+	);
+}
+
 function childNavigationLink(link, index) {
 	let subLinkList = '';
 	if (link.sublinks != null) {
 		subLinkList = link.sublinks.map((link, index) => {
+			if (link.sublinks != null) {
+				return subNavigationLink(link, index);
+			}
 			return navigationLink(link, index);
 		});
 	}

@@ -1,21 +1,20 @@
 import React from 'react';
 import { ChildLink } from './Styled';
-import { Link } from 'gatsby';
 import { SearchBar } from './SearchBar';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 import '../scss/components/_top-navigation.scss';
 import { slide as Menu } from 'react-burger-menu';
 import HamburgerIcon from '../svg/hamburger-cg.inline.svg';
 
-function navigationLink(link, index) {
+/*function navigationLink(link, index) {
 	return (
 		<li key={index}>
-			<Link to={link.link} activeClassName={'active'} className={'top-navigation-link'}>
+			<ChildLink  to={link.link} activeClassName={'active'} className={'top-navigation-link'}>
 				{link.name}
-			</Link>
+			</ChildLink >
 		</li>
 	);
-}
+}*/
 function childNavigationLink(link, index) {
 	/*let subLinkList = '';
 		if (link.sublinks != null ) {
@@ -34,23 +33,26 @@ function childNavigationLink(link, index) {
 }
 export const TopNavigation = () => {
 	const { menuLinks } = useSiteMetadata();
-
 	let linkList = menuLinks.map((link, index) => {
-		if (index == 0) {
-			return navigationLink(link, index);
-		}
 		let subLinkList = '';
 		if (link.sublinks != null) {
 			subLinkList = link.sublinks.map((link, index) => {
 				return childNavigationLink(link, index);
 			});
+			return (
+				<li key={index}>
+					<ChildLink to={link.link} activeClassName={'active'} className={'top-navigation-link'}>
+						{link.name}
+					</ChildLink>
+					<ul className={'second-tier'}>{subLinkList}</ul>
+				</li>
+			);
 		}
 		return (
 			<li key={index}>
 				<ChildLink to={link.link} activeClassName={'active'} className={'top-navigation-link'}>
 					{link.name}
 				</ChildLink>
-				<ul className={'second-tier'}>{subLinkList}</ul>
 			</li>
 		);
 	});

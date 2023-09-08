@@ -2,6 +2,7 @@
 title: National Cancer Plan
 template: left_nav
 description: "On April 3, with leadership from National Cancer Institute (NCI) Director Monica Bertagnolli, the U.S. Department of Health and Human Services (HHS) released a National Cancer Plan to guide the nation’s efforts against cancer."
+linktext: National Cancer Plan
 ---
 <div class="desktop-float-right">
 <single-homepage-box url="https://nationalcancerplan.cancer.gov/" source="ncp-401x357.png" alt="" title="National Cancer Plan" description="Everyone has a role to play in ending cancer as we know it. Learn more about the National Cancer Plan and its eight goals."></single-homepage-box>
