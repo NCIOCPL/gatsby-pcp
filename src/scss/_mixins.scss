@@ -65,17 +65,31 @@
 				padding-left: units(8);
 			}
 		}
+
 	} @else {
 		&.top-nav-list {
 			margin-top: units(3);
 			ul.second-tier {
 				a {
 					padding-left: units(6);
+					&.active + ul.third-tier {
+						display: block;
+					}
 				}
 			}
 			ul.third-tier {
+				display: none;
 				a {
-					padding-left: units(8);
+					padding-left: units(7);
+					&.active + ul.fourth-tier {
+							display: block;
+						}
+				}
+			}
+			ul.fourth-tier {
+				display: none;
+				a {
+					padding-left: units(9);
 				}
 			}
 		}
