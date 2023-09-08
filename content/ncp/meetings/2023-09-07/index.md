@@ -9,6 +9,8 @@ description: "National Cancer Plan Stakeholder Meeting"
 
 **September 7, 2023**
 
+[Register](https://nci.rev.vbrick.com/#/event-registration/6cfe1caa-6bce-4f62-9124-d8fd1b2cbbba)
+
 [Virtual](https://nci.rev.vbrick.com/#/webcasts/presidentscancerpanel)
 
 <hr />
@@ -89,8 +91,8 @@ Dr. Jeff M. Michalski
 </td>
 <td>
 
-**Association of Community Cancer Centers (ACCC)** \
-Dr. Olalekan Ajayi
+**American Cancer Society** \
+Dr. Karen E. Knudsen
 </td>
 </tr><tr><td>
 
@@ -115,8 +117,8 @@ Drs. Yolanda Lawson and Edith P. Mitchell
 </td>
 <td>
 
-**American Cancer Society (ACS)** \
-Dr. Karen E. Knudsen
+**Association of Community Cancer Centers (ACCC)** \
+Dr. Olalekan Ajayi
 </td>
 </tr><tr><td>
 
@@ -182,6 +184,6 @@ Drs. William C. Louv and David M. Reese
 </tr></tbody></table>
 
 *Don’t miss the upcoming meetings in the PCP Series, [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/)*
--	10/17/2023 [Focus: Opportunities for Enhancing Patient Navigation](/reports/2023/opportunities-enhancing-navigation/)
--	11/02/2023 & 11/03/2023 [Focus: Technology Opportunities for Patient Navigation](/reports/2023/technology-opportunities/)
--	12/07/2023 [Focus: Policy Considerations at the Intersection of Technology and Patient Navigation](/reports/2023/policy-considerations/)
+-	10/17/2023 Focus: [Opportunities for Enhancing Patient Navigation](/reports/2023/opportunities-enhancing-navigation/)
+-	11/02/2023 & 11/03/2023 Focus: [Technology Opportunities for Patient Navigation](/reports/2023/technology-opportunities/)
+-	12/07/2023 Focus: [Policy Considerations at the Intersection of Technology and Patient Navigation](/reports/2023/policy-considerations/)
