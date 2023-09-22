@@ -1,17 +1,17 @@
-import { graphql } from 'gatsby';
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../../components/Layout';
-import { SEO } from '../../components/Seo';
-import { LeftTopNavigation } from '../../components/LeftTopNavigation';
-import Image from '../../components/BlogImage';
-import HeroImage from '../../components/HeroImage';
-import '../../scss/components/_blogs.scss';
+import Layout from '../components/Layout';
+import { SEO } from '../components/Seo';
+import Image from '../components/BlogImage';
+import HeroImage from '../components/HeroImage';
+import '../scss/components/_blogs.scss';
 import PropTypes from 'prop-types';
+import { useBlogNodes } from '../hooks/use-blog-nodes';
+import { AutoLeftNavigation } from '../components/AutoLeftNavigation';
+import { BreadCrumbs } from '../components/Breadcrumbs';
 
-export default function BlogPage({ data: { allMarkdownRemark } }) {
-	const path = { relativeDirectory: 'about' };
-	const { edges } = allMarkdownRemark;
+export default function BlogsTemplate({ frontmatter, path }) {
+	const { edges } = useBlogNodes();
 	let blogLinks = edges.map((node, index) => {
 		let post = node.node;
 		let blogDate;
@@ -48,10 +48,11 @@ export default function BlogPage({ data: { allMarkdownRemark } }) {
 
 	return (
 		<Layout>
+			<BreadCrumbs frontmatter={frontmatter} path={path}></BreadCrumbs>
 			<div className={'post-body'}>
 				<div className={'full-report-container'}>
 					<div className={'left-nav-container'}>
-						<LeftTopNavigation root={path}></LeftTopNavigation>
+						<AutoLeftNavigation path={path}></AutoLeftNavigation>
 					</div>
 					<div className={'report-container top-left-nav-container'}>
 						<HeroImage sourcedesktop={'columns.jpg'} sourcetablet={'columns.jpg'} alt={''}></HeroImage>
@@ -64,33 +65,6 @@ export default function BlogPage({ data: { allMarkdownRemark } }) {
 	);
 }
 
-// there has got to be a better graphql query than going to the parent and getting name
-// and relative directory
-export const pageQuery = graphql`
-	query {
-		allMarkdownRemark(filter: { frontmatter: { template: { eq: "blog" } } }, sort: { frontmatter: { date: DESC } }) {
-			edges {
-				node {
-					id
-					frontmatter {
-						title
-						date(formatString: "MMMM DD, YYYY")
-						blurb
-						image
-						alt
-					}
-					parent {
-						... on File {
-							name
-							relativeDirectory
-						}
-					}
-				}
-			}
-		}
-	}
-`;
-
 export function Head() {
 	return (
 		<>
@@ -100,6 +74,7 @@ export function Head() {
 	);
 }
 
-BlogPage.propTypes = {
-	data: PropTypes.object,
+BlogsTemplate.propTypes = {
+	frontmatter: PropTypes.object.isRequired,
+	path: PropTypes.object,
 };

@@ -3,10 +3,12 @@ import Layout from '../components/Layout';
 import { LeftNavigation } from '../components/LeftNavigation';
 import MainText from '../components/MainText';
 import PropTypes from 'prop-types';
+import { BreadCrumbs } from '../components/Breadcrumbs';
 
 export default function LeftNavsSubSectionsTemplate({ frontmatter, htmlAst, path }) {
 	return (
 		<Layout>
+			<BreadCrumbs frontmatter={frontmatter} path={path}></BreadCrumbs>
 			<h2 className={'post-title'}>{frontmatter.sectionTitle}</h2>
 			<div className="full-report-container">
 				<div className="left-nav-container">

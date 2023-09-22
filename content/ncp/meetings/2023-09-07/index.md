@@ -1,8 +1,8 @@
 ---
 sectionTitle: "National Cancer Plan Stakeholder Meeting"
 title: Agenda
-template: left_nav_sub_sections
-linktext: Agenda
+template: left_nav
+linktext: September 7, 2023
 sortOrder: 1
 description: "National Cancer Plan Stakeholder Meeting"
 ---

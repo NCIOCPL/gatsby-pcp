@@ -6,14 +6,16 @@ import LeftNavTemplate from '../../templates/LeftNav';
 import LeftNavsSubSectionsTemplate from '../../templates/LeftNavSubSections';
 import BlogTemplate from '../../templates/Blog';
 import PropTypes from 'prop-types';
+import BlogsTemplate from '../../templates/Blogs';
 
 export default function GeneratedPage({ data: { markdownRemark } }) {
 	const { frontmatter, htmlAst, parent } = markdownRemark;
 	const templates = {
+		blogs: <BlogsTemplate frontmatter={frontmatter} path={parent} />,
 		blog: <BlogTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 		left_nav: <LeftNavTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 		left_nav_sub_sections: <LeftNavsSubSectionsTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
-		single_page: <SinglePageTemplate frontmatter={frontmatter} htmlAst={htmlAst} />,
+		single_page: <SinglePageTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 	};
 
 	return templates[frontmatter.template];
@@ -29,6 +31,8 @@ export const pageQuery = graphql`
 				template
 				sectionTitle
 				author
+				linktext
+				sortOrder
 			}
 			parent {
 				... on File {

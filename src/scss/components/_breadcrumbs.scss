@@ -1,0 +1,18 @@
+//@use "uswds-core" as *;
+@use "uswds-core" as *;
+@import "../variables";
+@import "../mixins";
+
+.breadcrumb-list {
+	list-style: none;
+	margin-left: 0;
+	a {
+		font-weight: normal;
+	}
+	li {
+		display: inline;
+	}
+	li + li:before {
+		content: " > ";
+	}
+}
