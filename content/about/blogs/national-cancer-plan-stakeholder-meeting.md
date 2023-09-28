@@ -10,7 +10,7 @@ description: "On September 7th, the Panel convened a meeting with stakeholders f
 <div>
 <image-with-class
 	className="float-right"
-	imagewidth="55%"
+	imagewidth="45%"
 	src="stakeholder-meeting.jpeg"
 	alt="It has been remarkable to see what achievements we can make when our communities step up and lead together.  - Dr. Elizabeth M. Jafee, Panel Chair">
 </image-with-class>
