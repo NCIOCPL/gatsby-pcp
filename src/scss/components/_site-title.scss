@@ -1,4 +1,4 @@
-@use "uswds-core" as *;
+@use "../uswds-theme" as *;
 @import "../variables";
 
 .site-title-container {
@@ -38,7 +38,7 @@ h1.site-name {
 .site-slogan {
 	 color: $pcpblue;
 	 text-align: center;
-	 font-size: font-size('sans',8);
+	 font-size: font-size('sans',9);
 	 width: units('card-lg');
 	@include at-media('tablet'){
 		width: units('mobile');

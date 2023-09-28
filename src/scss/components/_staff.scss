@@ -1,4 +1,4 @@
-@use "uswds-core" as *;
+@use "../uswds-theme" as *;
 @import "../variables";
 @import "../mixins";
 
@@ -44,7 +44,7 @@ ul.staff-list {
 	}
 	.member-name,
 	.member-title {
-		font-size: font-size("sans","lg");
+		font-size: font-size("sans",9);
 		@include at-media(tablet-lg){
 			text-align: center;
 		}

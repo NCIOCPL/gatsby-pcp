@@ -1,4 +1,4 @@
-@use "uswds-core" as *;
+@use "../uswds-theme" as *;
 @import "../variables";
 @import "../mixins";
 
@@ -35,9 +35,9 @@
 		}
 	}
 	ul {
-		font-size: font-size("sans",1);
+		font-size: font-size("sans",2);
 		@include at-media(tablet){
-			font-size: font-size("sans",2);
+			font-size: font-size("sans",3);
 		}
 		text-transform: uppercase;
 		padding: 0;
