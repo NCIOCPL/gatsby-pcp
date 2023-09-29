@@ -84,18 +84,6 @@ module.exports = {
 								{
 										name: 'Meetings',
 										link: '/ncp/meetings',
-										sublinks: [
-												{
-														name: 'September 7, 2023',
-														link: '/ncp/meetings/2023-09-07/',
-														sublinks: [
-																{
-																		name: 'Participants',
-																		link: '/ncp/meetings/2023-09-07/participants/',
-																}
-														],
-												}
-										],
 								}
 						],
 				},
