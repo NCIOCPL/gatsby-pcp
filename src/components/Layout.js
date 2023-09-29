@@ -2,12 +2,14 @@ import React from 'react';
 import { Script } from 'gatsby';
 import Header from './Header';
 import { Footer } from './Footer';
+import { Banner } from './Banner';
 import '../scss/styles.scss';
 import PropTypes from 'prop-types';
 
 export default function Layout({ children }) {
 	return (
 		<div role={'document'} className={'pcp-document-container'} id={'outer-container'}>
+			<Banner />
 			<Header />
 			<div className={'pcp-grid-section'} id={'page-wrap'}>
 				<div className={'desktop-constrained'}>
