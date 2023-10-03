@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChildLink } from './Styled';
+import ChildLink from './ChildLink';
 import { SearchBar } from './SearchBar';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 import '../scss/components/_top-navigation.scss';

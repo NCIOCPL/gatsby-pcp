@@ -2,7 +2,7 @@ import React from 'react';
 import { useGetNodes } from '../hooks/use-get-nodes';
 import '../scss/components/_left-nav-multipage.scss';
 import PropTypes from 'prop-types';
-import { ChildLink } from './Styled';
+import ChildLink from './ChildLink';
 
 export const AutoLeftNavigation = ({ path }) => {
 	function navigationLink(link, index) {
