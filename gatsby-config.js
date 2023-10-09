@@ -108,9 +108,6 @@ module.exports = {
 				siteUrl: siteUrl,
 			},
 		},
-		'gatsby-plugin-image',
-		'gatsby-plugin-sharp',
-		'gatsby-transformer-sharp',
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
@@ -126,6 +123,13 @@ module.exports = {
 				path: './src/images/',
 			},
 		},
+			{
+					resolve: 'gatsby-source-filesystem',
+					options: {
+							name: 'uswdsimages',
+							path: './node_modules/@uswds/uswds/dist/img/',
+					},
+			},
 		{
 			resolve: 'gatsby-plugin-react-svg',
 			options: {
@@ -134,6 +138,9 @@ module.exports = {
 				},
 			},
 		},
+			'gatsby-plugin-image',
+			'gatsby-plugin-sharp',
+			'gatsby-transformer-sharp',
 		{
 			resolve: 'gatsby-transformer-remark',
 			options: {
