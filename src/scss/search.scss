@@ -1,4 +1,4 @@
-@use "uswds-core" as *;
+@use "uswds-theme" as *;
 @import 'breakpoints';
 @import 'variables';
 
@@ -45,7 +45,7 @@ ul.results__container {
 		margin: units(4) 0;
 	}
 	.result__url {
-		font-size:font-size('sans','2xs');
+		font-size:font-size('sans','xs');
 	}
 }
 

@@ -1,4 +1,6 @@
-@use "uswds-core" as *;
+@use "../uswds-theme" as *;
+@import "../variables";
+
 html{
 	height: 100%;
 }
