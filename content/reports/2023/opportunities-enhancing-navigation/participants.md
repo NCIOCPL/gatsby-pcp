@@ -158,6 +158,12 @@ Clinical Assistant Professor of Global Health \
 University of Washington \
 Seattle, WA
 
+**Augusto Ochoa, MD** \
+Deputy Director \
+LSU-LCMC Cancer Center \
+LSU Health New Orleans \
+New Orleans, LA
+
 **Steven R. Patierno, PhD** \
 Deputy Director \
 Duke Cancer Institute \
