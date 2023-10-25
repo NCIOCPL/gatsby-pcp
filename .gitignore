@@ -6,8 +6,8 @@ public
 src/css
 
 # === Gatsby ===
-backstop_data/bitmaps_test
-backstop_data/html_report
+testing/backstop/data/bitmaps_test
+testing/backstop/data/html_report
 
 
 # === Rule for dotfiles ===

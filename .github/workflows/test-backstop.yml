@@ -16,77 +16,42 @@ jobs:
   backstop:
     name: Run Backstop
     runs-on: ubuntu-latest
-    services:
-      apache:
-        image: httpd:2.4
-        ports:
-          - 8080:80
-    environment: ${{ inputs.environment }}
     steps:
 
-      ####################################################
-      ## Setup
-      ####################################################
-
-      ## Checkout the backstop code
+      ## Checkout the code
       - name: Checkout branch
         uses: actions/checkout@v3
-        with:
-          sparse-checkout: |
-            package.json
-            package-lock.json
-            backstop-config.json
-            backstop_data
+
+      ## Put the standard reference images in place
+      - name: Replace code
+        run: |
+          rm -rf content
+          mv testing/standard/content .
+          mv testing/standard/src/pages/index.js src/pages/
+          mv testing/standard/src/images/* src/images/
 
       ## Setup node and npm caching
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
           registry-url: https://npm.pkg.github.com
-          cache: 'npm'
-          scope: '@nciocpl'
+          cache: "npm"
+          scope: "@nciocpl"
       - name: Run NPM
         run: npm ci
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      ####################################################
-      ## Dev Testing
-      ####################################################
+      ## Build all the things for testing
+      - name: Build site
+        run: npm run build
 
-      - name: Download built site (DEV)
-        if: inputs.environment == 'Dev'
-        uses: actions/download-artifact@v3
-        with:
-          name: pcp-site
-          path: ./built-site
-
-      - name: Copy built site to apache (DEV)
-        if: inputs.environment == 'Dev'
-        run: |
-          CONTAINER_ID=$(docker ps -q --filter "ancestor=httpd:2.4")
-          # DEV: SRC_PATH specifies a directory, DEST_PATH does not exist: DEST_PATH is created as a directory and the contents of the source directory are copied into this directory
-          docker cp built-site/. "$CONTAINER_ID:/usr/local/apache2/htdocs/${{ inputs.build_path }}"
-
-      ## Test the site DEV
-      - name: Test Site (DEV)
-        if: inputs.environment == 'Dev'
-        run: npm run test:backstop
+      ## Serve the site
+      - name: Serve site and generate images
+        run: npm run serve & sleep 5 && npm run test:backstop
         env:
-          BACKSTOP_BASE_URL: ${{ format('http://localhost:8080/{0}', inputs.build_path) }}
-
-
-      ####################################################
-      ## Non-Dev Testing
-      ####################################################
-
-      ## Test the site non-DEV
-      - name: Test Site (non-DEV)
-        if: inputs.environment != 'Dev'
-        run: npm run test:backstop
-        env:
-          BACKSTOP_BASE_URL: ${{ format('https://{0}/{1}', vars.backstop_site_domain, inputs.build_path) }}
+          BACKSTOP_BASE_URL: http://localhost:9000
 
       ####################################################
       ## Handle Failures
@@ -98,7 +63,7 @@ jobs:
         if: failure()
         with:
           name: failed-backstopjs
-          path: backstop_data
+          path: testing/backstop/data
 
       - name: Create zip file name
         id: zip-name
@@ -109,7 +74,7 @@ jobs:
       - name: Zip tests
         if: failure()
         run: |
-          pushd backstop_data
+          pushd testing/backstop/data
           zip -r ../${{ steps.zip-name.outputs.name }}.zip ./*
           popd
 
@@ -167,7 +132,7 @@ jobs:
         name: Upload successful tests
         with:
           name: success-backstopjs
-          path: backstop_data/bitmaps_test/**/report.json
+          path: testing/backstop/data/bitmaps_test/**/report.json
 
       ####################################################
       ## Approve Failures

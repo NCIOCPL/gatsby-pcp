@@ -7,7 +7,7 @@ permissions:
 
 jobs:
 
-  build:
+  generate:
     name: Generate Images
     runs-on: ubuntu-latest
     steps:
@@ -15,6 +15,14 @@ jobs:
       ## Checkout the code
       - name: Checkout branch
         uses: actions/checkout@v3
+
+      ## Put the standard reference images in place
+      - name: Replace code
+        run: |
+          rm -rf content
+          mv testing/standard/content .
+          mv testing/standard/src/pages/index.js src/pages/
+          mv testing/standard/src/images/* src/images/
 
       ## Setup node and npm caching
       - name: Setup Node
@@ -43,12 +51,6 @@ jobs:
         run: |
           git config --global user.name 'NCIOCPL Bot'
           git config --global user.email 'NCIOCPL@users.noreply.github.com'
-          git add -A backstop_data/bitmaps_reference/
+          git add -A testing/backstop/data/bitmaps_reference/
           git commit -m "Updated backstop images"
           git push
-
-      - uses: actions/upload-artifact@v3
-        name: Upload reference images
-        with:
-          name: backstopjs-reference
-          path: backstop_data/bitmaps_reference
