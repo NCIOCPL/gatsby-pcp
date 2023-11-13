@@ -1,7 +1,7 @@
 ---
 title: "Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation"
 template: single_page
-description: "Patient navigation is a health care service delivery model that aims to overcome individual barriers to accessing timely and quality cancer care and is demonstrated to address disparities in cancer care. "
+description: "Patient navigation is a health care service delivery model that aims to overcome individual barriers to accessing timely and quality cancer care and is demonstrated to address disparities in cancer care."
 ---
 
 Patient navigation is a health care service delivery model that aims to overcome individual barriers to accessing timely and quality cancer care and is demonstrated to address disparities in cancer care. Technology—including social media, telehealth, and artificial intelligence—has the potential to transform patient navigation. However, technology must be thoughtfully designed and implemented to ensure accuracy and utility and avoid negative unintended consequences, including exacerbation of existing health disparities.
