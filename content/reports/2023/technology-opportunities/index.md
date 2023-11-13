@@ -25,10 +25,10 @@ This meeting will be led by President’s Cancer Panel members Dr. Elizabeth Jaf
 
 **Join us on Twitter by following [@PresCancerPanel](https://twitter.com/PresCancerPanel), and connect with us on [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/).**
 
-**The President’s Cancer Panel meeting series is open to the public.
+**The President’s Cancer Panel meeting series is open to the public.**
 
-View the November 2nd meeting live: [https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov2](https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov2)
+**View the November 2nd meeting live: [https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov2](https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov2)**
 
-View the November 3rd meeting live: [https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov3](https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov3)**
-**
+**View the November 3rd meeting live: [https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov3](https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov3)**
+
 

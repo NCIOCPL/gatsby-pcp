@@ -9,10 +9,6 @@ description: "National Cancer Plan Stakeholder Meeting"
 
 **September 7, 2023**
 
-[Register](https://nci.rev.vbrick.com/#/event-registration/6cfe1caa-6bce-4f62-9124-d8fd1b2cbbba)
-
-[Virtual](https://nci.rev.vbrick.com/#/webcasts/presidentscancerpanel)
-
 <hr />
 
 <table class="agenda-table">

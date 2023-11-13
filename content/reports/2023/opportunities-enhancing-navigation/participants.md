@@ -1,10 +1,10 @@
 ---
-sectionTitle: "Focus: Opportunities for Enhancing Patient Navigation"
+sectionTitle: "Opportunities for Enhancing Patient Navigation"
 title: Participants
 template: left_nav_sub_sections
 linktext: Participants
 sortOrder: 3
-description: "Focus: Opportunities for Enhancing Patient Navigation - Participants"
+description: "Opportunities for Enhancing Patient Navigation - Participants"
 ---
 
 **Tracy Battaglia, MD, MPH** \
