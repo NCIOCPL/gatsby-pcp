@@ -25,8 +25,8 @@ module.exports = {
 		],
 		iconLinks: [
 			{
-				name: 'Twitter',
-				text: 'Visit us on Twitter',
+				name: 'X',
+				text: 'Visit us on X',
 				link: 'https://twitter.com/prescancerpanel',
 				height: 48,
 				width: 48,
