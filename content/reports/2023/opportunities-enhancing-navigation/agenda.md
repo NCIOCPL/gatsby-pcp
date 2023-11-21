@@ -8,6 +8,8 @@ description: "Opportunities for Enhancing Patient Navigation"
 ---
 **October 17, 2023**
 
+[Recording](https://nci.rev.vbrick.com/#/videos/367cb532-2248-482d-a0df-a20ba793138e)
+
 *All times listed are in Central Daylight Time.*
 
 <hr />

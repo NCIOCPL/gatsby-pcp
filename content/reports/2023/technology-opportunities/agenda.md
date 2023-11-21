@@ -8,6 +8,10 @@ description: "Technology Opportunities for Patient Navigation"
 ---
 **November 2, 2023**
 
+[Day 1 Recording](https://nci.rev.vbrick.com/#/videos/0856e728-6317-481a-a87b-cd7552c10556)
+
+[Day 2 Recording](https://nci.rev.vbrick.com/#/videos/06c34150-e3df-4903-b3b3-1b715976026f)
+
 <hr />
 
 <table class="agenda-table">
