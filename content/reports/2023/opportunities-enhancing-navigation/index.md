@@ -11,6 +11,8 @@ description: "This will be the first of three public meetings hosted by the Pres
 
 **Meeting location:** New Orleans, Louisiana, and online
 
+[Recording](https://nci.rev.vbrick.com/#/videos/367cb532-2248-482d-a0df-a20ba793138e)
+
 This will be the first of three public meetings hosted by the President’s Cancer Panel on the topic of [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/).
 
 Questions that will be explored during Meeting 1 include, but are not limited to, the following:
@@ -25,7 +27,5 @@ Questions that will be explored during Meeting 1 include, but are not limited to
 This meeting will be led by President’s Cancer Panel members Dr. Elizabeth Jaffee (Chair), Dr. Carol Brown, and Dr. Mitchel Berger, with presentations and facilitated discussion among invited participants.
 
 **Join us on Twitter by following [@PresCancerPanel](https://twitter.com/PresCancerPanel), and connect with us on [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/).**
-
-**The President’s Cancer Panel meeting series is open to the public. View the meeting live: [https://nci.rev.vbrick.com/#/webcasts/opportunitiesforenhancingpatientnavigation](https://nci.rev.vbrick.com/#/webcasts/opportunitiesforenhancingpatientnavigation)**
 
 
