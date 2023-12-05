@@ -1,10 +1,10 @@
 ---
-title: "Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation"
+title: "Meeting 1 Recap: Opportunities for Enhancing Patient Navigation"
 template: blog
-date: 2023-10-17
+date: 2023-10-18
 blurb: "On October 17, 2023, the President’s Cancer Panel convened the first of three public meetings with key experts to discuss gaps and opportunities at the intersection of technology and patient navigation. Read our latest blog post to find out more about common themes and priority areas that emerged from this meeting."
 image: enhance-patient-navigation.png
-alt: "Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation"
+alt: "Meeting 1 Recap: Opportunities for Enhancing Patient Navigation"
 description: "On October 17, 2023, the President’s Cancer Panel convened the first of three public meetings with key experts to discuss gaps and opportunities at the intersection of technology and patient navigation. Read our latest blog post to find out more about common themes and priority areas that emerged from this meeting."
 ---
 <div>
