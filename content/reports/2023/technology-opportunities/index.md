@@ -11,6 +11,10 @@ description: "This will be the second of three public meetings hosted by the Pre
 
 **Meeting location:** Online
 
+[Day 1 Recording](https://nci.rev.vbrick.com/#/videos/0856e728-6317-481a-a87b-cd7552c10556)
+
+[Day 2 Recording](https://nci.rev.vbrick.com/#/videos/06c34150-e3df-4903-b3b3-1b715976026f)
+
 This will be the second of three public meetings hosted by the President’s Cancer Panel on the topic of [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/).
 
 Questions for exploration during Meeting 2 include, but are not limited to, the following:
@@ -26,9 +30,5 @@ This meeting will be led by President’s Cancer Panel members Dr. Elizabeth Jaf
 **Join us on Twitter by following [@PresCancerPanel](https://twitter.com/PresCancerPanel), and connect with us on [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/).**
 
 **The President’s Cancer Panel meeting series is open to the public.**
-
-**View the November 2nd meeting live: [https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov2](https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov2)**
-
-**View the November 3rd meeting live: [https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov3](https://nci.rev.vbrick.com/#/webcasts/technologyopportunitiesforpatientnavigationnov3)**
 
 

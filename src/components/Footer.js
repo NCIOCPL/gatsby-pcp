@@ -1,7 +1,7 @@
 import React from 'react';
 import EnvelopeIcon from '../svg/envelope.inline.svg';
 import LinkedInIcon from '../svg/linkedin.inline.svg';
-import TwitterIcon from '../svg/twitter.inline.svg';
+import XIcon from '../svg/x.inline.svg';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 import '../scss/components/_footer.scss';
 
@@ -17,11 +17,11 @@ export const Footer = () => {
 	});
 	let iconList = iconLinks.map((link, index) => {
 		switch (link.name) {
-			case 'Twitter':
+			case 'X':
 				return (
 					<a href={link.link} key={index}>
 						<span className={'visually-hidden'}>{link.text}</span>
-						<TwitterIcon id={'footer-twitter-icon'} className={'connect-icon'} height={link.height} width={link.width} />
+						<XIcon id={'footer-twitter-icon'} className={'connect-icon'} height={link.height} width={link.width} />
 					</a>
 				);
 			case 'Linkedin':
