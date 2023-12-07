@@ -139,6 +139,11 @@ Clinical Assistant Professor of Global Health \
 University of Washington \
 Seattle, WA
 
+**Timil Patel, MD** \
+Medical Oncologist \
+U.S. Food and Drug Administration \
+Silver Spring, MD
+
 **Mandi Pratt-Chapman, PhD** \
 Associate Director \
 George Washington University Cancer Center \
