@@ -8,13 +8,26 @@ linktext: National Cancer Plan
 <single-homepage-box url="https://nationalcancerplan.cancer.gov/" source="ncp-401x357.png" alt="" title="National Cancer Plan" description="Everyone has a role to play in ending cancer as we know it. Learn more about the National Cancer Plan and its eight goals."></single-homepage-box>
 </div>
 
-On April 3, with leadership from National Cancer Institute (NCI) Director Monica Bertagnolli, the U.S. Department of Health and Human Services (HHS) released a [National Cancer Plan](https://nationalcancerplan.cancer.gov/) to guide the nation’s efforts against cancer. The Plan provides a framework for collaboration to reduce cancer mortality rates in the United States by at least 50% over the next 25 years and to end cancer as we know it. The Plan calls for a big-picture, whole-of-government approach to support cancer research, develop strategies, share knowledge, and accelerate progress against inequities in cancer care.
+The [National Cancer Plan](https://nationalcancerplan.cancer.gov/) provides a framework for collaboration to realize the Cancer Moonshot goal of reducing cancer mortality rates in the United States by at least 50% by 2047 and to end cancer as we know it. The Plan calls for a big-picture, whole-of-government approach to support cancer research, develop strategies, share knowledge, and accelerate progress against inequities in cancer care.
+The President’s Cancer Panel has been charged with monitoring the National Cancer Plan by gathering information from across the cancer community about progress toward the Plan's goals and identifying opportunities for improvement.
 
-The President’s Cancer Panel has been charged with monitoring the National Cancer Plan by gathering information about progress toward the Plan's goals and identifying opportunities for improvement. To assist with this task, the Panel invites stakeholders from across the [National Cancer Program](https://prescancerpanel.cancer.gov/about/blogs/national-cancer-program/) to provide updates on their relevant programs, activities, and achievements via:
+<div class="quote-text">The Panel looks forward to hearing from federal/state agencies, industry, universities, advocacy groups, nonprofits, and individual people on their commitment to making the eight goals of the Plan a reality.</div>
 
-- **[Public meetings](/ncp/meetings)**.
-- **Panel’s email inbox [PresCancerPanel@mail.nih.gov](mailto:PresCancerPanel@mail.nih.gov).**
-- **Social Media**. Follow us on [Twitter](https://twitter.com/prescancerpanel) and [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/). Tag social media posts with *#NationalCancerPlan*, *#CancerMoonshot*, and *#Every1HasARole*.
+<h3>SHARE YOUR ACTIVITIES WITH THE PANEL</h3>
 
-National Cancer Program activities collected via email and the stakeholder meetings will inform the Panel's annual report to the President, which will highlight opportunities to optimize implementation of the National Cancer Plan. Some activities also may be highlighted in President’s Cancer Panel social media and blog posts and/or the National Cancer Plan Updates newsletter.
+The Panel invites all [National Cancer Program](/about/blogs/national-cancer-program/) stakeholders to provide updates on their relevant programs, activities, and achievements via:
 
+- [President’s Cancer Panel public meetings](/ncp/meetings).
+- **Email**: [PresCancerPanel@mail.nih.gov](mailto:PresCancerPanel@mail.nih.gov).
+- **Social Media**. Follow us on [X](https://twitter.com/prescancerpanel) and [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/). Tag social media posts with *#NationalCancerPlan* and *#Every1HasARole*.
+
+For all written submissions, brief us on your programs and activities, including:
+
+- How your activities contribute to progress toward the National Cancer Plan’s goals.
+- Collaborators and partners involved.
+- Progress to date.
+- Implementation challenges and lessons learned.
+
+Activities collected via public meetings, email, and social media will inform the Panel's annual report to the President, which will highlight opportunities to optimize implementation of the National Cancer Plan. Some activities also may be highlighted in President’s Cancer Panel social media channels and/or the *National Cancer Plan Updates* newsletter.
+
+To learn more about what the cancer community is doing to achieve the eight goals of the National Cancer Plan, please subscribe to the *[National Cancer Plan Updates](https://public.govdelivery.com/accounts/USNIHNCINCP/signup/36870)* newsletter and visit the [Plan’s website](https://nationalcancerplan.cancer.gov/get-involved).

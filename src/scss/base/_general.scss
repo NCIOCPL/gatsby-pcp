@@ -123,3 +123,10 @@ table.agenda-table {
 .byline {
 	text-transform: uppercase;
 }
+.quote-text {
+	font-size:font-size('sans',8);
+	color: $pcpblue;
+	font-style: italic;
+	text-align: center;
+	padding: units(2) 0;
+}
