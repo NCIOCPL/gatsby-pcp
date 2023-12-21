@@ -1,16 +1,22 @@
 ---
-title: Meetings
+title: Public Meetings
 template: left_nav
 description: "The initial stakeholder meeting will be held virtually on Thursday, September 7, 2023."
-linktext: Meetings
+linktext: Public Meetings
 ---
 
-*The initial stakeholder meeting concluded on September 7th, 2023. To view the recording, please click [here](https://nci.rev.vbrick.com/#/videos/ca9bf067-ba4f-4dbe-a2fe-e4ad79068adc).* This meeting consisted of presentations from invited stakeholders, each followed by discussion with the Panel members. The organizations invited to this first meeting do not fully represent the rich landscape of National Cancer Program activities or the full breadth of the [National Cancer Plan](https://nationalcancerplan.cancer.gov/).
+<div class="quote-text">"We hope that by creating forums for sharing that we can learn from each other and foster collaborations."</div>
 
-The agenda and participant list are available [here](/ncp/meetings/2023-09-07/).
+<div>
+<image-with-caption
+	className="float-right"
+	imagewidth="45%"
+	image_src="public-meetings.png"
+	image_alt="September 7 2023 NCP Public Meeting"
+	image_caption='National Cancer Plan Stakeholder Meeting participants on September 7, 2023'>
+</image-with-caption>
+</div>
 
-The Panel enthusiastically looks forward to hearing from additional organizations in writing and at future meetings. The Panel encourages stakeholders to highlight their National Cancer Plan activities on their organizational websites and on social media. Tag social media posts with #NationalCancerPlan, #CancerMoonshot, and #Every1HasARole to join the conversation.
+Through public meetings, the Panel will gather information from [National Cancer Program](/about/blogs/national-cancer-program/) stakeholders on their activities to meet the [National Cancer Plan’s](https://nationalcancerplan.cancer.gov/) goals. Invited organizations will have the opportunity to share progress to date, discuss implementation challenges, and highlight key opportunities for collaboration. Activities collected will inform the Panel’s report to the President and may be highlighted on the Panel’s social channels.
 
-Updates on National Cancer Program activities will inform the Panel's report to the President, which will highlight opportunities to optimize implementation of the National Cancer Plan. Some activities also may be highlighted in President’s Cancer Panel social media and blog posts and/or the National Cancer Plan Updates newsletter.
-
-> *"We hope that by creating forums for sharing that we can learn from each other and foster collaborations."*
+The Panel enthusiastically looks forward to hearing from organizations in writing and at future meetings. To stay up to date with upcoming events, please subscribe to the *[National Cancer Plan Updates](https://public.govdelivery.com/accounts/USNIHNCINCP/signup/36870)* newsletter and follow the President’s Cancer Panel on [X](https://twitter.com/PresCancerPanel) and [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/).
