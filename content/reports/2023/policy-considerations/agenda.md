@@ -8,6 +8,8 @@ description: "Policy Considerations at the Intersection of Technology and Patien
 ---
 **DECEMBER 7, 2023**
 
+[Recording](https://nci.rev.vbrick.com/#/videos/c9968d9b-c274-4166-a0ce-b6c192b6faba)
+
 <hr />
 
 <table class="agenda-table">

@@ -11,6 +11,8 @@ description: "This will be the second of three public meetings hosted by the Pre
 
 **Meeting location:** Bethesda, Maryland, and online
 
+[Recording](https://nci.rev.vbrick.com/#/videos/c9968d9b-c274-4166-a0ce-b6c192b6faba)
+
 This will be the third of three public meetings hosted by the President’s Cancer Panel on the topic of [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/).
 
 Questions that will be explored during Meeting 3 include, but are not limited to, the following:
@@ -24,5 +26,3 @@ Questions that will be explored during Meeting 3 include, but are not limited to
 This meeting will be led by President’s Cancer Panel members Dr. Elizabeth Jaffee (Chair), Dr. Carol Brown, and Dr. Mitchel Berger, with presentations and facilitated discussion among invited participants.
 
 **Join us on Twitter by following [@PresCancerPanel](https://twitter.com/PresCancerPanel), and connect with us on [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/).**
-
-**The President’s Cancer Panel meeting series is open to the public. View the meeting live: [https://nci.rev.vbrick.com/#/webcasts/policyconsiderationsintersectiontechnpatientnav ](https://nci.rev.vbrick.com/#/webcasts/policyconsiderationsintersectiontechnpatientnav )**
