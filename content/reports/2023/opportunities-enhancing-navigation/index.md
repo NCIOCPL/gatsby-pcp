@@ -11,20 +11,11 @@ description: "This will be the first of three public meetings hosted by the Pres
 
 **Meeting location:** New Orleans, Louisiana, and online
 
+On October 17, 2023, the President’s Cancer Panel held the first of three public meetings on the topic of, Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation in New Orleans, Louisiana. This meeting consisted of presentations and facilitated discussion among invited participants, which highlighted potential challenges and opportunities to enhance patient navigation for patients, navigators, and health systems. Check out the summary below for themes and priority areas that emerged from this meeting.
+
+[Meeting Summary](/pdfs/PCP.October.meeting.summary_508.pdf)
+
 [Recording](https://nci.rev.vbrick.com/#/videos/367cb532-2248-482d-a0df-a20ba793138e)
-
-This will be the first of three public meetings hosted by the President’s Cancer Panel on the topic of [Reducing Cancer Care Inequities: Leveraging Technology to Enhance Patient Navigation](/reports/2023/inequities/).
-
-Questions that will be explored during Meeting 1 include, but are not limited to, the following:
-
-- What are patients’ pressing questions and needs during their cancer journey that can be addressed through patient navigation?
-- How can technology help people who are navigating patients (e.g., coordinating care, identifying community resources)?
-- How do patient needs for navigation technologies differ by community?
-- Are there right-tech or right-touch approaches to patient navigation that are currently working?
-- What challenges are associated with adopting new technology platforms for patient navigation?
-- What are the downsides/risks of incorporating technology into patient navigation?
-
-This meeting will be led by President’s Cancer Panel members Dr. Elizabeth Jaffee (Chair), Dr. Carol Brown, and Dr. Mitchel Berger, with presentations and facilitated discussion among invited participants.
 
 **Join us on Twitter by following [@PresCancerPanel](https://twitter.com/PresCancerPanel), and connect with us on [LinkedIn](https://www.linkedin.com/company/president's-cancer-panel/).**
 
