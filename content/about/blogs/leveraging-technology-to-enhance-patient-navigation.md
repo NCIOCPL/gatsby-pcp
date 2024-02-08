@@ -6,6 +6,7 @@ blurb: "On October 17, 2023, the President’s Cancer Panel convened the first o
 image: enhance-patient-navigation.png
 alt: "Meeting 1 Recap: Opportunities for Enhancing Patient Navigation"
 description: "On October 17, 2023, the President’s Cancer Panel convened the first of three public meetings with key experts to discuss gaps and opportunities at the intersection of technology and patient navigation. Read our latest blog post to find out more about common themes and priority areas that emerged from this meeting."
+series: blog
 ---
 <div>
 <image-with-class

@@ -7,12 +7,24 @@ import HeroImage from '../components/HeroImage';
 import '../scss/components/_blogs.scss';
 import PropTypes from 'prop-types';
 import { useBlogNodes } from '../hooks/use-blog-nodes';
+import { useReportNodes } from '../hooks/use-report-nodes';
 import { AutoLeftNavigation } from '../components/AutoLeftNavigation';
 import { BreadCrumbs } from '../components/Breadcrumbs';
 
 export default function BlogsTemplate({ frontmatter, path }) {
-	const { edges } = useBlogNodes();
-	let blogLinks = edges.map((node, index) => {
+	function GetEdges() {
+		const { edges } = useBlogNodes();
+		return edges;
+	}
+	function GetReportEdges() {
+		const { edges } = useReportNodes();
+		return edges;
+	}
+	let myEdges = GetEdges();
+	if (frontmatter.series === 'report') {
+		myEdges = GetReportEdges();
+	}
+	let blogLinks = myEdges.map((node, index) => {
 		let post = node.node;
 		let blogDate;
 		let blogImage = '';
@@ -27,7 +39,6 @@ export default function BlogsTemplate({ frontmatter, path }) {
 		if (post.frontmatter.image) {
 			blogImage = post.frontmatter.image;
 		}
-
 		return (
 			<div className={'blog-list-item'} key={index}>
 				<div className={'blog-list-item-image'}>
@@ -45,7 +56,6 @@ export default function BlogsTemplate({ frontmatter, path }) {
 			</div>
 		);
 	});
-
 	return (
 		<Layout>
 			<BreadCrumbs frontmatter={frontmatter} path={path}></BreadCrumbs>
@@ -55,8 +65,8 @@ export default function BlogsTemplate({ frontmatter, path }) {
 						<AutoLeftNavigation path={path}></AutoLeftNavigation>
 					</div>
 					<div className={'report-container top-left-nav-container'}>
-						<HeroImage sourcedesktop={'columns.jpg'} sourcetablet={'columns.jpg'} alt={''}></HeroImage>
-						<h2 className={'post-title'}>Blogs</h2>
+						<HeroImage sourcedesktop={frontmatter.bannerimage} sourcetablet={frontmatter.bannerimage} alt={''}></HeroImage>
+						<h2 className={'post-title'}>{frontmatter.linktext}</h2>
 						<div className={'post-body'}>{blogLinks}</div>
 					</div>
 				</div>
@@ -66,10 +76,11 @@ export default function BlogsTemplate({ frontmatter, path }) {
 }
 
 export function Head() {
+	let description = 'View ' + BlogsTemplate.frontmatter.title + "from the President's Cancer Panel.";
 	return (
 		<>
 			<html lang="en" />
-			<SEO title="Blogs" description="View blogs from the President's Cancer Panel." />
+			<SEO title={BlogsTemplate.frontmatter.title} description={description} />
 		</>
 	);
 }

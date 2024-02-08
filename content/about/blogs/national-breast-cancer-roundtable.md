@@ -6,6 +6,7 @@ blurb: "The National Breast Cancer Roundtable was born out of the call for actio
 image: nbcrt-card.jpg
 alt: "The National Breast Cancer Roundtable"
 description: "The National Breast Cancer Roundtable was born out of the call for action by the President's Cancer Panel. Learn more about how the American Cancer Society, the leading force behind the Roundtable, spearheads this effort to improve equity and access in cancer screening"
+series: blog
 ---
 
 The 2022 President’s Cancer Panel report, [“Closing Gaps in Cancer Screening: Connecting People, Communities, and Systems to Improve Equity and Access,”](https://prescancerpanel.cancer.gov/report/cancerscreening/) called for the creation of a roundtable with a particular focus on breast cancer prevention and screening. The American Cancer Society (ACS) heard this call to action and established the [National Breast Cancer Roundtable (NBCRT)](http://www.nbcrt.org/), which is already bringing key change-makers together.

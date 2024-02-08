@@ -82,6 +82,18 @@ module.exports = {
 						link: '/ncp/',
 						sublinks: [
 								{
+										name: 'Reports',
+										link: '/ncp/reports',
+								},
+								{
+										name: 'Digital Toolkit',
+										link: '/ncp/digital-toolkit',
+								},
+								{
+										name: 'Media Advisory',
+										link: '/ncp/media-advisory',
+								},
+								{
 										name: 'Meetings',
 										link: '/ncp/meetings',
 								}

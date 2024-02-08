@@ -6,6 +6,7 @@ blurb: "One of the most important tasks of the President’s Cancer Panel is to 
 image: cgov-16669_ncp-infographic-update_a_v3_2-cropped.png
 alt: "National Cancer Program"
 description: "One of the most important tasks of the President’s Cancer Panel is to monitor the National Cancer Program. Learn more about this critical effort that brings together the cancer community to make progress in reducing the burden of cancer."
+series: blog
 ---
 
 **One of the most important tasks of the President’s Cancer Panel is to monitor the National Cancer Program. But what is that program, exactly? And what does it do?**

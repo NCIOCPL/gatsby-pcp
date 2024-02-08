@@ -6,6 +6,7 @@ blurb: "On September 7th, the Panel convened a meeting with stakeholders from ac
 image: stakeholder-meeting.jpeg
 alt: "National Cancer Plan Stakeholder Meeting: Cancer Community Comes Together to Share Ideas for Progress"
 description: "On September 7th, the Panel convened a meeting with stakeholders from across the cancer community to highlight progress towards the National Cancer Plan’s goals and discuss opportunities for improvement. Check out our latest blog for a meeting recap and learn more about the Panel’s next steps."
+series: blog
 ---
 <div>
 <image-with-class

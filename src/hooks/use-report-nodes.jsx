@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-export const useBlogNodes = () => {
+export const useReportNodes = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			allMarkdownRemark(filter: { frontmatter: { template: { eq: "blog" }, series: { eq: "blog" } } }, sort: { frontmatter: { date: DESC } }) {
+			allMarkdownRemark(filter: { frontmatter: { template: { eq: "blog" }, series: { eq: "report" } } }, sort: { frontmatter: { date: DESC } }) {
 				edges {
 					node {
 						id

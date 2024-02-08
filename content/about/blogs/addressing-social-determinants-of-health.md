@@ -6,6 +6,7 @@ blurb: "A key to addressing health disparities - as highlighted in the 2010 Pane
 image: pcp-10-17-23-card.png
 alt: "Panel Recommendations in Action: Addressing Social Determinants of Health in Cancer Care"
 description: "A key to addressing health disparities - as highlighted in the 2010 Panel Report - is addressing social determinants of health in patient care. Learn how organizations are taking steps to better address patients’ social needs and risks in cancer care."
+series: blog
 ---
 
 Cancer death rates continue to decrease in the United States thanks to improvements in cancer prevention, screening, treatment, and survivorship care.

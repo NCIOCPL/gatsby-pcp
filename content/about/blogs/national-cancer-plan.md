@@ -7,6 +7,7 @@ blurb: "On April 3, with leadership from National Cancer Institute (NCI) Directo
 image: nationalcancerplan_401x357_pcphomepagethumbnail.jpg
 alt: "National Cancer Plan"
 description: "On April 3, 2023, with leadership from National Cancer Institute (NCI) Director Monica Bertagnolli, the U.S. Department of Health and Human Services (HHS) released a National Cancer Plan to guide the nation’s efforts against cancer."
+series: blog
 ---
 
 On April 3, with leadership from National Cancer Institute (NCI) Director Monica Bertagnolli, the U.S. Department of Health and Human Services (HHS) released a National Cancer Plan to guide the nation’s efforts against cancer. As members of the President’s Cancer Panel, we are charged by the National Cancer Act of 1971 to monitor the development and execution of the activities of the National Cancer Program. We enthusiastically endorse the National Cancer Plan as a roadmap for advancing the National Cancer Program. As highlighted in the Plan, we look forward to assessing the activities undertaken both inside and outside of government to realize the vision of the reignited Cancer Moonshot: to end cancer as we know it.

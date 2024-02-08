@@ -33,6 +33,8 @@ export const pageQuery = graphql`
 				author
 				linktext
 				sortOrder
+				series
+				bannerimage
 			}
 			parent {
 				... on File {
