@@ -1,10 +1,10 @@
 ---
-title: "Meeting 2 Recap: Post Technology Opportunities for Patient Navigation"
+title: "Meeting 2 Recap: Technology Opportunities for Patient Navigation"
 template: blog
 date: 2024-01-04
 blurb: "On November 2 and 3, 2023, the President’s Cancer Panel held the second of three public meetings with key experts to discuss all current and potential uses of technology to support patient navigation. Read our latest blog post to find out more about common themes and priority areas that emerged from this meeting."
 image: tech-meeting-blog-image.png
-alt: "Meeting 2 Recap: Post Technology Opportunities for Patient Navigation"
+alt: "Meeting 2 Recap: Technology Opportunities for Patient Navigation"
 description: "On November 2 and 3, 2023, the President’s Cancer Panel held the second of three public meetings with key experts to discuss all current and potential uses of technology to support patient navigation. Read our latest blog post to find out more about common themes and priority areas that emerged from this meeting."
 ---
 <div>
