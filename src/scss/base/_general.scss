@@ -2,7 +2,7 @@
 @import "../variables";
 @import "../mixins";
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .media-advisory-header {
 	text-transform: uppercase;
 	color: $pcpblue;
 	&.node-title,
@@ -19,8 +19,12 @@ h2 {
 h3 {
 	font-size:font-size('sans',10);
 }
-h4 {
+h4, .media-advisory-header {
 	font-size:font-size('sans',8);
+}
+.media-advisory-header {
+	font-weight: bold;
+	margin-bottom: units(2);
 }
 a {
 	color: $pcpanchor;

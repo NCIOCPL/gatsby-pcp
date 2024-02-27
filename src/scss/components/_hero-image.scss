@@ -7,7 +7,9 @@
 }
 .hero-image-desktop,
 .hero-image-tablet {
-	box-shadow: 0 units(1.5) units(2) 1px rgba(0,0,0,.4);
+	&.with-shadow {
+		box-shadow: 0 units(1.5) units(2) 1px rgba(0,0,0,.4);
+	}
 }
 
 .hero-image-desktop {

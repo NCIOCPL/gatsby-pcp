@@ -3,6 +3,7 @@ title: Public Meetings
 template: left_nav
 description: "The initial stakeholder meeting will be held virtually on Thursday, September 7, 2023."
 linktext: Public Meetings
+sortOrder: 1
 ---
 
 <div class="quote-text">"We hope that by creating forums for sharing that we can learn from each other and foster collaborations."</div>

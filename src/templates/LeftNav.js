@@ -4,6 +4,7 @@ import MainText from '../components/MainText';
 import PropTypes from 'prop-types';
 import { BreadCrumbs } from '../components/Breadcrumbs';
 import { AutoLeftNavigation } from '../components/AutoLeftNavigation';
+import HeroImage from '../components/HeroImage';
 
 export default function LeftNavTemplate({ frontmatter, htmlAst, path }) {
 	return (
@@ -14,6 +15,7 @@ export default function LeftNavTemplate({ frontmatter, htmlAst, path }) {
 					<AutoLeftNavigation path={path}></AutoLeftNavigation>
 				</div>
 				<div className="report-container top-left-nav-container">
+					<HeroImage sourcedesktop={frontmatter.bannerImage} sourcetablet={frontmatter.bannerImage} alt={''} className={frontmatter.bannerClass}></HeroImage>
 					<h2 className={'post-title'}>{frontmatter.title}</h2>
 					<div className="post-body">
 						<MainText html={htmlAst}></MainText>

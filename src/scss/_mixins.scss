@@ -139,6 +139,11 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+@mixin centered-small-mobile-constrained {
+	max-width: $mobile-small-constrained-max-width;
+	margin-left: auto;
+	margin-right: auto;
+}
 @mixin top-bar-background {
 	background: $top-bar-blue repeat scroll 0 0;
 	background-image: linear-gradient(to bottom, $top-bar-blue 0%, $top-bar-blue-gradient-end 100%);

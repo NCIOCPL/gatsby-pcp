@@ -4,8 +4,14 @@ template: left_nav
 description: "On April 3, with leadership from National Cancer Institute (NCI) Director Monica Bertagnolli, the U.S. Department of Health and Human Services (HHS) released a National Cancer Plan to guide the nation’s efforts against cancer."
 linktext: National Cancer Plan
 ---
-<div class="desktop-float-right">
-<single-homepage-box url="https://nationalcancerplan.cancer.gov/" source="ncp-401x357.png" alt="" title="National Cancer Plan" description="Everyone has a role to play in ending cancer as we know it. Learn more about the National Cancer Plan and its eight goals."></single-homepage-box>
+<div class="desktop-float-right width-constrained">
+<single-homepage-box
+	url="/ncp/reports/"
+	source="Reports_Feature_Card_Thumbnail_401x358.jpg"
+	alt=""
+	title="New Report from the President’s Cancer Panel"
+	description="This report features findings from the Panel's initial assessment of the National Cancer Plan and highlights recommendations in five priority areas to accelerate progress toward the Plan’s goals.">
+</single-homepage-box>
 </div>
 
 The [National Cancer Plan](https://nationalcancerplan.cancer.gov/) provides a framework for collaboration to realize the Cancer Moonshot goal of reducing cancer mortality rates in the United States by at least 50% by 2047 and to end cancer as we know it. The Plan calls for a big-picture, whole-of-government approach to support cancer research, develop strategies, share knowledge, and accelerate progress against inequities in cancer care.
