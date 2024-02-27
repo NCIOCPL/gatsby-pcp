@@ -11,6 +11,12 @@
 		font-weight: normal;
 	}
 }
+.width-constrained {
+	.featured-card {
+		@include centered-small-mobile-constrained();
+	}
+}
+
 .featured-card {
 	background-color: $cardblue;
 	color: $white;

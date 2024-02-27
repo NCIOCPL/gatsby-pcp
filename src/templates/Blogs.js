@@ -55,7 +55,7 @@ export default function BlogsTemplate({ frontmatter, path }) {
 						<AutoLeftNavigation path={path}></AutoLeftNavigation>
 					</div>
 					<div className={'report-container top-left-nav-container'}>
-						<HeroImage sourcedesktop={'columns.jpg'} sourcetablet={'columns.jpg'} alt={''}></HeroImage>
+						<HeroImage sourcedesktop={frontmatter.bannerImage} sourcetablet={frontmatter.bannerImage} alt={''} className={frontmatter.bannerClass}></HeroImage>
 						<h2 className={'post-title'}>Blogs</h2>
 						<div className={'post-body'}>{blogLinks}</div>
 					</div>

@@ -1,0 +1,35 @@
+@use "../uswds-theme" as *;
+@import "../variables";
+@import "../mixins";
+
+.date-and-contact {
+	@include grid-row();
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	margin: units(2) 0;
+	@include at-media(tablet-lg){
+		@include grid-gap(1);
+		flex-direction: row;
+	}
+}
+.media-advisory-title-container {
+	@include grid-row();
+	@include grid-gap(2);
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	.media-advisory-title-image {
+		width: 15%;
+		min-width: 15%;
+		max-width: 15%;
+		.hero-image-container {
+			margin: 0;
+		}
+	}
+	.media-advisory-title {
+		width: 85%;
+		min-width: 85%;
+		max-width: 85%;
+	}
+}
