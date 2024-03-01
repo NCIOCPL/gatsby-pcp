@@ -12,9 +12,10 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
 	const report = /^\/report\//g.test(to);
 	const internal = /^\/(?!\/)/.test(to);
 	const pdf = /\.pdf$/.test(to);
+	const image = /\.jpg|jpeg|gif|png$/.test(to);
 
 	// Use Gatsby Link for internal links, and <a> for others
-	if (internal && !report && !pdf) {
+	if (internal && !report && !pdf && !image) {
 		return (
 			<GatsbyLink to={to} activeClassName={activeClassName} partiallyActive={partiallyActive} {...other}>
 				{children}

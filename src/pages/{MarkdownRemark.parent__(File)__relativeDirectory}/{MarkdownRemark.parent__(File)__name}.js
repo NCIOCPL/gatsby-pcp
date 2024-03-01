@@ -7,6 +7,7 @@ import LeftNavsSubSectionsTemplate from '../../templates/LeftNavSubSections';
 import BlogTemplate from '../../templates/Blog';
 import PropTypes from 'prop-types';
 import BlogsTemplate from '../../templates/Blogs';
+import MediaAdvisoryTemplate from '../../templates/MediaAdvisory';
 
 export default function GeneratedPage({ data: { markdownRemark } }) {
 	const { frontmatter, htmlAst, parent } = markdownRemark;
@@ -15,6 +16,7 @@ export default function GeneratedPage({ data: { markdownRemark } }) {
 		blog: <BlogTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 		left_nav: <LeftNavTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 		left_nav_sub_sections: <LeftNavsSubSectionsTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
+		media_advisory: <MediaAdvisoryTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 		single_page: <SinglePageTemplate frontmatter={frontmatter} htmlAst={htmlAst} path={parent} />,
 	};
 
@@ -33,6 +35,10 @@ export const pageQuery = graphql`
 				author
 				linktext
 				sortOrder
+				bannerImage
+				bannerClass
+				advisoryDate
+				contact
 			}
 			parent {
 				... on File {

@@ -1,6 +1,29 @@
 @use "../uswds-theme" as *;
 @import "../variables";
 
+.picture-with-flex-text {
+	@extend .picture-with-quotes-container;
+	padding-bottom: units(2);
+	@include at-media(tablet){
+		@include grid-gap(1);
+		flex-direction: row;
+	}
+	.gatsby-image-wrapper {
+		@include at-media(tablet){
+			width: 33%;
+			min-width: 33%;
+			max-width: 33%;
+		}
+	}
+	.picture-with-quotes-caption {
+		font-size: font-size('sans',7 );
+		@include at-media(tablet){
+			width: 66%;
+			min-width: 66%;
+			max-width: 66%;
+		}
+	}
+}
 .picture-with-quotes-caption {
 	font-size: font-size('sans','3xs');
 	padding: units(1) 0;
@@ -19,8 +42,8 @@
 		padding: 0;
 		margin: 0;
 	}
-
 }
+
 .picture-with-quotes-image {
 	@include grid-col(12);
 	@include at-media(tablet-lg){
@@ -32,5 +55,10 @@
 	@include at-media(tablet-lg) {
 		@include grid-col(7);
 		padding: 0 units(1.5);
+	}
+}
+.image-with-caption {
+	&.flexCaption {
+
 	}
 }
