@@ -90,10 +90,14 @@ li {
 .float-right {
 	float: right;
 	margin-left: units(2);
+	margin-bottom: units(1.5);
 }
 .float-left {
 	float: left;
 	margin-right: units(2);
+}
+.extra-bottom-margin {
+	margin-bottom: units(1.5);
 }
 .pdf-icon {
 	background-image: url('../images/application-pdf.png');
