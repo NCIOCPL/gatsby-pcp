@@ -1,7 +1,7 @@
 ---
 title: '“We Had to Do Better”: Dr. Elizabeth Jaffee on a Career in Cancer Research and Treatment'
 template: blog
-date: 2024-06-04
+date: 2024-06-14
 blurb: "This post is the first in a series on getting to know the President’s Cancer Panel. Learn more about the career journey of our Panel Chair, Dr. Elizabeth Jaffee, and how she got involved in pancreatic cancer care and research."
 image: Dr.-Elizabeth-Jaffee-004.jpg
 alt: '“We Had to Do Better”: Dr. Elizabeth Jaffee on a Career in Cancer Research and Treatment'
