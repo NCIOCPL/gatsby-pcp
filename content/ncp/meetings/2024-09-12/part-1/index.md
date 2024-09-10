@@ -32,7 +32,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>&nbsp;
 
-**INNOVATION IN PARTNERSHIPS/RETAINING A DIVERSE CANCER WORKFORCE**
+**INNOVATION IN PARTNERSHIPS/RETAINING A DIVERSE CANCER WORKFORCE** \
+**Springboard Presenter:** Laura Long, Kaiser Permanente VP of Operations, Performance, and Compliance with National Equity, Inclusion, and Diversity
+
 </td>
 </tr><tr><td>
 
@@ -41,7 +43,8 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**INVESTING & SUPPORTING HEALTH-SECTOR CAREERS (FOCUS: PHYSICIANS, NURSES AND ADVANCED PRACTICE PROVIDERS)**
+**INVESTING & SUPPORTING HEALTH-SECTOR CAREERS (FOCUS: PHYSICIANS, NURSES AND ADVANCED PRACTICE PROVIDERS)** \
+**Springboard Presenter:** Larissa Nekhlyudov, Harvard Medical School/Brigham and Women’s Hospital
 
 </td>
 </tr><tr><td>
@@ -59,7 +62,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**INVESTING & SUPPORTING HEALTH-SECTOR CAREERS (FOCUS: LAB TECHS, MEDICAL ASSISTANTS, NAVIGATORS, AND OTHERS)**
+**INVESTING & SUPPORTING HEALTH-SECTOR CAREERS (FOCUS: LAB TECHS, MEDICAL ASSISTANTS, NAVIGATORS, AND OTHERS)** \
+**Springboard Presenter:** TBD
+
 </td>
 </tr><tr><td>
 
@@ -68,7 +73,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**STRENGTHENING HEALTHCARE ENVIRONMENTS TO PROMOTE WORKFORCE RETENTION & WELL-BEING**
+**STRENGTHENING HEALTHCARE ENVIRONMENTS TO PROMOTE WORKFORCE RETENTION & WELL-BEING** \
+**Springboard Presenter:** Ishawaria Subbiah, Sarah Cannon Research Institute, Executive Director for Cancer Care Equity and Professional Wellness
+
 </td>
 </tr><tr><td>
 
@@ -84,7 +91,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**LEVERAGING TECHNOLOGY TO IMPROVE CARE DELIVERY**
+**LEVERAGING TECHNOLOGY TO IMPROVE CARE DELIVERY** \
+**Springboard Presenter:** Othman Laraki, CEO of Color Health
+
 </td>
 </tr><tr><td>
 

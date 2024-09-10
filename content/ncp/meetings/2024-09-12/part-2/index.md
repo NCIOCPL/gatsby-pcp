@@ -32,7 +32,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>&nbsp;
 
-**CREATIVE PARTNERSHIPS/DIVERSITY IN CLINICAL TRIALS AWARDS PROGRAM**
+**CREATIVE PARTNERSHIPS/DIVERSITY IN CLINICAL TRIALS AWARDS PROGRAM** \
+**Springboard Presenter:** Robert Winn, VCU Massey Cancer Center Director
+
 </td>
 </tr><tr><td>
 
@@ -41,7 +43,8 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**ENTRY TO THE RESEARCH WORKFORCE & CAREER ADVANCEMENTS**
+**ENTRY TO THE RESEARCH WORKFORCE & CAREER ADVANCEMENTS** \
+**Springboard Presenter:** Nathan Vanderford, University of Kentucky Medical School
 
 </td>
 </tr><tr><td>
@@ -59,7 +62,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**RESEARCH TRAINING NEEDS & MECHANISMS FOR BASIC & CLINICAL RESEARCHERS**
+**RESEARCH TRAINING NEEDS & MECHANISMS FOR BASIC & CLINICAL RESEARCHERS** \
+**Springboard Presenter:** Oliver Bogler, National Cancer Institute, Center for Cancer Training CCT
+
 </td>
 </tr><tr><td>
 
@@ -68,7 +73,9 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**PERSPECTIVES FOR THE RESEARCH WORKFORCE IN NON-ACADEMIC SETTINGS**
+**PERSPECTIVES FOR THE RESEARCH WORKFORCE IN NON-ACADEMIC SETTINGS** \
+**Springboard Presenter:** Johanna Bendell, Roche Global Head of Oncology, Pharma Research and Early Development
+
 </td>
 </tr><tr><td>
 
@@ -85,6 +92,7 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 <td>
 
 **COLLABORATIVE CROSS-SECTOR OPPORTUNITIES FOR IMPROVING ONCOLOGY RESEARCH TRAINING**
+
 </td>
 </tr><tr><td>
 
@@ -259,7 +267,6 @@ VCU Massey Comprehensive Cancer Center   \
 Senior Associate Dean for Cancer Innovation and Professor of Pulmonary Disease and Critical Care Medicine \
 VCU School of Medicine \
 Richmond, VA
-
 
 ### GET INVOLVED
 The National Cancer Plan underscores the significant role of every organization and individual in our shared mission to end cancer as we know it. We encourage you to take part in this important initiative by sharing with us how your organization is committed to achieving the goals of the National Cancer Plan. Please email us at [PresCancerPanel@mail.nih.gov](mailto:PresCancerPanel@mail.nih.gov) or share your activities on social media by tagging your posts with #NationalCancerPlan and #Every1HasARole.
