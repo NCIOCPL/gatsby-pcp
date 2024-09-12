@@ -32,7 +32,7 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>&nbsp;
 
-**INNOVATION IN PARTNERSHIPS/RETAINING A DIVERSE CANCER WORKFORCE** \
+**INNOVATIONS IN DIVERSIFYING THE WORKFORCE** \
 **Springboard Presenter:** Laura Long, Kaiser Permanente VP of Operations, Performance, and Compliance with National Equity, Inclusion, and Diversity
 
 </td>
@@ -62,8 +62,8 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**INVESTING & SUPPORTING HEALTH-SECTOR CAREERS (FOCUS: LAB TECHS, MEDICAL ASSISTANTS, NAVIGATORS, AND OTHERS)** \
-**Springboard Presenter:** TBD
+**INVESTING & SUPPORTING HEALTH-SECTOR CAREERS (FOCUS: ALLIED HEALTH PROFESSIONALS, LAB TECHS, MEDICAL ASSISTANTS, NAVIGATORS, AND OTHERS)** \
+**Springboard Presenter:** Kevin Sowers, Johns Hopkins Health System
 
 </td>
 </tr><tr><td>
@@ -164,15 +164,19 @@ American Society for Clinical Pathology \
 Chicago, IL
 
 **Colleen A. Campbell, PhD, MS, LGC** \
-President \
-National Society of Genetic Counselors \
-Assistant Director \
-Iowa Institute of Human Genetics \
-UIHC Director of Genetic Counseling \
-Operations \
-Clinical Associate Professor, Department of Internal Medicine \
-University of Iowa Hospitals and Clinics \
+President, National Society of Genetic Counselors \
+Licensed, Certified Genetic Counselor \
+Assistant Director, Iowa Institute of Human Genetics \
+UIHC Director of Genetic Counseling Operations \
+Clinical Associate Professor of Internal Medicine, Division of Cardiovascular Medicine, Department of Internal Medicine \
+University of Iowa Carver College of Medicine \
 Iowa City, IA
+
+**Candice Chen, MD, MPH** \
+Acting Associate Administrator for Health Workforce \
+Health Resources and Services Administration \
+U.S. Department of Health and Human Services \
+Washington, DC
 
 **James Fitzgibbon, DPT, MBA** \
 President, Regional School Administrator \
@@ -184,18 +188,22 @@ Inaugural Executive Director \
 Research and Action Institute \
 Washington, DC
 
-**Clifford Hudis, MD, FACP, FASCO** \
+**Clifford Hudis, MD, FASCP, FASCO** \
 Chief Executive Officer \
 American Society of Clinical Oncology and \
 Association for Clinical Oncology \
 Executive Vice Chair \
-Conquer Cancer, The ASCO Foundation \
-Alexandria, VA
+Conquer Cancer, The ASCO Foundation
 
 **Kim Jay** \
 Training Manager and Senior Community Health Worker \
 Sinai Urban Health Institute \
 Chicago, IL
+
+**Michele L. Johnson, MPA, MA** \
+Senior Manager \
+Corning Community Impact and Investment \
+Corning, NY
 
 **Othman Laraki** \
 Chief Executive Officer \
@@ -224,20 +232,17 @@ Clinical Director, Internal Medicine for Cancer Survivors \
 Dana-Farber Cancer Institute \
 Boston, MA
 
-**Millicent K. Ruffin, PhD** \
-Senior Director, Community Impact and \
-Investment \
-Corning, Incorporated \
-Corning, NY
-
 **Christine Schuyler, BSN, RN, MHA** \
-Program Director, Health Care Initiatives, Workforce Development \
+Program Director, Health Care Initiatives, \
+Workforce Development \
 Jamestown Community College \
 Jamestown, NY
 
 **Jolynn Sessions, PharmD, BCOP, CCP, FHOPA** \
-President \
-Hematology/Oncology Pharmacy Association \
+President, Hematology/Oncology Pharmacy Association \
+EXCLAIM Pharmacogenomics Oncology \
+Pharmacy Manager \
+Oncology Clinical Pharmacist Practitioner Western North Carolina Veterans Affairs Health Care System and Charles George Department of Veteran Affairs (VA) Medical Center \
 Asheville, NC
 
 **Lawrence N. Shulman, MD, MACP, FASCO** \
@@ -247,16 +252,21 @@ Associate Director, Abramson Cancer Center \
 University of Pennsylvania \
 Philadelphia, PA
 
+**Kevin Sowers, MSN, RN, FAAN** \
+President, Johns Hopkins Health System \
+Executive Vice President \
+Johns Hopkins Medicine \
+Baltimore City, MD
+
 **Ishwaria Subbiah, MD, MS, FASCO** \
 Executive Director \
 Cancer Care Equity and Professional Wellness \
 Sarah Cannon Research Institute \
-Medical Director, Supportive Care Oncology, \
-Health Equity & Professional Well-being \
+Medical Director, Supportive Care Oncology, Health Equity & Professional Well-being \
 US Oncology Network \
 Nashville, TN
 
-**Caroline Sutter** \
+**Caroline Sutter, RN DNP-BC** \
 Co-Director \
 Center for Health Workforce at Mason \
 Professor of Nursing \
@@ -278,7 +288,6 @@ and Professor of Pulmonary Disease and \
 Critical Care Medicine \
 VCU School of Medicine \
 Richmond, VA
-
 
 ### GET INVOLVED
 The National Cancer Plan underscores the significant role of every organization and individual in our shared mission to end cancer as we know it. We encourage you to take part in this important initiative by sharing with us how your organization is committed to achieving the goals of the National Cancer Plan. Please email us at [PresCancerPanel@mail.nih.gov](mailto:PresCancerPanel@mail.nih.gov) or share your activities on social media by tagging your posts with #NationalCancerPlan and #Every1HasARole.
