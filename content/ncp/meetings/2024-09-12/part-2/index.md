@@ -62,7 +62,7 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 </td>
 <td>
 
-**RESEARCH TRAINING NEEDS & MECHANISMS FOR BASIC & CLINICAL RESEARCHERS** \
+**SUPPORTING RESEARCH TRAINING** \
 **Springboard Presenter:** Oliver Bogler, National Cancer Institute, Center for Cancer Training CCT
 
 </td>
@@ -74,7 +74,7 @@ description: "Developing and Retaining a Robust and Diverse Cancer Workforce: Ch
 <td>
 
 **PERSPECTIVES FOR THE RESEARCH WORKFORCE IN NON-ACADEMIC SETTINGS** \
-**Springboard Presenter:** Johanna Bendell, Roche Global Head of Oncology, Pharma Research and Early Development
+**Springboard Presenter:** Johanna Bendell, Vice President and Chief Diversity Officer, Genentech
 
 </td>
 </tr><tr><td>
@@ -158,8 +158,8 @@ Roche \
 Basel, Switzerland
 
 **Oliver Bogler, PhD** \
-Director \
-Center for Cancer Training, National Cancer Institute \
+Director, Center for Cancer Training \
+National Cancer Institute \
 Bethesda, MD
 
 **Callisia Clarke, MD, MS, FACS** \
@@ -200,11 +200,11 @@ Durham, NC
 
 **Bianca Islam, MD, PhD, MSc** \
 National Institute of Health T32 Research Fellow \
-Case Western Reserve University (CWRU) \
+Case Western Reserve University \
 Harrington Physician Scientist Program \
 Gastroenterology and Hepatology Fellow, Division of Gastroenterology & Liver Disease Department of Medicine \
-University Hospitals Cleveland Medical Center (UHCMC) \
-Louis Stokes Cleveland Veterans Affairs Medical Center (VAMC) \
+University Hospitals Cleveland Medical Center \
+Louis Stokes Cleveland Veterans Affairs Medical Center \
 Cleveland, OH
 
 **Heather H. Pierce, JD, MPH** \
@@ -225,14 +225,16 @@ Advarra \
 Newton Centre, MA
 
 **Joel Schildbach, PhD** \
-Program Director \
-Division of Graduate Education \
+Program Director, Division of Graduate Education \
 National Science Foundation \
+Professor of Biology \
+Johns Hopkins University \
 Baltimore, MD
 
 **Carolyn Seyss, PharmD, RUCIF** \
 Fellowship Director and RPIF Alumna \
-Institute for Pharmaceutical Industry Fellowships \
+Institute for Pharmaceutical Industry \
+Fellowships \
 Ernest Mario School of Pharmacy \
 Rutgers, The State University of New Jersey \
 Piscataway, NJ
