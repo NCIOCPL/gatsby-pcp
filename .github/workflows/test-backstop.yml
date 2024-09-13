@@ -94,7 +94,7 @@ jobs:
 
       ## Upload failed css tests
       - name: Upload failed tests to GitHub
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: failed-backstopjs
@@ -163,7 +163,7 @@ jobs:
       ####################################################
 
       ## Upload successful css tests
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         name: Upload successful tests
         with:
           name: success-backstopjs
